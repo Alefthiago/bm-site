@@ -3,65 +3,85 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 // Util. //
 
 // Styles //
 let text_style = 'text-base p-1 hover:bg-[#C55300] rounded-lg';
 let div_text_style = 'w-1/4 flex flex-col mb-1 items-center';
 let div_text_style_2 = 'w-full flex justify-center mb-1';
-let span_text_style = 'w-1/2 h-2 rounded-lg bg-[#C55300]';
+let span_text_style = 'w-[70%] h-2 rounded-lg bg-[#C55300]';
 // Styles //
 
 const Navbar = () => {
-
+    // Variaveis //
     const pathname = usePathname();
+    // Variaveis //
+
+    // FUNCOES //
+    function clickIcon(route) {
+        console.log(pathname);
+    }
+    // FUNCOES //
 
     return (
         <nav className={'w-full h-[90px] bg-[#206BA5]'}>
             <section className={'w-full h-full flex'}>
+                {/* LOGO */}
                 <section className={'w-1/5 h-full flex justify-center items-end'}>
                     <div className={'mb-3'}>
                         <Image src={'/LogoBranco.png'} alt={'Logo BM Informatica'} width={60} height={60} />
                     </div>
                 </section>
+                {/* LOGO */}
+
+                {/* INDICES */}
                 <section className={'w-3/5 h-full container mx-auto columns-sm flex items-end gap-2 text-[#E0E0E0] roboto-bold'}>
-                    
                     <div className={`${div_text_style}`}>
                         <div className={`${div_text_style_2}`}>
-                            <a href={'/'} className={`${text_style}`}>Inicio</a>
+                            <Link href={'/'} className={`${text_style}`} onClick={() => clickIcon()}>Inicio</Link>
                         </div>
                         <span className={`${span_text_style}`}></span>
                     </div>
 
                     <div className={`${div_text_style}`}>
                         <div className={`${div_text_style_2}`}>
-                            <a href={'/'} className={`${text_style}`}>Produtos</a>
+                            <Link href={'/solutions'} className={`${text_style}`}>Soluções</Link>
                         </div>
                         <span className={`${span_text_style}`}></span>
                     </div>
 
                     <div className={`${div_text_style}`}>
                         <div className={`${div_text_style_2}`}>
-                            <a href={'/'} className={`${text_style}`}>Serviços</a>
+                            <Link href={'/equipment'} className={`${text_style}`}>Equipamentos</Link>
                         </div>
                         <span className={`${span_text_style}`}></span>
                     </div>
 
                     <div className={`${div_text_style}`}>
                         <div className={`${div_text_style_2}`}>
-                            <a href={'/'} className={`${text_style}`}>Contato</a>
+                            <Link href={'/company'} className={`${text_style}`}>Empresa</Link>
                         </div>
                         <span className={`${span_text_style}`}></span>
                     </div>
 
                     <div className={`${div_text_style}`}>
                         <div className={`${div_text_style_2}`}>
-                            <a href={'/'} className={`${text_style}`}>Sobre</a>
+                            <Link href={'/contact'} className={`${text_style}`}>Contato</Link>
+                        </div>
+                        <span className={`${span_text_style}`}></span>
+                    </div>
+
+                    <div className={`${div_text_style}`}>
+                        <div className={`${div_text_style_2}`}>
+                            <Link href={'/products'} className={`${text_style}`}>Links Úteis</Link>
                         </div>
                         <span className={`${span_text_style}`}></span>
                     </div>
                 </section>
+                {/* INDICES */}
 
+                {/* WHATSAPP */}
                 <section className={'w-1/5 h-full'}>
                     <div className={'mb-w-1/5 h-full flex justify-center items-end'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className={"bi bi-whatsapp mb-4"} viewBox="0 0 16 16">
@@ -69,6 +89,7 @@ const Navbar = () => {
                         </svg>
                     </div>
                 </section>
+                {/* WHATSAPP */}
             </section>
         </nav>
     );
