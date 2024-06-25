@@ -9,3 +9,5 @@ const pageEquipment = () => {
         </div>
     );
 }
+
+export default pageEquipment;

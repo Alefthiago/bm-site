@@ -9,3 +9,5 @@ const pageContact = () => {
         </section>
     );
 }
+
+export default pageContact;

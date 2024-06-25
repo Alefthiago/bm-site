@@ -4,7 +4,7 @@ import "./globals.css";
 // Util //
 
 // Componentes //
-import Navbar from '../components/layout/navbar';
+import Navbar from '../components/layout/navbar/';
 import Footer from '../components/layout/footer';
 import Head from "next/head";
 // Componentes //
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         <Navbar />
-        <main className={'mx-auto w-3/5 h-full container'}>
+        <main className={'mx-auto lg:w-3/5 h-full container'}>
           {children}
         </main>
         <Footer />
