@@ -1,19 +1,19 @@
-// Importando as bibliotecas e componentes necessários
+
 import Globals from "@/components/globals";
 
-// Definindo as classes reutilizáveis
+
 let h3_text = "text-5xl font-bold text-center";
 let titulo = "text-xl font-bold text-center";
 let informativo = "text-[#208da5]";
 let info = "text-[#208da5] text-sm";
 
-// Componente da página da empresa
+
 const pageCompany = () => {
     return (
         <section className="flex min-h-screen flex-col items-center p-6 md:p-12 lg:p-24">
-            {/* Seção principal */}
+            
             <section className="flex flex-col gap-5 w-full max-w-screen-lg">
-                {/* Bloco Quem Somos */}
+               
                 <div className={`${h3_text}`}>
                     <h3>Quem Somos</h3>
                 </div>
@@ -22,9 +22,9 @@ const pageCompany = () => {
                 </div>
             </section>
 
-            {/* Seção com Missão, Visão e Valores */}
+            
             <section className="flex flex-col md:flex-row justify-between pt-12 w-full max-w-screen-lg">
-                {/* Missão */}
+                
                 <section className="text-center md:text-left pt-12 md:pr-2 w-full md:w-1/3">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-orange-600 rounded-full w-12 h-12 flex justify-center items-center">
@@ -39,7 +39,7 @@ const pageCompany = () => {
                     </div>
                 </section>
 
-                {/* Visão */}
+             
                 <section className="text-center md:text-left pt-12 md:pl-2 w-full md:w-1/3">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-orange-600 rounded-full w-12 h-12 flex justify-center items-center">
@@ -55,8 +55,8 @@ const pageCompany = () => {
                     </div>
                 </section>
 
-                {/* Valores */}
-                <section className="text-center md:text-left pt-12 md:pl-2 w-full md:w-1/3">
+                
+                <section className="text-justify md:text-left pt-12 md:pl-2 w-full md:w-1/3">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-orange-600 rounded-full w-12 h-12 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
