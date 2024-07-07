@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 1024px) {
+ .index-mobile {
+    display: none;
+ }
+}
+
 .rotate {
   transition: transform 0.3s ease;
   transform: rotate(180deg);
@@ -9,6 +15,36 @@
 
 .rotate-0 {
   transform: rotate(0deg);
+}
+
+/* Adicione essas classes ao seu arquivo CSS */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s forwards;
+}
+
+.animate-slide-out {
+  animation: slideOut 0.3s forwards;
 }
 
 /* Fontes */
@@ -158,6 +194,7 @@
   font-weight: 900;
   font-style: italic;
 }
+
 /* Fontes */
 
 :root {
