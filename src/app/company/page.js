@@ -22,6 +22,7 @@ const pageCompany = () => {
                 </div>
             </section>
 
+
             
             <section className="flex flex-row justify-between pt-12 w-full max-w-screen-lg">
                 
@@ -39,6 +40,7 @@ const pageCompany = () => {
                     </div>
                 </section>
 
+
              
                 <section className="text-justify w-1/3">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
@@ -54,8 +56,7 @@ const pageCompany = () => {
                         </p>
                     </div>
                 </section>
-
-                
+              
                 <section className="text-justify w-1/3 pt-10">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">

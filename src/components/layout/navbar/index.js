@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import IndexesDesktop from "./indexesDesktop";
-import IndexesMobile from "./indexesMobile";
+import IndexesMobile from "./indexMobile";
 // Util. //
 
 const Navbar = () => {
@@ -13,6 +13,7 @@ const Navbar = () => {
     const [route, setRoute] = useState(pathname);
     const [route_mobile, setRouteMobile] = useState();
     const [isRotated, setIsRotated] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     const routes_text = {
         '/': 'Inicio',
@@ -20,14 +21,58 @@ const Navbar = () => {
         '/equipment': 'Equipamentos',
         '/company': 'Empresa',
         '/contact': 'Contato',
-        '/links': 'Links Uteis'
+        '/links': 'Links'
     }
     // Variaveis //
 
+    //      HOOKS.      //
+    useEffect(() => {
+        setRouteMobile(routes_text[pathname]);
+        setRoute(pathname);
+        // randleRotation()
+    }, [pathname]);
+    useEffect(() => {
+        // Função para verificar o tamanho da tela
+        const checkScreenSize = () => {
+            const width = window.innerWidth;
+            setWindowWidth(width);
+            console.log(width);
+            if (width >= 1024) {
+                let indexs = document.getElementById('indexes-desktop');
+                if (indexs.classList.contains('animate-slide-out')) {
+                    indexs.classList.remove('animate-slide-out');
+                }
+            }
+        };
+
+        // Adiciona o evento resize ao window
+        window.addEventListener('resize', checkScreenSize);
+        
+        // Verifica o tamanho da tela ao carregar a página
+        checkScreenSize();
+
+        // Remove o evento resize ao desmontar o componente
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
+    //     /HOOKS.      //
+
+
     // FUNCOES //
     function clickIcon(text) {
-        setRoute(pathname);
         setRouteMobile(text);
+        setRoute(pathname);
+        setRouteMobile(routes_text[pathname]);
+
+        if (window.innerWidth <= 1024) {
+            let nav_bar = document.getElementById('nav-bar');
+            nav_bar.style.position = 'static';
+
+            let indexes = document.getElementById('indexes-desktop');
+            indexes.classList.remove('animate-slide-in');
+            indexes.classList.add('animate-slide-out');
+
+            setIsRotated(!isRotated);
+        };
     }
 
     function verifyRoute(route) {
@@ -37,19 +82,30 @@ const Navbar = () => {
     }
 
     function randleRotation() {
+        // depois verificar melhorar a logica para mudança de tamanho da tela em varios momentos
+        if (window.innerWidth > 1024) return;
         setIsRotated(!isRotated);
+        let indexes = document.getElementById('indexes-desktop');
+        let nav_bar = document.getElementById('nav-bar');
+        let index_mobile = document.getElementById('index-mobile');
+
+        if (isRotated) {
+            // Menu fechado
+            indexes.classList.remove('animate-slide-in');
+            indexes.classList.add('animate-slide-out');
+            nav_bar.style.position = 'static';
+        } else {
+            // Menu aberto
+            indexes.classList.remove('animate-slide-out');
+            indexes.classList.add('animate-slide-in');
+            indexes.classList.remove('hidden');
+            nav_bar.style.position = 'fixed';
+        }
     }
     // FUNCOES //
 
-    //      HOOKS.      //
-    useEffect(() => {
-        setRoute(pathname);
-        setRouteMobile(routes_text[pathname]);
-    }, [pathname]);
-    //     /HOOKS.      //
-
     return (
-        <nav className={'w-full h-[90px] bg-[#206BA5]'}>
+        <nav id="nav-bar" className={'w-full h-[90px] bg-[#206BA5]'}>
             <section className={'w-full h-full flex'}>
                 {/* LOGO */}
                 <section className={'w-1/5 h-full flex justify-center items-end'}>

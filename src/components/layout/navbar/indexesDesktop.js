@@ -5,18 +5,21 @@ import Link from 'next/link';
 // Styles //
 let text_style = 'text-[13px] hover:bg-[#C55300] rounded-lg lg:block';
 let div_text_style = 'lg:w-1/4 w-full flex flex-col mb-1 items-center';
-let div_text_style_2 = 'w-full flex justify-center mb-1';
-let span_text_style = 'w-[70%] h-2 rounded-lg bg-[#C55300] lg:block';
+let div_text_style_2 = 'lg:text-xs text-lg w-full flex justify-center mb-1';
+let span_text_style = 'w-[100px] h-2 rounded-lg bg-[#C55300] lg:block';
 // Styles //
 
 const IndexesDesktop = (props) => {
     // console.log("desktop");
     return (
-        <section className="lg:w-3/5 w-full h-full lg:flex lg:items-end justify-center lg:static fixed lg:top-auto top-[90px] gap-2 text-[#E0E0E0] roboto-bold pt-10">
+        <section id='indexes-desktop' className="lg:w-3/5 w-full h-full lg:flex hidden lg:items-end justify-center lg:static fixed lg:top-auto top-[90px] gap-2 text-[#E0E0E0] bg-[#206BA5] roboto-bold pt-10">
             <div className={`${div_text_style}`}>
                 <div className={`${div_text_style_2}`}>
                     <Link
-                        onClick={() => props.clickIcon('home', 'Inicio')}
+                        onClick={() => {
+                            props.clickIcon('home', 'Inicio');
+                            // props.randleRotation(); 
+                        }}
                         href={'/'}
                         className={`${text_style} ${props.verifyRoute('/')}`}
                         style={{ padding: '5px 10px' }}>
