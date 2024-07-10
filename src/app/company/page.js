@@ -6,14 +6,15 @@ let h3_text = "text-5xl font-bold text-center";
 let titulo = "text-xl font-bold text-center";
 let informativo = "text-[#208da5]  md:text-justify";
 let info = "text-[#208da5] text-sm";
+let container_empresa = "flex flex-row justify-between pt-12 w-full max-w-screen-lg ";
 
 
 const pageCompany = () => {
     return (
         <section className="flex min-h-screen flex-col items-center p-6 md:p-12 lg:p-24">
-            
+
             <section className="flex flex-col gap-5 w-full max-w-screen-lg">
-               
+
                 <div className={`${h3_text}`}>
                     <h3>Quem Somos</h3>
                 </div>
@@ -21,11 +22,7 @@ const pageCompany = () => {
                     <p>A BM Informática foi fundada em 1998 com a missão de transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de seus clientes. Oferecemos assessoria especializada, suporte contínuo e desenvolvimento de sistemas utilizando as mais modernas tecnologias, sempre com o objetivo de maximizar a efetividade dos resultados.</p>
                 </div>
             </section>
-
-
-            
-            <section className="flex flex-row justify-between pt-12 w-full max-w-screen-lg">
-                
+            <section className={`${container_empresa}`}>
                 <section className="text-justify w-1/3 pt-10">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
@@ -39,9 +36,6 @@ const pageCompany = () => {
                         </p>
                     </div>
                 </section>
-
-
-             
                 <section className="text-justify w-1/3">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
@@ -56,7 +50,6 @@ const pageCompany = () => {
                         </p>
                     </div>
                 </section>
-              
                 <section className="text-justify w-1/3 pt-10">
                     <div className="pl-5 flex flex-col justify-center items-center gap-5">
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
