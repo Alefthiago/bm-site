@@ -52,7 +52,7 @@ const IndexesDesktop = (props) => {
                         Equipamentos
                     </Link>
                 </div>
-                <span className={`${span_text_style} ${props.route == '/equipment' ? 'visible' : 'invisible'} w-[90%]`}></span>
+                <span className={`${span_text_style} ${props.route == '/equipment' ? 'visible' : 'invisible'}`}></span>
             </div>
 
             <div className={`${div_text_style}`}>

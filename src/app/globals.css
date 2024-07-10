@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @media (min-width: 1024px) {
- .index-mobile {
+  .index-mobile {
     display: none;
- }
+  }
+  /* #indexes-desktop {
+    overflow-y: auto;
+    max-height: 100vh;
+    z-index: 100;
+  } */
 }
 
 .rotate {
@@ -16,8 +21,6 @@
 .rotate-0 {
   transform: rotate(0deg);
 }
-
-/* Adicione essas classes ao seu arquivo CSS */
 
 @keyframes slideIn {
   from {
@@ -50,6 +53,15 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.raleway-medium {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 .roboto-thin {
   font-family: "Roboto", sans-serif;
