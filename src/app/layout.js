@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         <Navbar />
-        <main className={'mx-auto lg:w-3/5 h-full container'}>
+        <main className={'mx-auto lg:w-4/5 h-full container'}>
           {children}
         </main>
         <Footer />
