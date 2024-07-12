@@ -16,7 +16,7 @@ const Footer = () => {
               <p className="text-zinc-50 sm: text-sm  sm: pt-1 " ><span >CopyRight © Todos os drives reservados</span></p>
             </div>
           </div>
-          <div className={'flex justify-between pl-9'}>
+          <div className={'flex justify-between pl-5'}>
             <div>
               <div className={' text-zinc-50 pb-1  '}>
                 <a href="https://www.instagram.com/bminformaticaoficial/" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram  size-5  " viewBox="0 0 16 16">

@@ -1,20 +1,50 @@
-
-import Globals from "@/components/globals";
+'use client'
 
 
 let h3_text = "text-5xl font-bold text-center";
 let titulo = "text-xl font-bold text-center";
-let informativo = "text-[#208da5]  md:text-justify";
+let informativo = "text-[#208da5]";
 let info = "text-[#208da5] text-sm";
-let container_empresa = "flex flex-row justify-between pt-12 w-full max-w-screen-lg ";
+let container_empresa = "flex flex-row justify-between pt-12 w-full max-w-screen-lg lg:w-[1000px]  w-[900px] overflow-hidden";
+let div_inner = "pl-5 flex flex-col justify-center items-center gap-5";
+let section_valores = "text-justify w-1/3";
 
+import { useEffect } from 'react';
 
 const pageCompany = () => {
+    // Função para ajustar a visibilidade das divs nas seções 'section_valores'
+    const ajustarDivsResponsivo = () => {
+        // Verifica se a largura da tela é menor que 1024 pixels
+        if (window.innerWidth < 1024) {
+            // Seleciona todas as seções com a classe 'section_valores'
+            const secoesValores = document.querySelectorAll('.section_valores');
+
+            // Itera sobre cada seção de valores
+            secoesValores.forEach((secao) => {
+                // Seleciona todas as divs internas da seção
+                const divsInternas = secao.querySelectorAll('.div_inner');
+
+                // Oculta todas as divs internas, exceto a do meio (índice 1)
+                divsInternas.forEach((div, index) => {
+                    if (index !== 1) {
+                        div.style.overflow = 'hidden';
+                        
+                    }
+                });
+            });
+        }
+    };
+
+    // Executa a função de ajuste ao carregar a página e ao redimensionar a janela
+    useEffect(() => {
+        ajustarDivsResponsivo();
+        window.addEventListener('resize', ajustarDivsResponsivo);
+        return () => window.removeEventListener('resize', ajustarDivsResponsivo);
+    }, []);
+
     return (
-        <section className="flex min-h-screen flex-col items-center p-6 md:p-12 lg:p-24">
-
-            <section className="flex flex-col gap-5 w-full max-w-screen-lg">
-
+        <section className="flex min-h-screen flex-col items-center pt-12 ">
+            <section className="flex flex-col gap-5 w-full max-w-screen-lg ">
                 <div className={`${h3_text}`}>
                     <h3>Quem Somos</h3>
                 </div>
@@ -23,8 +53,8 @@ const pageCompany = () => {
                 </div>
             </section>
             <section className={`${container_empresa}`}>
-                <section className="text-justify w-1/3 pt-10">
-                    <div className="pl-5 flex flex-col justify-center items-center gap-5">
+                <section className={`${section_valores} pt-10`}>
+                    <div className={`${div_inner}`}>
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
                                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -36,8 +66,8 @@ const pageCompany = () => {
                         </p>
                     </div>
                 </section>
-                <section className="text-justify w-1/3">
-                    <div className="pl-5 flex flex-col justify-center items-center gap-5">
+                <section className={`${section_valores}`}>
+                    <div className={`${div_inner}`}>
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-eye-fill text-[#ffffff]" viewBox="0 0 16 16">
                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
@@ -50,8 +80,8 @@ const pageCompany = () => {
                         </p>
                     </div>
                 </section>
-                <section className="text-justify w-1/3 pt-10">
-                    <div className="pl-5 flex flex-col justify-center items-center gap-5">
+                <section className={`${section_valores} pt-10`}>
+                    <div className={`${div_inner}`}>
                         <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
                                 <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
