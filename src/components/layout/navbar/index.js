@@ -115,7 +115,7 @@ const Navbar = () => {
         <nav id="nav-bar" className={'w-full h-[90px] bg-[#206BA5]'}>
             <section className={'w-full h-full flex'}>
                 {/* LOGO */}
-                <section className={'w-[10%] h-full flex justify-center items-end'}>
+                <section className={'min-w-[10%] h-full flex justify-center items-end'}>
                     <div className={'mb-3'}>
                         <Image src={'/LogoBranco.png'} alt={'Logo BM Informatica'} width={60} height={60} />
                     </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
                 <IndexesMobile route_name_mobile={route_mobile} />
                 {/* indice atual mobile */}
 
-                <section className={'w-[10%] h-full'}>
+                <section className={'min-w-[10%] h-full'}>
                     <div className={`mb:w-1/5 h-full flex justify-center items-end`}>
                         {/* Menu mobile */}
                         <svg onClick={randleRotation} className={`text-[#E0E0E0] lg:hidden block mb-4 hover:cursor-pointer bi bi-chevron-double-left ${isRotated ? 'rotate' : ''}`} xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" viewBox="0 0 16 16">

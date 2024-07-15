@@ -42,7 +42,7 @@ const PageContact = () => {
                 <div>
                     <h1 className="text-black roboto-bold text-4xl">Fones</h1>
                 </div>
-                <div className="flex flex-col  md:flex-row md:gap-4 md:justify-center">
+                <div className="flex flex-col  md:flex-row md:gap-4 justify-center">
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">São Paulo<br />
                     (11) 2626-1337</h1>
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">Pernambuco<br />
