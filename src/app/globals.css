@@ -215,8 +215,8 @@
   --background-end-rgb: 255, 255, 255;
   background: linear-gradient(to bottom,
       transparent,
-      #F8F8F8 83%,
-      #7A7A7A)
+      #F8F8F8 90%,
+      #b3b3b3)
 }
 
 @media (prefers-color-scheme: dark) {

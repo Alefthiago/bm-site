@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <section className={`${Globals.default_style_page}`}>
       <div className="w-full lg:flex gap-x-3.5">
-        <div className={`w-1/2`}>
-          <h1 className={`text-6xl roboto-bold text-[#0E0E0E]`}>
+        <div className={`lg:w-1/2 w-full`}>
+          <h1 className={`lg:text-left text-center lg:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
             Encontre a
             melhor
             solução para o
             negócio aqui
           </h1>
-          <p className={`raleway-medium text-[#316994] mt-4`}>
+          <p className={`lg:text-left text-center raleway-medium text-[#316994] mt-4`}>
             Nossos profissionais,
             especialistas em várias áreas
             criam soluções que
@@ -20,13 +20,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={`w-1/2`}>
-          <Image
-            src={'/BM.png'}
-            alt="Logo BMinformatica"
-            width={500}
-            height={500}
-          />
+        <div className={`lg:w-1/2 lg:mt-0 mt-10 w-full flex items-center justify-center`}>
+          <div>
+            <Image
+              src={'/BM.png'}
+              alt="Logo BMinformatica"
+              width={500}
+              height={500}
+            />
+          </div>
         </div>
       </div>
 
@@ -53,21 +55,21 @@ export default function Home() {
         <div className={`lg:h-[10px] h-[8px] w-[60%] bg-[#A55820] rounded-[7px]`}></div>
       </div>
 
-      <div className={'w-full mt-[30px] grid grid-cols-2 gap-4 place-content-center text-center text-[#316994] roboto-bold'}>
+      <div className={'w-4/5 mt-[30px] grid grid-cols-2 gap-4 place-content-center text-center text-[#316994] roboto-bold'}>
         <div>
-          Pernambuco <br/>
+          Pernambuco <br />
           (81) 3126-2050
         </div>
         <div>
-          Alagoas <br/>
+          Alagoas <br />
           (82) 3142-0562
         </div>
         <div>
-          Paraíba <br/>
+          Paraíba <br />
           (83) 3142-0415
         </div>
         <div>
-          São Paulo <br/>
+          São Paulo <br />
           (11) 2626-1337
         </div>
       </div>
