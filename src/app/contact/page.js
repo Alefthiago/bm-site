@@ -5,6 +5,7 @@ let input = "bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium";
 let container_forms = "flex justify-center w-full";
 let container_button = "flex justify-center mt-4";
 let mensagem = "h-[100px] bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium text-center";
+let contato = "text-[#316994] roboto-bold text-center md:text-2xl";
 
 const PageContact = () => {
     return (
@@ -46,14 +47,14 @@ const PageContact = () => {
                     </div>
                     <div className={`lg:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
                 </div>
-                <div className="flex flex-col  md:flex-row md:gap-4 justify-center">
-                    <h1 className="text-[#316994] roboto-bold text-center text-2xl">São Paulo<br />
+                <div className=" md:flex md:flex-row md:gap-4 md:justify-center grid grid-cols-2 gap-4">
+                    <h1 className={`${contato}`}>São Paulo<br />
                         (11) 2626-1337</h1>
-                    <h1 className="text-[#316994] roboto-bold text-center text-2xl">Pernambuco<br />
+                    <h1 className={`${contato}`}>Pernambuco<br />
                         (81) 3126-2050</h1>
-                    <h1 className="text-[#316994] roboto-bold text-center text-2xl">Alagoas<br />
+                    <h1 className={`${contato}`}>Alagoas<br />
                         (82) 3142-0562</h1>
-                    <h1 className="text-[#316994] roboto-bold text-center text-2xl">Paraíba<br />
+                    <h1 className={`${contato}`}>Paraíba<br />
                         (83) 3142-0415</h1>
                 </div>
             </section>
