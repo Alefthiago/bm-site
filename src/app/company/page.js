@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 
 
 let h3_text = "text-5xl font-bold text-center";
@@ -94,6 +95,11 @@ const pageCompany = () => {
                     </div>
                 </section>
             </section>
+            <section className={'flex justify-center items-center pt-12'}>
+                    <div className={''}>
+                        <Image src={'/BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
+                    </div>
+                </section>
         </section>
     );
 }
