@@ -39,18 +39,22 @@ const PageContact = () => {
                         E-mail: bm@bminformatica.com.br
                     </h1>
                 </div>
-                <div>
-                    <h1 className="text-black roboto-bold text-4xl">Fones</h1>
+                <div className="flex flex-row">
+                    <div className={`lg:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
+                    <div className="w-[40%] text-center">
+                        <h1 className={`lg:text-3xl text-3xl roboto roboto-bold`}>Fones</h1>
+                    </div>
+                    <div className={`lg:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
                 </div>
                 <div className="flex flex-col  md:flex-row md:gap-4 justify-center">
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">São Paulo<br />
-                    (11) 2626-1337</h1>
+                        (11) 2626-1337</h1>
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">Pernambuco<br />
-                    (81) 3126-2050</h1>
+                        (81) 3126-2050</h1>
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">Alagoas<br />
-                    (82) 3142-0562</h1>
+                        (82) 3142-0562</h1>
                     <h1 className="text-[#316994] roboto-bold text-center text-2xl">Paraíba<br />
-                    (83) 3142-0415</h1>
+                        (83) 3142-0415</h1>
                 </div>
             </section>
         </section>
