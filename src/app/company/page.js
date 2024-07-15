@@ -5,9 +5,9 @@ let h3_text = "text-5xl font-bold text-center";
 let titulo = "text-xl font-bold text-center";
 let informativo = "text-[#208da5]";
 let info = "text-[#208da5] text-sm";
-let container_empresa = "flex flex-row justify-between pt-12 w-full max-w-screen-lg lg:w-[1000px]  w-[900px] overflow-hidden";
 let div_inner = "pl-5 flex flex-col justify-center items-center gap-5";
 let section_valores = "text-justify w-1/3";
+let container_empresa = "flex flex-row justify-between pt-12 w-full max-w-screen-lg lg:w-[1000px]  w-[900px] overflow-hidden";
 
 import { useEffect } from 'react';
 
