@@ -1,5 +1,6 @@
 import Globals from "@/components/globals";
 import Image from "next/image";
+import Contacts from "@/components/contacts";
 
 let input = "bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium";
 let container_forms = "flex justify-center w-full";
@@ -32,7 +33,7 @@ const PageContact = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col justify-center pt-4 gap-8 text-center">
+            <section className="flex flex-col justify-center pt-4 text-center">
                 <div>
                     <h1 className="text-[#316994] roboto-bold">
                         Rua Padre Carapuceiro, 733 - Sala 1001<br />
@@ -40,7 +41,8 @@ const PageContact = () => {
                         E-mail: bm@bminformatica.com.br
                     </h1>
                 </div>
-                <div className="flex flex-row">
+                <Contacts/>
+                {/* <div className="flex flex-row">
                     <div className={`lg:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
                     <div className="w-[40%] text-center">
                         <h1 className={`lg:text-3xl text-3xl roboto roboto-bold`}>Fones</h1>
@@ -56,7 +58,7 @@ const PageContact = () => {
                         (82) 3142-0562</h1>
                     <h1 className={`${contato}`}>Paraíba<br />
                         (83) 3142-0415</h1>
-                </div>
+                </div> */}
             </section>
         </section>
     );
