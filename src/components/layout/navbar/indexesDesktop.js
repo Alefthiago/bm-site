@@ -12,7 +12,7 @@ let span_text_style = 'w-[100px] h-2 rounded-lg bg-[#C55300] lg:block';
 const IndexesDesktop = (props) => {
     // console.log("desktop");
     return (
-        <section id='indexes-desktop' className="lg:w-4/5 w-full h-full lg:flex hidden lg:items-end justify-center lg:static fixed lg:top-auto top-[90px] gap-2 text-[#E0E0E0] bg-[#206BA5] roboto-bold pt-10">
+        <section id='indexes-desktop' className="lg:w-4/5 h-full lg:flex hidden lg:items-end justify-center lg:static fixed lg:top-auto top-[90px] gap-2 text-[#E0E0E0] bg-[#206BA5] roboto-bold pt-10">
             <div className={`${div_text_style}`}>
                 <div className={`${div_text_style_2}`}>
                     <Link

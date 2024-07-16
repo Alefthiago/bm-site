@@ -1,3 +1,3 @@
 export default class Globals {
-    static default_style_page = "flex min-h-screen flex-col items-center md:p-20 p-2";
+    static default_style_page = "flex min-h-screen flex-col items-center md:p-20 pt-10 pt-10 pr-2 pl-2 pb-2";
 }

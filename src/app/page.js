@@ -1,5 +1,8 @@
+// UTIL //
 import Image from "next/image";
 import Globals from "@/components/globals";
+import Contacts from "@/components/contacts";
+// UTIL. //
 
 export default function Home() {
   return (
@@ -10,11 +13,11 @@ export default function Home() {
           <div className={`lg:w-1/2 w-full`}>
             <h1 className={`lg:text-left text-center lg:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
-              melhor
-              solução para o
-              negócio aqui
+              Melhor
+              Solução Para o
+              Negócio Aqui
             </h1>
-            <p className={`lg:text-left text-center raleway-medium text-[#316994] mt-4`}>
+            <p className={`lg:text-left text-center raleway-medium text-[#316994] mt-4 text-2xl`}>
               Nossos profissionais,
               especialistas em várias áreas
               criam soluções que
@@ -34,11 +37,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`w-full h-[200px] text-center flex-col items-center mt-[100px]`}>
+        <div className={`w-full h-[300px] text-center flex-col items-center mt-[100px] raleway-medium text-2xl`}>
           <div className={`w-full h-4/6`}>
             <h3 className={`text-[#208DA5]`}>
               Sistemas ERP/PAF-ECF/NFC-E Automação Comercial <br />
-              Desenvolvimento desktop, web e mobile.
+              Desenvolvimento Desktop, Web e Mobile.
             </h3>
           </div>
 
@@ -50,16 +53,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`w-full`}>
-        <div className={`w-full mt-[100px] flex items-center gap-5`}>
+      <section className={`w-full mt-10`}>
+        {/* <div className={`w-full mt-[100px] flex items-center gap-5`}>
           <div className={`lg:h-[10px] h-[8px] w-[60%] bg-[#A55820] rounded-[7px]`}></div>
           <div className="w-[40%] text-center">
-            <h1 className={`lg:text-3xl text-3xl roboto roboto-bold`}>Contatos</h1>
+            <h1 className={`lg:text-3xl text-3xl roboto-bold`}>Contatos</h1>
           </div>
           <div className={`lg:h-[10px] h-[8px] w-[60%] bg-[#A55820] rounded-[7px]`}></div>
-        </div>
+        </div> */}
 
-        <div className={'w-full mt-[30px] grid grid-cols-2 gap-4 place-content-center text-center text-[#316994] roboto-bold'}>
+        <Contacts/>
+        {/* <div className={'w-full mt-[30px] grid grid-cols-2 gap-4 place-content-center text-center text-2xl text-[#316994] roboto-bold'}>
           <div>
             Pernambuco <br />
             (81) 3126-2050
@@ -76,7 +80,7 @@ export default function Home() {
             São Paulo <br />
             (11) 2626-1337
           </div>
-        </div>
+        </div> */}
         {/* <Image
         src="/vercel.svg"
         alt="Vercel Logo"
