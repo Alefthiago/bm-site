@@ -1,17 +1,20 @@
 'use client';
-// UTIL //
+//      UTIL        //
 import Link from 'next/link';
 
-// FLOWBITE //
+//      FLOWBITE        //
 import { Drawer } from "flowbite-react";
-// FLOWBITE. //
+//     /FLOWBITE        //
+//     /UTIL        //
 
-// UTIL. //
+//      STYLES      //
+const link = ``;
+//     /STYLES      //
 
 const MenuMobile = (props) => {
-    // VARIAVEIS //
+    //      VARIAVEIS       //
     const handleClose = () => props.setIsOpen(false);
-    // VARIAVEIS. //
+    //     /VARIAVEIS        //
 
     return (
         <>
@@ -25,42 +28,42 @@ const MenuMobile = (props) => {
                                 // props.randleRotation(); 
                             }}
                             href={'/'}
-                            className={`w-full rounded-lg border border-gray-200  px-4 py-2 text-center text-sm ${props.verifyRoute('/') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200  px-4 py-2  text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Início
                         </Link>
                         <Link
                             onClick={() => props.clickIcon('solutions', 'Soluções')}
                             href={'/solutions'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-center text-sm ${props.verifyRoute('/solutions') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/solutions')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/solutions', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/solutions', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Soluções
                         </Link>
                         <Link
                             onClick={() => props.clickIcon('equipment', 'Equipamentos')}
                             href={'/equipment'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-center text-sm ${props.verifyRoute('/equipment') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/equipment')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/equipment', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/equipment', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Equipamentos
                         </Link>
                         <Link
                             onClick={() => props.clickIcon('company', 'Empresa')}
                             href={'/company'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-center text-sm ${props.verifyRoute('/company') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/company')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/company', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/company', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Empresa
                         </Link>
                         <Link
                             onClick={() => props.clickIcon('contact', 'Contato')}
                             href={'/contact'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-center text-sm ${props.verifyRoute('/contact') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/contact')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/contact', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/contact', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Contato
                         </Link>
                         <Link
                             onClick={() => props.clickIcon('/links', 'Links')}
                             href={'/links'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-center text-sm ${props.verifyRoute('/links') ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/links')} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/links', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]' } ${props.verifyRoute('/links', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Links Úteis
                         </Link>
