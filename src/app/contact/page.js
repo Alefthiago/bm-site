@@ -1,7 +1,7 @@
 import Globals from "@/components/globals";
 import Image from "next/image";
 
-let input = "bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium";
+let input = "bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium ";
 let container_forms = "flex justify-center w-full";
 let container_button = "flex justify-center mt-4";
 let mensagem = "h-[100px] bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium text-center";
@@ -26,7 +26,7 @@ const PageContact = () => {
                         <input className={input} type="text" name="Assunto" placeholder="Assunto" />
                         <textarea className={mensagem} name="Mensagem" placeholder="Mensagem"></textarea>
                         <div className={container_button}>
-                            <button className="bg-[#C55300] text-white rounded px-4 py-2">Cadastrar</button>
+                            <button className="bg-[#C55300] text-white rounded px-4 py-2">Enviar</button>
                         </div>
                     </form>
                 </div>

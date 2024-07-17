@@ -9,7 +9,7 @@ let div_icons = 'text-zinc-50   '
 const Footer = () => {
   return (
     <footer className={'w-full h-[70px]'}>
-      <section className={'w-full h-full bg-[#3D6B8F] flex items-center justify-center '}>
+      <section className={'w-full h-full bg-[#206BA5] flex items-center justify-center '}>
         <section className={'flex justify-between'}>
           <div className={`${div_footer}`}>
             <div className={`${div_inner_footer}`}>
