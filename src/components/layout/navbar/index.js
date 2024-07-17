@@ -75,7 +75,8 @@ const Navbar = () => {
     // FUNCOES. //
 
     return (
-        <nav id="nav-bar" className={'w-full h-[90px] bg-[#206BA5]'}>
+        <nav id="nav-bar" className={'w-full h-[90px] bg-[#206BA5]'}>?
+        
             <section className={'w-full h-full flex'}>
                 {/* LOGO */}
                 <section className={'min-w-[10%] h-full flex justify-center items-end'}>
