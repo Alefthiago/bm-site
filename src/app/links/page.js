@@ -9,7 +9,7 @@ const pageLinks = () => {
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
             <section className="w-full flex flex-col justify-center lg:gap-[5rem] gap-[3rem]">
-                <h1 className=" text-center text-3xl roboto roboto-bold ">Links Úteis</h1>
+                <h1 className=" text-center text-3xl roboto roboto-bold ">Links</h1>
                 <div className="flex flex-row justify-center">
                     <div className={`${barra}`}></div>
                     <div className="lg:w-[10%]  w-[30%] text-center">
