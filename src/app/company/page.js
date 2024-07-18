@@ -13,8 +13,9 @@ let info = "text-[#316994] text-sm";
 let div_inner = "pl-5 flex flex-col justify-center items-center gap-5";
 let section_valores = "text-justify w-1/3";
 let container_empresa = " flex-row justify-between  w-full max-w-screen-lg lg:w-[1000px]  w-[900px] pl-4  md:flex hidden";
-let div_inner_carrosel = "pl-5 flex flex-col justify-center items-center gap-5";
+let div_inner_carrosel = "pl-5 flex flex-col justify-center items-center gap-1 h-[50%]";
 let info_carrosel = "text-[#316994] text-sm text-justify";
+let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center"
 
 
 
@@ -23,7 +24,7 @@ const pageCompany = () => {
 
     
     return (
-        <section className="flex min-h-screen flex-col items-center pt-10 gap-1 md:gap-12 ">
+        <section className="flex min-h-screen flex-col items-center pt-10 gap-0 md:gap-12 ">
             <section className="flex flex-col  w-full max-w-screen-lg gap-12 ">
                 <div className={`${h3_text}`}>
                     <h3>Quem Somos</h3>
@@ -74,13 +75,13 @@ const pageCompany = () => {
                     </div>
                 </section>
             </section>
-            <section className="w-[90%] md:hidden ">
+            <section className="w-[100%] md:hidden ">
                 <div className="h-80">
-                    <Carousel slideInterval={5000}>
-                        <div className="flex h-full items-center justify-center bg-re ">
-                            <section >
+                    <Carousel slideInterval={8000} leftControl rightControl >
+                        <div className="flex  items-center justify-center bg-re w-[80%]">
+                            <section className="w-[80%]">
                                 <div className={`${div_inner_carrosel}`}>
-                                    <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
+                                    <div className={`${svg_icon}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                         </svg>
@@ -92,7 +93,7 @@ const pageCompany = () => {
                                 </div>
                             </section>
                         </div>
-                        <div className="flex h-full items-center justify-center  ">
+                        <div className="flex h-full items-center justify-center w-[70%] pr-4  ">
                             <section >
                                 <div className={`${div_inner_carrosel}`}>
                                     <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
@@ -108,7 +109,7 @@ const pageCompany = () => {
                                 </div>
                             </section>
                         </div>
-                        <div className="flex h-full items-center justify-center">
+                        <div className="flex h-full items-center justify-center w-[70%] pr-4">
                             <section >
                                 <div className={`${div_inner_carrosel}`}>
                                     <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
