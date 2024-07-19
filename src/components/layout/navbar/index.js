@@ -34,8 +34,8 @@ const Nav_bar = (props) => {
 
     //      HOOKS      //
     useEffect(() => {
-        setRouteMobile(routes_text[pathname]);
         setRoute(pathname);
+        setRouteMobile(routes_text[pathname]);
         // randleRotation()
     }, [pathname]);
 
