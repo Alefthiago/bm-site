@@ -129,7 +129,7 @@ const pageCompany = () => {
             </section>
             <section className={'flex justify-center items-center'}>
                 <div className={''}>
-                    <Image src={'/BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
+                    <Image src={'./BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
                 </div>
             </section>
 
