@@ -22,7 +22,7 @@ let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center
 
 const pageCompany = () => {
 
-    
+
     return (
         <section className="flex min-h-screen flex-col items-center pt-10 gap-0 md:gap-12 ">
             <section className="flex flex-col  w-full max-w-screen-lg gap-12 ">
@@ -127,9 +127,9 @@ const pageCompany = () => {
                     </Carousel>
                 </div>
             </section>
-            <section className={'flex justify-center items-center'}>
-                <div className={''}>
-                    <Image src={'/BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
+            <section className="flex justify-center items-center">
+                <div className="w-[70%] pb-2 md:pb-0 md:max-w-full">
+                    <Image src="/BM.png" alt="Logo BM Informatica" width={300} height={100} />
                 </div>
             </section>
 
