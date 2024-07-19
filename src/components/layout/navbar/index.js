@@ -101,7 +101,7 @@ const Nav_bar = (props) => {
                 {/* INDICES MENU MOBILE. */}
             </div>
             <Navbar.Collapse className={`md:block hidden`}>
-                <Navbar.Link href={``} className={`${navbar_link}`}>
+                <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}>
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -113,7 +113,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
+                <Navbar.Link href={'/bm-site/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
                     {verifyRoute('/solutions') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -125,7 +125,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
+                <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
                     {verifyRoute('/equipment') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -137,7 +137,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'company'} className={`${navbar_link} ${verifyRoute('/company')}`}>
+                <Navbar.Link href={'/bm-site/company'} className={`${navbar_link} ${verifyRoute('/company')}`}>
                     {verifyRoute('/company') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/company') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -149,7 +149,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}>
+                <Navbar.Link href={'/bm-site/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}>
                     {verifyRoute('/contact') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/contact') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -161,7 +161,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'links'} className={`${navbar_link} ${verifyRoute('/links')}`}>
+                <Navbar.Link href={'/bm-site/links'} className={`${navbar_link} ${verifyRoute('/links')}`}>
                     {verifyRoute('/links') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/links') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
