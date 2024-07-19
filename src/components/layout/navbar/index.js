@@ -101,7 +101,7 @@ const Nav_bar = (props) => {
                 {/* INDICES MENU MOBILE. */}
             </div>
             <Navbar.Collapse className={`md:block hidden`}>
-                <Navbar.Link href={`/`} className={`${navbar_link}`}>
+                <Navbar.Link href={`./`} className={`${navbar_link}`}>
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -113,7 +113,7 @@ const Nav_bar = (props) => {
                         </>
                     }
                 </Navbar.Link>
-                <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
+                <Navbar.Link href={'./solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
                     {verifyRoute('/solutions') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>

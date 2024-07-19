@@ -10,7 +10,7 @@ export default function Home() {
       
       <section className={`w-full`}> {/* xl:h-[70vh] */}
         <div className={`w-full lg:flex`}>
-          <div className={`md:w-1/2 w-full`}>
+          <div className={`l:w-1/2 w-full`}>
             <h1 className={`lg:text-left text-center md:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
               Melhor
@@ -28,7 +28,7 @@ export default function Home() {
           <div className={`md:w-1/2 w-full flex items-center justify-center pt-5`}>
             <div>
               <Image
-                src={'/BM.png'}
+                src={'./BM.png'}
                 alt="Logo BMinformatica"
                 width={500}
                 height={500}
