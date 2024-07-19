@@ -80,7 +80,7 @@ const Nav_bar = (props) => {
     return (
         <Navbar fluid className={`text-[#F8F8F8] bg-[#206BA5]`}>
             <Navbar.Brand href={`/bm-site/`}>
-                <Image src={'/public/logoBranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} />
+                <Image src={'/bm-site/public/logoBranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} />
             </Navbar.Brand>
             {/* indice atual mobile */}
             <IndexesMobile route_name_mobile={route_mobile} />
