@@ -79,7 +79,7 @@ const Nav_bar = (props) => {
 
     return (
         <Navbar fluid className={`text-[#F8F8F8] bg-[#206BA5]`}>
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand href={`/`}>
                 <Image src={'/logoBranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} />
             </Navbar.Brand>
             {/* indice atual mobile */}
