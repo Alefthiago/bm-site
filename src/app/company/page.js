@@ -127,9 +127,15 @@ const pageCompany = () => {
                     </Carousel>
                 </div>
             </section>
+<<<<<<< HEAD
             <section className="flex justify-center items-center">
                 <div className="w-[70%] pb-2 md:pb-0 md:max-w-full">
                     <Image src="/BM.png" alt="Logo BM Informatica" width={300} height={100} />
+=======
+            <section className={'flex justify-center items-center'}>
+                <div className={''}>
+                    <Image src={'./BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
+>>>>>>> ee8763dd267609d5ba6fdc0bdc7d7e97fc0da57c
                 </div>
             </section>
 

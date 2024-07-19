@@ -8,16 +8,16 @@ export default function Home() {
   return (
     <section className={`${Globals.default_style_page}`}>
       
-      <section className={`w-full gap-10`}> {/* xl:h-[70vh] */}
-        <div className="w-full md:flex gap-x-3.5">
-          <div className={`md:w-1/2 w-full`}>
-            <h1 className={`md:text-left text-center md:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
+      <section className={`w-full`}> {/* xl:h-[70vh] */}
+        <div className={`w-full lg:flex`}>
+          <div className={`l:w-1/2 w-full`}>
+            <h1 className={`lg:text-left text-center md:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
               Melhor
               Solução Para o
               Negócio Aqui
             </h1>
-            <p className={`md:text-left text-center raleway-medium text-[#316994] text-2xl`}>
+            <p className={`md:text-left text-center raleway-medium text-[#316994] text-2xl pt-5`}>
               Nossos profissionais,
               especialistas em várias áreas
               criam soluções que
@@ -25,10 +25,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={`md:w-1/2 w-full flex items-center justify-center`}>
+          <div className={`md:w-1/2 w-full flex items-center justify-center pt-5`}>
             <div>
               <Image
-                src={'/BM.png'}
+                src={'./BM.png'}
                 alt="Logo BMinformatica"
                 width={500}
                 height={500}
