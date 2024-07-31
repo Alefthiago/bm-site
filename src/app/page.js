@@ -7,17 +7,17 @@ import Contacts from "@/components/contacts";
 export default function Home() {
   return (
     <section className={`${Globals.default_style_page}`}>
-      
       <section className={`w-full`}> {/* xl:h-[70vh] */}
-        <div className={`w-full lg:flex`}>
+
+        <div className={`w-full lg:flex gap-2`}>
           <div className={`l:w-1/2 w-full`}>
-            <h1 className={`lg:text-left text-center md:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
+            <h1 className={`lg:text-left text-center lg:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
               Melhor
               Solução Para o
               Negócio Aqui
             </h1>
-            <p className={`md:text-left text-center raleway-medium text-[#316994] text-2xl pt-5`}>
+            <p className={`lg:text-left text-center lg:text-2xl text:xl raleway-medium text-[#316994] pt-5`}>
               Nossos profissionais,
               especialistas em várias áreas
               criam soluções que
@@ -25,31 +25,34 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={`md:w-1/2 w-full flex items-center justify-center pt-5`}>
+          <div className={`lg:w-1/2 w-full flex items-center justify-center pt-5`}>
             <div>
               <Image
                 src={'./BM.png'}
                 alt="Logo BMinformatica"
-                width={500}
-                height={500}
+                width={300}
+                height={300}
+                className="lg:w-[500px] lg:h-[500px]"
               />
             </div>
           </div>
         </div>
 
-        <div className={`w-full h-[250px] text-center flex-col items-center raleway-medium text-2xl pt-20`}>
-          <div className={`w-full h-4/6`}>
+        <div className={`w-full h-[250px] text-center lg:text-2xl text-xl raleway-medium flex-col items-center pt-10`}>
+
+          <div className={`w-full`}>
             <h3 className={`text-[#316994]`}>
               Sistemas ERP/PAF-ECF/NFC-E Automação Comercial <br />
               Desenvolvimento Desktop, Web e Mobile.
             </h3>
           </div>
 
-          <div className={`w-full`}>
+          <div className={`w-full pt-5`}>
             <h3 className={`text-[#208DA5]`}>
               Entre em contato conosco, solicite uma demonstração e faça um orçamento
             </h3>
           </div>
+
         </div>
       </section>
 

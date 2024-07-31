@@ -7,7 +7,7 @@ const Contacts = () => {
 
     return (
         <>
-            <div className={`w-full mt-[100px] flex items-center gap-5`}>
+            <div className={`w-full pt-10 flex items-center gap-5`}>
                 <div className={`h-[5px] w-[60%] bg-[#A55820] rounded-[7px]`}></div>
                 <div className="w-[40%] text-center">
                     <h1 className={`lg:text-3xl text-3xl roboto-bold`}>Fones</h1>
@@ -15,7 +15,7 @@ const Contacts = () => {
                 <div className={`h-[5px] w-[60%] bg-[#A55820] rounded-[7px]`}></div>
             </div>
 
-            <div className={'w-full mt-[30px] grid lg:grid-cols-4 grid-cols-2 gap-4 place-content-center text-center text-2xl text-[#316994] roboto-bold'}>
+            <div className={'w-full pt-5 grid lg:grid-cols-4 grid-cols-2 gap-4 place-content-center text-center lg:text-2xl text-xl text-[#316994] roboto-bold'}>
                 <div>
                     Pernambuco <br />
                     (81) 3126-2050
