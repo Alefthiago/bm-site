@@ -1,3 +1,4 @@
+'use client';
 
 import Image from "next/image";
 
@@ -77,7 +78,7 @@ const pageCompany = () => {
             </section>
             <section className="w-[100%] md:hidden ">
                 <div className="h-80">
-                    <Carousel slideInterval={8000} leftControl rightControl >
+                    <Carousel slideInterval={5000} leftControl rightControl >
                         <div className="flex  items-center justify-center bg-re w-[80%]">
                             <section className="w-[80%]">
                                 <div className={`${div_inner_carrosel}`}>
