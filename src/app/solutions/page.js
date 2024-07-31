@@ -18,7 +18,7 @@ const pageSoluctions = () => {
                     <p className=" w-[60%] text-center">Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos. Clique no seu segmento e verifique o que a BM Informática tem a oferecer :</p>
                 </div>
             </section>
-            <Card/>
+            {/* <Card/> */}
         </section>
     );
 }
