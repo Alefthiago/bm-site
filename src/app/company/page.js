@@ -1,3 +1,4 @@
+'use client';
 
 import Image from "next/image";
 
@@ -22,7 +23,7 @@ let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center
 
 const pageCompany = () => {
 
-    
+
     return (
         <section className="flex min-h-screen flex-col items-center pt-10 gap-0 md:gap-12 ">
             <section className="flex flex-col  w-full max-w-screen-lg gap-12 ">
@@ -77,7 +78,7 @@ const pageCompany = () => {
             </section>
             <section className="w-[100%] md:hidden ">
                 <div className="h-80">
-                    <Carousel slideInterval={8000} leftControl rightControl >
+                    <Carousel slideInterval={5000} leftControl rightControl >
                         <div className="flex  items-center justify-center bg-re w-[80%]">
                             <section className="w-[80%]">
                                 <div className={`${div_inner_carrosel}`}>
@@ -132,9 +133,6 @@ const pageCompany = () => {
                     <Image src={'./BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
                 </div>
             </section>
-
-
-
         </section>
     );
 }

@@ -35,8 +35,8 @@ const pageLinks = () => {
                 </div>
                 <div className="flex flex-col justify-center gap-2">
                     <a href="https://download.teamviewer.com/download/version_12x/TeamViewerQS.exe" target="_blank" className=" text-[#316994] text-center">Team ViewerQs (<strong className="text-[#A55820]"   >Novo</strong>)</a>
-                    <a href="https://desk.bminformatica.com.br/rustdesk-1.2.0.exe" target="_blank" className=" text-[#316994] text-center "> Rust Desck (<strong className="text-[#A55820]">Win 8,9,10,11</strong>)</a>
-                    <a href="http://download.bminformatica.com.br/downloads/bm_informatica/executaveis/LiberaNetUp.exe" target="_blank" className=" text-[#316994] text-center "> Liberanet</a>
+                    <a href="https://desk.bminformatica.com.br/rustdesk-1.2.0.exe" target="_blank" className=" text-[#316994] text-center "> Rust Desk (<strong className="text-[#A55820]">Win 8,9,10,11</strong>)</a>
+                    <a href="https://bit.ly/apkrustdesk1" target="_blank" className=" text-[#316994] text-center "> Rust Desk (<strong className="text-[#A55820]">Android</strong>)</a>
 
                 </div>
             </section>
