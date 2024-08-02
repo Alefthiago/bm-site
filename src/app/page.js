@@ -46,7 +46,7 @@ export default function Home() {
               Negócio Aqui
             </h1>
             
-            <div className={`pl-10 pr-10`}>
+            <div className={`md:pl-10 md:pr-10`}>
               <p className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
                 Nossos profissionais,
                 especialistas em várias áreas
@@ -57,7 +57,7 @@ export default function Home() {
 
             <div className={`init-hidden w-full`}>
               <h3 className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
-                Sistemas ERP/PAF-ECF/NFC-E Automação Comercial <br />
+                Sistemas ERP/PAF-ECF/NFC-E Automação Comercial
                 Desenvolvimento Desktop, Web e Mobile.
               </h3>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`w-full h-[250px] text-center md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
+        <div className={`w-full h-[250px] md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
           <div className={`init-hidden w-full`}>
             <Banner>
               <div className="flex w-full justify-between">
