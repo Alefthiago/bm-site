@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
   return (
     <section className={`${Globals.default_style_page}`}>
-      <div className="container px-6 py-16 mx-auto">
+      <div className="container px-6 mx-auto">
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
@@ -93,68 +93,6 @@ export default function Home() {
       </div>
 
       <section> {/* xl:h-[70vh] */}
-        <div className={`init-hidden`}>
-          <div>
-            {/* <h1 className={`md:text-center text-left md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
-              Encontre a
-              Melhor
-              Solução Para o
-              Negócio Aqui
-            </h1> */}
-
-            {/* <div className={`md:pl-10 md:pr-10`}>
-              <p className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
-                Nossos profissionais,
-                especialistas em várias áreas
-                criam soluções que
-                transformam seu dia a dia.
-              </p>
-            </div> */}
-
-            {/* <div className={`init-hidden w-full`}>
-              <h3 className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
-                Sistemas ERP/PAF-ECF/NFC-E Automação Comercial
-                Desenvolvimento Desktop, Web e Mobile.
-              </h3>
-            </div> */}
-
-            {/* <div className={`w-full flex justify-center pt-8`}>
-              <div>
-                <button className={`button`}>
-                  <div className="svg-wrapper-1">
-                    <div className="svg-wrapper">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="30"
-                        height="30"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                          fill="currentColor"
-                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <span className={`roboto-medium`}>Contratar</span>
-                </button>
-              </div>
-            </div> */}
-          </div>
-
-          {/* <div className={`md:m-w-[500px] md:m-h-[300px] w-full flex items-center justify-center md:pt-24 pt-10 pr-2 pl-2`}>
-            <div>
-              <Image
-                src={'./BM.svg'}
-                alt="Logo BMinformatica"
-                width={600}
-                height={600}
-              />
-            </div>
-          </div> */}
-        </div>
-
         <div className={`w-full h-[250px] md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
           <div className={`init-hidden w-full`}>
             <Banner>
@@ -171,7 +109,7 @@ export default function Home() {
                         className="ml-0 flex items-center md:text-xl text-[18px] font-medium text-[#D67229] hover:underline md:ml-1 md:inline-flex"
                       >
                         solicite uma demonstração e faça um orçamento
-                        <HiArrowRight className="ml-2" />
+                        <HiArrowRight />
                       </a>
                     </span>
                   </p>
