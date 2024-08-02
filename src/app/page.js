@@ -10,7 +10,11 @@ export default function Home() {
   useEffect(() => {
     const obeserver = new IntersectionObserver((e) => {
       // console.log(e)
-      e[0].target.classList.add('init-hidden-off');
+      Array.from(e).forEach((elemento) => {
+        if(elemento.intersectionRatio >= 1) {
+          elemento.target.classList.add('init-hidden-off');
+        }
+      });
     }, {
       threshold: 1
     });
@@ -27,7 +31,7 @@ export default function Home() {
   }, []);
   return (
     <section className={`${Globals.default_style_page}`}>
-      <section > {/* xl:h-[70vh] */}
+      <section> {/* xl:h-[70vh] */}
         <div className={`init-hidden`}>
           <div>
             <h1 className={`text-center md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
