@@ -36,29 +36,26 @@ export default function Home() {
   }, []);
   return (
     <section className={`${Globals.default_style_page}`}>
-<header className="bg-white dark:bg-gray-900">
-    <div className="container px-6 mx-auto">
+      <div className="container px-6 py-16 mx-auto">
         <div className="items-center lg:flex">
-            <div className="w-full lg:w-1/2">
-                <div className="lg:max-w-lg">
-                    <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
-  A Melhor
-              Solução Para o Seu
-              Negócio 
-  <span className="text-blue-500 ">
-   Aqui
-  </span>
-  </h1>
-                    
-                    <p className="mt-3 text-gray-600 dark:text-gray-400">
+          <div className="w-full lg:w-1/2">
+            <div className="lg:max-w-lg">
+              <h1 className="init-hidden md:text-4xl text-4xl font-semibold text-gray-800 dark:text-white">
+                Encontre a
+                Melhor
+                Solução <br />Para
+                <span className="text-blue-500 "> o Seu Negócio Aqui</span>
+              </h1>
+
+              <p className="init-hidden mt-3 text-gray-600 dark:text-gray-400">
                 Nossos profissionais,
                 especialistas em várias áreas
                 criam soluções que
-                transformam seu dia a dia com Sistemas ERP/PAF-ECF/NFC-E Automação Comercial
+                transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
                 Desenvolvimento Desktop, Web e Mobile.
-                </p>
-              
-                  <button className={`button`}>
+              </p>
+              <div className="pt-5 init-hidden">
+                <button className={`button`}>
                   <div className="svg-wrapper-1">
                     <div className="svg-wrapper">
                       <svg
@@ -77,45 +74,51 @@ export default function Home() {
                   </div>
                   <span className={`roboto-medium`}>Contratar</span>
                 </button>
-                  
-                    <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Shop Now</button>
-                </div>
-            </div>
+              </div>
 
-            <div className="flex items-center justify-center w-full mt-6">
+              {/* <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Shop Now</button> */}
             </div>
+          </div>
+
+          <div className="init-hidden flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 pr-3 pl-3">
+            <Image
+              src={'./BM.svg'}
+              alt="Logo BMinformatica"
+              width={600}
+              height={600}
+            />
+            {/* <img className="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Catalogue-pana.svg"> */}
+          </div>
         </div>
-    </div>
-</header>
-  
+      </div>
+
       <section> {/* xl:h-[70vh] */}
-                            {/*                   
         <div className={`init-hidden`}>
           <div>
-            <h1 className={`md:text-center text-left md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
+            {/* <h1 className={`md:text-center text-left md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
               Melhor
               Solução Para o
               Negócio Aqui
-            </h1>
-            
-            <div className={`md:pl-10 md:pr-10`}>
+            </h1> */}
+
+            {/* <div className={`md:pl-10 md:pr-10`}>
               <p className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
                 Nossos profissionais,
                 especialistas em várias áreas
                 criam soluções que
                 transformam seu dia a dia.
               </p>
-            </div>
+            </div> */}
 
-            <div className={`init-hidden w-full`}>
+            {/* <div className={`init-hidden w-full`}>
               <h3 className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
                 Sistemas ERP/PAF-ECF/NFC-E Automação Comercial
                 Desenvolvimento Desktop, Web e Mobile.
               </h3>
-            </div>
-*/}
-            <div className={`w-full flex justify-center pt-8`}>
+            </div> */}
+
+            {/* <div className={`w-full flex justify-center pt-8`}>
               <div>
                 <button className={`button`}>
                   <div className="svg-wrapper-1">
@@ -137,10 +140,10 @@ export default function Home() {
                   <span className={`roboto-medium`}>Contratar</span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className={`md:m-w-[500px] md:m-h-[300px] w-full flex items-center justify-center md:pt-24 pt-10 pr-2 pl-2`}>
+          {/* <div className={`md:m-w-[500px] md:m-h-[300px] w-full flex items-center justify-center md:pt-24 pt-10 pr-2 pl-2`}>
             <div>
               <Image
                 src={'./BM.svg'}
@@ -149,7 +152,7 @@ export default function Home() {
                 height={600}
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className={`w-full h-[250px] md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
@@ -180,7 +183,7 @@ export default function Home() {
             </h3> */}
           </div>
         </div>
-      </section>
+      </section >
 
       <section className={`init-hidden w-full md:pt-30 pt-20`}>
         <Contacts />
@@ -193,7 +196,7 @@ export default function Home() {
         priority
         /> */}
       </section>
-    </section>
+    </section >
   )
 };
 
