@@ -39,7 +39,7 @@ export default function Home() {
       <section> {/* xl:h-[70vh] */}
         <div className={`init-hidden`}>
           <div>
-            <h1 className={`text-center md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
+            <h1 className={`md:text-center text-left md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
               Encontre a
               Melhor
               Solução Para o
@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
             
             <div className={`pl-10 pr-10`}>
-              <p className={`text-center md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
+              <p className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
                 Nossos profissionais,
                 especialistas em várias áreas
                 criam soluções que
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className={`init-hidden w-full`}>
-              <h3 className={`text-center md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
+              <h3 className={`md:text-center text-left md:text-2xl text-[18px] raleway-medium text-[#316994] pt-5`}>
                 Sistemas ERP/PAF-ECF/NFC-E Automação Comercial <br />
                 Desenvolvimento Desktop, Web e Mobile.
               </h3>
