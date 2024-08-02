@@ -57,7 +57,7 @@ export default function Home() {
                 transformam seu dia a dia com Sistemas ERP/PAF-ECF/NFC-E Automação Comercial
                 Desenvolvimento Desktop, Web e Mobile.
                 </p>
-                    <div>
+              
                   <button className={`button`}>
                   <div className="svg-wrapper-1">
                     <div className="svg-wrapper">
@@ -77,7 +77,7 @@ export default function Home() {
                   </div>
                   <span className={`roboto-medium`}>Contratar</span>
                 </button>
-                  </div>
+                  
                     <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Shop Now</button>
                 </div>
             </div>
@@ -89,6 +89,7 @@ export default function Home() {
 </header>
   
       <section> {/* xl:h-[70vh] */}
+                            {/*                   
         <div className={`init-hidden`}>
           <div>
             <h1 className={`md:text-center text-left md:text-6xl text-4xl roboto-bold text-[#0E0E0E]`}>
@@ -113,7 +114,7 @@ export default function Home() {
                 Desenvolvimento Desktop, Web e Mobile.
               </h3>
             </div>
-
+*/}
             <div className={`w-full flex justify-center pt-8`}>
               <div>
                 <button className={`button`}>
