@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <section className={`${Globals.default_style_page}`}>
 <header className="bg-white dark:bg-gray-900">
-    <div className="container px-6 py-16 mx-auto">
+    <div className="container px-6 mx-auto">
         <div className="items-center lg:flex">
             <div className="w-full lg:w-1/2">
                 <div className="lg:max-w-lg">
