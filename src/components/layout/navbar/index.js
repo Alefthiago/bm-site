@@ -28,7 +28,7 @@ const Nav_bar = (props) => {
         '/equipment': 'Equipamentos',
         '/company': 'Empresa',
         '/contact': 'Contato',
-        '/links': 'Links'
+        '/suport': 'Suporte'
     }
     //      /VARIAVEIS      //
 
@@ -180,17 +180,17 @@ const Nav_bar = (props) => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/links'} className={`${navbar_link} ${verifyRoute('/links')}`}>
+                <Navbar.Link href={'/bm-site/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}>
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/links'} className={`${navbar_link} ${verifyRoute('/links')}`}> */}
-                    {verifyRoute('/links') == 'text-[#D67229]'
+                    {/* <Navbar.Link href={'/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}> */}
+                    {verifyRoute('/suport') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/links') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
-                            Links
+                        <Kbd className={`${verifyRoute('/suport') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                            Suporte
                         </Kbd>
                         :
                         <>
-                            Links
+                            Suporte
                         </>
                     }
                 </Navbar.Link>
