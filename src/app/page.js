@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="init-hidden flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 pr-3 pl-3">
+          <div className="init-hidden flex items-center justify-center w-full mt-10 lg:mt-0 lg:w-1/2 pr-3 pl-3">
             <Image
               src={'./BM.svg'}
               alt="Logo BMinformatica"
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </section >
 
-      <section className={` md:pt-10 pt-20 grid grid-cols-2 gap-10`}>
+      <section className={`pt-10 grid md:grid-cols-2 grid-cols-1 gap-5`}>
         {/* <Contacts /> */}
         <Card
           className="max-w-sm init-hidden "
