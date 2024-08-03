@@ -5,7 +5,7 @@ import "./globals.css";
 
 // Componentes //
 import Navbar from '../components/layout/navbar/';
-import Footer from '../components/layout/footer';
+import Footers from '../components/layout/footer';
 import Head from "next/head";
 import Nav_bar from "@/components/layout/navbar";
 // Componentes //
@@ -32,8 +32,7 @@ export default function RootLayout({ children }) {
         <main className={'mx-auto lg:w-4/5 h-full container'}>
           {children}
         </main>
-        <Footer />
-
+        <Footers />
       </body>
     </html>
   );
