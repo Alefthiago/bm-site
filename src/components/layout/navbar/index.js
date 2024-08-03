@@ -11,7 +11,7 @@ import { Kbd } from "flowbite-react";
 //      /UTIL       //
 
 //      STYLES      //
-const navbar_link = `text-lg text-[#F8F8F8] md:hover:text-[#D67229]`;
+const navbar_link = `text-sm text-[#F8F8F8] md:hover:text-[#D67229]`;
 //     /STYLES     //
 
 const Nav_bar = (props) => {
@@ -110,7 +110,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={`/`} className={`${navbar_link}`}>  */}
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Início
                         </Kbd>
                         :
@@ -125,7 +125,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>   */}
                     {verifyRoute('/solutions') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Soluções
                         </Kbd>
                         :
@@ -140,7 +140,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
                     {verifyRoute('/equipment') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Equipamentos
                         </Kbd>
                         :
@@ -155,7 +155,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={'/company'} className={`${navbar_link} ${verifyRoute('/company')}`}> */}
                     {verifyRoute('/company') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/company') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/company') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Empresa
                         </Kbd>
                         :
@@ -170,7 +170,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={'/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}> */}
                     {verifyRoute('/contact') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/contact') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/contact') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Contato
                         </Kbd>
                         :
@@ -185,7 +185,7 @@ const Nav_bar = (props) => {
                     {/* <Navbar.Link href={'/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}> */}
                     {verifyRoute('/suport') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/suport') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verifyRoute('/suport') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Suporte
                         </Kbd>
                         :
