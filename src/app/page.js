@@ -98,7 +98,7 @@ export default function Home() {
       </div>
 
       <section> {/* xl:h-[70vh] */}
-        <div className={`w-full h-[250px] md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
+        <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
           <div className={`init-hidden w-full`}>
             <Banner>
               <div className="flex w-full justify-between">
