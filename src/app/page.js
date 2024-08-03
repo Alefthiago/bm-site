@@ -128,10 +128,10 @@ export default function Home() {
         </div>
       </section >
 
-      <section className={`init-hidden md:pt-10 pt-20 grid grid-cols-2 gap-10`}>
+      <section className={` md:pt-10 pt-20 grid grid-cols-2 gap-10`}>
         {/* <Contacts /> */}
         <Card
-          className="max-w-sm"
+          className="max-w-sm init-hidden "
           imgAlt="Meaningful alt text for an image that is not purely decorative"
           imgSrc="./BM.svg"
         >
@@ -142,7 +142,7 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
           </p>
         </Card><Card
-          className="max-w-sm"
+          className="max-w-sm init-hidden "
           imgAlt="Meaningful alt text for an image that is not purely decorative"
           imgSrc="./BM.svg"
         >
@@ -153,7 +153,7 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
           </p>
         </Card><Card
-          className="max-w-sm"
+          className="max-w-sm init-hidden "
           imgAlt="Meaningful alt text for an image that is not purely decorative"
           imgSrc="./BM.svg"
         >
@@ -164,7 +164,7 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
           </p>
         </Card><Card
-          className="max-w-sm"
+          className="max-w-sm init-hidden "
           imgAlt="Meaningful alt text for an image that is not purely decorative"
           imgSrc="./BM.svg"
         >
