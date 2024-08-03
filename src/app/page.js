@@ -107,13 +107,12 @@ export default function Home() {
                     <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full p-1">
                     </span>
                     <span className="[&_p]:inline">
-                      Entre em contato conosco,&nbsp;
                       <a
-                        href="https://wa.me/558131262050"
+                        href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
                         target="_blank"
                         className="ml-0 flex items-center md:text-xl text-[18px] font-medium text-[#D67229] hover:underline md:ml-1 md:inline-flex"
                       >
-                        solicite uma demonstração e faça um orçamento
+                      Código de Defesa do Consumidor
                         <HiArrowRight />
                       </a>
                     </span>
