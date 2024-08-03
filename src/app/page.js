@@ -18,20 +18,19 @@ import { Card } from "flowbite-react";
 
 export default function Home() {
   useEffect(() => {
-    const obeserver = new IntersectionObserver((e) => {
-      // console.log(e)
-      Array.from(e).forEach((elemento) => {
-        if (elemento.intersectionRatio >= 1) {
-          elemento.target.classList.add('init-hidden-off');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add('init-hidden-off');
         }
       });
     }, {
-      threshold: 1
+      threshold: [0] // Trigger when any part of the element appears
     });
 
-    // Array.from(document.querySelectorAll('fade-in'));
-    Array.from(document.querySelectorAll('.init-hidden')).forEach(elemento => {
-      obeserver.observe(elemento);
+    // Select all elements with the class 'init-hidden' and observe them
+    Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+      observer.observe(element);
     });
     // obeserver.observe(document.querySelector('.init-hidden'));
 
@@ -41,7 +40,16 @@ export default function Home() {
   }, []);
   return (
     <section className={`${Globals.default_style_page}`}>
-      <div className="container px-6 mx-auto">
+      <div className="container mx-auto">
+        <div className="init-hidden md:hidden flex items-center justify-center w-full mb-20 lg:mt-0 lg:w-1/2 pr-1 pl-1">
+          <Image
+            src={'./BM.svg'}
+            alt="Logo BMinformatica"
+            width={800}
+            height={800}
+          />
+          {/* <img className="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Catalogue-pana.svg"> */}
+        </div>
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
@@ -85,17 +93,83 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="init-hidden flex items-center justify-center w-full mt-10 lg:mt-0 lg:w-1/2 pr-3 pl-3">
+          <div className="init-hidden md:flex hidden items-center justify-center w-full mt-20 lg:mt-0 lg:w-1/2 pr-1 pl-1">
             <Image
               src={'./BM.svg'}
               alt="Logo BMinformatica"
-              width={600}
-              height={600}
+              width={800}
+              height={800}
             />
             {/* <img className="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Catalogue-pana.svg"> */}
           </div>
         </div>
       </div>
+      <section className={`pt-40 grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-5`}>
+        {/* <Contacts /> */}
+        <Card
+          className="max-w-sm init-hidden"
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio1.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#206BA5] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
+          >
+            Contratar
+          </button>
+        </Card>
+        <Card
+          className="max-w-sm init-hidden "
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio2.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#206BA5] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
+          >
+            Contratar
+          </button>
+        </Card>
+        <Card
+          className="max-w-sm init-hidden "
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio3.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#206BA5] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
+          >
+            Contratar
+          </button>
+        </Card>
+        <Card
+          className="max-w-sm init-hidden md:col-start-2 col-start-1"
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio4.jpg"
+        >
+          <button
+            type="button"
+            className="bg-[#206BA5] inline-flex w-full justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
+          >
+            Contratar
+          </button>
+          {/* <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Noteworthy technology acquisitions 2021
+          </h5>
+          <p className="font-normal text-gray-700 dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+          </p> */}
+        </Card>
+
+        {/* <Image
+        src="/vercel.svg"
+        alt="Vercel Logo"
+        className="dark:invert"
+        width={100}
+        height={24}
+        priority
+        /> */}
+      </section>
 
       <section> {/* xl:h-[70vh] */}
         <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
@@ -112,8 +186,8 @@ export default function Home() {
                         target="_blank"
                         className="ml-0 flex items-center md:text-xl text-[18px] font-medium text-[#D67229] hover:underline md:ml-1 md:inline-flex"
                       >
-                      Código de Defesa do Consumidor
-                        <HiArrowRight />
+                        Código de Defesa do Consumidor
+                        <HiArrowRight className="ml-2" />
                       </a>
                     </span>
                   </p>
@@ -126,64 +200,6 @@ export default function Home() {
           </div>
         </div>
       </section >
-
-      <section className={`pt-10 grid md:grid-cols-2 grid-cols-1 gap-5`}>
-        {/* <Contacts /> */}
-        <Card
-          className="max-w-sm init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./BM.svg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-          </p>
-        </Card><Card
-          className="max-w-sm init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./BM.svg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-          </p>
-        </Card><Card
-          className="max-w-sm init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./BM.svg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-          </p>
-        </Card><Card
-          className="max-w-sm init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./BM.svg"
-        >
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-          </p>
-        </Card>
-        
-        {/* <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        className="dark:invert"
-        width={100}
-        height={24}
-        priority
-        /> */}
-      </section>
     </section >
   )
 };
