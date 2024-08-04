@@ -14,7 +14,7 @@ const PageContact = () => {
             {/* contate-nos */}
             <div className="w-full">
                 <div className="w-full text-center">
-                    <h1 className="text-4xl font-semibold font-mono text-[#0E0E0E]">
+                    <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
                         Contate-nos
                         {/* <span className="text-blue-500"> o Seu Negócio Aqui</span> */}
                     </h1>
