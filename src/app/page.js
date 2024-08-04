@@ -41,7 +41,7 @@ export default function Home() {
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
-              <h1 className="init-hidden text-4xl font-semibold font-mono text-[#0E0E0E]">
+              <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
                 Encontre a
                 Melhor
                 Solução <br />Para
