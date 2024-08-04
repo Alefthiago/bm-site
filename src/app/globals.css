@@ -132,7 +132,7 @@
 }
 
 .button:hover svg {
-  transform: translateX(2em) rotate(45deg) scale(1.1);
+  transform: translateX(3em) rotate(45deg) scale(1.1);
 }
 
 .button:hover span {
