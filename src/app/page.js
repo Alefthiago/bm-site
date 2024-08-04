@@ -44,7 +44,7 @@ export default function Home() {
               <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
                 Encontre a
                 Melhor
-                Solução <br />Para
+                Solução <br className="hidden md:block"/>Para
                 <span className="text-blue-500"> o Seu Negócio Aqui</span>
               </h1>
 
