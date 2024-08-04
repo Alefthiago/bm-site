@@ -30,14 +30,14 @@ export default function Home() {
   return (
     <section className={`${Globals.default_style_page}`}>
       <div className="container mx-auto">
-        <div className="init-hidden md:hidden flex items-center justify-center w-full md:mb-20 mb-10 lg:mt-0 lg:w-1/2 pr-1 pl-1">
+        {/* <div className="init-hidden md:hidden flex items-center justify-center w-full md:mb-20 mb-10 lg:mt-0 lg:w-1/2 pr-1 pl-1">
           <Image
             src={'./BM.svg'}
             alt="Logo BMinformatica"
             width={800}
             height={800}
           />
-        </div>
+        </div> */}
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
