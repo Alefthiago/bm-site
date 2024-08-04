@@ -19,9 +19,9 @@ const MenuMobile = (props) => {
     return (
         <>
             <Drawer open={props.is_open} onClose={handleClose} position="right" className='roboto-bold bg-[#F8F8F8]'>
-                <Drawer.Header title="Menu"/>
+                <Drawer.Header title="Menu" className="font-mono"/>
                 <Drawer.Items>
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
+                    <div className="font-sans grid grid-cols-1 gap-4 md:grid-cols-1">
                         <Link
                             onClick={() => {
                                 props.clickIcon('home', 'Inicio');

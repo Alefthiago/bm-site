@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLikedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa6";
 
 // let div_footer = ' pt-2 '
@@ -16,26 +16,17 @@ const Footers = () => {
       <div className="w-full">
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
           <div>
-            {/* <Image src={'./lgbranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} /> */}
             <Footer.Brand
               href="https://flowbite.com"
               src={'./lgbranco.svg'}
               alt={'Logo BM Informatica'}
-              name={<span style={{ color: '#F8F8F8' }}>BM informatica</span>}
+              name={<span style={{ color: '#F8F8F8' }} className="font-mono" >BM informatica</span>}
             />
           </div>
-          {/* <div>
-          <Footer.Brand
-            href="https://flowbite.com"
-            src="https://flowbite.com/docs/images/logo.svg"
-            alt="Flowbite Logo"
-            name="Flowbite"
-          />
-        </div> */}
           <div className="grid lg:grid-cols-4 gap-8 md:mt-4 md:grid-cols-2 md:gap-6" >
             <div>
-              <Footer.Title title="Fones" className="text-[#F8F8F8]" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]">
+              <Footer.Title title="Fones" className="text-[#F8F8F8] font-mono" />
+              <Footer.LinkGroup col className="text-[#F8F8F8] font-sans">
                 <Footer.Link target="_blank" href="#">
                   Pernambuco <br />
                   (81) 3126-2050
@@ -55,8 +46,8 @@ const Footers = () => {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="E-mails" className="text-[#F8F8F8]" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]">
+              <Footer.Title title="E-mails" className="text-[#F8F8F8] font-mono" />
+              <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
                 <Footer.Link target="_blank" href="#">bm@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">comercial@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">suporte@bminformatica.com.br</Footer.Link>
@@ -64,8 +55,8 @@ const Footers = () => {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Suporte" className="text-[#F8F8F8]" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]">
+              <Footer.Title title="Suporte" className="text-[#F8F8F8] font-mono" />
+              <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
                 <Footer.Link target="_blank" href="https://download.teamviewer.com/download/version_12x/TeamViewerQS.exe" >Team ViewerQs (<strong className="text-[#D67229]">Suporte BM</strong>)</Footer.Link>
 
                 <Footer.Link target="_blank" href="https://desk.bminformatica.com.br/rustdesk-1.2.0.exe"> Rust Desk (<strong className="text-[#D67229]">Win 8,9,10,11</strong>)</Footer.Link>
@@ -73,30 +64,23 @@ const Footers = () => {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Fiscal" className="text-[#F8F8F8]" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]">
+              <Footer.Title title="Fiscal" className="text-[#F8F8F8] font-mono" />
+              <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
                 <Footer.Link href="http://www.sintegra.gov.br/" >Consulta Sintegra</Footer.Link>
 
                 <Footer.Link target="_blank" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=&AspxAutoDetectCookieSupport=1"> Consulta (<strong className="text-[#D67229]">NF-e</strong>)</Footer.Link>
-                {/* <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
-              <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
-              <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
-              <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
-              <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link> */}
               </Footer.LinkGroup>
             </div>
           </div>
         </div>
         <Footer.Divider className="text-[#F8F8F8]" />
         <div className="w-full md:flex md:items-center md:justify-between">
-          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2024} className="text-[#F8F8F8]" />
+          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2024} className="text-[#F8F8F8] font-mono" />
 
-          <div className="mt-4 flex space-x-6 md:mt-0 md:justify-center">
+          <div className="mt-4 flex space-x-6 md:mt-0 md:justify-center  font-sans">
             <Footer.Icon target="_blank" href="https://www.facebook.com/bminformaticaoficial/?_rdr" icon={BsFacebook} className="text-[#F8F8F8]" />
             <Footer.Icon target="_blank" href="https://www.instagram.com/bminformaticaoficial/" icon={BsInstagram} className="text-[#F8F8F8]" />
             <Footer.Icon target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda" icon={FaLinkedinIn} className="text-[#F8F8F8]" />
-            {/* <Footer.Icon target="_blank" href="#" icon={BsGithub} className="text-[#F8F8F8]"/> */}
-            {/* <Footer.Icon href="#" icon={BsDribbble} className="text-[#F8F8F8]"/> */}
           </div>
         </div>
       </div>

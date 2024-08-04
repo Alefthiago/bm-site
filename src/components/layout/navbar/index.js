@@ -2,7 +2,6 @@
 //      UTIL        //
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
 import { Navbar } from "flowbite-react";
 import Image from "next/image";
 import MenuMobile from "./menuMobile";
@@ -103,14 +102,14 @@ const Nav_bar = (props) => {
                 <MenuMobile is_open={is_open} setIsOpen={setIsOpen} clickIcon={clickIcon} verifyRoute={verifyRoute} route={route} />
                 {/* INDICES MENU MOBILE. */}
             </div>
-            <Navbar.Collapse className={`md:block hidden`}>
+            <Navbar.Collapse className={`md:block hidden font-sans`}>
                 {/*     PARA PRODUCAO       */}
                 <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}>
                     {/*    /PARA PRODUCAO       */}
                     {/* <Navbar.Link href={`/`} className={`${navbar_link}`}>  */}
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={` ${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Início
                         </Kbd>
                         :
