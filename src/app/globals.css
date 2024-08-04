@@ -136,7 +136,7 @@
 }
 
 .button:hover span {
-  transform: translateX(6em);
+  transform: translateX(7em);
 }
 
 .button:active {
