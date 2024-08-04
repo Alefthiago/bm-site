@@ -136,11 +136,11 @@
 }
 
 .button:hover span {
-  transform: translateX(6em);
+  transform: translateX(7em);
 }
 
 .button:active {
-  transform: scale(0.95);
+  transform: scale(0.100);
 }
 
 @keyframes fly-1 {
