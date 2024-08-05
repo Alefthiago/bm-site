@@ -8,7 +8,6 @@ import { Drawer } from "flowbite-react";
 //     /UTIL        //
 
 //      STYLES      //
-const link = ``;
 //     /STYLES      //
 
 const MenuMobile = (props) => {

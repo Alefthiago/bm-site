@@ -20,7 +20,7 @@ const PageContact = () => {
                     </h1>
 
                     <p className="mt-3 text-gray-600 font-sans">
-                    Nós da Bm Informatica teremos prazer em ouvir você
+                        Nós da Bm Informatica teremos prazer em ouvir você
                     </p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const PageContact = () => {
                                     Nós da Bm Informatica teremos prazer em ouvir você
                                 </p> */}
 
-                                <form className="pt-5"> 
+                                <form className="pt-5">
                                     <div className="-mx-2 md:items-center md:flex">
                                         <div className="flex-1 px-2">
                                             <label className="block mb-2 text-sm text-[#F8F8F8]">Nome</label>
@@ -62,7 +62,7 @@ const PageContact = () => {
                                         <textarea className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Mensagem"></textarea>
                                     </div>
 
-                                    <button className="font-mono w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] rounded-lg hover:bg-[#D67229] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                    <button className="font-mono w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] hover:bg-[#C55300] rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                         Enviar
                                     </button>
                                 </form>
@@ -142,6 +142,9 @@ const PageContact = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="overflow-hidden rounded-lg h-auto w-full mb-10">
+                    <iframe width="100%" height="100%" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.845566945619!2d-34.904949224234315!3d-8.11720209191211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fadcaa54637%3A0xbdb1a1182c056086!2sR.%20Padre%20Carapuceiro%2C%20733%20-%20Sala%201001%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051020-280!5e0!3m2!1spt-BR!2sbr!4v1722870633793!5m2!1spt-BR!2sbr"></iframe>
                 </div>
             </section>
             {/* <section className="w-full flex flex-col justify-center gap-2">
