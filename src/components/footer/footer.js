@@ -51,7 +51,6 @@ const Footers = () => {
                 <Footer.Link target="_blank" href="#">bm@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">comercial@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">suporte@bminformatica.com.br</Footer.Link>
-                <Footer.Link target="_blank" href="#">analise@bminformatica.com.br</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -61,6 +60,7 @@ const Footers = () => {
 
                 <Footer.Link target="_blank" href="https://desk.bminformatica.com.br/rustdesk-1.2.0.exe"> Rust Desk (<strong className="text-[#D67229]">Win 8,9,10,11</strong>)</Footer.Link>
                 <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
+                {/* <Footer.Link id="outros" href="#outros">  Outros </Footer.Link> */}
               </Footer.LinkGroup>
             </div>
             <div>
