@@ -103,9 +103,9 @@ const Nav_bar = (props) => {
             </div>
             <Navbar.Collapse className={`md:block hidden`}>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}>
+                {/* <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}> */}
                 {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={`/`} className={`${navbar_link}`}>  */}
+                <Navbar.Link href={`/`} className={`${navbar_link}`}> 
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-lg text-[#F8F8F8]' : ''}`}>
@@ -118,7 +118,7 @@ const Nav_bar = (props) => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
+                <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
                 {/*    /PARA PRODUCAO       */}
                 {/* <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>   */}
                     {verifyRoute('/solutions') == 'text-[#D67229]'
