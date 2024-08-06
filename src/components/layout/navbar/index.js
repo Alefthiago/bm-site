@@ -134,9 +134,9 @@ const Nav_bar = (props) => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
+                {/* <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
+                    <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
                     {verifyRoute('/equipment') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>

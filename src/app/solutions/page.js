@@ -13,91 +13,73 @@ const pageSoluctions = () => {
             alt: "Descrição da imagem 1",
             imgSrc: "/caminho/para/sua/imagem1.jpg",
             link: "https://www.exemplo1.com",
-            text: "Seu texto aqui 1"
+            text: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis."
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Padarias,Delicatessens e Lojas de Conveniência"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Restaurantes, Lanchonetes, Cafeterias e Food Services"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Lojas de Materiais de Construção e Madeireiras"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Livrarias e Papelarias"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Informática, Telefonia e Eletrônicos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Auto Peças e Oficinas"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Lojas de Roupas e Calçados"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Lojas de Brinquedos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Pet Shops"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
+            text: "Atacados, Distribuidoras e Atacarejos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "/caminho/para/sua/imagem2.jpg",
             link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "/caminho/para/sua/imagem2.jpg",
-            link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "/caminho/para/sua/imagem2.jpg",
-            link: "https://www.exemplo2.com",
-            text: "Seu texto aqui 2"
-        },
-        {
-            imgAlt: "Descrição da imagem 3",
-            imgSrc: "/caminho/para/sua/imagem3.jpg",
-            link: "https://www.exemplo3.com",
-            text: "Seu texto aqui 3"
+            text: "Varejo em Geral"
         }
         
     ];
