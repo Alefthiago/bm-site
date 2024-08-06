@@ -13,7 +13,7 @@ import { Kbd } from "flowbite-react";
 const navbar_link = `text-sm text-[#F8F8F8] md:hover:text-[#D67229]`;
 //     /STYLES     //
 
-const Nav_bar = (props) => {
+const NavbarApp = () => {
     //      VARIAVEIS       //
     const pathname = usePathname();
     const [route, setRoute] = useState(pathname);
@@ -198,4 +198,4 @@ const Nav_bar = (props) => {
     );
 }
 
-export default Nav_bar;
+export default NavbarApp;
