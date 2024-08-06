@@ -11,7 +11,7 @@ import { useState } from "react";
 let barra = "lg:h-[5px] h-[3px] lg:w-[30%] w-[20%] bg-[#A55820] rounded-[7px] lg:mt-4 mt-3"
 let titulo = "lg:text-3xl text-xl roboto roboto-bold text-[#316994]"
 
-const pageLinks = () => {
+const PageLinks = () => {
     const [openModal, setOpenModal] = useState(false);
 
     return (
@@ -172,4 +172,4 @@ const pageLinks = () => {
     );
 }
 
-export default pageLinks;
+export default PageLinks;
