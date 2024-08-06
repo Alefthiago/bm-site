@@ -23,10 +23,10 @@ const Footers = () => {
               name={<span style={{ color: '#F8F8F8' }} className="font-mono" >BM informatica</span>}
             />
           </div>
-          <div className="grid lg:grid-cols-4 gap-8 md:mt-4 md:grid-cols-2 md:gap-6" >
+          <div className="grid md:grid-cols-2 gap-8" >
             <div>
               <Footer.Title title="Fones" className="text-[#F8F8F8] font-mono" />
-              <Footer.LinkGroup col className="text-[#F8F8F8] font-sans">
+              <Footer.LinkGroup className="text-[#F8F8F8] font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
                 <Footer.Link target="_blank" href="#">
                   Pernambuco <br />
                   (81) 3126-2050
@@ -51,24 +51,6 @@ const Footers = () => {
                 <Footer.Link target="_blank" href="#">bm@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">comercial@bminformatica.com.br</Footer.Link>
                 <Footer.Link target="_blank" href="#">suporte@bminformatica.com.br</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Suporte" className="text-[#F8F8F8] font-mono" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
-                <Footer.Link target="_blank" href="https://download.teamviewer.com/download/version_12x/TeamViewerQS.exe" >Team ViewerQs (<strong className="text-[#D67229]">Suporte BM</strong>)</Footer.Link>
-
-                <Footer.Link target="_blank" href="https://desk.bminformatica.com.br/rustdesk-1.2.0.exe"> Rust Desk (<strong className="text-[#D67229]">Win 8,9,10,11</strong>)</Footer.Link>
-                <Footer.Link target="_blank" href="https://bit.ly/apkrustdesk1" >  Rust Desk (<strong className="text-[#D67229]">Android</strong>)</Footer.Link>
-                {/* <Footer.Link id="outros" href="#outros">  Outros </Footer.Link> */}
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Fiscal" className="text-[#F8F8F8] font-mono" />
-              <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
-                <Footer.Link href="http://www.sintegra.gov.br/" >Consulta Sintegra</Footer.Link>
-
-                <Footer.Link target="_blank" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=&AspxAutoDetectCookieSupport=1"> Consulta (<strong className="text-[#D67229]">NF-e</strong>)</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
