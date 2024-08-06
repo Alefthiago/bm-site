@@ -4,7 +4,7 @@ import Image from "next/image";
 import Globals from "@/components/globals";
 import { useEffect } from "react";
 import { Banner } from "flowbite-react";
-import { HiArrowRight, HiX } from "react-icons/hi";
+import { HiArrowRight } from "react-icons/hi";
 import { Card } from "flowbite-react";
 // UTIL. //
 
@@ -136,7 +136,7 @@ export default function Home() {
           </button>
         </Card>
       </section>
-      <div className="flex flex-row pt-12 w-full gap-5 init-hidden pt-20">
+      <div className="flex flex-row w-full gap-5 init-hidden pt-20">
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
         <div className="lg:w-[40%] w-[60%] text-center">
           <h1 className={`font-mono text-4xl font-semibold`}>Mensões</h1>

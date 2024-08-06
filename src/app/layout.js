@@ -4,10 +4,10 @@ import "./globals.css";
 // Util //
 
 // Componentes //
-import Navbar from '../components/layout/navbar/';
-import Footers from '../components/layout/footer';
+import Navbar from '../components/navbar';
+import Footers from '../components/footer/footer';
 import Head from "next/head";
-import Nav_bar from "@/components/layout/navbar";
+import Nav_bar from "@/components/navbar";
 // Componentes //
 
 const inter = Inter({ subsets: ["latin"] });
