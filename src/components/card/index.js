@@ -8,7 +8,7 @@ const Cardes = (props) => {
             {props.cardsData.map((card, index) => (
                 <Card
                     key={index}
-                    className="max-w-sm"
+                    className="max-w-[300px]"
                     imgAlt={card.imgAlt }
                     imgSrc={card.imgSrc }
                 >
