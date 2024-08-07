@@ -1,11 +1,14 @@
 'use client';
 // UTIL //
 import Image from "next/image";
-import Globals from "@/components/globals";
 import { useEffect } from "react";
 import { Banner } from "flowbite-react";
 import { HiArrowRight } from "react-icons/hi";
 import { Card } from "flowbite-react";
+import Globals from "@/components/globals";
+
+
+// import CardInicio from "@/components/cardHome"; 
 // UTIL. //
 
 export default function Home() {
@@ -23,28 +26,65 @@ export default function Home() {
     Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
       observer.observe(element);
     });
-    // if(typeof document !== 'undefined' && typeof window !== 'undefined') {   
-    // }
   }, []);
 
   return (
     <section className={`${Globals.default_style_page}`}>
+
+      <div className="flip-card w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" >
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+
+            <Card
+              className="font-mono init-hidden w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]"
+              imgAlt="Meaningful alt text for an image that is not purely decorative"
+              imgSrc="./09e0add64a2c83e9bafd0d39f8707652.png"
+            >
+              {/* <button
+                type="button"
+                className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
+              >
+                Contratar
+              </button> */}
+            </Card>
+
+            {/* <Card
+              className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" 
+              imgAlt="Meaningful alt text for an image that is not purely decorative"
+              imgSrc="./cardInicioM1.jpg"
+            >
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+              </p>
+            </Card> */}
+          </div>
+          <div className="flip-card-back">
+            {/* <p className="title">BACK</p>
+            <p>Leave Me</p> */}
+            <Card href="#" className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]">
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* <CardInicio />   */}
       <div className="container mx-auto">
-        {/* <div className="init-hidden md:hidden flex items-center justify-center w-full md:mb-20 mb-10 lg:mt-0 lg:w-1/2 pr-1 pl-1">
-          <Image
-            src={'./BM.svg'}
-            alt="Logo BMinformatica"
-            width={800}
-            height={800}
-          />
-        </div> */}
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
               <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
                 Encontre a
                 Melhor
-                Solução <br className="hidden md:block"/>Para
+                Solução <br className="hidden md:block" />Para
                 <span className="text-blue-500"> o Seu Negócio Aqui</span>
               </h1>
 
@@ -98,7 +138,7 @@ export default function Home() {
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
       </div>
       <section className={`grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-5 pt-20`}>
-        {/* <Contacts /> */}
+
         <Card
           className="max-w-sm font-mono init-hidden"
           imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -149,12 +189,11 @@ export default function Home() {
             className="object-cover w-full h-64"
             src="./cardInicioM1.jpg"
             alt="avatar"
-            // layout="responsive"
             width={500}
             height={224}
           />
 
-          <div className="py-5 text-center">
+          <div className="py-5 text-center p-2">
             <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
             <span className="text-sm text-gray-700 font-sans">Categoria - Lançamentos do Ano Solução Completa para Padaria</span>
           </div>
@@ -164,18 +203,17 @@ export default function Home() {
             className="object-cover w-full h-64"
             src="./cardInicioM2.jpg"
             alt="avatar"
-            // layout="responsive"
             width={500}
             height={224}
           />
 
-          <div className="py-5 text-center">
+          <div className="py-5 text-center p-2">
             <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
             <span className="text-sm text-gray-700 font-sans">Categoria - Soluções & Serviços</span>
           </div>
         </div>
       </section>
-      <section> {/* xl:h-[70vh] */}
+      <section>
         <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
           <div className={`init-hidden w-full`}>
             <Banner>
