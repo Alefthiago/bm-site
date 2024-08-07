@@ -5,63 +5,6 @@ import React from "react";
 import Cardi from "@/components/card";
 
 const pageEquipment = () => {
-    const cardsData = [
-        {
-            alt: "Mini Impressoras",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo1.com",
-            text: "Mini Impressoras"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Smart PCs"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "TEF (Transferência Eletrônica de Fundos) / Pin-Pads"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Leitores de Código de Barras"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Gavetas de Dinheiro"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Impressora de Etiquetas de Código de Barras"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "CPUs de Varejo"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Monitores"
-        },
-        {
-            imgAlt: "Descrição da imagem 2",
-            imgSrc: "../../imgEq/R.jpeg",
-            link: "https://www.exemplo2.com",
-            text: "Balanças Eletrônicas"
-        }
-
-    ];
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4 gap-4">
             <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">

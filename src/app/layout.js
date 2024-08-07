@@ -4,10 +4,9 @@ import "./globals.css";
 // Util //
 
 // Componentes //
-import Navbar from '../components/layout/navbar/';
-import Footers from '../components/layout/footer';
-import Head from "next/head";
-import Nav_bar from "@/components/layout/navbar";
+// import Head from "next/head";
+import NavbarApp from "@/components/navbar";
+import Footers from '../components/footer/footer';
 // Componentes //
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       </Head> */}
       <body className={inter.className}>
-        <Nav_bar />
+        <NavbarApp />
         <main className={'mx-auto lg:w-4/5 h-full container'}>
           {children}
         </main>
