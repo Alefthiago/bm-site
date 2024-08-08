@@ -15,6 +15,7 @@ const Cardes = (props) => {
                             alt={card.imgAlt}
                             className="card-image"
                         />
+                        
 
                     </Card>
                     <div class="card__content">
