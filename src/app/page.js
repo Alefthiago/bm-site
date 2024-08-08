@@ -1,70 +1,244 @@
+'use client';
 // UTIL //
 import Image from "next/image";
+import { useEffect } from "react";
+import { Banner } from "flowbite-react";
+import { HiArrowRight } from "react-icons/hi";
+import { Card } from "flowbite-react";
 import Globals from "@/components/globals";
-import Contacts from "@/components/contacts";
+
+
+// import CardInicio from "@/components/cardHome"; 
 // UTIL. //
 
 export default function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add('init-hidden-off');
+        }
+      });
+    }, {
+      threshold: [0]
+    });
+
+    Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+      observer.observe(element);
+    });
+  }, []);
+
   return (
     <section className={`${Globals.default_style_page}`}>
-      
-      <section className={`w-full`}> {/* xl:h-[70vh] */}
-        <div className={`w-full lg:flex`}>
-          <div className={`l:w-1/2 w-full`}>
-            <h1 className={`lg:text-left text-center md:text-6xl text-5xl roboto-bold text-[#0E0E0E]`}>
-              Encontre a
-              Melhor
-              Solução Para o
-              Negócio Aqui
-            </h1>
-            <p className={`md:text-left text-center raleway-medium text-[#316994] text-2xl pt-5`}>
-              Nossos profissionais,
-              especialistas em várias áreas
-              criam soluções que
-              transformam seu dia a dia.
-            </p>
-          </div>
 
-          <div className={`md:w-1/2 w-full flex items-center justify-center pt-5`}>
-            <div>
-              <Image
-                src={'./BM.png'}
-                alt="Logo BMinformatica"
-                width={500}
-                height={500}
-              />
-            </div>
+      <div className="flip-card w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" >
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+
+            <Card
+              className="font-mono init-hidden w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]"
+              imgAlt="Meaningful alt text for an image that is not purely decorative"
+              imgSrc="./09e0add64a2c83e9bafd0d39f8707652.png"
+            >
+              {/* <button
+                type="button"
+                className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
+              >
+                Contratar
+              </button> */}
+            </Card>
+
+            {/* <Card
+              className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" 
+              imgAlt="Meaningful alt text for an image that is not purely decorative"
+              imgSrc="./cardInicioM1.jpg"
+            >
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+              </p>
+            </Card> */}
+          </div>
+          <div className="flip-card-back">
+            {/* <p className="title">BACK</p>
+            <p>Leave Me</p> */}
+            <Card href="#" className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]">
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+              </p>
+            </Card>
           </div>
         </div>
+      </div>
 
-        <div className={`w-full h-[250px] text-center flex-col items-center raleway-medium text-2xl pt-20`}>
-          <div className={`w-full h-4/6`}>
-            <h3 className={`text-[#316994]`}>
-              Sistemas ERP/PAF-ECF/NFC-E Automação Comercial <br />
-              Desenvolvimento Desktop, Web e Mobile.
-            </h3>
+      {/* <CardInicio />   */}
+      <div className="container mx-auto">
+        <div className="items-center lg:flex">
+          <div className="w-full lg:w-1/2">
+            <div className="lg:max-w-lg">
+              <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
+                Encontre a
+                Melhor
+                Solução <br className="hidden md:block" />Para
+                <span className="text-blue-500"> o Seu Negócio Aqui</span>
+              </h1>
+
+              <p className="init-hidden mt-3 text-gray-600 font-sans">
+                Nossos profissionais,
+                especialistas em várias áreas
+                criam soluções que
+                transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
+                Desenvolvimento Desktop, Web e Mobile.
+              </p>
+              <div className="pt-5 init-hidden">
+                <button className={`button`}>
+                  <div className="svg-wrapper-1">
+                    <div className="svg-wrapper">
+                      <svg
+                        className={"text-[#F8F8F8]"}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="30"
+                        height="30"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className={`font-mono text-[#F8F8F8]`}>Contratar</span>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div className={`w-full`}>
-            <h3 className={`text-[#208DA5]`}>
-              Entre em contato conosco, solicite uma demonstração e faça um orçamento
-            </h3>
+          <div className="init-hidden md:flex hidden items-center justify-center w-full mt-20 lg:mt-0 lg:w-1/2 pr-1 pl-1">
+            <Image
+              src={'./BM.svg'}
+              alt="Logo BMinformatica"
+              width={800}
+              height={800}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row w-full gap-5 init-hidden md:pt-40 pt-20">
+        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
+        <div className="lg:w-[40%] w-[60%] text-center">
+          <h1 className={`font-mono text-4xl font-semibold`}>Destaques</h1>
+        </div>
+        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
+      </div>
+      <section className={`grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-5 pt-20`}>
+
+        <Card
+          className="max-w-sm font-mono init-hidden"
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio1.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
+          >
+            Contratar
+          </button>
+        </Card>
+        <Card
+          className="max-w-sm font-mono init-hidden "
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio2.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
+          >
+            Contratar
+          </button>
+        </Card>
+        <Card
+          className="max-w-sm font-mono init-hidden "
+          imgAlt="Meaningful alt text for an image that is not purely decorative"
+          imgSrc="./cardInicio3.jpg"
+        >
+          <button
+            type="button"
+            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
+          >
+            Contratar
+          </button>
+        </Card>
+      </section>
+      <div className="flex flex-row w-full gap-5 init-hidden pt-20">
+        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
+        <div className="lg:w-[40%] w-[60%] text-center">
+          <h1 className={`font-mono text-4xl font-semibold`}>Mensões</h1>
+        </div>
+        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
+      </div>
+      <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          <Image
+            className="object-cover w-full h-64"
+            src="./cardInicioM1.jpg"
+            alt="avatar"
+            width={500}
+            height={224}
+          />
+
+          <div className="py-5 text-center p-2">
+            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
+            <span className="text-sm text-gray-700 font-sans">Categoria - Lançamentos do Ano Solução Completa para Padaria</span>
+          </div>
+        </div>
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          <Image
+            className="object-cover w-full h-64"
+            src="./cardInicioM2.jpg"
+            alt="avatar"
+            width={500}
+            height={224}
+          />
+
+          <div className="py-5 text-center p-2">
+            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
+            <span className="text-sm text-gray-700 font-sans">Categoria - Soluções & Serviços</span>
           </div>
         </div>
       </section>
-
-      <section className={`w-full`}>
-        <Contacts/>
-        {/* <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        className="dark:invert"
-        width={100}
-        height={24}
-        priority
-        /> */}
+      <section>
+        <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
+          <div className={`init-hidden w-full`}>
+            <Banner>
+              <div className="flex w-full justify-between">
+                <div className="mx-auto flex items-center">
+                  <p className="flex items-center md:text-xl text-[18px] font-normal raleway-medium">
+                    <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full p-1">
+                    </span>
+                    <span className="[&_p]:inline">
+                      <a
+                        href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+                        target="_blank"
+                        className="ml-0 flex items-center md:text-xl text-[18px] font-medium text-[#D67229] hover:underline md:ml-1 md:inline-flex font-sans"
+                      >
+                        Código de Defesa do Consumidor
+                        <HiArrowRight className="ml-2" />
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </Banner>
+          </div>
+        </div>
       </section>
     </section>
   )
 };
-
