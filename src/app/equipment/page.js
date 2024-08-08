@@ -11,6 +11,7 @@ const pageEquipment = () => {
             alt: "Mini Impressoras",
             imgSrc: "./09e0add64a2c83e9bafd0d39f8707652.png",
             // link: "https://www.exemplo1.com",
+            nome:"Livrarias e Papelarias",
             hover: true,
             text: "Mini Impressoras"
         },

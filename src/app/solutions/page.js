@@ -36,6 +36,7 @@ const pageSoluctions = () => {
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_6c5c975b9dcf41268c9696a3c861611f~mv2_d_2800_2227_s_2.webp",
+            nome:"Livrarias e Papelarias",
             // link: "https://www.exemplo2.com",
             text: "Livrarias e Papelarias"
         },

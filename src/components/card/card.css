@@ -10,13 +10,13 @@
   overflow: hidden;
   perspective: 1000px;
   box-shadow: 0 0 0 5px #ffffff80;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 10.0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card svg {
   width: 48px;
   fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 10.0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {

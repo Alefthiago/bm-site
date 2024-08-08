@@ -15,9 +15,10 @@ const Cardes = (props) => {
                             alt={card.imgAlt}
                             className="card-image"
                         />
-                        
-
-                    </Card>
+                        <div>
+                            <h1>{card.nome}</h1>
+                        </div>
+                        </Card>
                     <div class="card__content">
                         <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal text-blue-700">
                             {card.text}
