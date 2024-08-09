@@ -12,73 +12,84 @@ const pageSoluctions = () => {
         {
             alt: "Descrição da imagem 1",
             imgSrc: "./3500c1_701cdabe9a0a4e6ba433b6d12e60d5c7~mv2_d_2800_1867_s_2.webp",
+            nome: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis.",
             // link: "https://www.exemplo1.com",
             text: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis."
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_5b03940ce4a64ea2868bf7eaf154f095~mv2.webp",
+            nome: "Padarias,Delicatessens e Lojas de Conveniência",
             // link: "https://www.exemplo2.com",
             text: "Padarias,Delicatessens e Lojas de Conveniência"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./326dfa52134949cfa9538648b9482b5c.webp",
+            nome: "Restaurantes, Lanchonetes, Cafeterias e Food Services",
             // link: "https://www.exemplo2.com",
             text: "Restaurantes, Lanchonetes, Cafeterias e Food Services"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_daaef41f54654b30bac2cc6136d00a05~mv2_d_2800_2100_s_2.webp",
+            nome: "Lojas de Materiais de Construção e Madeireiras",
             // link: "https://www.exemplo2.com",
             text: "Lojas de Materiais de Construção e Madeireiras"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_6c5c975b9dcf41268c9696a3c861611f~mv2_d_2800_2227_s_2.webp",
-            nome:"Livrarias e Papelarias",
+            nome: "Livrarias e Papelarias",
             // link: "https://www.exemplo2.com",
             text: "Livrarias e Papelarias"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3526a453af0045a4a608537103c26973.webp",
+            nome: "Informática, Telefonia e Eletrônicos",
             // link: "https://www.exemplo2.com",
             text: "Informática, Telefonia e Eletrônicos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_9e3e6e87c51c4c5c84a4916d6b6ebb56~mv2_d_2800_1866_s_2.webp",
+            nome: "Auto Peças e Oficinas",
             // link: "https://www.exemplo2.com",
             text: "Auto Peças e Oficinas"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./c25a6748f1ca44d9bc09c6705e5e6ed5.webp",
+            nome: "Lojas de Roupas e Calçados",
             // link: "https://www.exemplo2.com",
             text: "Lojas de Roupas e Calçados"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./8fcb84cc20914397a05f6fe26636716b.webp",
+            nome: "Lojas de Brinquedos",
             // link: "https://www.exemplo2.com",
             text: "Lojas de Brinquedos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./143c530d12befe41941c124489f9acc2.webp",
+            nome: "Pet Shops",
             // link: "https://www.exemplo2.com",
             text: "Pet Shops"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_af492fbd990547e182cfddcad49fc643~mv2_d_2800_1822_s_2.webp",
+            nome: "Atacados, Distribuidoras e Atacarejos",
             // link: "https://www.exemplo2.com",
             text: "Atacados, Distribuidoras e Atacarejos"
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_5e82a68c5eb042c5b7c60eef71ea0430~mv2_d_2800_1869_s_2.webp",
+            nome: "Varejo em Geral",
             // link: "https://www.exemplo2.com",
             text: "Varejo em Geral"
         }

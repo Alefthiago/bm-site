@@ -13,7 +13,7 @@ const pageEquipment = () => {
             // link: "https://www.exemplo1.com",
             nome:"Mini Impressoras",
             hover: true,
-            text: "Mini Impressoras"
+            text: "Mini impressora de cupom fiscal, compacta e eficiente. Ideal para pequenos negócios, imprime recibos rapidamente via conexão Rede ou USB. Leve e fácil de transportar, perfeita para o dia a dia!"
         },
         {
             imgAlt: "Descrição da imagem 2",
