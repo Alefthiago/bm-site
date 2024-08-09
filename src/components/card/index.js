@@ -9,23 +9,22 @@ const Cardes = (props) => {
             {props.cardsData.map((card, index) => (
                 <div key={index} className="card">
 
-                    <Card className="max-w-[280px] h-full">
+                    <Card className="max-w-[300px] h-[350px]"> {/* Aumente a largura e altura do cartão */}
                         <img
                             src={card.imgSrc}
                             alt={card.imgAlt}
                             className="card-image"
                         />
-                        <div>
-                            <h1>{card.nome}</h1>
+                        <div className="card-text">
+                            <h1 className="text-lg font-semibold">{card.nome}</h1> {/* Texto ajustado */}
                         </div>
-                        </Card>
-                    <div class="card__content">
+                    </Card>
+                    <div className="card__content">
                         <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal text-blue-700">
                             {card.text}
                         </a>
                     </div>
                 </div>
-
             ))}
         </section>
     );

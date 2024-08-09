@@ -11,7 +11,7 @@ const pageEquipment = () => {
             alt: "Mini Impressoras",
             imgSrc: "./09e0add64a2c83e9bafd0d39f8707652.png",
             // link: "https://www.exemplo1.com",
-            nome:"Livrarias e Papelarias",
+            nome:"Mini Impressoras",
             hover: true,
             text: "Mini Impressoras"
         },
@@ -19,6 +19,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_42c81e47b8064624bc1407bdcc39cfd8~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Smart PCs",
             hover: true,
             text: "Smart PCs"
         },
@@ -26,6 +27,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_9ef9944dc52b4cb7ab5cb325051d1b4e~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"TEF / Pin-Pads",
             hover: true,
             text: "TEF (Transferência Eletrônica de Fundos) / Pin-Pads"
         },
@@ -33,6 +35,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_8f961a30ca144868af811f2014b50fa7~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Leitores de Código de Barras",
             hover: true,
             text: "Leitores de Código de Barras"
         },
@@ -40,6 +43,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_b4cccac9b8c54e31b77c42d11116f46e~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Gavetas de Dinheiro",
             hover: true,
             text: "Gavetas de Dinheiro"
         },
@@ -47,14 +51,16 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_661759b7fe76411c8045f17a26a61f4e~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Impressora de Etiquetas de Código de Barras",
             hover: true,
-            text: "Impressora de Etiquetas de Código de Barras",
-            description: "Impressora de Etiquetas de Código de Barras"
+            text: "Impressora de Etiquetas de Código de Barras"
+          
         },
         {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_6011ee0c63b04398b6c9349e91b6484a~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"CPUs de Varejo",
             hover: true,
             text: "CPUs de Varejo"
         },
@@ -62,6 +68,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_34bcb7f538734f428ae61c20a96bb3dc~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Monitores",
             hover: true,
             text: "Monitores"
         },
@@ -69,6 +76,7 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_5d7bf9e82a2644308a63d240dc2f316b~mv2.webp",
             // link: "https://www.exemplo2.com",
+            nome:"Balanças Eletrônicas",
             hover: true,
             text: "Balanças Eletrônicas"
         }
