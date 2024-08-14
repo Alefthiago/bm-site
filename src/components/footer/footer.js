@@ -28,20 +28,20 @@ const Footers = () => {
               <Footer.Title title="Fones" className="text-[#F8F8F8] font-mono" />
               <Footer.LinkGroup className="text-[#F8F8F8] font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
                 <Footer.Link target="_blank" href="#">
-                  Pernambuco <br />
+                  Central <br />
                   (81) 3126-2050
                 </Footer.Link>
                 <Footer.Link target="_blank" href="#">
-                  Alagoas <br />
-                  (82) 3142-0562
+                  Central <br />
+                  (81) 3439-5259
                 </Footer.Link>
                 <Footer.Link target="_blank" href="#">
-                  Paraíba <br />
-                  (83) 3142-0415
+                  Central <br />
+                  (81) 2011-2754
                 </Footer.Link>
                 <Footer.Link target="_blank" href="#">
-                  São Paulo <br />
-                  (11) 2626-1337
+                  Comercial <br />
+                  (81) 9 8804-9715
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>

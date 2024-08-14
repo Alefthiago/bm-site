@@ -4,12 +4,27 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { Banner } from "flowbite-react";
 import { HiArrowRight } from "react-icons/hi";
-import { Card } from "flowbite-react";
+// import { Card } from "flowbite-react";
 import Globals from "@/components/globals";
 
-
+import CardDestaques from '@/components/cardDestaques';
 // import CardInicio from "@/components/cardHome"; 
 // UTIL. //
+
+const card_destaques = [
+  {
+    imgSrc: './cardInicio1.jpg'
+  },
+  {
+    imgSrc: './cardInicio2.jpg'
+  },
+  {
+    imgSrc: './cardInicio3.jpg'
+  },
+  // {
+  //   imgSrc: './cardInicio4.jpg'
+  // }
+];
 
 export default function Home() {
   useEffect(() => {
@@ -30,53 +45,6 @@ export default function Home() {
 
   return (
     <section className={`${Globals.default_style_page}`}>
-
-      <div className="flip-card w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" >
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-
-            <Card
-              className="font-mono init-hidden w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]"
-              imgAlt="Meaningful alt text for an image that is not purely decorative"
-              imgSrc="./09e0add64a2c83e9bafd0d39f8707652.png"
-            >
-              {/* <button
-                type="button"
-                className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
-              >
-                Contratar
-              </button> */}
-            </Card>
-
-            {/* <Card
-              className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]" 
-              imgAlt="Meaningful alt text for an image that is not purely decorative"
-              imgSrc="./cardInicioM1.jpg"
-            >
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-              </p>
-            </Card> */}
-          </div>
-          <div className="flip-card-back">
-            {/* <p className="title">BACK</p>
-            <p>Leave Me</p> */}
-            <Card href="#" className="w-[300px] h-[300px] max-w-[300px] max-h-[300px] min-w-[300px] min-h-[300px]">
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </div>
-
-      {/* <CardInicio />   */}
       <div className="container mx-auto">
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
@@ -137,45 +105,15 @@ export default function Home() {
         </div>
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
       </div>
-      <section className={`grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-5 pt-20`}>
 
-        <Card
-          className="max-w-sm font-mono init-hidden"
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./cardInicio1.jpg"
-        >
-          <button
-            type="button"
-            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
-          >
-            Contratar
-          </button>
-        </Card>
-        <Card
-          className="max-w-sm font-mono init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./cardInicio2.jpg"
-        >
-          <button
-            type="button"
-            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
-          >
-            Contratar
-          </button>
-        </Card>
-        <Card
-          className="max-w-sm font-mono init-hidden "
-          imgAlt="Meaningful alt text for an image that is not purely decorative"
-          imgSrc="./cardInicio3.jpg"
-        >
-          <button
-            type="button"
-            className="inline-flex w-full justify-center rounded-lg bg-[#D67229] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#C55300] focus:outline-none focus:ring-4 focus:ring-cyan-200"
-          >
-            Contratar
-          </button>
-        </Card>
+      <section className={`grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 md:gap-20 gap-5 pt-20`}>
+
+        {card_destaques.map((card, index) => (
+          <CardDestaques key={index} imgSrc={card.imgSrc} />
+        ))}
+
       </section>
+
       <div className="flex flex-row w-full gap-5 init-hidden pt-20">
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
         <div className="lg:w-[40%] w-[60%] text-center">
@@ -183,6 +121,7 @@ export default function Home() {
         </div>
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
       </div>
+      
       <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
         <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
           <Image

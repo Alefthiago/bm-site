@@ -23,73 +23,44 @@
   opacity: 1;
 }
 
-/* From Uiverse.io by joe-watson-sbf */
-.flip-card {
-  background-color: transparent;
-  /* min-width: 290px;
-  min-height: 254px; */
-  /* width: 290px;
-  height: 254px; */
-  perspective: 1000px;
-  font-family: sans-serif;
-}
-
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-}
-
-.flip-card-inner {
+/* From Uiverse.io by alexruix */
+.card {
+  border: 2px solid transparent;
+  border-radius: 10px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  transition: 0.5s ease-out;
+  overflow: visible;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.card-details {
+  color: black; 
+  height: 100%;
+  display: grid;
+  place-content: center;
 }
 
-.flip-card-front,
-.flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* border: 1px solid coral; */
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
   border-radius: 1rem;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
-/* From Uiverse.io by joe-watson-sbf */
-
-/* .Btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  height: 45px;
   border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition-duration: .3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(255, 65, 65);
-} */
+  background-color: #D67229;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/*Hover*/
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+/* From Uiverse.io by alexruix */
 
 /* plus sign */
 .sign {

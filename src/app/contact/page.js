@@ -1,22 +1,15 @@
-import Globals from "@/components/globals";
+// import Globals from "@/components/globals";
 import Image from "next/image";
-import Contacts from "@/components/contacts";
-
-let input = "bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium placeholder-white";
-let container_forms = "flex justify-center w-full";
-let container_button = "flex justify-center mt-4";
-let mensagem = "h-[100px] bg-[#3D808F] rounded p-2 flex flex-col w-full raleway-medium text-left placeholder-white";
-let contato = "text-[#316994] roboto-bold text-center md:text-2xl ";
+import Alerts from "@/components/alert";
 
 const PageContact = () => {
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
-            {/* contate-nos */}
+            <Alerts />
             <div className="w-full">
                 <div className="w-full text-center">
                     <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
                         Contate-nos
-                        {/* <span className="text-blue-500"> o Seu Negócio Aqui</span> */}
                     </h1>
 
                     <p className="mt-3 text-gray-600 font-sans">
@@ -24,16 +17,13 @@ const PageContact = () => {
                     </p>
                 </div>
             </div>
+
             <section className="min-h-screen">
                 <div className="container px-6 py-10 mx-auto">
                     <div className="md:flex md:items-center md:-mx-10">
                         <div className="md:w-1/2 md:mx-10">
                             <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5]">
                                 <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl font-mono">Envie sua Mensagem</h1>
-                                {/* <p className="mt-4 mb-4 text-[#F8F8F8]">
-                                    Nós da Bm Informatica teremos prazer em ouvir você
-                                </p> */}
-
                                 <form className="pt-5">
                                     <div className="-mx-2 md:items-center md:flex">
                                         <div className="flex-1 px-2">
@@ -70,16 +60,15 @@ const PageContact = () => {
                         </div>
 
                         <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10">
-                            {/* <img className="hidden object-cover mx-auto rounded-full md:block shrink-0 w-96 h-96" src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""> */}
                             <Image
                                 className="hidden object-cover mx-auto rounded-full md:block shrink-0 w-96 h-96"
                                 src="./OIP.webp"
                                 alt="avatar"
-                                // layout="responsive"
                                 width={500}
                                 height={224}
                             />
                             <div className="mt-6 space-y-8 md:mt-8">
+
                                 <p className="flex items-start -mx-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -92,33 +81,51 @@ const PageContact = () => {
                                     </span>
                                 </p>
 
-                                {/* <p className="flex items-start -mx-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
 
-                                    <span className="mx-2 text-gray-700 w-72">(257) 563-7401</span>
+                                    <span class="mx-2 text-gray-700 w-72 dark:text-gray-400">Central (81) 3126-2050 | (81) 3439-5259 | (81) 2011-2754</span>
                                 </p>
 
-                                <p className="flex items-start -mx-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
 
-                                    <span className="mx-2 text-gray-700 w-72">acb@example.com</span>
-                                </p> */}
+                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">Comercial (81) 9 8804-9715</span>
+                                </p>
+
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+
+                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bm@bminformatica.com.br</span>
+                                </p>
+
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+
+                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">comercial@bminformatica.com.br</span>
+                                </p>
+
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+
+                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">suporte@bminformatica.com.br</span>
+                                </p>
                             </div>
 
                             <div className="mt-6 w-80 md:mt-8">
                                 <h3 className="text-gray-600 font-mono">Siga-nos</h3>
 
                                 <div className="flex mt-4 -mx-1.5">
-                                    {/* <a className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="#">
-                                        <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6668 6.67334C18.0002 7.00001 17.3468 7.13268 16.6668 7.33334C15.9195 6.49001 14.8115 6.44334 13.7468 6.84201C12.6822 7.24068 11.9848 8.21534 12.0002 9.33334V10C9.83683 10.0553 7.91016 9.07001 6.66683 7.33334C6.66683 7.33334 3.87883 12.2887 9.3335 14.6667C8.0855 15.498 6.84083 16.0587 5.3335 16C7.53883 17.202 9.94216 17.6153 12.0228 17.0113C14.4095 16.318 16.3708 14.5293 17.1235 11.85C17.348 11.0351 17.4595 10.1932 17.4548 9.34801C17.4535 9.18201 18.4615 7.50001 18.6668 6.67268V6.67334Z" />
-                                        </svg>
-                                    </a> */}
-
                                     <a className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda">
                                         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z" fill="currentColor" />
@@ -147,53 +154,6 @@ const PageContact = () => {
                     <iframe width="100%" height="100%" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.845566945619!2d-34.904949224234315!3d-8.11720209191211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fadcaa54637%3A0xbdb1a1182c056086!2sR.%20Padre%20Carapuceiro%2C%20733%20-%20Sala%201001%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051020-280!5e0!3m2!1spt-BR!2sbr!4v1722870633793!5m2!1spt-BR!2sbr"></iframe>
                 </div>
             </section>
-            {/* <section className="w-full flex flex-col justify-center gap-2">
-                <div className="text-center">
-                    <h1 className="font-bold text-4xl">Contato</h1>
-                </div>
-                <div className="raleway-medium text-[#316994]">
-                    <h1 className="text-center">Envie sua mensagem:</h1>
-                </div>
-                <div className={container_forms}>
-                    <form className="w-full max-w-md h-auto flex justify-center flex-col gap-5">
-                        <input className={`${input}`} type="text" name="Empresa" placeholder="Empresa" />
-                        <input className={`${input}`} type="text" name="Nome" placeholder="Nome" />
-                        <input className={`${input}`} type="email" name="E-mail" placeholder="E-mail" />
-                        <input className={`${input}`} type="text" name="Contato" placeholder="Contato" />
-                        <input className={`${input}`} type="text" name="Assunto" placeholder="Assunto" />
-                        <textarea className={mensagem} name="Mensagem" placeholder="Mensagem"></textarea>
-                        <div className={container_button}>
-                            <button className="bg-[#C55300] text-white rounded px-4 py-2">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section className="flex flex-col justify-center pt-1 text-center">
-                <div>
-                    <h1 className="text-[#316994] roboto-bold">
-                        Rua Padre Carapuceiro, 733 - Sala 1001<br />
-                        Boa Viagem - Recife - PE<br />
-                        E-mail: bm@bminformatica.com.br
-                    </h1>
-                </div>
-                <div className="flex flex-row pt-12">
-                    <div className={`md:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-                    <div className="md:w-[40%] w-[60%] text-center">
-                        <h1 className={`md:text-3xl text-3xl roboto roboto-bold`}>Fones</h1>
-                    </div>
-                    <div className={`md:h-[5px] h-[3px] w-[60%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-                </div>
-                <div className=" md:flex md:flex-row md:gap-4 md:justify-center grid grid-cols-2 gap-4 md:pt-4 pt-">
-                    <h1 className={`${contato}`}>São Paulo<br />
-                        (11) 2626-1337</h1>
-                    <h1 className={`${contato}`}>Pernambuco<br />
-                        (81) 3126-2050</h1>
-                    <h1 className={`${contato}`}>Alagoas<br />
-                        (82) 3142-0562</h1>
-                    <h1 className={`${contato}`}>Paraíba<br />
-                        (83) 3142-0415</h1>
-                </div>
-            </section> */}
         </section>
     );
 }
