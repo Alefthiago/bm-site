@@ -16,13 +16,20 @@ const Cardes = (props) => {
                             className="card-image"
                         />
                         <div className="card-text">
-                            <h1 className="text-lg font-semibold">{card.nome}</h1> {/* Texto ajustado */}
+                            <h1 className="text-lg font-semibold ">{card.nome}</h1> {/* Texto ajustado */}
                         </div>
                     </Card>
+
                     <div className="card__content">
-                        <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal text-blue-700">
-                            {card.text}
-                        </a>
+                        <div className=" flex itens-center justify-center">
+                            <h1 className=" font-normal text-justify">{card.titulo}</h1> {/* Texto ajustado */}
+                        </div>
+                        <div className="lex itens-center justify-center text-center pt-2">
+                            <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal  text-cyan-500 text-center">
+
+                                {card.text}
+                            </a>
+                        </div>
                     </div>
                 </div>
             ))}
