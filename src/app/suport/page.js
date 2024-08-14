@@ -45,13 +45,20 @@ const PageLinks = () => {
                         Suporte
                         {/* <span className="text-blue-500"> o Seu Negócio Aqui</span> */}
                     </h1>
+                    <p className="mt-3 text-gray-600 font-sans">
+                        Nossos profissionais,
+                        especialistas em várias áreas
+                        criam soluções que
+                        transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
+                        Desenvolvimento Desktop, Web e Mobile.
+                    </p>
                 </div>
             </div>
             <div className="overflow-x-auto w-full">
                 <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                     <Tabs.Item active title="Geral">
-                        <Accordion collapseAll>
-                            <Accordion.Panel>
+                        <Accordion>
+                            <Accordion.Panel active>
                                 <Accordion.Title>Links Uteis</Accordion.Title>
                                 <Accordion.Content>
                                     <HR.Text text="Suporte" />
