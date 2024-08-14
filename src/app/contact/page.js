@@ -5,7 +5,7 @@ import Alerts from "@/components/alert";
 const PageContact = () => {
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
-            <Alerts />
+            {/* <Alerts /> */}
             <div className="w-full">
                 <div className="w-full text-center">
                     <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
