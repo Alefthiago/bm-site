@@ -46,7 +46,7 @@ const PageLinks = () => {
                         {/* <span className="text-blue-500"> o Seu Negócio Aqui</span> */}
                     </h1>
                     <p className="mt-3 text-gray-600 font-sans">
-                        Verifique nossos horarios de funcionamento para ser atendido <span onClick={() => { }} className="text-blue-500 hover:cursor-pointer">aqui!</span>
+                        Verifique nossos horários de funcionamento para ser atendido <span onClick={() => { }} className="text-blue-500 hover:cursor-pointer">aqui!</span>
                     </p>
                 </div>
             </div>

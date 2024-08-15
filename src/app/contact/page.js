@@ -1,11 +1,9 @@
 // import Globals from "@/components/globals";
 import Image from "next/image";
-import Alerts from "@/components/alert";
 
 const PageContact = () => {
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
-            {/* <Alerts /> */}
             <div className="w-full">
                 <div className="w-full text-center">
                     <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
@@ -61,7 +59,7 @@ const PageContact = () => {
 
                         <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10">
                             <Image
-                                className="hidden object-cover mx-auto rounded-full md:block shrink-0 w-96 h-96"
+                                className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
                                 src="./OIP.webp"
                                 alt="avatar"
                                 width={500}
