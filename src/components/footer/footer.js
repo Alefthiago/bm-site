@@ -14,7 +14,7 @@ import Alerts from "@/components/alert";
 const Footers = () => {
   return (
     <Footer container className="bg-[#206BA5] w-full">
-      <Alerts />
+      <Alerts/>
 
       <div className="w-full">
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
