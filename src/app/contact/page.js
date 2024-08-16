@@ -1,5 +1,7 @@
 // import Globals from "@/components/globals";
+//      UTIL.       //
 import Image from "next/image";
+//     /UTIL.       //
 
 const PageContact = () => {
     return (

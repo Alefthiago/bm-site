@@ -1,11 +1,13 @@
-import Globals from "@/components/globals";
+// import Globals from "@/components/globals";
+//      UTIL.       //
 import Style from './equipament.module.css'
 import React from "react";
-
 import Cardi from "@/components/card";
 import "@/components/card";
+//     /UTIL.       //
 
 const pageEquipment = () => {
+    //      INFO CARDS.     //
     const cardsData = [
         {
             alt: "Mini Impressoras",
@@ -87,8 +89,9 @@ const pageEquipment = () => {
             nome: "Balanças Eletrônicas",
             hover: true,
         }
-
     ];
+    //     /INFO CARDS.     //
+
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4 gap-4">
             <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">
@@ -102,7 +105,6 @@ const pageEquipment = () => {
                 </div>
             </section>
             <Cardi cardsData={cardsData} />
-
         </section>
     );
 }

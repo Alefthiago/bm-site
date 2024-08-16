@@ -9,8 +9,8 @@ import React, { useState, useEffect } from 'react';
 //     /UTIL.       //
 
 const ModalHorarios = (props) => {
-    const [situacao, setSituacao] = useState('Aberto');
-    const [corSituacao, setCorSituacao] = useState('text-green-500');
+    const [situacao, setSituacao] = useState('Carregando...');
+    const [corSituacao, setCorSituacao] = useState('');
 
     useEffect(() => {
         const updateSituacao = () => {

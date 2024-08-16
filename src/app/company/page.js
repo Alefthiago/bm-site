@@ -1,12 +1,10 @@
 'use client';
-
+//      UTIL.       //
 import Image from "next/image";
-
-
 import { Carousel } from "flowbite-react";
+//     /UTIL.       //
 
-
-
+//      STYLES.     //
 let h3_text = "text-5xl font-bold text-center";
 let titulo = "text-xl font-bold text-center";
 let informativo = " flex text-[#316994] pl-12 text-justify w-[90%] md:w-[100%]";
@@ -17,12 +15,9 @@ let container_empresa = " flex-row justify-between  w-full max-w-screen-lg lg:w-
 let div_inner_carrosel = "pl-5 flex flex-col justify-center items-center gap-1 h-[50%]";
 let info_carrosel = "text-[#316994] text-sm text-justify";
 let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center"
-
-
-
+//     /STYLES.     //
 
 const pageCompany = () => {
-
 
     return (
         <section className="flex min-h-screen flex-col items-center pt-10 gap-0 md:gap-12 ">

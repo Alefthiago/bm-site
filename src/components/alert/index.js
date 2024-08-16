@@ -2,7 +2,6 @@
 //      UTIL.       //
 import { Toast } from "flowbite-react";
 import { FaClock } from "react-icons/fa6";
-// import ModalHorarios from "@/components/modalHorarios";
 import React, { useState, useEffect } from 'react';
 //     /UTIL.       //
 
@@ -66,7 +65,6 @@ const Alerts = () => {
                 <div className={`ml-3 text-sm font-normal ${corSituacao}`}>{situacao}</div>
                 <Toast.Toggle />
             </Toast>
-            {/* <ModalHorarios setOpenModal={setOpenModal} openModal={openModal}/> */}
         </>
 
     );

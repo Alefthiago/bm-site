@@ -6,7 +6,8 @@ import { Tabs } from "flowbite-react";
 import { ListGroup } from "flowbite-react";
 import { Accordion } from "flowbite-react";
 import { Modal } from "flowbite-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import ModalHorarios from "@/components/modalHorarios";
 import { HR } from "flowbite-react";
 // Util. //
 
@@ -16,6 +17,9 @@ import { HR } from "flowbite-react";
 const PageLinks = () => {
     const [openModal, setOpenModal] = useState(false);
     const [tituloModal, setTituloModal] = useState('');
+
+    const [openModalHorario, setopenModalHorario] = useState(false);
+    const [tituloModalHorario, setTituloModalHorario] = useState('');
 
     const vModal = (state, tipo = null) => {
         if (tipo) {
@@ -250,6 +254,8 @@ const PageLinks = () => {
                     </Button>
                 </Modal.Footer> */}
             </Modal>
+
+            <ModalHorarios setOpenModal={setopenModalHorario} openModal={openModalHorario}/>
             {/*    /MODAIS      */}
         </section>
     );
