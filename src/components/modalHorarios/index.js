@@ -3,8 +3,10 @@
 import { Modal } from "flowbite-react";
 import { FaClock } from "react-icons/fa6";
 import { Tabs } from "flowbite-react";
-import { HiAdjustments, HiUserCircle } from "react-icons/hi";
-import { MdDashboard } from "react-icons/md";
+import { List } from "flowbite-react";
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+
 import React, { useState, useEffect } from 'react';
 //     /UTIL.       //
 
@@ -71,22 +73,63 @@ const ModalHorarios = (props) => {
                         <p id="horario-situacao" className={corSituacao}>
                             {situacao}
                         </p>
-                        <div className="flex justify-center gap-4">
-                            <Tabs aria-label="Tabs with icons" variant="underline">
-                                <Tabs.Item active title="Comercial" icon={HiUserCircle}>
-                                    This is <span className="font-medium text-gray-800">Profile tab's associated content</span>.
-                                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
-                                    control the content visibility and styling.
+                        <div className="flex justify-center pt-5">
+                            <Tabs aria-label="Pills" variant="pills">
+                                <Tabs.Item active title="Comercial - Administrativo">
+                                    <Timeline>
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={FaClock} />
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Time>Dias Úteis</Timeline.Time>
+                                                <Timeline.Title>08:00 às 12:00 - 14:00 às 18:00</Timeline.Title>
+                                                <Timeline.Body>
+                                                    Para atendimentos fora do horário informado, consulte a disponibilidade.
+                                                </Timeline.Body>
+                                                <Button color="gray">
+                                                    Entrar em Contato
+                                                </Button>
+                                            </Timeline.Content>
+                                        </Timeline.Item>
+                                    </Timeline>
                                 </Tabs.Item>
-                                <Tabs.Item title="Administrativo" icon={MdDashboard}>
-                                    This is <span className="font-medium text-gray-800">Dashboard tab's associated content</span>.
-                                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
-                                    control the content visibility and styling.
-                                </Tabs.Item>
-                                <Tabs.Item title="Suporte" icon={HiAdjustments}>
-                                    This is <span className="font-medium text-gray-800">Settings tab's associated content</span>.
-                                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
-                                    control the content visibility and styling.
+                                <Tabs.Item title="Suporte">
+                                    <Timeline>
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={FaClock} />
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Time>Dias Úteis</Timeline.Time>
+                                                <Timeline.Title>08:00 às 12:00</Timeline.Title>
+                                            </Timeline.Content>
+
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Title>12:00 às 14:00 Plantão (APENAS URGÊNCIAS)</Timeline.Title>
+                                            </Timeline.Content>
+
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Title>14:00 às 18:00</Timeline.Title>
+                                            </Timeline.Content>
+
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Title>18:00 às 20:00 (APENAS URGÊNCIAS)</Timeline.Title>
+                                            </Timeline.Content>
+                                            {/* <Button color="gray">
+                                                Entrar em Contato
+                                            </Button> */}
+                                        </Timeline.Item>
+
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={FaClock} />
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Time>Sabado</Timeline.Time>
+                                                <Timeline.Title>08:00 às 18:00 (APENAS URGÊNCIAS)</Timeline.Title>
+                                            </Timeline.Content>
+
+                                            <Timeline.Content className="text-left">
+                                                <Timeline.Time>Domingo e Feriados</Timeline.Time>
+                                                <Timeline.Title>08:00 às 17:00 (APENAS URGÊNCIAS)</Timeline.Title>
+                                            </Timeline.Content>
+                                        </Timeline.Item>
+                                    </Timeline>
                                 </Tabs.Item>
                             </Tabs>
                         </div>
