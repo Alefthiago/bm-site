@@ -1,12 +1,30 @@
+'use client';
 // import Globals from "@/components/globals";
 //      UTIL.       //
+import { useEffect } from "react";
+
 import Image from "next/image";
 //     /UTIL.       //
 
 const PageContact = () => {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('init-hidden-off');
+                }
+            });
+        }, {
+            threshold: [0]
+        });
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element);
+        });
+    }, []);
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
-            <div className="w-full">
+            <div className="w-full init-hidden">
                 <div className="w-full text-center">
                     <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
                         Contate-nos
@@ -21,7 +39,7 @@ const PageContact = () => {
             <section className="min-h-screen">
                 <div className="container px-6 py-10 mx-auto">
                     <div className="md:flex md:items-center md:-mx-10">
-                        <div className="md:w-1/2 md:mx-10">
+                        <div className="md:w-1/2 md:mx-10 init-hidden">
                             <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5]">
                                 <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl font-mono">Envie sua Mensagem</h1>
                                 <form className="pt-5">
@@ -59,7 +77,7 @@ const PageContact = () => {
                             </div>
                         </div>
 
-                        <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10">
+                        <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 init-hidden">
                             <Image
                                 className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
                                 src="./OIP.webp"
@@ -122,7 +140,7 @@ const PageContact = () => {
                                 </p>
                             </div>
 
-                            <div className="mt-6 w-80 md:mt-8">
+                            <div className="mt-6 w-80 md:mt-8 init-hidden">
                                 <h3 className="text-gray-600 font-mono">Siga-nos</h3>
 
                                 <div className="flex mt-4 -mx-1.5">

@@ -20,7 +20,7 @@ const Footers = () => {
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
           <div>
             <Footer.Brand
-              href="https://flowbite.com"
+              href="#"
               src={'./lgbranco.svg'}
               alt={'Logo BM Informatica'}
               name={<span style={{ color: '#F8F8F8' }} className="font-mono" >BM informatica</span>}
@@ -30,20 +30,20 @@ const Footers = () => {
             <div>
               <Footer.Title title="Fones" className="text-[#F8F8F8] font-mono" />
               <Footer.LinkGroup className="text-[#F8F8F8] font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
-                <Footer.Link target="_blank" href="#">
+                <Footer.Link href="#">
                   Central <br />
                   (81) 3126-2050
                 </Footer.Link>
-                <Footer.Link target="_blank" href="#">
+                <Footer.Link href="#">
                   Central <br />
                   (81) 3439-5259
                 </Footer.Link>
-                <Footer.Link target="_blank" href="#">
+                <Footer.Link href="#">
                   Central <br />
                   (81) 2011-2754
                 </Footer.Link>
-                <Footer.Link target="_blank" href="#">
-                  Comercial <br />
+                <Footer.Link href="#">
+                  Comercial (Whatsapp) <br />
                   (81) 9 8804-9715
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -51,9 +51,9 @@ const Footers = () => {
             <div>
               <Footer.Title title="E-mails" className="text-[#F8F8F8] font-mono" />
               <Footer.LinkGroup col className="text-[#F8F8F8]  font-sans">
-                <Footer.Link target="_blank" href="#">bm@bminformatica.com.br</Footer.Link>
-                <Footer.Link target="_blank" href="#">comercial@bminformatica.com.br</Footer.Link>
-                <Footer.Link target="_blank" href="#">suporte@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="#">bm@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="#">comercial@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="#">suporte@bminformatica.com.br</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>

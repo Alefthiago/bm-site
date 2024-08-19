@@ -6,7 +6,7 @@ import { Tabs } from "flowbite-react";
 import { ListGroup } from "flowbite-react";
 import { Accordion } from "flowbite-react";
 import { Modal } from "flowbite-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ModalHorarios from "@/components/modalHorarios";
 import { HR } from "flowbite-react";
 // Util. //
@@ -37,24 +37,40 @@ const PageLinks = () => {
         setOpenModal(state);
     };
 
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('init-hidden-off');
+                }
+            });
+        }, {
+            threshold: [0]
+        });
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element);
+        });
+    }, []);
+
     // useEffect(() => {
     //     setTituloModal(tituloModal);
     // }, [tituloModal]);
 
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
-            <div className="w-full">
+            <div className="w-full init-hidden">
                 <div className="w-full text-center">
                     <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
                         Suporte
                         {/* <span className="text-blue-500"> o Seu Negócio Aqui</span> */}
                     </h1>
                     <p className="mt-3 text-gray-600 font-sans">
-                        Verifique nossos horários de funcionamento para ser atendido <span onClick={() => { setopenModalHorario (true) }} className="text-blue-500 hover:cursor-pointer">aqui!</span>
+                        Verifique nossos horários de funcionamento para ser atendido <span onClick={() => { setopenModalHorario(true) }} className="text-blue-500 hover:cursor-pointer">aqui!</span>
                     </p>
                 </div>
             </div>
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto w-full init-hidden">
                 <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                     <Tabs.Item active title="Geral">
                         <Accordion>
@@ -127,7 +143,7 @@ const PageLinks = () => {
                             </Accordion.Panel> */}
                         </Accordion>
                     </Tabs.Item>
-{/* 
+                    {/* 
                     <Tabs.Item title="Datacash">
                         <Accordion collapseAll>
                             <Accordion.Panel>

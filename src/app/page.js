@@ -125,7 +125,7 @@ export default function Home() {
       </div>
 
       <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 init-hidden">
           <Image
             className="object-cover w-full h-64"
             src="./cardInicioM1.jpg"
@@ -139,7 +139,7 @@ export default function Home() {
             <span className="text-sm text-gray-700 font-sans">Categoria - Lançamentos do Ano Solução Completa para Padaria</span>
           </div>
         </div>
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 init-hidden">
           <Image
             className="object-cover w-full h-64"
             src="./cardInicioM2.jpg"
@@ -147,7 +147,7 @@ export default function Home() {
             width={500}
             height={224}
           />
-
+          
           <div className="py-5 text-center p-2">
             <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
             <span className="text-sm text-gray-700 font-sans">Categoria - Soluções & Serviços</span>
