@@ -64,26 +64,28 @@ export default function Home() {
                 Desenvolvimento Desktop, Web e Mobile.
               </p>
               <div className="pt-5 init-hidden">
-                <button className={`button`}>
-                  <div className="svg-wrapper-1">
-                    <div className="svg-wrapper">
-                      <svg
-                        className={"text-[#F8F8F8]"}
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="30"
-                        height="30"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                          fill="currentColor"
-                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                        ></path>
-                      </svg>
+                <a href="https://wa.me/5581988049715" target="_blank">
+                  <button className={`button`}>
+                    <div className="svg-wrapper-1">
+                      <div className="svg-wrapper">
+                        <svg
+                          className={"text-[#F8F8F8]"}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="30"
+                          height="30"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            fill="currentColor"
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                          ></path>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <span className={`font-mono text-[#F8F8F8]`}>Contratar</span>
-                </button>
+                    <span className={`font-mono text-[#F8F8F8]`}>Contratar</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -121,7 +123,7 @@ export default function Home() {
         </div>
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
       </div>
-      
+
       <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
         <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
           <Image
@@ -178,6 +180,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </section>
+    </section >
   )
 };

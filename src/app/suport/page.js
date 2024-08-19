@@ -115,7 +115,7 @@ const PageLinks = () => {
                                 </Accordion.Content>
                             </Accordion.Panel>
 
-                            <Accordion.Panel>
+                            {/* <Accordion.Panel>
                                 <Accordion.Title>Liberação do Sistema</Accordion.Title>
                                 <Accordion.Content>
                                     <ListGroup className="w-full">
@@ -124,10 +124,10 @@ const PageLinks = () => {
                                         </ListGroup.Item>
                                     </ListGroup>
                                 </Accordion.Content>
-                            </Accordion.Panel>
+                            </Accordion.Panel> */}
                         </Accordion>
                     </Tabs.Item>
-
+{/* 
                     <Tabs.Item title="Datacash">
                         <Accordion collapseAll>
                             <Accordion.Panel>
@@ -236,7 +236,7 @@ const PageLinks = () => {
                                 </Accordion.Content>
                             </Accordion.Panel>
                         </Accordion>
-                    </Tabs.Item>
+                    </Tabs.Item> */}
                 </Tabs>
             </div>
             {/*     MODAIS      */}
