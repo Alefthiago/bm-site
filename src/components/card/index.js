@@ -16,7 +16,7 @@ const Cardes = (props) => {
                             className="card-image"
                         />
                         <div className="card-text">
-                            <h1 className="text-lg font-semibold ">{card.nome}</h1> {/* Texto ajustado */}
+                            <h1 className="text-sm font-semibold">{card.nome}</h1> {/* Texto ajustado */}
                         </div>
                     </Card>
 
@@ -25,8 +25,7 @@ const Cardes = (props) => {
                             <h1 className=" font-normal text-justify">{card.titulo}</h1> {/* Texto ajustado */}
                         </div>
                         <div className="lex itens-center justify-center text-center pt-2">
-                            <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal  text-cyan-500 text-center">
-
+                            <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal text-cyan-500 text-center hover:cursor-pointer">
                                 {card.text}
                             </a>
                         </div>
