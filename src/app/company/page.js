@@ -47,7 +47,7 @@ const pageCompany = () => {
     return (
         <section className="flex min-h-screen flex-col items-center gap-0 md:gap-12">
             {/*     DESKTOP     */}
-            <section className="md:block hidden init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+            <section className="md:block hidden  hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                 <div className="max-w-6xl px-6">
                     <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
                         <div className="absolute w-full bg-[#206BA5] -z-10 md:h-96 rounded-2xl"></div>
@@ -72,7 +72,7 @@ const pageCompany = () => {
 
             {/*     MOBILE     */}
             <section>
-                <div className="container px-6 py-16 mx-auto md:hidden block init-hidden">
+                <div className="container px-6 py-16 mx-auto md:hidden block ">
                     <div className="items-center lg:flex">
                         <div className="w-full lg:w-1/2">
                             <div className="lg:max-w-lg">
@@ -100,7 +100,7 @@ const pageCompany = () => {
 
             {/*         desktop.         */}
             <div className="items-center justify-center gap-8 text-center xl:flex-wrap xl:flex hidden w-full">
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer init-hidden hover:scale-105 transition-transform duration-500 ease-in-out">
+                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
                     <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
@@ -116,7 +116,7 @@ const pageCompany = () => {
                     </p>
                 </div>
 
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 hover:cursor-pointer init-hidden hover:scale-105 transition-transform duration-500 ease-in-out">
+                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
                     <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-eye-fill text-[#ffffff]" viewBox="0 0 16 16">
@@ -133,7 +133,7 @@ const pageCompany = () => {
                     </p>
                 </div>
 
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer init-hidden hover:scale-105 transition-transform duration-500 ease-in-out">
+                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
                     <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
@@ -153,7 +153,7 @@ const pageCompany = () => {
             <div className="overflow-x-auto p-10 xl:hidden block">
                 <Tabs aria-label="Full width tabs" variant="fullWidth">
                     <Tabs.Item title="Visão" icon={FaEye}>
-                        <div className="p-4 text-center py-7 px-5 init-hidden">
+                        <div className="p-4 text-center py-7 px-5 ">
                             <h1 className="text-xl font-bold text-gray-800">
                                 Visão
                             </h1>
@@ -167,7 +167,7 @@ const pageCompany = () => {
                     </Tabs.Item>
 
                     <Tabs.Item active title="Missão" icon={BsBullseye}>
-                        <div className="p-4 text-center py-7 px-5 init-hidden">
+                        <div className="p-4 text-center py-7 px-5 ">
                             <h1 className="text-xl font-bold text-gray-800">
                                 Missão
                             </h1>
@@ -178,7 +178,7 @@ const pageCompany = () => {
                     </Tabs.Item>
 
                     <Tabs.Item title="Valores" icon={BsHeartFill}>
-                        <div className="p-4 text-center py-7 px-5 init-hidden">
+                        <div className="p-4 text-center py-7 px-5 ">
                             <h1 className="text-xl font-bold text-gray-800">
                                 Valores
                             </h1>
