@@ -28,21 +28,21 @@ let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center
 
 const pageCompany = () => {
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.intersectionRatio > 0) {
-                    entry.target.classList.add('init-hidden-off');
-                }
-            });
-        }, {
-            threshold: [0]
-        });
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             if (entry.intersectionRatio > 0) {
+    //                 entry.target.classList.add('init-hidden-off');
+    //             }
+    //         });
+    //     }, {
+    //         threshold: [0]
+    //     });
 
-        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
-            observer.observe(element);
-        });
-    }, []);
+    //     Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+    //         observer.observe(element);
+    //     });
+    // }, []);
 
     return (
         <section className="flex min-h-screen flex-col items-center gap-0 md:gap-12">
