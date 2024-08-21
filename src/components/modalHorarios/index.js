@@ -92,6 +92,7 @@ const ModalHorarios = (props) => {
                                         </Timeline.Item>
                                     </Timeline>
                                 </Tabs.Item>
+
                                 <Tabs.Item title="Suporte">
                                     <Timeline>
                                         <Timeline.Item>
@@ -112,9 +113,6 @@ const ModalHorarios = (props) => {
                                             <Timeline.Content className="text-left">
                                                 <Timeline.Title>18:00 às 20:00 (APENAS URGÊNCIAS)</Timeline.Title>
                                             </Timeline.Content>
-                                            {/* <Button color="gray">
-                                                Entrar em Contato
-                                            </Button> */}
                                         </Timeline.Item>
 
                                         <Timeline.Item>
@@ -124,6 +122,10 @@ const ModalHorarios = (props) => {
                                                 <Timeline.Title>08:00 às 18:00 (APENAS URGÊNCIAS)</Timeline.Title>
                                             </Timeline.Content>
 
+                                        </Timeline.Item>
+
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
                                                 <Timeline.Time>Domingo e Feriados</Timeline.Time>
                                                 <Timeline.Title>08:00 às 17:00 (APENAS URGÊNCIAS)</Timeline.Title>

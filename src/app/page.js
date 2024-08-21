@@ -13,17 +13,17 @@ import CardDestaques from '@/components/cardDestaques';
 
 const card_destaques = [
   {
-    imgSrc: './cardInicio1.jpg'
+    imgSrc: './destaques/cardInicio1.jpg'
   },
   {
-    imgSrc: './cardInicio2.jpg'
+    imgSrc: './destaques/cardInicio2.jpg'
   },
   {
-    imgSrc: './cardInicio3.jpg'
+    imgSrc: './destaques/cardInicio3.jpg'
   },
-  // {
-  //   imgSrc: './cardInicio4.jpg'
-  // }
+  {
+    imgSrc: './destaques/cardInicio4.jpg'
+  }
 ];
 
 export default function Home() {
@@ -92,7 +92,7 @@ export default function Home() {
 
           <div className="init-hidden md:flex hidden items-center justify-center w-full mt-20 lg:mt-0 lg:w-1/2 pr-1 pl-1">
             <Image
-              src={'./BM.svg'}
+              src={'./bm/BM.svg'}
               alt="Logo BMinformatica"
               width={800}
               height={800}
@@ -108,7 +108,7 @@ export default function Home() {
         <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
       </div>
 
-      <section className={`grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 md:gap-20 gap-5 pt-20`}>
+      <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
 
         {card_destaques.map((card, index) => (
           <CardDestaques key={index} imgSrc={card.imgSrc} />
@@ -125,10 +125,10 @@ export default function Home() {
       </div>
 
       <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 init-hidden">
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
           <Image
             className="object-cover w-full h-64"
-            src="./cardInicioM1.jpg"
+            src="./premios/premio1.webp"
             alt="avatar"
             width={500}
             height={224}
@@ -139,21 +139,53 @@ export default function Home() {
             <span className="text-sm text-gray-700 font-sans">Categoria - Lançamentos do Ano Solução Completa para Padaria</span>
           </div>
         </div>
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 init-hidden">
+
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
           <Image
             className="object-cover w-full h-64"
-            src="./cardInicioM2.jpg"
+            src="./premios/premio2.webp"
             alt="avatar"
             width={500}
             height={224}
           />
-          
+
           <div className="py-5 text-center p-2">
-            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
+            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">11º Prêmio Mariores e Melhores Fornecedores</a>
             <span className="text-sm text-gray-700 font-sans">Categoria - Soluções & Serviços</span>
           </div>
         </div>
+
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+          <Image
+            className="object-cover w-full h-64"
+            src="./premios/premio3.webp"
+            alt="avatar"
+            width={500}
+            height={224}
+          />
+
+          <div className="py-5 text-center p-2">
+            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
+            <span className="text-sm text-gray-700 font-sans">Categoria - Categoria - Lançamento do Ano</span>
+          </div>
+        </div>
+
+        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+          <Image
+            className="object-cover w-full h-64"
+            src="./premios/premio4.webp"
+            alt="avatar"
+            width={500}
+            height={224}
+          />
+
+          <div className="py-5 text-center p-2">
+            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">Solução Embalagens Inteligentes no PDV</a>
+            <span className="text-sm text-gray-700 font-sans">Premiada pela GS1 BRASIL</span>
+          </div>
+        </div>
       </section>
+
       <section>
         <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
           <div className={`init-hidden w-full`}>

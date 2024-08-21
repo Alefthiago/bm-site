@@ -22,6 +22,7 @@ const PageContact = () => {
             observer.observe(element);
         });
     }, []);
+
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
             <div className="w-full init-hidden">
@@ -80,7 +81,7 @@ const PageContact = () => {
                         <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 init-hidden">
                             <Image
                                 className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
-                                src="./OIP.webp"
+                                src="./bm/OIP.webp"
                                 alt="avatar"
                                 width={500}
                                 height={224}

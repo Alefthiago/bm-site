@@ -18,7 +18,7 @@ const CardDestaques = (props) => {
                     </button>
                 </a>
             </Card>
-            <div className={`md:flex hidden card hover:border-[#D67229] hover:shadow-lg hover:shadow-black/25 hover:cursor-pointer init-hidden max-w-xs`}>
+            <div className={`md:flex hidden card hover:border-[#D67229] hover:shadow-lg hover:shadow-black/25 hover:cursor-pointer init-hidden max-w-xs  hover:scale-105 transition-transform duration-500 ease-in-out`}>
                 <div className="card-details">
                     <Card
                         className="font-mono"
