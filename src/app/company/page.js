@@ -289,11 +289,7 @@ const pageCompany = () => {
             </section> */}
             {/*         mobile.         */}
 
-            <section className={'flex justify-center items-center pb-8'}>
-                <div className={''}>
-                    <Image src={'./bm/BM.png'} alt={'Logo BM Informatica'} width={300} height={100} />
-                </div>
-            </section>
+            
         </section>
     );
 }
