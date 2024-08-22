@@ -45,15 +45,54 @@ export default function Home() {
 
   return (
     <section className={`${Globals.default_style_page}`}>
-      <div className="container mx-auto">
+
+      <section>
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-blue-500">BM Informática</h1>
+
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              Nossos profissionais,
+              especialistas em várias áreas
+              criam soluções que
+              transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
+              Desenvolvimento Desktop, Web e Mobile.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              Get started
+              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              Speak to Sales
+            </a>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex flex-col justify-center items-center">
+            <Image
+              src={'./bm/bmAL.svg'}
+              alt="Logo BMinformatica"
+              width={300}
+              height={300}
+            />
+
+            <h1 className="msg pt-2 text-4xl font-semibold font-sans text-[#0E0E0E]">
+              A Melhor Solução Para o Seu Negócio Aqui
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      {/* <div className="container mx-auto">
         <div className="items-center lg:flex">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full">
             <div className="lg:max-w-lg">
+              <h1 className="init-hidden text-6xl font-semibold font-sans text-blue-500">
+                BM Informática
+              </h1>
+
               <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
                 Encontre a
                 Melhor
-                Solução <br className="hidden md:block" />Para
-                <span className="text-blue-500"> o Seu Negócio Aqui</span>
+                Solução Para o Seu Negócio Aqui.<br className="hidden md:block" />
               </h1>
 
               <p className="init-hidden mt-3 text-gray-600 font-sans">
@@ -99,92 +138,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-      <div className="flex flex-row w-full gap-5 init-hidden md:pt-40 pt-20">
-        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-        <div className="lg:w-[40%] w-[60%] text-center">
-          <h1 className={`font-mono text-4xl font-semibold`}>Destaques</h1>
-        </div>
-        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-      </div>
-
-      <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
-
-        {card_destaques.map((card, index) => (
-          <CardDestaques key={index} imgSrc={card.imgSrc} />
-        ))}
-
-      </section>
-
-      <div className="flex flex-row w-full gap-5 init-hidden pt-20">
-        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-        <div className="lg:w-[40%] w-[60%] text-center">
-          <h1 className={`font-mono text-4xl font-semibold`}>Mensões</h1>
-        </div>
-        <div className={`lg:h-[5px] h-[3px] w-[100%] bg-[#A55820] rounded-[7px] mt-4`}></div>
-      </div>
-
-      <section className={`grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 pt-20`}>
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-          <Image
-            className="object-cover w-full h-64"
-            src="./premios/premio1.webp"
-            alt="avatar"
-            width={500}
-            height={224}
-          />
-
-          <div className="py-5 text-center p-2">
-            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
-            <span className="text-sm text-gray-700 font-sans">Categoria - Lançamentos do Ano Solução Completa para Padaria</span>
-          </div>
-        </div>
-
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-          <Image
-            className="object-cover w-full h-64"
-            src="./premios/premio2.webp"
-            alt="avatar"
-            width={500}
-            height={224}
-          />
-
-          <div className="py-5 text-center p-2">
-            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">11º Prêmio Mariores e Melhores Fornecedores</a>
-            <span className="text-sm text-gray-700 font-sans">Categoria - Soluções & Serviços</span>
-          </div>
-        </div>
-
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-          <Image
-            className="object-cover w-full h-64"
-            src="./premios/premio3.webp"
-            alt="avatar"
-            width={500}
-            height={224}
-          />
-
-          <div className="py-5 text-center p-2">
-            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">10º Prêmio Mariores e Melhores Fornecedores</a>
-            <span className="text-sm text-gray-700 font-sans">Categoria - Categoria - Lançamento do Ano</span>
-          </div>
-        </div>
-
-        <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg init-hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-          <Image
-            className="object-cover w-full h-64"
-            src="./premios/premio4.webp"
-            alt="avatar"
-            width={500}
-            height={224}
-          />
-
-          <div className="py-5 text-center p-2">
-            <a href="#" className="block text-xl font-bold text-gray-800 font-mono" role="link">Solução Embalagens Inteligentes no PDV</a>
-            <span className="text-sm text-gray-700 font-sans">Premiada pela GS1 BRASIL</span>
-          </div>
-        </div>
-      </section>
+      </div> */}
 
       <section>
         <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>
