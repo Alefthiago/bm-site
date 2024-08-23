@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#backs{
+  
+}
+
 @media (min-width: 1024px) {
   .index-mobile {
     display: none;

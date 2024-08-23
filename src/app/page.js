@@ -1,13 +1,16 @@
 'use client';
 // UTIL //
+
+import { List } from "flowbite-react";
+import { HiCheckCircle } from "react-icons/hi";
 import Image from "next/image";
 import { useEffect } from "react";
 import { Banner } from "flowbite-react";
 import { HiArrowRight } from "react-icons/hi";
-// import { Card } from "flowbite-react";
 import Globals from "@/components/globals";
-
-import CardDestaques from '@/components/cardDestaques';
+import { Carousel } from "flowbite-react";
+// import { Card } from "flowbite-react";
+// import CardDestaques from '@/components/cardDestaques';
 // import CardInicio from "@/components/cardHome"; 
 // UTIL. //
 
@@ -45,100 +48,149 @@ export default function Home() {
 
   return (
     <section className={`${Globals.default_style_page}`}>
-
+      <svg className="absolute top-0 -z-10" viewBox="0 0 2560 1156" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H2560V724L0 1156V0Z" fill="#206BA5" />
+      </svg>
       <section>
-        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-blue-500">BM Informática</h1>
+        <div className="max-w-screen-xl px-4 mx-auto md:flex gap-10">
+          <div className="mr-auto place-self-center max-w-screen pb-10">
+            <div className="flex mb-2 gap-2">
+              <h1 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-blue-500">BM Informática</h1>
+            </div>
 
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
               Nossos profissionais,
               especialistas em várias áreas
               criam soluções que
               transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
               Desenvolvimento Desktop, Web e Mobile.
             </p>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-              Get started
-              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-              Speak to Sales
+            <a href="#" className="inline-flex items-center justify-center px-5 py-3 md:mt-2 mt-5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+              Contratar
             </a>
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex flex-col justify-center items-center">
-            <Image
-              src={'./bm/bmAL.svg'}
-              alt="Logo BMinformatica"
-              width={300}
-              height={300}
-            />
 
-            <h1 className="msg pt-2 text-4xl font-semibold font-sans text-[#0E0E0E]">
-              A Melhor Solução Para o Seu Negócio Aqui
-            </h1>
+          <div className="lg:col-span-5 flex flex-col justify-center items-center">
+            <svg width="100%" height="402" viewBox="0 0 401 422" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M113.943 124.195C109.746 151.238 82.5379 169.467 53.1719 164.909C70.9506 102.981 3.40226 134.734 7.59919 107.691C11.7961 80.6479 43.0768 43.9967 68.3703 66.9769C60.5424 127.942 118.14 97.1517 113.943 124.195Z" fill="#D67229" />
+              <path d="M393.726 285.844C390.097 309.229 362.033 324.288 331.043 319.478C332.432 292.5 278.432 303 279.932 268C281.432 233 316.944 214.089 344.186 234.794C355.432 279 397.356 262.459 393.726 285.844Z" fill="#D67229" />
+
+              <g className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                <rect x="55.9317" width="300" height="100" rx="20" fill="#D9D9D9" />
+                <text
+                  x="205.9317" // Coordenada X centralizada no retângulo (55.9317 + 150)
+                  y="50" // Coordenada Y centralizada no retângulo (altura 100 / 2)
+                  textAnchor="middle"
+                  alignmentBaseline="middle"
+                  fill="#000"
+                  fontSize="16"
+                  fontFamily="Arial, sans-serif"
+                >
+                  Sistemas ERP/PAF-ECF/NFC-E
+                </text>
+              </g>
+
+              <g className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                <path d="M55.9317 167C55.9317 155.954 64.886 147 75.9317 147H335.932C346.977 147 355.932 155.954 355.932 167V227C355.932 238.046 346.977 247 335.932 247H75.9317C64.886 247 55.9317 238.046 55.9317 227V167Z" fill="#D9D9D9" />
+                <text
+                  x="205.9317" // Coordenada X centralizada no caminho (75.9317 + 150)
+                  y="197" // Coordenada Y centralizada no caminho (147 + 50)
+                  textAnchor="middle"
+                  alignmentBaseline="middle"
+                  fill="#000"
+                  fontSize="16"
+                  fontFamily="Arial, sans-serif"
+                >
+                  Desktop, Web e Mobile
+                </text>
+              </g>
+
+              <g className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                <rect x="55.9317" y="294" width="300" height="100" rx="20" fill="#D9D9D9" />
+                <text
+                  x="205.9317" // Coordenada X centralizada no retângulo (55.9317 + 150)
+                  y="344" // Coordenada Y centralizada no retângulo (294 + 50)
+                  textAnchor="middle"
+                  alignmentBaseline="middle"
+                  fill="#000"
+                  fontSize="16"
+                  fontFamily="Arial, sans-serif"
+                >
+                  Automação Comercial
+                </text>
+              </g>
+
+              <defs>
+                <filter id="filter0_d_417_272" x="51.9317" y="0" width="308" height="108" filterUnits="userSpaceOnUse">
+                  <feFlood result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_417_272" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_417_272" result="shape" />
+                </filter>
+                <filter id="filter1_d_417_272" x="51.9317" y="294" width="308" height="108" filterUnits="userSpaceOnUse">
+                  <feFlood result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_417_272" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_417_272" result="shape" />
+                </filter>
+                <filter id="filter2_d_417_272" x="51.9317" y="147" width="308" height="108" filterUnits="userSpaceOnUse">
+                  <feFlood result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_417_272" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_417_272" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+
           </div>
         </div>
       </section>
 
-      {/* <div className="container mx-auto">
-        <div className="items-center lg:flex">
-          <div className="w-full">
-            <div className="lg:max-w-lg">
-              <h1 className="init-hidden text-6xl font-semibold font-sans text-blue-500">
-                BM Informática
-              </h1>
+      <div className="h-[400px] w-full pt-5">
+        <Carousel slideInterval={3000}>
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+        </Carousel>
+      </div>
 
-              <h1 className="init-hidden text-4xl font-semibold font-sans text-[#0E0E0E]">
-                Encontre a
-                Melhor
-                Solução Para o Seu Negócio Aqui.<br className="hidden md:block" />
-              </h1>
+      <section className="md:block hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer pb-16">
+        <div className="max-w-6xl px-6">
+          <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
+            <div className="absolute w-full bg-[#206BA5] -z-10 md:h-96 rounded-2xl"></div>
+            <div className="w-full p-6 bg-[#206BA5] md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+              <img className="md:block hidden h-34 w-24 md:mx-6 rounded-full shadow-md md:h-[30rem] md:w-80 md:rounded-2xl" src="./bm/bmvdo.gif" alt="client photo" />
 
-              <p className="init-hidden mt-3 text-gray-600 font-sans">
-                Nossos profissionais,
-                especialistas em várias áreas
-                criam soluções que
-                transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
-                Desenvolvimento Desktop, Web e Mobile.
-              </p>
-              <div className="pt-5 init-hidden">
-                <a href="https://wa.me/5581988049715" target="_blank">
-                  <button className={`button`}>
-                    <div className="svg-wrapper-1">
-                      <div className="svg-wrapper">
-                        <svg
-                          className={"text-[#F8F8F8]"}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="30"
-                          height="30"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path
-                            fill="currentColor"
-                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <span className={`font-mono text-[#F8F8F8]`}>Contratar</span>
-                  </button>
-                </a>
+              <div className="mt-2 md:mx-6">
+                <List className="text-blue-200">
+                  <List.Item icon={HiCheckCircle}>Controle de Estoque</List.Item>
+                  <List.Item icon={HiCheckCircle}>Totens de Autoatendimento</List.Item>
+                  <List.Item icon={HiCheckCircle}>Produção</List.Item>
+                  <List.Item icon={HiCheckCircle}>Financeiro</List.Item>
+                  <List.Item icon={HiCheckCircle}>Fidelização</List.Item>
+                  <List.Item icon={HiCheckCircle}>PDV Móvel</List.Item>
+                  <List.Item icon={HiCheckCircle}>Gestão de Comissões</List.Item>
+                  <List.Item icon={HiCheckCircle}>Dashboard Intuitivo</List.Item>
+                </List>
               </div>
             </div>
-          </div>
-
-          <div className="init-hidden md:flex hidden items-center justify-center w-full mt-20 lg:mt-0 lg:w-1/2 pr-1 pl-1">
-            <Image
-              src={'./bm/BM.svg'}
-              alt="Logo BMinformatica"
-              width={800}
-              height={800}
-            />
-          </div>
+          </main>
         </div>
-      </div> */}
+      </section>
 
       <section>
         <div className={`w-full md:text-center text-left md:text-2xl text-[18px] raleway-medium flex-col items-center md:pt-32 pt-20`}>

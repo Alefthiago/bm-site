@@ -47,7 +47,7 @@ const pageCompany = () => {
     return (
         <section className="flex min-h-screen flex-col items-center gap-0 md:gap-12">
             {/*     DESKTOP     */}
-            <section className="md:block hidden  hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+            <section className="md:block hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                 <div className="max-w-6xl px-6">
                     <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
                         <div className="absolute w-full bg-[#206BA5] -z-10 md:h-96 rounded-2xl"></div>
