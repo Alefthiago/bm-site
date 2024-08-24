@@ -55,22 +55,21 @@ export default function Home() {
         <div className="max-w-screen-xl px-4 mx-auto md:flex gap-10">
           <div className="mr-auto place-self-center max-w-screen pb-10">
             <div className="flex mb-2 gap-2">
-              <h1 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-blue-500">BM Informática</h1>
+              <h1 className="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#111111] archivo-black-bold">BM INFORMÁTICA</h1>
             </div>
 
-            <p className="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+            <p className="max-w-2xl font-light text-[#111111] lg:mb-8 md:text-lg lg:text-xl raleway-regular">
               Nossos profissionais,
               especialistas em várias áreas
               criam soluções que
-              transformam seu dia a dia com sistemas ERP/PAF-ECF/NFC-E Automação Comercial
-              Desenvolvimento Desktop, Web e Mobile.
+              transformam seu dia a dia.
             </p>
-            <a href="#" className="inline-flex items-center justify-center px-5 py-3 md:mt-2 mt-5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+            <a href="#" className="archivo-black-bold inline-flex items-center justify-center px-8 py-3 md:mt-2 mt-5 text-base font-medium text-center bg-[#D67229] text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 hover:scale-105 transition-transform duration-500 ease-in-out">
               Contratar
             </a>
           </div>
 
-          <div className="lg:col-span-5 flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
             <svg width="100%" height="402" viewBox="0 0 401 422" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M113.943 124.195C109.746 151.238 82.5379 169.467 53.1719 164.909C70.9506 102.981 3.40226 134.734 7.59919 107.691C11.7961 80.6479 43.0768 43.9967 68.3703 66.9769C60.5424 127.942 118.14 97.1517 113.943 124.195Z" fill="#D67229" />
               <path d="M393.726 285.844C390.097 309.229 362.033 324.288 331.043 319.478C332.432 292.5 278.432 303 279.932 268C281.432 233 316.944 214.089 344.186 234.794C355.432 279 397.356 262.459 393.726 285.844Z" fill="#D67229" />
@@ -85,6 +84,7 @@ export default function Home() {
                   fill="#000"
                   fontSize="16"
                   fontFamily="Arial, sans-serif"
+                  fontWeight="bold"
                 >
                   Sistemas ERP/PAF-ECF/NFC-E
                 </text>
@@ -100,6 +100,7 @@ export default function Home() {
                   fill="#000"
                   fontSize="16"
                   fontFamily="Arial, sans-serif"
+                  fontWeight="bold"
                 >
                   Desktop, Web e Mobile
                 </text>
@@ -115,6 +116,7 @@ export default function Home() {
                   fill="#000"
                   fontSize="16"
                   fontFamily="Arial, sans-serif"
+                  fontWeight="bold"
                 >
                   Automação Comercial
                 </text>
@@ -158,13 +160,13 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="h-[400px] w-full pt-5">
+      <div className="h-[400px] w-full">
         <Carousel slideInterval={3000}>
+          <img src="./destaques/datacash.webp" alt="Datacash" />
+          <img src="./destaques/pdv.webp" alt="PDV - NFCE" />
+          {/* <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
           <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
-          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
-          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
-          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
-          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." />
+          <img src="./MacBook Pro 16 inch Right View Mockup (1).png" alt="..." /> */}
         </Carousel>
       </div>
 
