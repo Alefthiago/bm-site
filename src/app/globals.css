@@ -3,6 +3,46 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.divider-bottom {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 0; */
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 160px;
+}
+
+.divider-bottom .shape-fill {
+  fill: #FFFFFF;
+}
+
+.divider-top {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 160px;
+}
+
+.divider-top .shape-fill {
+  fill: #FFFFFF;
+}
 
 .archivo-black-bold {
   font-family: "Archivo Black", sans-serif;

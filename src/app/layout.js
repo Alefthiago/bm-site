@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       </Head> */}
       <body className={inter.className}>
         <NavbarApp />
-        <main className={'mx-auto lg:w-4/5 h-full container'}>
+        <main className={'mx-auto h-full'}>
           {children}
         </main>
         <Footers />
