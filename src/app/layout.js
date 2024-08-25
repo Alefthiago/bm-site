@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
       </Head> */}
       <body className={inter.className}>
         <NavbarApp/>
-        <div className="skew-cc"></div>
         <main className={'mx-auto h-full'}>
+        <div className="skew-cc lg:block hidden"></div>
           {children}
         </main>
         <Footers />
