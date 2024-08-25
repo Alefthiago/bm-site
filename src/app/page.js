@@ -99,7 +99,7 @@ export default function Home() {
 
               <div className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                 <div className="w-8 h-8">
-                  <MdOutlineCloudDone  className="w-8 h-8"/>
+                  <MdOutlineCloudDone className="w-8 h-8" />
                 </div>
 
                 <h1 className="mt-4 text-xl font-semibold">Computação em Nuvem</h1>
@@ -122,14 +122,14 @@ export default function Home() {
       </section>
       {/*    /EMPRESA.     */}
 
-      <div className="divider-top w-full bg-[#206BA5]">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
-        </svg>
-      </div>
 
       {/*     DESTAQUES.     */}
       <section className="w-full bg-[#206BA5]">
+        <div className="divider-top w-full bg-[#206BA5]">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+          </svg>
+        </div>
         <section className="container lg:w-3/5 px-6 mx-auto">
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-center text-gray-100 capitalize lg:text-4xl">Sistemas para Automatizar<br /><span className="decoration-gray-100">Seu Negócio</span></h1>
@@ -176,20 +176,20 @@ export default function Home() {
       </section>
       {/*    /DESTAQUES.     */}
 
-      <div className="divider-bottom w-full bg-[#F8F8F8]">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
-        </svg>
-      </div>
 
       {/* <div className="divider-bottom bg-[#206BA5]">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
         </svg>
-      </div> */}
+        </div> */}
 
       {/*     SERVIÇOS.     */}
       <section className="w-full bg-transparent">
+        <div className="divider-bottom w-full bg-[#F8F8F8]">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+          </svg>
+        </div>
         <section className="container lg:w-3/5 px-6 mx-auto">
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-center text-[#206BA5] capitalize lg:text-4xl">Emissão Facilitada e Segura de <br /><span> Documentos Fiscais Eletrônicos</span></h1>
