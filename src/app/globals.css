@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.divider-bottom {
+/* .divider-bottom {
   top: 0;
   left: 0;
   width: 100%;
@@ -28,7 +28,7 @@
       width: calc(125% + 1.3px);
       height: 49px;
   }
-}
+} */
 .divider-top {
   top: 0;
   left: 0;
