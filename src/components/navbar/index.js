@@ -104,9 +104,9 @@ const NavbarApp = () => {
             </div>
             <Navbar.Collapse className={`md:block hidden font-sans`}>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={`/`} className={`${navbar_link}`}>
+                <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={`/`} className={`${navbar_link}`}> */}
                     {verifyRoute('/') == 'text-[#D67229]'
                         ?
                         <Kbd className={` ${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -119,9 +119,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/bm-site/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
+                <Navbar.Link href={'/bm-site/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}> */}
                     {verifyRoute('/solutions') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -134,9 +134,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
+                <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
                     {verifyRoute('/equipment') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -149,9 +149,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/bm-site/company'} className={`${navbar_link} ${verifyRoute('/company')}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={'/company'} className={`${navbar_link} ${verifyRoute('/company')}`}>
+                <Navbar.Link href={'/bm-site/company'} className={`${navbar_link} ${verifyRoute('/company')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/company'} className={`${navbar_link} ${verifyRoute('/company')}`}> */}
                     {verifyRoute('/company') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/company') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -164,9 +164,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/bm-site/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={'/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}>
+                <Navbar.Link href={'/bm-site/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}> */}
                     {verifyRoute('/contact') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/contact') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -179,9 +179,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/bm-site/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}> */}
-                {/*    /PARA PRODUCAO       */}
-                <Navbar.Link href={'/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}>
+                <Navbar.Link href={'/bm-site/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}> */}
                     {verifyRoute('/suport') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verifyRoute('/suport') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
