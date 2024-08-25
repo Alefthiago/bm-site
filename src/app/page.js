@@ -146,7 +146,7 @@ export default function Home() {
                     <p className="mt-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
                   </div> */}
 
-                  <img className="object-cover w-full h-90" src={card.imgSrc} alt="NIKE AIR" />
+                  <img className="object-cover w-full h-90" src={card.imgSrc} />
 
                   <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
                     <h1 className="text-lg font-bold text-white">{card.texto}</h1>
