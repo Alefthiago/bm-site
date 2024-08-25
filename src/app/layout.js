@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       </Head> */}
       <body className={inter.className}>
-        <NavbarApp />
+        <NavbarApp className="sticky"/>
         <main className={'mx-auto h-full'}>
           {children}
         </main>

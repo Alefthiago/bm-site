@@ -5,13 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .divider-bottom {
-  /* position: absolute; */
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
 .divider-bottom svg {
@@ -22,7 +20,7 @@
 }
 
 .divider-bottom .shape-fill {
-  fill: #FFFFFF;
+  fill: #206BA5;
 }
 
 @media (max-width: 767px) {
@@ -32,13 +30,11 @@
   }
 }
 .divider-top {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
-  line-height: 0;
-  
+  line-height: 0; 
 }
 
 .divider-top svg {
@@ -49,7 +45,7 @@
 }
 
 .divider-top .shape-fill {
-  fill: #FFFFFF;
+  fill: #F8F8F8;
 }
 
 @media (max-width: 767px) {
