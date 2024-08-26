@@ -6,27 +6,18 @@ import Image from "next/image";
 import { Tabs } from "flowbite-react";
 import { FaEye } from "react-icons/fa"
 import { BsBullseye, BsHeartFill } from "react-icons/bs";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { BsInstagram } from "react-icons/bs";
 // import { HiAdjustments, HiUserCircle } from "react-icons/hi";
 // import { MdDashboard } from "react-icons/md";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 //     /UTIL.       //
 
-//      STYLES.     //
-// let h3_text = "text-5xl font-bold text-center";
-// let informativo = " flex text-[#316994] pl-12 text-justify w-[90%] md:w-[100%]";
-// let info = "text-[#316994] text-lg";
-// let div_inner = "pl-5 flex flex-col justify-center items-center gap-5";
-// let section_valores = "text-justify w-1/3";
-// let container_empresa = "flex-row justify-between w-full pl-4 md:flex hidden pt-20";
-let titulo = "text-xl font-bold text-center";
-let div_inner_carrosel = "pl-5 flex flex-col justify-center items-center gap-1 h-[50%]";
-let info_carrosel = "text-[#316994] text-sm text-center";
-let svg_icon = "border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center"
-//     /STYLES.     //
-
 const pageCompany = () => {
+    const [tabsP, setTab] = useState(1);
 
     // useEffect(() => {
     //     const observer = new IntersectionObserver((entries) => {
@@ -44,252 +35,138 @@ const pageCompany = () => {
     //     });
     // }, []);
 
-    return (
-        <section className="flex min-h-screen flex-col items-center gap-0 md:gap-12">
-            {/*     DESKTOP     */}
-            <section className="md:block hidden hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                <div className="max-w-6xl px-6">
-                    <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-                        <div className="absolute w-full bg-[#206BA5] -z-10 md:h-96 rounded-2xl"></div>
-                        <div className="w-full p-6 bg-[#206BA5] md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-                            <img className="md:block hidden h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src="./bm/bmvdo.gif" alt="client photo" />
-                            {/* <img className="h-24 w-24 rounded-full object-cover shadow-md md:hidden block" src={'./lgbranco.svg'} alt="client photo" /> */}
-                            <div className="mt-2 md:mx-6">
-                                <div>
-                                    <p className="text-xl font-medium tracking-tight text-[#fffafa]">BM Informática</p>
-                                    <p className="text-blue-200 ">Quem Somos</p>
-                                </div>
 
-                                <p className="mt-4 text-lg leading-relaxed text-[#fffafa]">
-                                    A fundada em 1998 com a missão de transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de seus clientes. Oferecemos assessoria especializada, suporte contínuo e desenvolvimento de sistemas utilizando as mais modernas tecnologias.
+    return (
+        <section className="flex min-h-screen flex-col items-center">
+            <section>
+                <div className="container px-6 py-10 mx-auto">
+                    <p className="text-xl font-medium text-blue-500 ">A Empresa</p>
+
+                    <h1 className="mt-2 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+                        Quem Somos
+                    </h1>
+
+                    <div className="lg:-mx-6 lg:flex lg:items-center">
+                        <img className="object-center lg:w-1/2 lg:mx-6 w-full h-52 rounded-lg lg:h-[36rem]" src="./bm/BM.svg" alt="" />
+
+                        <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                            <p className="text-5xl font-semibold text-blue-500 ">“</p>
+
+                            <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl lg:w-96">
+                                A Melhor Solução para o Seu Negocio aqui
+                            </h1>
+
+                            <p className="max-w-lg mt-6 text-gray-500">
+                                A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
+                            </p>
+
+                            <h3 className="mt-6 text-lg font-medium text-blue-500">Solicite demonstrações sem compromisso</h3>
+                            <p className="text-gray-600 flex items-center">
+                                <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                            </p>
+                            <p className="text-gray-600 flex items-center">
+                                <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                            </p>
+                            <p className="text-gray-600 flex items-center">
+                                <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                            </p>
+                            <p className="text-gray-600 flex items-center">
+                                <IoLogoWhatsapp /> &nbsp; (81) 9 8804-9715
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="skew-c"></div>
+
+            {/*         MISSAO, VISAO E VALORES         */}
+            <section className="w-full bg-[#206BA5]">
+                <section>
+                    <div className="container px-6 py-10 mx-auto">
+                        <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl">Nossos Princípios</h1>
+
+                        <div className="flex justify-center mx-auto mt-6">
+                            <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
+                            <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
+                            <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
+                        </div>
+
+
+                        <p className="max-w-2xl mx-auto my-6 text-center text-[#F8F8F8]">
+                            Acreditamos no poder da transformação através da inovação e qualidade. Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
+                        </p>
+
+                        <div className="flex items-center justify-center">
+                            <div className="flex items-center p-1 border border-[#D67229] rounded-xl">
+                                <button onClick={() => setTab(0)} className={`px-4 py-2 text-sm font-medium ${tabsP == 0 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>Missão</button>
+                                <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-sm font-medium ${tabsP == 1 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>Visão</button>
+                                <button onClick={() => setTab(2)} className={`px-4 py-2 text-sm font-medium ${tabsP == 2 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} ${tabsP == 2 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:px-12`}>Valores</button>
+                            </div>
+                        </div>
+
+                        <section className={`${tabsP == 0 ? '' : 'hidden'}`}>
+                            <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+                                <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl">
+                                    Missão
+                                </h2>
+
+                                <p className="max-w-4xl mt-6 text-center text-[#F8F8F8]">
+                                    Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
                                 </p>
                             </div>
-                        </div>
-                    </main>
-                </div>
-            </section>
-            {/*    /DESKTOP     */}
+                        </section>
 
-            {/*     MOBILE     */}
-            <section>
-                <div className="container px-6 py-16 mx-auto md:hidden block ">
-                    <div className="items-center lg:flex">
-                        <div className="w-full lg:w-1/2">
-                            <div className="lg:max-w-lg">
-                                <h1 className="text-xl font-semibold text-gray-800">Quem Somos <br /> <span className="text-blue-500 text-4xl">BM Informática</span></h1>
-                                <p className="mt-3 text-gray-600 dark:text-gray-400"> A fundada em 1998 com a missão de transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de seus clientes. Oferecemos assessoria especializada, suporte contínuo e desenvolvimento de sistemas utilizando as mais modernas tecnologias.</p>
+                        <section className={`${tabsP == 1 ? '' : 'hidden'}`}>
+                            <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+                                <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl">
+                                    Visão
+                                </h2>
+
+                                <p className="max-w-4xl mt-6 text-center text-[#F8F8F8]">
+                                    Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
+                                </p>
                             </div>
-                        </div>
+                        </section>
 
-                        <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-                            <img className="md:mx-6 shadow-md h-[42rem] w-[26rem] rounded-2xl" src="./bm/bmvdo.gif" alt="client photo" />
-                        </div>
+                        <section className={`${tabsP == 2 ? '' : 'hidden'}`}>
+                            <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+                                <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl">
+                                    Valores
+                                </h2>
+
+                                <p className="max-w-4xl mt-6 text-center text-[#F8F8F8]">
+                                    Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação.
+                                </p>
+                            </div>
+                        </section>
                     </div>
-                </div>
+                </section>
             </section>
-            {/*    /MOBILE     */}
+            {/*        /MISSAO, VISAO E VALORES         */}
 
-            {/* <section className="flex flex-col  w-full max-w-screen-lg gap-12 ">
-                <div className={`${h3_text}`}>
-                    <h3>Quem Somos</h3>
-                </div>
-                <div className={`${informativo}`}>
-                    <p>A BM Informática foi fundada em 1998 com a missão de transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de seus clientes. Oferecemos assessoria especializada, suporte contínuo e desenvolvimento de sistemas utilizando as mais modernas tecnologias, sempre com o objetivo de maximizar a efetividade dos resultados.</p>
-                </div>
-            </section> */}
+            <div className="skew-cc"></div>
 
-            {/*         desktop.         */}
-            <div className="items-center justify-center gap-8 text-center xl:flex-wrap xl:flex hidden w-full">
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 className="py-4 text-2xl font-semibold sm:text-xl text-[#fffafa]">
-                        Missão
-                    </h3>
-                    <p className="py-4 text-md text-[#fffafa]">
-                        Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
-                    </p>
-                </div>
+            <section className="container px-6 py-10">
+                <section>
+                    <div className="h-[32rem]">
+                        <div className="container px-6 py-10 mx-auto">
+                            <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
 
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-eye-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 className="py-4 text-2xl font-semibold sm:text-xl text-[#fffafa]">
-                        Visão
-                    </h3>
-                    <p className="py-4 text-md text-[#fffafa]">
-                        Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
-                    </p>
-                </div>
+                            <div className="flex justify-center mx-auto mt-6">
+                                <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                                <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                                <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                            </div>
 
-                <div className="w-full min-h-[400px] max-h-[400px] px-4 py-4 mt-6 bg-[#206BA5] rounded-lg shadow-lg md:w-1/4 hover:cursor-pointer  hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 mx-auto text-[#fffafa] bg-[#A55820] rounded-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 className="py-4 text-2xl font-semibold sm:text-xl text-[#fffafa]">
-                        Valores
-                    </h3>
-                    <p className="py-4 text-md text-[#fffafa]">
-                        Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação.
-                    </p>
-                </div>
-            </div>
-
-            <div className="overflow-x-auto p-10 xl:hidden block">
-                <Tabs aria-label="Full width tabs" variant="fullWidth">
-                    <Tabs.Item title="Visão" icon={FaEye}>
-                        <div className="p-4 text-center py-7 px-5 ">
-                            <h1 className="text-xl font-bold text-gray-800">
-                                Visão
-                            </h1>
-                            <p className="mt-2 text-gray-500">
-                                Transformar a informática em uma poderosa ferramenta estratégica, que impulsione o sucesso dos negócios de nossos clientes. Oferecemos assessoria especializada, suporte contínuo e desenvolvimento de sistemas, utilizando tecnologias de ponta para garantir soluções inovadoras e eficazes. Nosso compromisso é proporcionar um diferencial competitivo, ajudando as empresas a alcançarem seus objetivos com eficiência e excelência.
-                            </p>
-                            {/* <a className="mt-3 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                                Go somewhere
-                            </a> */}
-                        </div>
-                    </Tabs.Item>
-
-                    <Tabs.Item active title="Missão" icon={BsBullseye}>
-                        <div className="p-4 text-center py-7 px-5 ">
-                            <h1 className="text-xl font-bold text-gray-800">
-                                Missão
-                            </h1>
-                            <p className="mt-2 text-gray-500">
-                                Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
+                            <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
                             </p>
                         </div>
-                    </Tabs.Item>
-
-                    <Tabs.Item title="Valores" icon={BsHeartFill}>
-                        <div className="p-4 text-center py-7 px-5 ">
-                            <h1 className="text-xl font-bold text-gray-800">
-                                Valores
-                            </h1>
-                            <p className="mt-2 text-gray-500">
-                                Nosso compromisso inabalável com a qualidade é a base de tudo o que fazemos. Buscamos constante inovação em nossas soluções, sempre focados em superar as expectativas. Oferecemos um atendimento personalizado que compreende e atende às necessidades específicas de cada cliente, garantindo não apenas o sucesso, mas também a plena satisfação em cada interação. Nosso objetivo é ser mais que um fornecedor, mas um verdadeiro parceiro no crescimento e sucesso de nossos clientes.
-                            </p>
-                        </div>
-                    </Tabs.Item>
-                </Tabs>
-            </div>
-
-            {/* <section className={`${container_empresa}`}>
-                <section className={`${section_valores}`}>
-                    <div className={`${div_inner}`}>
-                        <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <h1 className={`${titulo}`}>Missão</h1>
-                        <p className={`${info}`}>
-                            Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
-                        </p>
                     </div>
                 </section>
-                <section className={`${section_valores}`}>
-                    <div className={`${div_inner}`}>
-                        <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-eye-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                            </svg>
-                        </div>
-                        <h1 className={`${titulo}`}>Visão</h1>
-                        <p className={`${info}`}>
-                            Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
-                        </p>
-                    </div>
-                </section>
-                <section className={`${section_valores}`}>
-                    <div className={`${div_inner}`}>
-                        <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                            </svg>
-                        </div>
-                        <h1 className={`${titulo}`}>Valores</h1>
-                        <p className={`${info}`}>
-                            Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente e um foco contínuo na maximização da efetividade dos resultados, garantindo sucesso e satisfação.
-                        </p>
-                    </div>
-                </section>
-            </section> */}
-            {/*        /desktop.         */}
+            </section>
 
-            {/*         mobile.         */}
-            {/* <section className="w-full 2xl:hidden">
-                <div className="h-80">
-                    <Carousel slideInterval={2000} leftControl rightControl >
-                        <div className="flex  items-center justify-center bg-re w-[80%]">
-                            <section className="w-[80%]">
-                                <div className={`${div_inner_carrosel}`}>
-                                    <div className={`${svg_icon}`}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                    </div>
-                                    <h1 className={`${titulo}`}>Missão</h1>
-                                    <p className={`${info_carrosel}`}>
-                                        Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
-                                    </p>
-                                </div>
-                            </section>
-                        </div>
-                        <div className="flex h-full items-center justify-center w-[70%] pr-4">
-                            <section >
-                                <div className={`${div_inner_carrosel}`}>
-                                    <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-eye-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                        </svg>
-                                    </div>
-                                    <h1 className={`${titulo}`}>Visão</h1>
-                                    <p className={`${info_carrosel}`}>
-                                        Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
-                                    </p>
-                                </div>
-                            </section>
-                        </div>
-                        <div className="flex h-full items-center justify-center w-[70%] pr-4">
-                            <section >
-                                <div className={`${div_inner_carrosel}`}>
-                                    <div className="border-2 bg-[#A55820] rounded-full w-12 h-12 flex justify-center items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-fill text-[#ffffff]" viewBox="0 0 16 16">
-                                            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
-                                        </svg>
-                                    </div>
-                                    <h1 className={`${titulo}`}>Valores</h1>
-                                    <p className={`${info_carrosel}`}>
-                                        Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente e um foco contínuo na maximização da efetividade dos resultados, garantindo sucesso e satisfação.
-                                    </p>
-                                </div>
-                            </section>
-                        </div>
-                    </Carousel>
-                </div>
-            </section> */}
-            {/*         mobile.         */}
-
-            
         </section>
     );
 }
