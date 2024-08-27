@@ -151,7 +151,7 @@ const PageCompany = () => {
                 <section>
                     <div className="h-[32rem]">
                         <div className="container px-6 py-10 mx-auto">
-                            <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
+                            <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Automação e Suporte Empresarial</h1>
 
                             <div className="flex justify-center mx-auto mt-6">
                                 <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
@@ -160,7 +160,7 @@ const PageCompany = () => {
                             </div>
 
                             <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                                Sediada em Recife-PE, a BM Informática tem como principais atribuições o desenvolvimento de produtos e serviços voltados para automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança, bem como a preparação de treinamento, documentação, implantação, análise e suporte aos sistemas que desenvolve e comercializa. Dispomos de profissionais especializados nos diversos ramos de nossa atuação, que se propõem a demonstrar todas as facilidades que oferecemos, tanto em termos de qualidade como em preços.
                             </p>
                         </div>
                     </div>
