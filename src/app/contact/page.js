@@ -10,26 +10,31 @@ const PageContact = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        Globals.observer(setIsLoading);
+        setInterval(() => setIsLoading(false), 500);
     }, []);
+
+    useEffect(() => {
+        Globals.observer(setIsLoading);
+    }, [isLoading]);
+
 
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
             {isLoading ? (
                 <div className="flex justify-center items-center min-h-screen absolute">
                     <svg width="100" height="100" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-jump animate-infinite animate-duration-1000 animate-delay-500">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M157.176 4.55984C79.5307 22.1808 19.2564 84.9109 3.38029 161.347C-0.993846 182.415 -1.14817 221.375 3.06502 241.245C10.7793 277.628 27.6144 309.953 52.6179 336.391C92.9905 379.074 141.732 400.039 200.507 400C230.903 399.98 246.769 397.032 275.348 386.1C333.654 363.791 380.065 310.283 396.073 246.916C401.81 224.199 401.153 174.169 394.81 151.049C384.018 111.697 358.185 72.0998 327.141 47.3241C308.941 32.7981 273.659 12.5151 252.318 6.6706C223.777 -1.14538 179.683 -2.40663 157.176 4.55984ZM243.744 62.4187C263.899 72.2638 279.713 94.441 279.828 113.02C279.874 120.746 280.108 120.958 289.998 122.301C311.701 125.254 331.31 139.137 342.051 159.161C346.225 166.937 347.087 171.922 347.085 188.233C347.078 217.637 345.746 219.507 274.993 289.396C220.561 343.165 213.945 349.001 207.41 349.001C196.947 349.001 187.279 338.919 187.279 328.009C187.279 320.196 190.119 316.976 247.053 260.248C304.483 203.026 306.864 200.32 307.804 191.181C309.049 179.053 302.79 168.503 291.597 163.864C274.801 156.902 273.313 157.941 208.094 222.314C149.468 280.174 148.28 281.194 139.393 281.194C132 281.194 129.306 279.965 124.641 274.463C112.674 260.353 112.809 260.152 177.111 195.983C209.108 164.05 236.391 135.775 237.74 133.148C243.223 122.463 238.829 105.732 228.69 98.6866C223 94.7297 206.817 94.172 199.811 97.6914C197.163 99.0212 168.995 125.794 137.217 157.186C83.2787 210.467 78.9156 214.262 71.5674 214.262C60.7665 214.262 51.9102 205.476 51.9102 194.76C51.9102 187.456 55.8368 183.043 112.429 126.743C145.716 93.6317 176.655 64.6236 181.181 62.2853C201.352 51.8693 222.235 51.9131 243.744 62.4187Z" fill="#206BA5" />
+                        <path d="M157.176 4.55984C79.5307 22.1808 19.2564 84.9109 3.38029 161.347C-0.993846 182.415 -1.14817 221.375 3.06502 241.245C10.7793 277.628 27.6144 309.953 52.6179 336.391C92.9905 379.074 141.732 400.039 200.507 400C230.903 399.98 246.769 397.032 275.348 386.1C333.654 363.791 380.065 310.283 396.073 246.916C401.81 224.199 401.153 174.169 394.81 151.049C384.018 111.697 358.185 72.0998 327.141 47.3241C308.941 32.7981 273.659 12.5151 252.318 6.6706C223.777 -1.14538 179.683 -2.40663 157.176 4.55984ZM243.744 62.4187C263.899 72.2638 279.713 94.441 279.828 113.02C279.874 120.746 280.108 120.958 289.998 122.301C311.701 125.254 331.31 139.137 342.051 159.161C346.225 166.937 347.087 171.922 347.085 188.233C347.078 217.637 345.746 219.507 274.993 289.396C220.561 343.165 213.945 349.001 207.41 349.001C196.947 349.001 187.279 338.919 187.279 328.009C187.279 320.196 190.119 316.976 247.053 260.248C304.483 203.026 306.864 200.32 307.804 191.181C309.049 179.053 302.79 168.503 291.597 163.864C274.801 156.902 273.313 157.941 208.094 222.314C149.468 280.174 148.28 281.194 139.393 281.194C132 281.194 129.306 279.965 124.641 274.463C112.674 260.353 112.809 260.152 177.111 195.983C209.108 164.05 236.391 135.775 237.74 133.148C243.223 122.463 238.829 105.732 228.69 98.6866C223 94.7297 206.817 94.172 199.811 97.6914C197.163 99.0212 168.995 125.794 137.217 157.186C83.2787 210.467 78.9156 214.262 71.5674 214.262C60.7665 214.262 51.9102 205.476 51.9102 194.76C51.9102 187.456 55.8368 183.043 112.429 126.743C145.716 93.6317 176.655 64.6236 181.181 62.2853C201.352 51.8693 222.235 51.9131 243.744 62.4187Z" fill="#206BA5" />
                     </svg>
                 </div>
             ) : (
                 <>
                     <div className="w-full ">
                         <div className="w-full text-center">
-                            <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E]">
+                            <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] show-right inter-bold">
                                 Contate-nos
                             </h1>
 
-                            <p className="mt-3 text-gray-600 font-sans">
+                            <p className="mt-3 text-gray-600 font-sans show-left inter-regular">
                                 Nós da Bm Informatica teremos prazer em ouvir você
                             </p>
                         </div>
@@ -39,9 +44,9 @@ const PageContact = () => {
                         <div className="container px-6 py-10 mx-auto">
                             <div className="md:flex md:items-center md:-mx-10">
                                 <div className="md:w-1/2 md:mx-10 ">
-                                    <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5]">
-                                        <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl font-mono">Envie sua Mensagem</h1>
-                                        <form className="pt-5">
+                                    <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5] show-right">
+                                        <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl inter-bold">Envie sua Mensagem</h1>
+                                        <form className="pt-5 inter-regular">
                                             <div className="-mx-2 md:items-center md:flex">
                                                 <div className="flex-1 px-2">
                                                     <label className="block mb-2 text-sm text-[#F8F8F8]">Nome</label>
@@ -69,14 +74,14 @@ const PageContact = () => {
                                                 <textarea className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Mensagem"></textarea>
                                             </div>
 
-                                            <button className="font-mono w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] hover:bg-[#C55300] rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                            <button className="inter-bold w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] hover:bg-[#C55300] rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                                 Enviar
                                             </button>
                                         </form>
                                     </div>
                                 </div>
 
-                                <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 ">
+                                <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 show-left">
                                     <Image
                                         className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
                                         src="./bm/OIP.webp"
@@ -84,7 +89,7 @@ const PageContact = () => {
                                         width={500}
                                         height={224}
                                     />
-                                    <div className="mt-6 space-y-8 md:mt-8">
+                                    <div className="mt-6 space-y-8 md:mt-8 inter-regular">
 
                                         <p className="flex items-start -mx-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,7 +145,7 @@ const PageContact = () => {
                                     </div>
 
                                     <div className="mt-6 w-80 md:mt-8 ">
-                                        <h3 className="text-gray-600 font-mono">Siga-nos</h3>
+                                        <h3 className="text-gray-600 inter-bold">Siga-nos</h3>
 
                                         <div className="flex mt-4 -mx-1.5">
                                             <a className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda">
@@ -167,7 +172,7 @@ const PageContact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="overflow-hidden rounded-lg h-auto w-full mb-10">
+                        <div className="overflow-hidden rounded-lg h-auto w-full mb-10 show-top">
                             <iframe width="100%" height="100%" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.845566945619!2d-34.904949224234315!3d-8.11720209191211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fadcaa54637%3A0xbdb1a1182c056086!2sR.%20Padre%20Carapuceiro%2C%20733%20-%20Sala%201001%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051020-280!5e0!3m2!1spt-BR!2sbr!4v1722870633793!5m2!1spt-BR!2sbr"></iframe>
                         </div>
                     </section>
