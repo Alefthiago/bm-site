@@ -10,7 +10,7 @@ import Globals from "@/components/globals";
 
 //     /UTIL.       //
 
-const pageEquipment = () => {
+const PageEquipment = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -129,4 +129,4 @@ const pageEquipment = () => {
     );
 }
 
-export default pageEquipment;
+export default PageEquipment;
