@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 
 //     /UTIL.       //
 
-const pageCompany = () => {
+const PageCompany = () => {
     const [tabsP, setTab] = useState(1);
 
     // useEffect(() => {
@@ -171,4 +171,4 @@ const pageCompany = () => {
     );
 }
 
-export default pageCompany;
+export default PageCompany;
