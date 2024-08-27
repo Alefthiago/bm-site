@@ -61,7 +61,7 @@ export default function Home() {
       observer.observe(element);
     });
 
-    setIsLoading(false);
+    setTimeout(() => setIsLoading(false), 1500);
   }, []);
 
   return (

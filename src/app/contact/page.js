@@ -23,7 +23,8 @@ const PageContact = () => {
         Array.from(document.querySelectorAll('.as')).forEach(element => {
             observer.observe(element);
         });
-        setIsLoading(false);
+        
+        setTimeout(() => setIsLoading(false), 1500);
     }, []);
 
     return (
