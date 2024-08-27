@@ -2,7 +2,7 @@
 // import Globals from "@/components/globals";
 //      UTIL.       //
 import { useState, useEffect } from "react";
-
+import Globals from "@/components/globals";
 import Image from "next/image";
 //     /UTIL.       //
 
@@ -10,21 +10,7 @@ const PageContact = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.intersectionRatio > 0) {
-                    entry.target.classList.add('-off');
-                }
-            });
-        }, {
-            threshold: [0]
-        });
-
-        Array.from(document.querySelectorAll('.as')).forEach(element => {
-            observer.observe(element);
-        });
-        
-        setTimeout(() => setIsLoading(false), 1500);
+        Globals.observer(setIsLoading);
     }, []);
 
     return (
