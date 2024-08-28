@@ -39,7 +39,7 @@ const cardSN = [
 const cardDt = [
   {
     imgSrc: './destaques/bm1.png',
-    texto: 'Solicite uma Demontração',
+    texto: 'Solicite uma Demosntração',
   },
   {
     imgSrc: './destaques/bm2.png',

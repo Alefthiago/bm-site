@@ -24,7 +24,7 @@ const PageSoluctions = () => {
             imgSrc: "./solucoes/supermercado.webp",
             nome: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis.",
             titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado! Controle estoque, acompanhe vendas em tempo real e automatize operações diárias. Relatórios precisos ajudam na tomada de decisões estratégicas, aumentando a eficiência e os lucros. Transforme seu supermercado com nosso ERP!",
-            // link: "https://www.exemplo1.com",
+            link: "/products",
             text: "Ver mais"
         },
         {
@@ -32,7 +32,7 @@ const PageSoluctions = () => {
             imgSrc: "./solucoes/padaria.webp",
             nome: "Padarias,Delicatessens e Lojas de Conveniência",
             titulo: "Modernize a gestão da sua padaria ou delicatessen com nosso ERP exclusivo! Gerencie o estoque de ingredientes, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados garantem decisões mais assertivas, aumentando a eficiência e os lucros. Eleve sua padaria com nosso ERP especializado!",
-            // link: "https://www.exemplo2.com",
+            link: "https://www.datapao.com.br/",
             text: "Ver mais"
         },
         {
