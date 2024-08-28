@@ -2,6 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+.skew-c{
+  width:100%;
+  height:100px;
+  /* position:absolute; */
+  /* left:0px; */
+  background: linear-gradient(to right bottom, #F8F8F8 49%, #206BA5 50%), linear-gradient(-50deg, #F8F8F8 16px, #000 0);
+}
+.skew-cc{
+  width:100%;
+  height:100px;
+  /* position:absolute; */
+  /* left:0px; */
+  background: linear-gradient(to right bottom, #206BA5 49%, #F8F8F8 50%), linear-gradient(-50deg, #F8F8F8 16px, #000 0);
+}
+
+/* .divider-bottom {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 100px;
+}
+
+.divider-bottom .shape-fill {
+  fill: #206BA5;
+}
+
+@media (max-width: 767px) {
+  .divider-bottom svg {
+      width: calc(125% + 1.3px);
+      height: 49px;
+  }
+} */
+.divider-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; 
+}
+
+.divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 100px;
+}
+
+.divider-top .shape-fill {
+  fill: #F8F8F8;
+}
+
+@media (max-width: 767px) {
+  .divider-top svg {
+      width: calc(125% + 1.3px);
+      height: 49px;
+  }
+}
+
 @media (min-width: 1024px) {
   .index-mobile {
     display: none;

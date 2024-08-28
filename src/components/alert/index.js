@@ -15,7 +15,7 @@ const Alerts = () => {
             const hora_atual = new Date().getHours();
             const dia_atual = new Date().getDay(); // 0 (Domingo) - 6 (Sábado)
 
-            if (dia_atual >= 1 && dia_atual <= 5) { // Verifica se é um dia útil (segunda a sexta)
+            if (dia_atual >= 1 && dia_atual <= 5) { // (segunda a sexta)
                 if (hora_atual >= 8 && hora_atual < 12) {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
@@ -40,7 +40,7 @@ const Alerts = () => {
                     setSituacao('Fechado');
                     setCorSituacao('text-red-500');
                 }
-            } else if (dia_atual == 6) { // Verifica se é Domingo
+            } else if (dia_atual == 0) { // Verifica se é Domingo
                 if (hora_atual >= 8 && hora_atual < 17) {
                     setSituacao('Aberto (APENAS URGÊNCIAS)');
                     setCorSituacao('text-yellow-500');
@@ -58,7 +58,7 @@ const Alerts = () => {
 
     return (
         <>
-            <Toast className="w-auto fixed bottom-4 right-4 flex items-center">
+            <Toast className="w-auto fixed bottom-4 right-4 flex items-center z-20">
                 <div className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cyan-100 ${corSituacao}`}>
                     <FaClock className="h-5 w-5" />
                 </div>

@@ -19,7 +19,7 @@ const ModalHorarios = (props) => {
             const hora_atual = new Date().getHours();
             const dia_atual = new Date().getDay(); // 0 (Domingo) - 6 (Sábado)
 
-            if (dia_atual >= 1 && dia_atual <= 5) { // Verifica se é um dia útil (segunda a sexta)
+            if (dia_atual >= 1 && dia_atual <= 5) { // Verifica (segunda a sexta)
                 if (hora_atual >= 8 && hora_atual < 12) {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
@@ -44,7 +44,7 @@ const ModalHorarios = (props) => {
                     setSituacao('Fechado');
                     setCorSituacao('text-red-500');
                 }
-            } else if (dia_atual == 6) { // Verifica se é Domingo
+            } else if (dia_atual == 0) { // Verifica se é Domingo
                 if (hora_atual >= 8 && hora_atual < 17) {
                     setSituacao('Aberto (APENAS URGÊNCIAS)');
                     setCorSituacao('text-yellow-500');
@@ -80,7 +80,7 @@ const ModalHorarios = (props) => {
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Time>Dias Úteis</Timeline.Time>
+                                                <Timeline.Time>Segunda a Sexta</Timeline.Time>
                                                 <Timeline.Title>08:00 às 12:00 - 14:00 às 18:00</Timeline.Title>
                                                 <Timeline.Body>
                                                     Para atendimentos fora do horário informado, consulte a disponibilidade.
@@ -92,12 +92,13 @@ const ModalHorarios = (props) => {
                                         </Timeline.Item>
                                     </Timeline>
                                 </Tabs.Item>
+
                                 <Tabs.Item title="Suporte">
                                     <Timeline>
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Time>Dias Úteis</Timeline.Time>
+                                                <Timeline.Time>Segunda a Sexta</Timeline.Time>
                                                 <Timeline.Title>08:00 às 12:00</Timeline.Title>
                                             </Timeline.Content>
 
@@ -112,9 +113,6 @@ const ModalHorarios = (props) => {
                                             <Timeline.Content className="text-left">
                                                 <Timeline.Title>18:00 às 20:00 (APENAS URGÊNCIAS)</Timeline.Title>
                                             </Timeline.Content>
-                                            {/* <Button color="gray">
-                                                Entrar em Contato
-                                            </Button> */}
                                         </Timeline.Item>
 
                                         <Timeline.Item>
@@ -124,6 +122,10 @@ const ModalHorarios = (props) => {
                                                 <Timeline.Title>08:00 às 18:00 (APENAS URGÊNCIAS)</Timeline.Title>
                                             </Timeline.Content>
 
+                                        </Timeline.Item>
+
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
                                                 <Timeline.Time>Domingo e Feriados</Timeline.Time>
                                                 <Timeline.Title>08:00 às 17:00 (APENAS URGÊNCIAS)</Timeline.Title>

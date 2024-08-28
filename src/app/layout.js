@@ -24,9 +24,10 @@ export default function RootLayout({ children }) {
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       </Head> */}
-      <body className={inter.className}>
-        <NavbarApp />
-        <main className={'mx-auto lg:w-4/5 h-full container'}>
+      <body className={`${inter.className} bg-[#F8F8F8]`}>
+        <NavbarApp/>
+        <main className={'mx-auto h-full'}>
+        <div className="skew-cc lg:block hidden"></div>
           {children}
         </main>
         <Footers />
