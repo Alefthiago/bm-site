@@ -4,7 +4,7 @@ import VLibras from 'vlibras-nextjs';
 
 const Libras = () => {
     return (
-        <VLibras forceOnload />
+        <VLibras forceOnload  className="absolute"/>
     );
 }
 
