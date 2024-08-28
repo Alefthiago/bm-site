@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 //    UTIL.   //
 import { Footer } from "flowbite-react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";

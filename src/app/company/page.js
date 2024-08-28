@@ -32,10 +32,10 @@ const PageCompany = () => {
             ) : (
                 <>
                     <section>
-                        <div className="container px-6 py-10 mx-auto show-left">
-                            <p className="text-xl text-blue-500 show-right inter-regular">A Empresa</p>
+                        <div className="container px-6 py-10 mx-auto invisible show-left">
+                            <p className="text-xl text-blue-500 invisible  show-right inter-regular">A Empresa</p>
 
-                            <h1 className="mt-2 text-2xl inter-bold text-gray-800 capitalize lg:text-3xl show-left">
+                            <h1 className="mt-2 text-2xl inter-bold text-gray-800 capitalize lg:text-3xl invisible show-left">
                                 Quem Somos
                             </h1>
 
@@ -86,11 +86,11 @@ const PageCompany = () => {
                                 </div>
 
 
-                                <p className="max-w-2xl mx-auto my-6 text-center raleway-bold text-[#F8F8F8] show-bottom">
+                                <p className="max-w-2xl mx-auto my-6 text-center raleway-bold text-[#F8F8F8] invisible show-bottom">
                                     Acreditamos no poder da transformação através da inovação e qualidade. Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
                                 </p>
 
-                                <div className="flex items-center justify-center show-bottom">
+                                <div className="flex items-center justify-center invisible show-bottom">
                                     <div className="flex items-center p-1 border border-[#D67229] rounded-xl inter-regular">
                                         <button onClick={() => setTab(0)} className={`px-4 py-2 text-sm ${tabsP == 0 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>Missão</button>
                                         <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-sm ${tabsP == 1 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>Visão</button>
@@ -98,7 +98,7 @@ const PageCompany = () => {
                                     </div>
                                 </div>
 
-                                <section className={`${tabsP == 0 ? '' : 'hidden'} show-right`}>
+                                <section className={`${tabsP == 0 ? '' : 'hidden'} invisible   show-right`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Missão
@@ -110,7 +110,7 @@ const PageCompany = () => {
                                     </div>
                                 </section>
 
-                                <section className={`${tabsP == 1 ? '' : 'hidden'} show-top`}>
+                                <section className={`${tabsP == 1 ? '' : 'hidden'} invisible   show-top`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Visão
@@ -122,7 +122,7 @@ const PageCompany = () => {
                                     </div>
                                 </section>
 
-                                <section className={`${tabsP == 2 ? '' : 'hidden'} show-left`}>
+                                <section className={`${tabsP == 2 ? '' : 'hidden'} invisible   show-left`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Valores
@@ -152,7 +152,7 @@ const PageCompany = () => {
                                         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
                                     </div>
 
-                                    <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 show-top raleway-regular">
+                                    <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 invisible   show-top raleway-regular">
                                         Sediada em Recife-PE, a BM Informática tem como principais atribuições o desenvolvimento de produtos e serviços voltados para automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança, bem como a preparação de treinamento, documentação, implantação, análise e suporte aos sistemas que desenvolve e comercializa. Dispomos de profissionais especializados nos diversos ramos de nossa atuação, que se propõem a demonstrar todas as facilidades que oferecemos, tanto em termos de qualidade como em preços.
                                     </p>
                                 </div>
