@@ -1,8 +1,7 @@
 .card {
   position: relative;
-  width: 340px; /* Aumente a largura do cartão */
-  height: 350px; /* Aumente a altura do cartão */
-  /* background-color: #f2f2f2; */
+  width: 340px; /* Largura do cartão */
+  height: 350px; /* Altura do cartão */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@
   justify-content: flex-start;
   overflow: hidden;
   perspective: 1000px;
-  /* box-shadow: 0 0 0 5px #ffffff80; */
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -39,15 +37,16 @@
 
 .card-image {
   width: 100%;
-  height: 70%; /* Ajuste para ocupar 70% da altura do cartão */
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0; /* Para ajustar os cantos superiores da imagem */
+  height: 70%; /* Ocupa 70% da altura do cartão */
+  object-fit: contain; /* Contain garante que a imagem seja exibida completamente */
+  display: block;
+  margin: auto; /* Centraliza a imagem dentro do card */
 }
 
 .card-text {
   padding: 10px;
   text-align: center;
-  height: 30%; /* Ajuste para ocupar 30% da altura do cartão */
+  height: 30%; /* Ocupa 30% da altura do cartão */
 }
 
 .card-text h1 {

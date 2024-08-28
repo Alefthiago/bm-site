@@ -8,8 +8,7 @@ const Cardes = (props) => {
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 pb-4 animate-fade-left">
             {props.cardsData.map((card, index) => (
                 <div key={index} className="card">
-
-                    <Card className="w-[400px] h-[400px]"> {/* Aumente a largura e altura do cartão */}
+                    <Card className="w-[340px] h-[350px]"> {/* Largura e altura do cartão ajustadas */}
                         <img
                             src={card.imgSrc}
                             alt={card.imgAlt}
@@ -21,10 +20,10 @@ const Cardes = (props) => {
                     </Card>
 
                     <div className="card__content">
-                        <div className=" flex itens-center justify-center">
-                            <h1 className=" font-normal text-justify">{card.titulo}</h1> {/* Texto ajustado */}
+                        <div className="flex items-center justify-center">
+                            <h1 className="font-normal text-justify">{card.titulo}</h1> {/* Texto ajustado */}
                         </div>
-                        <div className="itens-center justify-center text-center pt-2">
+                        <div className="items-center justify-center text-center pt-2">
                             <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-normal text-cyan-500 text-center hover:cursor-pointer">
                                 {card.text}
                             </a>
