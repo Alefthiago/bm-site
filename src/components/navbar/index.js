@@ -1,6 +1,5 @@
 "use client";
 //      UTIL        //
-import VLibras from 'vlibras-nextjs';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Navbar } from "flowbite-react";
@@ -79,7 +78,6 @@ const NavbarApp = () => {
 
     return (
         <Navbar fluid className={`text-[#F8F8F8] bg-[#206BA5]`}>
-            <VLibras forceOnload />
             {/* PARA PRODUCAO <Navbar.Brand href={`/bm-site/`}> PARA PRODUCAO */}
             <Navbar.Brand href={`/bm-site`}>
                 <Image src={'./bm/lgbranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} />

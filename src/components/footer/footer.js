@@ -3,7 +3,7 @@
 import { Footer } from "flowbite-react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa6";
-import Alerts from "@/components/alert";
+// import Alerts from "@/components/alert";
 //   /UTIL.   //
 
 const Footers = () => {
