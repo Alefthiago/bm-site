@@ -3,6 +3,7 @@ import Style from './equipament.module.css'
 import React from "react";
 
 import Cardi from "@/components/card";
+import "@/components/card";
 
 const pageEquipment = () => {
     const cardsData = [
@@ -46,7 +47,8 @@ const pageEquipment = () => {
             imgSrc: "./3500c1_661759b7fe76411c8045f17a26a61f4e~mv2.webp",
             // link: "https://www.exemplo2.com",
             hover: true,
-            text: "Impressora de Etiquetas de Código de Barras"
+            text: "Impressora de Etiquetas de Código de Barras",
+            description: "Impressora de Etiquetas de Código de Barras"
         },
         {
             imgAlt: "Descrição da imagem 2",
@@ -79,11 +81,12 @@ const pageEquipment = () => {
                 </div>
                 <div className="flex justify-center">
                     <p className="w-full sm:w-3/4 lg:w-2/3 text-center">
-                    Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
+                        Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
                     </p>
                 </div>
             </section>
             <Cardi cardsData={cardsData} />
+
         </section>
     );
 }
