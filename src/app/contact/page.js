@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import Globals from "@/components/globals";
 import Image from "next/image";
+import Form from "@/components/formContato";
 //     /UTIL.       //
 
 const PageContact = () => {
@@ -43,42 +44,8 @@ const PageContact = () => {
                     <section className="min-h-screen">
                         <div className="container px-6 py-10 mx-auto">
                             <div className="md:flex md:items-center md:-mx-10">
-                                <div className="md:w-1/2 md:mx-10 ">
-                                    <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5] invisible show-right">
-                                        <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl inter-bold">Envie sua Mensagem</h1>
-                                        <form className="pt-5 inter-regular">
-                                            <div className="-mx-2 md:items-center md:flex">
-                                                <div className="flex-1 px-2">
-                                                    <label className="block mb-2 text-sm text-[#F8F8F8]">Nome</label>
-                                                    <input type="text" placeholder="Nome" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                                </div>
-
-                                                <div className="flex-1 px-2 mt-4 md:mt-0">
-                                                    <label className="block mb-2 text-sm text-[#F8F8F8]">Sobrenome</label>
-                                                    <input type="text" placeholder="Sobrenome" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                                </div>
-                                            </div>
-
-                                            <div className="mt-4">
-                                                <label className="block mb-2 text-sm text-[#F8F8F8]">E-mail</label>
-                                                <input type="email" placeholder="E-mail" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                            </div>
-
-                                            <div className="mt-4">
-                                                <label className="block mb-2 text-sm text-[#F8F8F8]">CNPJ/CPF</label>
-                                                <input type="email" placeholder="Documento" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                            </div>
-
-                                            <div className="w-full mt-4">
-                                                <label className="block mb-2 text-sm text-[#F8F8F8]">Mensagem</label>
-                                                <textarea className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Mensagem"></textarea>
-                                            </div>
-
-                                            <button className="inter-bold w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] hover:bg-[#C55300] rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                                                Enviar
-                                            </button>
-                                        </form>
-                                    </div>
+                                <div className="md:w-1/2 md:mx-10">
+                                    <Form/>
                                 </div>
 
                                 <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
@@ -88,9 +55,10 @@ const PageContact = () => {
                                         alt="avatar"
                                         width={500}
                                         height={224}
+                                        priority={false}
+                                        quality={60}
                                     />
                                     <div className="mt-6 space-y-8 md:mt-8 inter-regular">
-
                                         <p className="flex items-start -mx-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -103,44 +71,44 @@ const PageContact = () => {
                                             </span>
                                         </p>
 
-                                        <p class="flex items-start -mx-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        <p className="flex items-start -mx-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                             </svg>
 
-                                            <span class="mx-2 text-gray-700 w-72 dark:text-gray-400">Central (81) 3126-2050 | (81) 3439-5259 | (81) 2011-2754</span>
+                                            <span className="mx-2 text-gray-700 w-72 dark:text-gray-400">Central (81) 3126-2050 | (81) 3439-5259 | (81) 2011-2754</span>
                                         </p>
 
-                                        <p class="flex items-start -mx-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        <p className="flex items-start -mx-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                             </svg>
 
-                                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">Comercial (81) 9 8804-9715</span>
+                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">Comercial (81) 9 8804-9715</span>
                                         </p>
 
-                                        <p class="flex items-start -mx-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        <p className="flex items-start -mx-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bm@bminformatica.com.br</span>
+                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bm@bminformatica.com.br</span>
                                         </p>
 
-                                        <p class="flex items-start -mx-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        <p className="flex items-start -mx-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">comercial@bminformatica.com.br</span>
+                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">comercial@bminformatica.com.br</span>
                                         </p>
 
-                                        <p class="flex items-start -mx-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        <p className="flex items-start -mx-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">suporte@bminformatica.com.br</span>
+                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">suporte@bminformatica.com.br</span>
                                         </p>
                                     </div>
 
