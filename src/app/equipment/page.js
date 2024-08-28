@@ -29,7 +29,7 @@ const pageEquipment = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./3500c1_9ef9944dc52b4cb7ab5cb325051d1b4e~mv2.webp",
+            imgSrc: "./pinpad.jpeg",
             titulo: "Pin-Pad TEF (Transferência Eletrônica de Fundos) confiável e fácil de usar, oferece transações rápidas e seguras. Compatível com diversos sistemas de pagamento, é a escolha ideal para aprimorar o atendimento no seu negócio!",
             // link: "https://www.exemplo2.com",
             nome: "TEF / Pin-Pads",
@@ -37,7 +37,7 @@ const pageEquipment = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./3500c1_8f961a30ca144868af811f2014b50fa7~mv2.webp",
+            imgSrc: "./leitor_de_codigo_de_barras_jetway_jl_200_19_1_2768660276749f7b69446052caf5325e.webp",
             titulo: "Leitor de Código de Barras rápido e preciso, ideal para otimizar o atendimento e controle de estoque. Fácil de usar, compatível com diversos sistemas, garantindo eficiência em cada leitura!"
             ,
             // link: "https://www.exemplo2.com",
@@ -55,7 +55,7 @@ const pageEquipment = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./3500c1_661759b7fe76411c8045f17a26a61f4e~mv2.webp",
+            imgSrc: "./impetiqueta.jpg",
             titulo: "Impressora de Etiquetas de Código de Barras eficiente e precisa, ideal para identificar produtos e organizar estoques. Fácil de operar, compatível com diversos formatos de etiquetas. Perfeita para otimizar a sua gestão.",
             // link: "https://www.exemplo2.com",
             nome: "Impressora de Etiquetas de Código de Barras",
@@ -67,7 +67,6 @@ const pageEquipment = () => {
             imgSrc: "./3500c1_6011ee0c63b04398b6c9349e91b6484a~mv2.webp",
             // link: "https://www.exemplo2.com",
             titulo: "CPU de Varejo potente e confiável, projetada para suportar as demandas do seu negócio. Oferece desempenho robusto, conectividade avançada e alta durabilidade. Ideal para maximizar a eficiência no ponto de venda!",
-
             nome: "CPUs de Varejo",
             hover: true
         },
@@ -75,7 +74,6 @@ const pageEquipment = () => {
             imgAlt: "Descrição da imagem 2",
             imgSrc: "./3500c1_34bcb7f538734f428ae61c20a96bb3dc~mv2.webp",
             titulo: "Monitores nítidos e responsivos, ideais para melhorar a experiência de atendimento. Com alta resolução e design moderno, garante visualização clara e suporte a longas jornadas de trabalho. Perfeito para o varejo!",
-
             // link: "https://www.exemplo2.com",
             nome: "Monitores",
             hover: true,
@@ -83,7 +81,7 @@ const pageEquipment = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./3500c1_5d7bf9e82a2644308a63d240dc2f316b~mv2.webp",
+            imgSrc: "./b150a9a1f1.webp",
             titulo: "Balanças Eletrônicas precisas e duráveis, ideal para pesagens rápidas e confiáveis no varejo. Fácil de usar, com display claro e alta capacidade de carga. Perfeita para melhorar a eficiência no atendimento!",
             // link: "https://www.exemplo2.com",
             nome: "Balanças Eletrônicas",
