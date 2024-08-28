@@ -13,6 +13,7 @@ export default class Globals {
                     } else {
                         entry.target.classList.add('animate-fade-right');
                     }
+                    entry.target.classList.remove('invisible');
                 }
             });
         }, {
