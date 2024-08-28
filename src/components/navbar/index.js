@@ -80,7 +80,7 @@ const NavbarApp = () => {
         <Navbar fluid className={`text-[#F8F8F8] bg-[#206BA5]`}>
             {/* PARA PRODUCAO <Navbar.Brand href={`/bm-site/`}> PARA PRODUCAO */}
             <Navbar.Brand href={`/bm-site`}>
-                <Image src={'./bm/lgbranco.svg'} alt={'Logo BM Informatica'} width={60} height={60} />
+                <Image src={'./bm/lgbranco.svg'} alt={'Logo BM Informática Ltda'} width={60} height={60} />
             </Navbar.Brand>
             {/* indice atual mobile */}
             <IndexesMobile route_name_mobile={route_mobile} />

@@ -16,13 +16,13 @@ const Footers = () => {
             <Footer.Brand
               href="/"
               src={'./bm/lgbranco.svg'}
-              alt={'Logo BM Informatica'}
+              alt={'Logo BM Informática Ltda'}
               name={<span style={{ color: '#F8F8F8' }} className="inter-bold" >BM Informática</span>}
             />
           </div>
           <div className="grid md:grid-cols-2 gap-8" >
             <div>
-              <Footer.Title title="Fones" className="text-[#F8F8F8] inter-bold" />
+              <Footer.Title title="Contatos" className="text-[#F8F8F8] inter-bold" />
               <Footer.LinkGroup className="text-[#F8F8F8] raleway-regular font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
                 <Footer.Link href="#">
                   Central <br />

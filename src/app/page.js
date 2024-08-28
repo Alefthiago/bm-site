@@ -12,24 +12,28 @@ import { MdOutlineCloudDone } from "react-icons/md";
 const cardSN = [
   {
     imgSrc: './destaques/nf/nfe.svg',
+    alt: 'Logo NFe',
     texto: 'NFe',
     abbr: 'Nota Fiscal Eletrônica',
     desc: 'Emissão rápida e fácil de notas fiscais eletrônicas, simplificando seu processo de faturamento.',
   },
   {
     imgSrc: './destaques/nf/nfce.svg',
+    alt: 'Logo NFCe',
     texto: 'NFCe',
     abbr: 'Nota Fiscal do Consumidor Eletrônica',
     desc: 'Emitir notas fiscais para consumidores de forma eletrônica, com simplicidade e agilidade.',
   },
   {
     imgSrc: './destaques/nf/cte.svg',
+    alt: 'Logo CTe',
     texto: 'CTe',
     abbr: 'Conhecimento de Transporte Eletrônico',
     desc: 'Gerencie o transporte de mercadorias com facilidade através da emissão eletrônica de conhecimentos de transporte.',
   },
   {
     imgSrc: './destaques/nf/mdfe.svg',
+    alt: 'Logo MDFe',
     texto: 'MDFe',
     abbr: 'Manifesto Eletrônico de Documentos Fiscais',
     desc: 'Facilite a gestão de documentos fiscais com a emissão eletrônica do manifesto de documentos fiscais.',
@@ -65,7 +69,6 @@ export default function Home() {
           <svg width="100" height="100" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-jump animate-infinite animate-duration-1000 animate-delay-500">
             <path d="M157.176 4.55984C79.5307 22.1808 19.2564 84.9109 3.38029 161.347C-0.993846 182.415 -1.14817 221.375 3.06502 241.245C10.7793 277.628 27.6144 309.953 52.6179 336.391C92.9905 379.074 141.732 400.039 200.507 400C230.903 399.98 246.769 397.032 275.348 386.1C333.654 363.791 380.065 310.283 396.073 246.916C401.81 224.199 401.153 174.169 394.81 151.049C384.018 111.697 358.185 72.0998 327.141 47.3241C308.941 32.7981 273.659 12.5151 252.318 6.6706C223.777 -1.14538 179.683 -2.40663 157.176 4.55984ZM243.744 62.4187C263.899 72.2638 279.713 94.441 279.828 113.02C279.874 120.746 280.108 120.958 289.998 122.301C311.701 125.254 331.31 139.137 342.051 159.161C346.225 166.937 347.087 171.922 347.085 188.233C347.078 217.637 345.746 219.507 274.993 289.396C220.561 343.165 213.945 349.001 207.41 349.001C196.947 349.001 187.279 338.919 187.279 328.009C187.279 320.196 190.119 316.976 247.053 260.248C304.483 203.026 306.864 200.32 307.804 191.181C309.049 179.053 302.79 168.503 291.597 163.864C274.801 156.902 273.313 157.941 208.094 222.314C149.468 280.174 148.28 281.194 139.393 281.194C132 281.194 129.306 279.965 124.641 274.463C112.674 260.353 112.809 260.152 177.111 195.983C209.108 164.05 236.391 135.775 237.74 133.148C243.223 122.463 238.829 105.732 228.69 98.6866C223 94.7297 206.817 94.172 199.811 97.6914C197.163 99.0212 168.995 125.794 137.217 157.186C83.2787 210.467 78.9156 214.262 71.5674 214.262C60.7665 214.262 51.9102 205.476 51.9102 194.76C51.9102 187.456 55.8368 183.043 112.429 126.743C145.716 93.6317 176.655 64.6236 181.181 62.2853C201.352 51.8693 222.235 51.9131 243.744 62.4187Z" fill="#206BA5" />
           </svg>
-
         </div>
       ) : (
         <>
@@ -76,7 +79,7 @@ export default function Home() {
                 <div className="lg:max-w-lg px-2">
                   <h1 className="text-3xl inter-bold lg:text-4xl">
                     A Melhor Solução para o Seu Negocio aqui<br />
-                    <span className="text-blue-500">BM INFORMATICA</span>
+                    <span className="text-blue-500">BM INFORMÁTICA</span>
                   </h1>
                   <p className="mt-3 text-gray-600 raleway-regular">
                     Nossos profissionais, especialistas em várias áreas criam soluções que transformam seu dia a dia.
@@ -90,7 +93,7 @@ export default function Home() {
                 <div className="w-full h-full max-w-[200px]">
                   <Image
                     src="./bm/LogoAzul.svg"
-                    alt="Logo Bm Informatica"
+                    alt="Logo BM Informática Ltda"
                     layout="responsive"
                     width={200}
                     height={200}
@@ -160,8 +163,14 @@ export default function Home() {
                     <h1 className="text-xl font-bold uppercase">NIKE AIR</h1>
                     <p className="mt-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
                   </div> */}
-
-                      <img className="object-cover w-full" src={card.imgSrc} />
+                      <Image
+                        src={card.imgSrc}
+                        alt="Imagem Promocional"
+                        width={100}
+                        height={100}
+                        objectFit="cover"
+                        className="w-full"
+                      />
 
                       <div className="flex items-center justify-center px-4 py-2  bg-gray-900">
                         {/* <h1 className="text-lg font-bold text-white">{card.texto}</h1> */}
@@ -188,7 +197,7 @@ export default function Home() {
           <section className="w-full bg-[#F8F8F8]">
             <section className="container lg:w-3/5 px-6 mx-auto">
               <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-2xl text-center inter-bold text-[#206BA5] capitalize lg:text-4xl">Emissão Facilitada e Segura de <br /><span> Documentos Fiscais Eletrônicos</span></h1>
+                <h1 className="text-2xl text-center inter-bold text-[#206BA5] capitalize lg:text-4xl">Emissão Facilitada e Segura de <br /> Documentos Fiscais Eletrônicos</h1>
 
                 <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-2">
                   {cardSN.map((card, index) => (
@@ -199,10 +208,10 @@ export default function Home() {
                     </svg> */}
                         <div className="relative w-12 h-12">
                           <Image
-                            src={card.imgSrc} // Caminho da imagem passado como prop
-                            alt="Descrição da imagem" // Adicione uma descrição alternativa para a acessibilidade
-                            layout="fill" // Preenche o contêiner
-                            objectFit="contain" // Ajusta a imagem para caber dentro do contêiner mantendo a proporção
+                            src={card.imgSrc}
+                            alt={card.alt}
+                            layout="fill"
+                            objectFit="contain"
                           />
                         </div>
                       </span>
@@ -210,7 +219,6 @@ export default function Home() {
                       <h1 className="text-xl text-[#f8f8f8] capitalize inter-bold"><abbr title={`${card.abbr}`}>{card.texto}</abbr></h1>
 
                       <p className="text-[#f8f8f8] raleway-regular">{card.desc}</p>
-
                       {/* <a href="#" className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">read more</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"></path></svg>
