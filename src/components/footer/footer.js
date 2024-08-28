@@ -9,12 +9,12 @@ import Alerts from "@/components/alert";
 const Footers = () => {
   return (
     <Footer container className="bg-[#206BA5] w-full">
-      <Alerts />
+      {/* <Alerts /> */}
       <div className="w-full">
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
           <div>
             <Footer.Brand
-              href="#"
+              href="/"
               src={'./bm/lgbranco.svg'}
               alt={'Logo BM Informatica'}
               name={<span style={{ color: '#F8F8F8' }} className="inter-bold" >BM Informática</span>}
