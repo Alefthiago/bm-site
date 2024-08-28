@@ -64,10 +64,10 @@ const PageLinks = () => {
                 <>
                     <div className="w-full ">
                         <div className="w-full text-center">
-                            <h1 className="text-4xl text-[#0E0E0E] show-right inter-bold">
+                            <h1 className="text-4xl text-[#0E0E0E] invisible show-right inter-bold">
                                 Suporte
                             </h1>
-                            <p className="mt-3 text-gray-600 show-left inter-regular">
+                            <p className="mt-3 text-gray-600 invisible show-left inter-regular">
                                 Verifique nossos horários de funcionamento para ser atendido&nbsp;
                                 <span
                                     onClick={() => {
@@ -80,7 +80,7 @@ const PageLinks = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="overflow-x-auto w-full show-top">
+                    <div className="overflow-x-auto w-full invisible show-top">
                         <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                             <Tabs.Item active title="Geral" className="inter-bold">
                                 <Accordion>

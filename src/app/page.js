@@ -12,22 +12,26 @@ import { MdOutlineCloudDone } from "react-icons/md";
 const cardSN = [
   {
     imgSrc: './destaques/nf/nfe.svg',
-    texto: 'NFe - Nota Fiscal Eletrônica',
+    texto: 'NFe',
+    abbr: 'Nota Fiscal Eletrônica',
     desc: 'Emissão rápida e fácil de notas fiscais eletrônicas, simplificando seu processo de faturamento.',
   },
   {
     imgSrc: './destaques/nf/nfce.svg',
-    texto: 'NFCe - Nota Fiscal do Consumidor Eletrônica',
+    texto: 'NFCe',
+    abbr: 'Nota Fiscal do Consumidor Eletrônica',
     desc: 'Emitir notas fiscais para consumidores de forma eletrônica, com simplicidade e agilidade.',
   },
   {
     imgSrc: './destaques/nf/cte.svg',
-    texto: 'CTe - Conhecimento de Transporte Eletrônico',
+    texto: 'CTe',
+    abbr: 'Conhecimento de Transporte Eletrônico',
     desc: 'Gerencie o transporte de mercadorias com facilidade através da emissão eletrônica de conhecimentos de transporte.',
   },
   {
     imgSrc: './destaques/nf/mdfe.svg',
-    texto: 'MDFe - Manifesto Eletrônico de Documentos Fiscais',
+    texto: 'MDFe',
+    abbr: 'Manifesto Eletrônico de Documentos Fiscais',
     desc: 'Facilite a gestão de documentos fiscais com a emissão eletrônica do manifesto de documentos fiscais.',
   }
 ];
@@ -203,7 +207,7 @@ export default function Home() {
                         </div>
                       </span>
 
-                      <h1 className="text-xl text-[#f8f8f8] capitalize inter-bold">{card.texto}</h1>
+                      <h1 className="text-xl text-[#f8f8f8] capitalize inter-bold"><abbr title={`${card.abbr}`}>{card.texto}</abbr></h1>
 
                       <p className="text-[#f8f8f8] raleway-regular">{card.desc}</p>
 

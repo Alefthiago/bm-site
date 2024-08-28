@@ -30,11 +30,11 @@ const PageContact = () => {
                 <>
                     <div className="w-full ">
                         <div className="w-full text-center">
-                            <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] show-right inter-bold">
+                            <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
                                 Contate-nos
                             </h1>
 
-                            <p className="mt-3 text-gray-600 font-sans show-left inter-regular">
+                            <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
                                 Nós da Bm Informatica teremos prazer em ouvir você
                             </p>
                         </div>
@@ -44,7 +44,7 @@ const PageContact = () => {
                         <div className="container px-6 py-10 mx-auto">
                             <div className="md:flex md:items-center md:-mx-10">
                                 <div className="md:w-1/2 md:mx-10 ">
-                                    <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5] show-right">
+                                    <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5] invisible show-right">
                                         <h1 className="text-2xl font-semibold text-[#F8F8F8] md:text-3xl inter-bold">Envie sua Mensagem</h1>
                                         <form className="pt-5 inter-regular">
                                             <div className="-mx-2 md:items-center md:flex">
@@ -81,7 +81,7 @@ const PageContact = () => {
                                     </div>
                                 </div>
 
-                                <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 show-left">
+                                <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
                                     <Image
                                         className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
                                         src="./bm/OIP.webp"
@@ -172,7 +172,7 @@ const PageContact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="overflow-hidden rounded-lg h-auto w-full mb-10 show-top">
+                        <div className="overflow-hidden rounded-lg h-auto w-full mb-10 invisible show-top">
                             <iframe width="100%" height="100%" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.845566945619!2d-34.904949224234315!3d-8.11720209191211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fadcaa54637%3A0xbdb1a1182c056086!2sR.%20Padre%20Carapuceiro%2C%20733%20-%20Sala%201001%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051020-280!5e0!3m2!1spt-BR!2sbr!4v1722870633793!5m2!1spt-BR!2sbr"></iframe>
                         </div>
                     </section>
