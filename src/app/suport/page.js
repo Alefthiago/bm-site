@@ -80,11 +80,11 @@ const PageLinks = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="overflow-x-auto w-full invisible show-top">
+                    <div className="overflow-x-auto w-full invisible show-top lg:w-3/5">
                         <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                             <Tabs.Item active title="Geral" className="inter-bold">
                                 <Accordion>
-                                    <Accordion.Panel active >
+                                    <Accordion.Panel active>
                                         <Accordion.Title className="inter-bold">Links Uteis</Accordion.Title>
                                         <Accordion.Content>
                                             <HR.Text text="Suporte" />
@@ -127,7 +127,7 @@ const PageLinks = () => {
                                                 </ListGroup.Item>
                                             </ListGroup>
 
-                                            <HR.Text text="Fiscal" />
+                                            <HR.Text text="Fiscal"/>
 
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item

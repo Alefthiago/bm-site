@@ -24,22 +24,22 @@ const Footers = () => {
             <div>
               <Footer.Title title="Contatos" className="text-[#F8F8F8] inter-bold" />
               <Footer.LinkGroup className="text-[#F8F8F8] raleway-regular font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
-                <Footer.Link href="#">
+                <Footer.Link className="hover:cursor-pointer">
                   Central <br />
                   (81) 3126-2050
                 </Footer.Link>
 
-                <Footer.Link href="#">
+                <Footer.Link className="hover:cursor-pointer">
                   Central <br />
                   (81) 3439-5259
                 </Footer.Link>
 
-                <Footer.Link href="#">
+                <Footer.Link className="hover:cursor-pointer">
                   Central <br />
                   (81) 2011-2754
                 </Footer.Link>
 
-                <Footer.Link href="#">
+                <Footer.Link href="https://wa.me/5581988049715" target="_blank">
                   Comercial (Whatsapp) <br />
                   (81) 9 8804-9715
                 </Footer.Link>
@@ -48,9 +48,9 @@ const Footers = () => {
             <div>
               <Footer.Title title="E-mails" className="text-[#F8F8F8] inter-bold" />
               <Footer.LinkGroup col className="text-[#F8F8F8] raleway-regular">
-                <Footer.Link href="#">bm@bminformatica.com.br</Footer.Link>
-                <Footer.Link href="#">comercial@bminformatica.com.br</Footer.Link>
-                <Footer.Link href="#">suporte@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="mailto:bm@bminformatica.com.br">bm@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="mailto:comercial@bminformatica.com.br">comercial@bminformatica.com.br</Footer.Link>
+                <Footer.Link href="mailto:suporte@bminformatica.com.br">suporte@bminformatica.com.br</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>

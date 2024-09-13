@@ -85,7 +85,7 @@ const ModalHorarios = (props) => {
                                                 <Timeline.Body>
                                                     Para atendimentos fora do horário informado, consulte a disponibilidade.
                                                 </Timeline.Body>
-                                                <Button color="gray">
+                                                <Button href="https://wa.me/558131262050" target="_blank" color="gray">
                                                     Entrar em Contato
                                                 </Button>
                                             </Timeline.Content>

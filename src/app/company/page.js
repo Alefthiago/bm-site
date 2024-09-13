@@ -74,7 +74,7 @@ const PageCompany = () => {
                     <div className="skew-c"></div>
 
                     {/*         MISSAO, VISAO E VALORES         */}
-                    <section className="w-full bg-[#206BA5]">
+                    <section className="w-full bg-[#206BA5] h-[550px]">
                         <section>
                             <div className="container px-6 py-10 mx-auto">
                                 <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl">Nossos Princípios</h1>
@@ -98,7 +98,7 @@ const PageCompany = () => {
                                     </div>
                                 </div>
 
-                                <section className={`${tabsP == 0 ? '' : 'hidden'} invisible   show-right`}>
+                                <section className={`${tabsP == 0 ? '' : 'hidden'} invisible show-right`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Missão
@@ -110,7 +110,7 @@ const PageCompany = () => {
                                     </div>
                                 </section>
 
-                                <section className={`${tabsP == 1 ? '' : 'hidden'} invisible   show-top`}>
+                                <section className={`${tabsP == 1 ? '' : 'hidden'} invisible show-top`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Visão
@@ -122,7 +122,7 @@ const PageCompany = () => {
                                     </div>
                                 </section>
 
-                                <section className={`${tabsP == 2 ? '' : 'hidden'} invisible   show-left`}>
+                                <section className={`${tabsP == 2 ? '' : 'hidden'} invisible show-left`}>
                                     <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
                                         <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                             Valores

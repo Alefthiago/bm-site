@@ -84,9 +84,11 @@ export default function Home() {
                   <p className="mt-3 text-gray-600 raleway-regular">
                     Nossos profissionais, especialistas em várias áreas criam soluções que transformam seu dia a dia.
                   </p>
-                  <button className="inter-regular w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none transition-transform duration-500 ease-in-out transform hover:scale-105">
-                    Contratar
-                  </button>
+                  <a href="https://wa.me/5581988049715" target="_blank">
+                    <button className="inter-regular w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none transition-transform duration-500 ease-in-out transform hover:scale-105">
+                      Contratar
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
@@ -157,7 +159,6 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-1 lg:grid-cols-2">
                   {cardDt.map((card, index) => (
-
                     <div key={index} className={`${index == 0 ? 'invisible show-right' : 'invisible show-left'} overflow-hidden h-auto bg-gray-900 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
                       {/* <div className="px-4 py-2">
                     <h1 className="text-xl font-bold uppercase">NIKE AIR</h1>
@@ -174,7 +175,9 @@ export default function Home() {
 
                       <div className="flex items-center justify-center px-4 py-2  bg-gray-900">
                         {/* <h1 className="text-lg font-bold text-white">{card.texto}</h1> */}
-                        <button className="px-2 py-1 text-xs inter-bold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">{card.texto}</button>
+                        <a href="https://wa.me/5581988049715" target="_blank">
+                          <button className="px-2 py-1 text-xs inter-bold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">{card.texto}</button>
+                        </a>
                       </div>
                     </div>
                   ))}

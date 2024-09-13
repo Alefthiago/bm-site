@@ -45,7 +45,7 @@ const PageContact = () => {
                         <div className="container px-6 py-10 mx-auto">
                             <div className="md:flex md:items-center md:-mx-10">
                                 <div className="md:w-1/2 md:mx-10">
-                                    <Form/>
+                                    <Form />
                                 </div>
 
                                 <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
@@ -92,7 +92,9 @@ const PageContact = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bm@bminformatica.com.br</span>
+                                            <a href="mailto:bm@bminformatica.com.br">
+                                                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">bm@bminformatica.com.br</span>
+                                            </a>
                                         </p>
 
                                         <p className="flex items-start -mx-2">
@@ -100,7 +102,9 @@ const PageContact = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">comercial@bminformatica.com.br</span>
+                                            <a href="mailto:comercial@bminformatica.com.br">
+                                                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">comercial@bminformatica.com.br</span>
+                                            </a>
                                         </p>
 
                                         <p className="flex items-start -mx-2">
@@ -108,7 +112,9 @@ const PageContact = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">suporte@bminformatica.com.br</span>
+                                            <a href="mailto:suporte@bminformatica.com.br">
+                                                <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">suporte@bminformatica.com.br</span>
+                                            </a>
                                         </p>
                                     </div>
 
