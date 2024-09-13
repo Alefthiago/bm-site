@@ -74,7 +74,7 @@ const PageCompany = () => {
                     <div className="skew-c"></div>
 
                     {/*         MISSAO, VISAO E VALORES         */}
-                    <section className="w-full bg-[#206BA5] h-[550px]">
+                    <section className="w-full bg-[#206BA5]">
                         <section>
                             <div className="container px-6 py-10 mx-auto">
                                 <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl">Nossos Princípios</h1>
