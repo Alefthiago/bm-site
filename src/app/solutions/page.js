@@ -132,14 +132,27 @@ const PageSoluctions = () => {
                 <>
 
                     <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">
-                        <div className="flex justify-center">
+                        {/* <div className="flex justify-center">
                             <h1 className={`text-5xl font-bold text-center ${Style.h1_shadow}`}>Soluções para a sua Empresa</h1>
                         </div>
                         <div className="flex justify-center">
                             <p className="w-full sm:w-3/4 lg:w-2/3 text-center">
                                 Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos. Clique no seu segmento e verifique o que a BM Informática tem a oferecer:
                             </p>
+                        </div> */}
+                        <div className="w-full ">
+                            <div className="w-full text-center">
+                                <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
+                                    Soluções para a sua Empresa
+                                </h1>
+
+                                <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
+                                    Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.<br/>
+                                    Clique no seu segmento e verifique o que a BM Informática tem a oferecer:
+                                </p>
+                            </div>
                         </div>
+
                     </section>
                     <Cardi cardsData={cardsData} />
                 </>
