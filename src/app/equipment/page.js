@@ -116,13 +116,16 @@ const PageEquipment = () => {
             ) : (
                 <>
                     <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">
-                        <div className="flex justify-center">
-                            <h1 className={`text-5xl font-bold text-center ${Style.h1_shadow}`}>Equipamentos para Automação Comercial</h1>
-                        </div>
-                        <div className="flex justify-center">
-                            <p className="w-full sm:w-3/4 lg:w-2/3 text-center">
-                                Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
-                            </p>
+                        <div className="w-full">
+                            <div className="w-full text-center">
+                                <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
+                                    Equipamentos para Automação Comercial
+                                </h1>
+
+                                <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
+                                    Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
+                                </p>
+                            </div>
                         </div>
                     </section>
                     <Cardi cardsData={cardsData} />
