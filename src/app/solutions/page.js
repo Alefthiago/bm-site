@@ -21,103 +21,118 @@ const PageSoluctions = () => {
     const cardsData = [
         {
             alt: "Descrição da imagem 1",
-            imgSrc: "./solucoes/supermercado.webp",
-            nome: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis.",
-            titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado! Controle estoque, acompanhe vendas em tempo real e automatize operações diárias. Relatórios precisos ajudam na tomada de decisões estratégicas, aumentando a eficiência e os lucros. Transforme seu supermercado com nosso ERP!",
+            // imgSrc: "./solucoes/supermercado.webp",
+            imgSrc: "./solucoes/card1.png",
+            // nome: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis.",
+            nome: ["Supermercados", "Mercadinhos", "Frigoríficos", "Açougues", "Peixarias", "Hortifrutis"],
+            // titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado! Controle estoque, acompanhe vendas em tempo real e automatize operações diárias. Relatórios precisos ajudam na tomada de decisões estratégicas, aumentando a eficiência e os lucros. Transforme seu supermercado com nosso ERP!",
+            titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado, que controla estoque, acompanha vendas em tempo real e automatiza operações diárias e com relatórios precisos",
             link: "/products",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/padaria.webp",
-            nome: "Padarias,Delicatessens e Lojas de Conveniência",
-            titulo: "Modernize a gestão da sua padaria ou delicatessen com nosso ERP exclusivo! Gerencie o estoque de ingredientes, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados garantem decisões mais assertivas, aumentando a eficiência e os lucros. Eleve sua padaria com nosso ERP especializado!",
+            // imgSrc: "./solucoes/padaria.webp",
+            imgSrc: "./solucoes/card2.png",
+            // nome: "Padarias,Delicatessens e Lojas de Conveniência",
+            nome: ["Padarias", "Delicatessens", "Conveniência"],
+            // titulo: "Modernize a gestão da sua padaria ou delicatessen com nosso ERP exclusivo! Gerencie o estoque de ingredientes, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados garantem decisões mais assertivas, aumentando a eficiência e os lucros. Eleve sua padaria com nosso ERP especializado!",
+            titulo: "Transforme a gestão da sua padaria com nosso ERP especializado! Gerencie estoque, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados ajudam a tomar decisões mais assertivas, aumentando a eficiência e os lucros",
             link: "https://www.datapao.com.br/",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/restaurante.webp",
-            nome: "Restaurantes, Lanchonetes, Cafeterias e Food Services",
-            titulo : "Simplifique a gestão do seu restaurante, lanchonete, cafeteria ou food service com nosso ERP especializado! Controle estoque, pedidos e vendas de forma integrada. Com relatórios precisos, você toma decisões estratégicas, aumentando a eficiência e maximizando seus lucros. Eleve seu negócio com nosso ERP!",
+            // imgSrc: "./solucoes/restaurante.webp",
+            imgSrc: "./solucoes/card3.png",
+            // nome: "Restaurantes, Lanchonetes, Cafeterias e Food Services",
+            nome: ["Restaurantes", "Lanchonetes", "Cafeterias", "Food Services"],
+            titulo: "Simplifique a gestão do seu restaurante ou food service com nosso ERP especializado! Controle estoque, pedidos e vendas de forma integrada. Relatórios precisos ajudam a tomar decisões estratégicas, aumentando a eficiência e os lucros",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/materiais.webp",
-            nome: "Lojas de Materiais de Construção e Madeireiras",
-            titulo : "Transforme a gestão da sua loja de materiais de construção com nossa solução completa! Controle seu estoque, acompanhe as vendas e automatize processos diários. Com ferramentas precisas, você otimiza a operação e toma decisões estratégicas para impulsionar o crescimento da sua loja. Eleve seu negócio ao próximo nível!",
-
+            // imgSrc: "./solucoes/materiais.webp",
+            imgSrc: "./solucoes/card4.png",
+            // nome: "Lojas de Materiais de Construção e Madeireiras",
+            nome: ["Materiais de Construção", "Madeireiras"],
+            titulo: "Transforme a gestão da sua loja de materiais de construção com nossa solução completa! Controle estoque, vendas e automatize processos. Ferramentas precisas ajudam a otimizar a operação e impulsionar o crescimento do seu negócio",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/3500c1_6c5c975b9dcf41268c9696a3c861611f~mv2_d_2800_2227_s_2.webp",
-            nome: "Livrarias e Papelarias",
-            titulo : "Organize e impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle o estoque de livros e materiais, acompanhe as vendas e facilite o dia a dia com processos automatizados. Tome decisões estratégicas com base em relatórios detalhados e leve sua loja a novos patamares de sucesso!",
-
+            imgSrc: "./solucoes/card5.png",
+            // nome: "Livrarias e Papelarias",
+            nome: ["Livrarias", "Papelarias"],
+            titulo: "Impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle estoque, vendas e automatize processos. Tome decisões estratégicas com relatórios detalhados e leve seu negócio a novos patamares!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Informatica e eletronicos",
-            imgSrc: "./3526a453af0045a4a608537103c26973.webp",
-            nome: "Informática, Telefonia e Eletrônicos",
-            titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão eficiente! Controle o estoque, gerencie vendas e automatize operações diárias. Com ferramentas avançadas e relatórios detalhados, você toma decisões estratégicas e maximiza o crescimento do seu negócio. Aumente suas vendas e conquiste novos clientes!",
+            imgSrc: "./solucoes/card6.png",
+            // nome: "Informática, Telefonia e Eletrônicos",
+            nome: ["Informática", "Telefonia", "Eletrônicos"],
+            titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão! Controle estoque, vendas e automatize operações. Com relatórios detalhados, tome decisões estratégicas e impulsione o crescimento do seu negócio!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/3500c1_9e3e6e87c51c4c5c84a4916d6b6ebb56~mv2_d_2800_1866_s_2.webp",
-            nome: "Auto Peças e Oficinas",
-            titulo : "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle o estoque de peças, acompanhe serviços e automatize processos diários. Com relatórios precisos, você toma decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio. Mantenha sua oficina sempre à frente!",
+            imgSrc: "./solucoes/card7.png",
+            // nome: "Auto Peças e Oficinas",
+            nome: ["Auto Peças", "Oficinas"],
+            titulo: "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle estoque, acompanhe serviços e automatize processos. Com relatórios precisos, tome decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/c25a6748f1ca44d9bc09c6705e5e6ed5.webp",
-            nome: "Lojas de Roupas e Calçados",
-            titulo : "Revitalize a gestão da sua loja de roupas e calçados com nossa solução completa! Gerencie seu estoque, acompanhe as vendas e automatize tarefas diárias. Com relatórios detalhados, você toma decisões estratégicas para otimizar suas operações e aumentar as vendas. Eleve sua loja ao próximo nível de sucesso!",
+            imgSrc: "./solucoes/card8.png",
+            // nome: "Lojas de Roupas e Calçados",
+            nome: ["Roupas", "Calçados"],
+            titulo: "Revitalize a gestão da sua loja de roupas e calçados com nossa solução completa! Gerencie estoque, acompanhe vendas e automatize tarefas. Com relatórios detalhados, tome decisões estratégicas para otimizar operações e aumentar as vendas!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/8fcb84cc20914397a05f6fe26636716b.webp",
-            nome: "Lojas de Brinquedos",
-            titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Tenha controle total de estoque, acompanhe as vendas em tempo real e automatize tarefas diárias. Com relatórios precisos, você toma decisões estratégicas para aumentar suas vendas e eficiência. Transforme sua loja com nosso ERP!",
+            imgSrc: "./solucoes/card9.png",
+            // nome: "Lojas de Brinquedos",
+            nome: ["Brinquedos"],
+            titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Controle estoque, acompanhe vendas e automatize tarefas. Com relatórios precisos, tome decisões estratégicas para aumentar vendas e eficiência!",
             link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/143c530d12befe41941c124489f9acc2.webp",
-            nome: "Pet Shops",
-            titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle o estoque de produtos, acompanhe as vendas e automatize processos diários. Relatórios detalhados ajudam você a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio. Dê um salto de qualidade na gestão do seu pet shop!",
+            imgSrc: "./solucoes/card10.png",
+            // nome: "Pet Shops",
+            nome: ["Pet Shops"],
+            titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle estoque, acompanhe vendas e automatize processos diários. Relatórios detalhados ajudam a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/3500c1_af492fbd990547e182cfddcad49fc643~mv2_d_2800_1822_s_2.webp",
-            nome: "Atacados, Distribuidoras e Atacarejos",
-            titulo : "Otimize a operação com nossa solução completa! Controle o estoque, gerencie pedidos em grande escala e automatize processos. Relatórios precisos facilitam decisões estratégicas, impulsionando eficiência e lucratividade. Eleve o desempenho do seu negócio e amplie sua capacidade de atendimento!",
+            imgSrc: "./solucoes/card11.png",
+            // nome: "Atacados, Distribuidoras e Atacarejos",
+            nome: ["Atacados", "Distribuidoras", "Atacarejos"],
+            titulo: "Otimize sua operação com nossa solução completa! Controle estoque, gerencie pedidos e automatize processos. Relatórios precisos ajudam nas decisões estratégicas, impulsionando eficiência e lucratividade. Eleve o desempenho e amplie sua capacidade de atendimento!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./3500c1_5e82a68c5eb042c5b7c60eef71ea0430~mv2_d_2800_1869_s_2.webp",
-            nome: "Varejo em Geral",
-            titulo :"Simplifique a gestão do seu negócio no varejo com nossa solução completa! Controle o estoque, gerencie vendas e automatize processos diários. Com relatórios detalhados, você toma decisões estratégicas que otimizam operações e aumentam seus lucros. Transforme a eficiência da sua loja e eleve o sucesso do seu varejo!",
+            imgSrc: "./solucoes/card12.png",
+            // nome: "Varejo em Geral",
+            nome: ["Varejo em Geral"],
+            titulo: "Simplifique a gestão do seu varejo com nossa solução completa! Controle estoque, gerencie vendas e automatize processos. Relatórios detalhados ajudam nas decisões estratégicas, otimizando operações e aumentando lucros. Eleve o sucesso do seu negócio!",
             // link: "https://www.exemplo2.com",
             text: "Ver mais"
         }
-
     ];
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4 gap-4">
@@ -132,27 +147,18 @@ const PageSoluctions = () => {
                 <>
 
                     <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">
-                        {/* <div className="flex justify-center">
-                            <h1 className={`text-5xl font-bold text-center ${Style.h1_shadow}`}>Soluções para a sua Empresa</h1>
-                        </div>
-                        <div className="flex justify-center">
-                            <p className="w-full sm:w-3/4 lg:w-2/3 text-center">
-                                Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos. Clique no seu segmento e verifique o que a BM Informática tem a oferecer:
-                            </p>
-                        </div> */}
-                        <div className="w-full ">
+                        <div className="w-full">
                             <div className="w-full text-center">
                                 <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
                                     Soluções para a sua Empresa
                                 </h1>
 
                                 <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
-                                    Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.<br/>
+                                    Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.<br />
                                     Clique no seu segmento e verifique o que a BM Informática tem a oferecer:
                                 </p>
                             </div>
                         </div>
-
                     </section>
                     <Cardi cardsData={cardsData} />
                 </>
