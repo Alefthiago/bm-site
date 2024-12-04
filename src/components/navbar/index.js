@@ -39,7 +39,7 @@ const NavbarApp = () => {
 
     useEffect(() => {
         // Função para verificar o tamanho da tela
-        const checkScreenSize = () => {
+        const verificarTamanhoTela = () => {
             const width = window.innerWidth;
             setLarguraJanela(width);
             // console.log(width);
@@ -48,11 +48,11 @@ const NavbarApp = () => {
             }
         };
         // Adiciona o evento resize ao window
-        window.addEventListener('resize', checkScreenSize);
+        window.addEventListener('resize', verificarTamanhoTela);
         // Verifica o tamanho da tela ao carregar a página
-        checkScreenSize();
+        verificarTamanhoTela();
         // Remove o evento resize ao desmontar o componente
-        return () => window.removeEventListener('resize', checkScreenSize);
+        return () => window.removeEventListener('resize', verificarTamanhoTela);
     }, []);
     //     /HOOKS      //
 

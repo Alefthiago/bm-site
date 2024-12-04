@@ -10,7 +10,7 @@ import CardDestaques from "@/components/cards/cardDestaques";
 import CardEmissorFiscal from "@/components/cards/cardEmissorFiscal";
 // UTIL. //
 
-export default function Home() {
+export default function Inicio() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
