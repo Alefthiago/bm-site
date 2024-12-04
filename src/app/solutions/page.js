@@ -1,7 +1,6 @@
 'use client';
 // Util //
 import Globals from "@/components/globals";
-import Style from './solution.module.css'
 import { useState, useEffect } from "react";
 
 import Cardi from "@/components/card";
@@ -22,7 +21,7 @@ const PageSoluctions = () => {
         {
             alt: "Descrição da imagem 1",
             // imgSrc: "./solucoes/supermercado.webp",
-            imgSrc: "./solucoes/card1.png",
+            imgSrc: "./solucoes/card1.webp",
             // nome: "Supermercados, Mercadinhos, Frigoríficos, Açougues, Peixarias e Hortifrutis.",
             nome: ["Supermercados", "Mercadinhos", "Frigoríficos", "Açougues", "Peixarias", "Hortifrutis"],
             // titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado! Controle estoque, acompanhe vendas em tempo real e automatize operações diárias. Relatórios precisos ajudam na tomada de decisões estratégicas, aumentando a eficiência e os lucros. Transforme seu supermercado com nosso ERP!",
@@ -33,7 +32,7 @@ const PageSoluctions = () => {
         {
             imgAlt: "Descrição da imagem 2",
             // imgSrc: "./solucoes/padaria.webp",
-            imgSrc: "./solucoes/card2.png",
+            imgSrc: "./solucoes/card2.webp",
             // nome: "Padarias,Delicatessens e Lojas de Conveniência",
             nome: ["Padarias", "Delicatessens", "Conveniência"],
             // titulo: "Modernize a gestão da sua padaria ou delicatessen com nosso ERP exclusivo! Gerencie o estoque de ingredientes, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados garantem decisões mais assertivas, aumentando a eficiência e os lucros. Eleve sua padaria com nosso ERP especializado!",
@@ -44,7 +43,7 @@ const PageSoluctions = () => {
         {
             imgAlt: "Descrição da imagem 2",
             // imgSrc: "./solucoes/restaurante.webp",
-            imgSrc: "./solucoes/card3.png",
+            imgSrc: "./solucoes/card3.webp",
             // nome: "Restaurantes, Lanchonetes, Cafeterias e Food Services",
             nome: ["Restaurantes", "Lanchonetes", "Cafeterias", "Food Services"],
             titulo: "Simplifique a gestão do seu restaurante ou food service com nosso ERP especializado! Controle estoque, pedidos e vendas de forma integrada. Relatórios precisos ajudam a tomar decisões estratégicas, aumentando a eficiência e os lucros",
@@ -54,7 +53,7 @@ const PageSoluctions = () => {
         {
             imgAlt: "Descrição da imagem 2",
             // imgSrc: "./solucoes/materiais.webp",
-            imgSrc: "./solucoes/card4.png",
+            imgSrc: "./solucoes/card4.webp",
             // nome: "Lojas de Materiais de Construção e Madeireiras",
             nome: ["Materiais de Construção", "Madeireiras"],
             titulo: "Transforme a gestão da sua loja de materiais de construção com nossa solução completa! Controle estoque, vendas e automatize processos. Ferramentas precisas ajudam a otimizar a operação e impulsionar o crescimento do seu negócio",
@@ -63,7 +62,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card5.png",
+            imgSrc: "./solucoes/card5.webp",
             // nome: "Livrarias e Papelarias",
             nome: ["Livrarias", "Papelarias"],
             titulo: "Impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle estoque, vendas e automatize processos. Tome decisões estratégicas com relatórios detalhados e leve seu negócio a novos patamares!",
@@ -72,7 +71,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Informatica e eletronicos",
-            imgSrc: "./solucoes/card6.png",
+            imgSrc: "./solucoes/card6.webp",
             // nome: "Informática, Telefonia e Eletrônicos",
             nome: ["Informática", "Telefonia", "Eletrônicos"],
             titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão! Controle estoque, vendas e automatize operações. Com relatórios detalhados, tome decisões estratégicas e impulsione o crescimento do seu negócio!",
@@ -81,7 +80,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card7.png",
+            imgSrc: "./solucoes/card7.webp",
             // nome: "Auto Peças e Oficinas",
             nome: ["Auto Peças", "Oficinas"],
             titulo: "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle estoque, acompanhe serviços e automatize processos. Com relatórios precisos, tome decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio!",
@@ -90,7 +89,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card8.png",
+            imgSrc: "./solucoes/card8.webp",
             // nome: "Lojas de Roupas e Calçados",
             nome: ["Roupas", "Calçados"],
             titulo: "Revitalize a gestão da sua loja de roupas e calçados com nossa solução completa! Gerencie estoque, acompanhe vendas e automatize tarefas. Com relatórios detalhados, tome decisões estratégicas para otimizar operações e aumentar as vendas!",
@@ -99,7 +98,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card9.png",
+            imgSrc: "./solucoes/card9.webp",
             // nome: "Lojas de Brinquedos",
             nome: ["Brinquedos"],
             titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Controle estoque, acompanhe vendas e automatize tarefas. Com relatórios precisos, tome decisões estratégicas para aumentar vendas e eficiência!",
@@ -108,7 +107,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card10.png",
+            imgSrc: "./solucoes/card10.webp",
             // nome: "Pet Shops",
             nome: ["Pet Shops"],
             titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle estoque, acompanhe vendas e automatize processos diários. Relatórios detalhados ajudam a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio!",
@@ -117,7 +116,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card11.png",
+            imgSrc: "./solucoes/card11.webp",
             // nome: "Atacados, Distribuidoras e Atacarejos",
             nome: ["Atacados", "Distribuidoras", "Atacarejos"],
             titulo: "Otimize sua operação com nossa solução completa! Controle estoque, gerencie pedidos e automatize processos. Relatórios precisos ajudam nas decisões estratégicas, impulsionando eficiência e lucratividade. Eleve o desempenho e amplie sua capacidade de atendimento!",
@@ -126,7 +125,7 @@ const PageSoluctions = () => {
         },
         {
             imgAlt: "Descrição da imagem 2",
-            imgSrc: "./solucoes/card12.png",
+            imgSrc: "./solucoes/card12.webp",
             // nome: "Varejo em Geral",
             nome: ["Varejo em Geral"],
             titulo: "Simplifique a gestão do seu varejo com nossa solução completa! Controle estoque, gerencie vendas e automatize processos. Relatórios detalhados ajudam nas decisões estratégicas, otimizando operações e aumentando lucros. Eleve o sucesso do seu negócio!",

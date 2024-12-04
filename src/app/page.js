@@ -42,11 +42,11 @@ const cardSN = [
 
 const cardDt = [
   {
-    imgSrc: './destaques/bm1.png',
+    imgSrc: './destaques/bm1.webp',
     texto: 'Solicite uma Demosntração',
   },
   {
-    imgSrc: './destaques/bm2.png',
+    imgSrc: './destaques/bm2.webp',
     texto: 'Faça um Orçamento',
   }
 ];
