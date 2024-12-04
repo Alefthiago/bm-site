@@ -12,56 +12,56 @@ import { Drawer } from "flowbite-react";
 
 const MenuMobile = (props) => {
     //      VARIAVEIS       //
-    const handleClose = () => props.setIsOpen(false);
+    const handleClose = () => props.setMenuMobileAberto(false);
     //     /VARIAVEIS        //
 
     return (
         <>
-            <Drawer open={props.is_open} onClose={handleClose} position="right" className='roboto-bold'>
+            <Drawer open={props.menuMobileAberto} onClose={handleClose} position="right" className='roboto-bold'>
                 <Drawer.Header title="Menu" className="font-mono" />
                 <Drawer.Items>
                     <div className="font-sans grid grid-cols-1 gap-4 md:grid-cols-1">
                         <Link
                             onClick={() => {
-                                props.clickIcon('home', 'Inicio');
+                                props.clickIcone('home', 'Inicio');
                             }}
                             href={'/'}
-                            className={`w-full rounded-lg border border-gray-200  px-4 py-2  text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            className={`w-full rounded-lg border border-gray-200  px-4 py-2  text-[#0E0E0E] text-center text-sm ${props.verificarRota('/', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Início
                         </Link>
                         <Link
-                            onClick={() => props.clickIcon('solutions', 'Soluções')}
-                            href={'/solutions'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/solutions', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/solutions', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('Solucoes', 'Soluções')}
+                            href={'/Solucoes'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/Solucoes', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/Solucoes', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Soluções
                         </Link>
                         <Link
-                            onClick={() => props.clickIcon('equipment', 'Equipamentos')}
-                            href={'/equipment'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/equipment', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/equipment', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('equipamentos', 'Equipamentos')}
+                            href={'/equipamentos'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/equipamentos', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/equipamentos', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Equipamentos
                         </Link>
                         <Link
-                            onClick={() => props.clickIcon('company', 'Empresa')}
-                            href={'/company'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/company', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/company', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('empresa', 'Empresa')}
+                            href={'/empresa'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/empresa', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/empresa', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Empresa
                         </Link>
                         <Link
-                            onClick={() => props.clickIcon('contact', 'Contato')}
-                            href={'/contact'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/contact', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/contact', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('contato', 'Contato')}
+                            href={'/contato'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/contato', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/contato', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Contato
                         </Link>
                         <Link
-                            onClick={() => props.clickIcon('/suport', 'suport')}
-                            href={'/suport'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verifyRoute('/links', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verifyRoute('/links', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('/suporte', 'suport')}
+                            href={'/suporte'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/links', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/suporte', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Suporte
                         </Link>

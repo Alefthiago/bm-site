@@ -3,49 +3,48 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Navbar } from "flowbite-react";
+import { Kbd } from "flowbite-react";
 import Image from "next/image";
 import MenuMobile from "./menuMobile";
 import IndexesMobile from './indexMobile';
-import { Kbd } from "flowbite-react";
 //      /UTIL       //
 
 //      STYLES      //
-const navbar_link = `text-sm text-[#F8F8F8] md:hover:text-[#D67229]`;
+const navBarLink = `text-sm text-[#F8F8F8] md:hover:text-[#D67229]`;
 //     /STYLES     //
 
 const NavbarApp = () => {
     //      VARIAVEIS       //
-    const pathname = usePathname();
-    const [route, setRoute] = useState(pathname);
-    const [route_mobile, setRouteMobile] = useState();
-    const [windowWidth, setWindowWidth] = useState(0);
+    const caminhoNome = usePathname();
+    const [rota, setRota] = useState(caminhoNome);
+    const [rotaMobile, setRotaMobile] = useState();
+    const [larguraJanela, setLarguraJanela] = useState(0);
 
-    const [is_open, setIsOpen] = useState(false);
-    const routes_text = {
+    const [menuMobileAberto, setMenuMobileAberto] = useState(false);
+    const tituloRota = {
         '/': 'Inicio',
-        '/solutions': 'Soluções',
-        '/equipment': 'Equipamentos',
-        '/company': 'Empresa',
-        '/contact': 'Contato',
-        '/suport': 'Suporte'
+        '/solucoes': 'Soluções',
+        '/equipamentos': 'Equipamentos',
+        '/empresa': 'Empresa',
+        '/contato': 'Contato',
+        '/suporte': 'Suporte'
     }
     //      /VARIAVEIS      //
 
     //      HOOKS      //
     useEffect(() => {
-        setRoute(pathname);
-        setRouteMobile(routes_text[pathname]);
-        // randleRotation()
-    }, [pathname]);
+        setRota(caminhoNome);
+        setRotaMobile(tituloRota[caminhoNome]);
+    }, [caminhoNome]);
 
     useEffect(() => {
         // Função para verificar o tamanho da tela
         const checkScreenSize = () => {
             const width = window.innerWidth;
-            setWindowWidth(width);
+            setLarguraJanela(width);
             // console.log(width);
             if (width >= 768) {
-                setIsOpen(false);
+                setMenuMobileAberto(false);
             }
         };
         // Adiciona o evento resize ao window
@@ -58,19 +57,17 @@ const NavbarApp = () => {
     //     /HOOKS      //
 
     //      FUNCOES     //
-    function clickIcon(text) {
-        setRoute(pathname);
+    function clickIcone(texto) {
+        setRota(caminhoNome);
         if (window.innerWidth <= 1024) {
-            setRouteMobile(text);
-            setRouteMobile(routes_text[pathname]);
-            setIsOpen(false);
+            setRotaMobile(texto);
+            setRotaMobile(tituloRota[caminhoNome]);
+            setMenuMobileAberto(false);
         };
     }
 
-    function verifyRoute(route, mobile = false) {
-        if (route == pathname) {
-            // return 'bg-[#C55300] text-[#F8F8F8]';
-            // console.log(route == pathname);
+    function verificarRota(rota, mobile = false) {
+        if (rota == caminhoNome) {
             return `${mobile ? 'bg-[#206BA5] text-[#F8F8F8]' : 'text-[#D67229]'}`;
         }
     }
@@ -80,10 +77,15 @@ const NavbarApp = () => {
         <Navbar fluid className={`text-[#F8F8F8] bg-[#206BA5]`}>
             {/* PARA PRODUCAO <Navbar.Brand href={`/bm-site/`}> PARA PRODUCAO */}
             <Navbar.Brand href={`/bm-site`}>
-                <Image src={'./bm/lgbranco.svg'} alt={'Logo BM Informática Ltda'} width={60} height={60} />
+                <Image
+                    src={'./bm/lgbranco.svg'}
+                    alt={'Logo BM Informática Ltda'}
+                    width={60}
+                    height={60}
+                />
             </Navbar.Brand>
             {/* indice atual mobile */}
-            <IndexesMobile route_name_mobile={route_mobile} />
+            <IndexesMobile rotaMobileTitulo={rotaMobile} />
             {/* indice atual mobile. */}
             <div className="flex md:order-2">
                 {/* WHATSAPP DESKTOP */}
@@ -94,22 +96,22 @@ const NavbarApp = () => {
                 </a>
                 {/* WHATSAPP DESKTOP. */}
 
-                <svg onClick={() => setIsOpen(true)} xmlns="http://www.w3.org/2000/svg" width="60" height="50" fill="currentColor" className={`text-[#F8F8F8] md:hidden block hover:cursor-pointer bi bi-justify`} viewBox="0 0 16 16">
+                <svg onClick={() => setMenuMobileAberto(true)} xmlns="http://www.w3.org/2000/svg" width="60" height="50" fill="currentColor" className={`text-[#F8F8F8] md:hidden block hover:cursor-pointer bi bi-justify`} viewBox="0 0 16 16">
                     <path d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
                 </svg>
 
                 {/* INDICES MENU MOBILE */}
-                <MenuMobile is_open={is_open} setIsOpen={setIsOpen} clickIcon={clickIcon} verifyRoute={verifyRoute} route={route} />
+                <MenuMobile menuMobileAberto={menuMobileAberto} setMenuMobileAberto={setMenuMobileAberto} clickIcone={clickIcone} verificarRota={verificarRota} />
                 {/* INDICES MENU MOBILE. */}
             </div>
             <Navbar.Collapse className={`md:block hidden font-sans`}>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={`/bm-site/`} className={`${navbar_link}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={`/`} className={`${navbar_link}`}> */}
-                    {verifyRoute('/') == 'text-[#D67229]'
+                <Navbar.Link href={`/bm-site/`} className={`${navBarLink}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={`/`} className={`${navBarLink}`}> */}
+                    {verificarRota('/') == 'text-[#D67229]'
                         ?
-                        <Kbd className={` ${verifyRoute('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={` ${verificarRota('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Início
                         </Kbd>
                         :
@@ -119,12 +121,12 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/solutions'} className={`${navbar_link} ${verifyRoute('/solutions')}`}> */}
-                    {verifyRoute('/solutions') == 'text-[#D67229]'
+                <Navbar.Link href={'/bm-site/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}> */}
+                    {verificarRota('/solucoes') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/solutions') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verificarRota('/solucoes') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Soluções
                         </Kbd>
                         :
@@ -134,12 +136,12 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/equipment'} className={`${navbar_link} ${verifyRoute('/equipment')}`}> */}
-                    {verifyRoute('/equipment') == 'text-[#D67229]'
+                <Navbar.Link href={'/bm-site/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}> */}
+                    {verificarRota('/equipamentos') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/equipment') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verificarRota('/equipamentos') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Equipamentos
                         </Kbd>
                         :
@@ -149,12 +151,12 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/company'} className={`${navbar_link} ${verifyRoute('/company')}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/company'} className={`${navbar_link} ${verifyRoute('/company')}`}> */}
-                    {verifyRoute('/company') == 'text-[#D67229]'
+                <Navbar.Link href={'/bm-site/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}> */}
+                    {verificarRota('/empresa') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/company') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verificarRota('/empresa') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Empresa
                         </Kbd>
                         :
@@ -164,12 +166,12 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/contact'} className={`${navbar_link} ${verifyRoute('/contact')}`}> */}
-                    {verifyRoute('/contact') == 'text-[#D67229]'
+                <Navbar.Link href={'/bm-site/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}> */}
+                    {verificarRota('/contato') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/contact') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verificarRota('/contato') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Contato
                         </Kbd>
                         :
@@ -179,12 +181,12 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}>
-                {/*    /PARA PRODUCAO       */}
-                {/* <Navbar.Link href={'/suport'} className={`${navbar_link} ${verifyRoute('/suport')}`}> */}
-                    {verifyRoute('/suport') == 'text-[#D67229]'
+                <Navbar.Link href={'/bm-site/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}>
+                    {/*    /PARA PRODUCAO       */}
+                    {/* <Navbar.Link href={'/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}> */}
+                    {verificarRota('/suporte') == 'text-[#D67229]'
                         ?
-                        <Kbd className={`${verifyRoute('/suport') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
+                        <Kbd className={`${verificarRota('/suporte') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
                             Suporte
                         </Kbd>
                         :
