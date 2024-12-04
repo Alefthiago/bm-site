@@ -2,11 +2,10 @@
 // Util //
 import Globals from "@/components/globals";
 import { useState, useEffect } from "react";
-
 import Cardi from "@/components/card";
 // Util. //
 
-const PageSoluctions = () => {
+const pageSoluctions = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -166,4 +165,4 @@ const PageSoluctions = () => {
     );
 }
 
-export default PageSoluctions;
+export default pageSoluctions;
