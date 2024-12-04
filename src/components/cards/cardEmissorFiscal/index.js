@@ -39,8 +39,8 @@ const CardEmissorFiscal = (props) => {
     return (
         <>
             {card.map((card, index) => (
-                <div className={`${index == 0 || index == 2 ? 'invisible show-right' : 'invisible show-left'} `}>
-                    <div key={index} className={`flex flex-col items-center p-6 space-y-3 text-center bg-[#206BA5] rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
+                <div key={index} className={`${index == 0 || index == 2 ? 'invisible show-right' : 'invisible show-left'} `}>
+                    <div className={`flex flex-col items-center p-6 space-y-3 text-center bg-[#206BA5] rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
                         <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
                             <div className="relative w-12 h-12">
 

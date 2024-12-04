@@ -19,8 +19,8 @@ const CardDestaques = (props) => {
     return (
         <>
             {cards.map((card, index) => (
-                <div className={`${index == 0 ? 'invisible show-right' : 'invisible show-left'}`}>
-                    <div key={index} className={`overflow-hidden h-auto bg-gray-900 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
+                <div key={index} className={`${index == 0 ? 'invisible show-right' : 'invisible show-left'}`}>
+                    <div className={`overflow-hidden h-auto bg-gray-900 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
 
                         <Image
                             src={card.imgSrc}
