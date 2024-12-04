@@ -3,13 +3,11 @@
 import { Footer } from "flowbite-react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa6";
-// import Alerts from "@/components/alert";
 //   /UTIL.   //
 
 const Footers = () => {
   return (
     <Footer container className="bg-[#206BA5] w-full">
-      {/* <Alerts /> */}
       <div className="w-full">
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
           <div>
