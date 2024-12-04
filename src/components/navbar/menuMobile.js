@@ -31,9 +31,9 @@ const MenuMobile = (props) => {
                             Início
                         </Link>
                         <Link
-                            onClick={() => props.clickIcone('Solucoes', 'Soluções')}
-                            href={'/Solucoes'}
-                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/Solucoes', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/Solucoes', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
+                            onClick={() => props.clickIcone('solucoes', 'Soluções')}
+                            href={'/solucoes'}
+                            className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/solucoes', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/solucoes', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Soluções
                         </Link>

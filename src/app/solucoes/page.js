@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Cardi from "@/components/card";
 // Util. //
 
-const pageSoluctions = () => {
+const PageSoluctions = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -165,4 +165,4 @@ const pageSoluctions = () => {
     );
 }
 
-export default pageSoluctions;
+export default PageSoluctions;
