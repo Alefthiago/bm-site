@@ -15,9 +15,9 @@ const cards = [
 ];
 //     /VARIAVEIS.      //
 
-const CardDestaques = (props) => {
+const CardDestaques = () => {
     return (
-        <>
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-1 lg:grid-cols-2">
             {cards.map((card, index) => (
                 <div key={index} className={`${index == 0 ? 'invisible show-right' : 'invisible show-left'}`}>
                     <div className={`overflow-hidden h-auto bg-gray-900 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
@@ -31,7 +31,7 @@ const CardDestaques = (props) => {
                             className="w-full"
                         />
 
-                        <div className="flex items-center justify-center px-4 py-2  bg-gray-900">
+                        <div className="flex items-center justify-center px-4 py-2 bg-gray-900">
                             <a href="https://wa.me/5581988049715" target="_blank">
                                 <button className="px-2 py-1 text-xs inter-bold text-gray-900 uppercase transition-colors duration-300 transform bg-[#F8F8F8] rounded">
                                     {card.texto}
@@ -41,7 +41,7 @@ const CardDestaques = (props) => {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 

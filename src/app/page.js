@@ -136,9 +136,7 @@ export default function Inicio() {
                   <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
                 </div>
 
-                <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-1 lg:grid-cols-2">
-                  <CardDestaques />
-                </div>
+                <CardDestaques />
               </div>
 
             </section>
@@ -165,9 +163,7 @@ export default function Inicio() {
                   <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
                 </div>
 
-                <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-2">
-                  <CardEmissorFiscal />
-                </div>
+                <CardEmissorFiscal />
               </div>
             </section>
           </section>

@@ -35,9 +35,9 @@ const card = [
 ];
 //     /VARIAVEIS.      //
 
-const CardEmissorFiscal = (props) => {
+const CardEmissorFiscal = () => {
     return (
-        <>
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-2">
             {card.map((card, index) => (
                 <div key={index} className={`${index == 0 || index == 2 ? 'invisible show-right' : 'invisible show-left'} `}>
                     <div className={`flex flex-col items-center p-6 space-y-3 text-center bg-[#206BA5] rounded-xl hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer`}>
@@ -64,7 +64,7 @@ const CardEmissorFiscal = (props) => {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 };
 
