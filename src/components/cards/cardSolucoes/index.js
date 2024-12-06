@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 //     /VARIAVEIS.      //
 const card = [
     {
@@ -85,7 +87,15 @@ const CardSolucoes = () => {
                 <div key={index} className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                     <div className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'} flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[705px]`}>
 
-                        <img className="object-cover object-center w-full h-[310px] p-2" src={card.imgSrc} alt="avatar" />
+                        <div className="relative w-full h-[310px]">
+                            <Image
+                                className="object-cover object-center p-2"
+                                src={card.imgSrc}
+                                fill
+                                alt="Imagem Promocinal"
+                            />
+                        </div>
+
                         <div className="px-6 py-4">
 
                             <p className="py-2 text-gray-700">
