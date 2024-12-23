@@ -5,19 +5,19 @@ import Image from "next/image";
 //      VARIÁVEIS.      //
 const cards = [
     {
-        imgSrc: '/premios/premio1.webp',
+        imgSrc: './premios/premio1.webp',
         alt: 'Prêmio',
         titulo: 'SOLUÇÃO COMPLETA PARA PADARIA',
         texto: 'Lançamentos do Ano',
     },
     {
-        imgSrc: '/premios/premio2.webp',
+        imgSrc: './premios/premio2.webp',
         alt: 'Prêmio',
         titulo: 'SOLUÇÕES & SERVIÇOS',
         texto: 'Soluções & Serviços',
     },
     {
-        imgSrc: '/premios/premio3.webp',
+        imgSrc: './premios/premio3.webp',
         alt: 'Prêmio',
         titulo: 'SOLUÇÕES & SERVIÇOS',
         texto: 'Lançamentos do Ano',

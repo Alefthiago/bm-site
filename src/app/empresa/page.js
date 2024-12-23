@@ -47,7 +47,7 @@ const PageCompany = () => {
                                 <div className="relative w-full lg:w-1/2 lg:mx-6 h-52 lg:h-[36rem]">
                                     <Image
                                         className="object-center rounded-lg"
-                                        src="/bm/BM.svg"
+                                        src="./bm/BM.svg"
                                         alt="Logo da Empresa"
                                         fill
                                     />
