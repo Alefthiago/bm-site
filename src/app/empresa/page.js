@@ -148,7 +148,7 @@ const PageCompany = () => {
 
                     <div className="skew-cc"></div>
 
-                    <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
+                    <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center py-10">
                         <div>
                             <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
 
