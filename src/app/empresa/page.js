@@ -5,6 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Globals from "@/components/globals";
 import { useEffect, useState } from "react";
+import CardPremios from "@/components/cards/cardPremios/Index";
 
 //     /UTIL.       //
 
@@ -147,28 +148,37 @@ const PageCompany = () => {
 
                     <div className="skew-cc"></div>
 
-                    <section className="container px-6 py-10">
-                        <section>
-                            <div className="h-[32rem]">
+                    <section className="container lg:w-3/5 mx-auto flex justify-center items-center">
+                        <CardPremios />
+                    </section>
+
+                    <div className="skew-c"></div>
+
+                    <section className="w-full bg-[#206BA5]">
+                        <section className="container lg:w-3/5 mx-auto">
+                            <div className="h-[20rem]">
                                 <div className="container px-6 py-10 mx-auto">
-                                    <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
+                                    <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
 
                                     <div className="flex justify-center mx-auto mt-6">
-                                        <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-                                        <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                                        <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                                        <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
+                                        <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
+                                        <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
                                     </div>
 
-                                    <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 invisible show-top raleway-regular">
+
+                                    <p className="max-w-2xl mx-auto mt-6 text-center text-[#F8F8F8] invisible show-top raleway-regular">
                                         Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
                                     </p>
                                 </div>
                             </div>
                         </section>
                     </section>
+                    <div className="skew-cc mb-10"></div>
                 </>
-            )}
-        </section>
+            )
+            }
+        </section >
     );
 }
 
