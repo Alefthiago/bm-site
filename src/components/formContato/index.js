@@ -30,11 +30,8 @@ const Form = () => {
 
     return (
         <div className="p-4 py-6 rounded-lg md:p-8 bg-[#206BA5] invisible show-right">
-            {/* <Alert color="failure" icon={HiInformationCircle} className="">
-                <span className="inter-bold">Verifique os campos!</span> <br/> Change a few things up and try submitting again.
-            </Alert> */}
-
             <h1 className="text-2xl text-[#F8F8F8] md:text-3xl inter-bold pt-5">Envie sua Mensagem</h1>
+            
             <form className="pt-5 inter-regular" id="form-cadastro" onSubmit={handleSubmit}>
                 <div className="-mx-2 md:items-center md:flex">
                     <div className="flex-1 px-2">

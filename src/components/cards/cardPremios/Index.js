@@ -13,13 +13,13 @@ const cards = [
     {
         imgSrc: './premios/premio2.webp',
         alt: 'Prêmio',
-        titulo: 'SOLUÇÕES & SERVIÇOS',
+        titulo: 'MELHORES FORNECEDORES',
         texto: 'Soluções & Serviços',
     },
     {
         imgSrc: './premios/premio3.webp',
         alt: 'Prêmio',
-        titulo: 'SOLUÇÕES & SERVIÇOS',
+        titulo: 'EMBALAGENS ITELIGENTES NO PDV',
         texto: 'Lançamentos do Ano',
     },
 ];
