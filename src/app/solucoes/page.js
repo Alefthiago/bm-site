@@ -3,10 +3,13 @@
 import Globals from "@/components/globals";
 import { useState, useEffect } from "react";
 import CardSolucoes from "@/components/cards/cardSolucoes";
+import DatacashModal from "@/components/modals/datacash";
 // Util. //
 
 const PaginaSolucoes = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [modalDatacash, setModalDatacash] = useState(false);
+
 
     useEffect(() => {
         setInterval(() => setIsLoading(false), 500);
@@ -44,7 +47,8 @@ const PaginaSolucoes = () => {
                         </div>
                     </section>
                     <div className="container px-6 py-10 mx-auto flex justify-center">
-                        <CardSolucoes/>
+                        <CardSolucoes modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} />
+                        <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} />
                     </div>
                 </>
             )}

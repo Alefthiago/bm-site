@@ -80,7 +80,7 @@ const card = [
 ];
 //     /VARIAVEIS.      //
 
-const CardSolucoes = () => {
+const CardSolucoes = (props) => {
     return (
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
             {card.map((card, index) => (
@@ -118,8 +118,8 @@ const CardSolucoes = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
-                            <a href="#" target="_blank">
+                        <div onClick={() => props.setModalDatacash(true)} className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
+                            <a>
                                 <button className="px-2 py-1 text-sm uppercase text-[#F8F8F8]">
                                     <span className="font-semibold font-sans">
                                         Mais Informações
