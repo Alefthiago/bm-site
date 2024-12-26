@@ -1,6 +1,6 @@
 //      UTIL.       //
 import { Button, Modal, Timeline } from "flowbite-react";
-import { HiCheckCircle, HiPhone, HiMail } from "react-icons/hi";
+import { HiCheckCircle } from "react-icons/hi";
 //     /UTIL.       //
 
 const DatacashModal = (props) => {
@@ -97,30 +97,16 @@ const DatacashModal = (props) => {
                 </div>
             </Modal.Body>
             <Modal.Footer className="flex flex-col items-center space-y-4 sm:space-y-0 sm:flex-row sm:justify-between">
-                <Button
-                    color="gray"
-                    onClick={() => props.setModalDatacash(false)}
-                    className="w-full sm:w-auto"
-                >
-                    Voltar
-                </Button>
                 <div className="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
-                    <Button
-                        color="blue"
-                        onClick={() => props.setModalDatacash(false)}
-                        className="w-full sm:w-auto"
-                    >
-                        <HiPhone className="mr-2 h-5 w-5" />
-                        Contato Telefônico
-                    </Button>
-                    <Button
-                        color="blue"
-                        onClick={() => props.setModalDatacash(false)}
-                        className="w-full sm:w-auto"
-                    >
-                        <HiMail className="mr-2 h-5 w-5" />
-                        Enviar E-mail
-                    </Button>
+                    <a href="https://wa.me/5581988049715" target="_blank">
+                        <Button
+                            color="blue"
+                            onClick={() => props.setModalDatacash(false)}
+                            className="w-full sm:w-auto"
+                        >
+                            Contato
+                        </Button>
+                    </a>
                 </div>
             </Modal.Footer>
         </Modal>
