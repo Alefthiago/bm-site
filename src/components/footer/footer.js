@@ -12,7 +12,7 @@ const Footers = () => {
         <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4">
           <div>
             <Footer.Brand
-              href="/"
+              href="/bm-site"
               src={'./bm/lgbranco.svg'}
               alt={'Logo BM Informática Ltda'}
               name={<span style={{ color: '#F8F8F8' }} className="inter-bold" >BM Informática</span>}
