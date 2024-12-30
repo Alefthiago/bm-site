@@ -9,7 +9,7 @@ import DatacashModal from "@/components/modals/datacash";
 const PaginaSolucoes = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [modalDatacash, setModalDatacash] = useState(false);
-
+    const [tipoModal, setTipoModal] = useState(1);
 
     useEffect(() => {
         setInterval(() => setIsLoading(false), 500);
@@ -19,6 +19,11 @@ const PaginaSolucoes = () => {
         Globals.observer(setIsLoading);
     }, [isLoading]);
 
+
+    function clickInfo(tipoModal) {
+        setTipoModal(tipoModal);
+        setModalDatacash(true);
+    }
 
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 gap-4 ">
@@ -47,8 +52,8 @@ const PaginaSolucoes = () => {
                         </div>
                     </section>
                     <div className="container px-6 py-10 mx-auto flex justify-center">
-                        <CardSolucoes modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} />
-                        <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} />
+                        <CardSolucoes clickInfo={clickInfo} />
+                        <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} tipoModal={tipoModal} setTipoModal={setTipoModal} />
                     </div>
                 </>
             )}

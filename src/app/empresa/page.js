@@ -42,8 +42,7 @@ const PageCompany = () => {
                                 Quem Somos
                             </h1>
 
-                            <div className="lg:-mx-6 lg:flex lg:items-center">
-
+                            <div className="lg:-mx-6 lg:flex lg:items-center invisible show-top">
                                 <div className="relative w-full lg:w-1/2 lg:mx-6 h-52 lg:h-[36rem]">
                                     <Image
                                         className="object-center rounded-lg"
@@ -85,9 +84,9 @@ const PageCompany = () => {
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
                         <section className="container lg:w-3/5 mx-auto">
-                            <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl">Nossos Princípios</h1>
+                            <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl invisible show-top">Nossos Princípios</h1>
 
-                            <div className="flex justify-center mx-auto mt-6">
+                            <div className="flex justify-center mx-auto mt-6 invisible show-top">
                                 <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
                                 <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
                                 <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
@@ -149,7 +148,7 @@ const PageCompany = () => {
                     <div className="skew-cc"></div>
 
                     <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center py-10">
-                        <div>
+                        <div className="invisible show-top">
                             <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
 
                             <div className="flex justify-center mx-auto mt-6">
@@ -158,7 +157,7 @@ const PageCompany = () => {
                                 <span className="inline-block w-1 h-1 bg-[#206BA5] rounded-full"></span>
                             </div>
 
-                            <p className="max-w-2xl mx-auto my-6 text-center raleway-regular text-gray-800 invisible show-bottom">
+                            <p className="max-w-2xl mx-auto my-6 text-center raleway-regular text-gray-800">
                                 Nossos prêmios refletem o compromisso com a qualidade e inovação. Continuamos a superar expectativas e a oferecer o melhor aos nossos clientes.
                             </p>
                         </div>
@@ -170,7 +169,7 @@ const PageCompany = () => {
                     <section className="w-full bg-[#206BA5]">
                         <section className="container lg:w-3/5 mx-auto">
                             <div className="h-[20rem]">
-                                <div className="container px-6 py-10 mx-auto">
+                                <div className="container px-6 py-10 mx-auto invisible show-top">
                                     <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
 
                                     <div className="flex justify-center mx-auto mt-6">
@@ -180,7 +179,7 @@ const PageCompany = () => {
                                     </div>
 
 
-                                    <p className="max-w-2xl mx-auto mt-6 text-center text-[#F8F8F8] invisible show-top raleway-regular">
+                                    <p className="max-w-2xl mx-auto mt-6 text-center text-[#F8F8F8] raleway-regular">
                                         Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
                                     </p>
                                 </div>
@@ -192,7 +191,7 @@ const PageCompany = () => {
 
                     <section className="w-full pb-10">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
-                            <div>
+                            <div className="invisible show-top">
                                 <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Redes Sociais</h1>
 
                                 <div className="flex justify-center mx-auto mt-6">
@@ -206,7 +205,7 @@ const PageCompany = () => {
                                 </p>
                             </div>
 
-                            <div className="card">
+                            <div className="card invisible show-bottom">
                                 <a className="socialContainer containerOne" href="https://www.instagram.com/bminformaticaoficial/" target="_blank">
                                     <svg viewBox="0 0 16 16" className="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
                                     </path>
