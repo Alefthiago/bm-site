@@ -33,7 +33,7 @@ export default function Inicio() {
         <>
           {/*     EMPRESA.     */}
           <section className="container lg:w-3/5 pb-10">
-            <div className="flex flex-col lg:flex-row items-center">
+            <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
               <div className="w-full lg:w-1/2">
                 <div className="lg:max-w-lg px-2">
                   <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
@@ -79,18 +79,20 @@ export default function Inicio() {
             <section className="container lg:w-3/5 px-6 mx-auto">
 
               <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-2xl text-center inter-bold text-[#F8F8F8] capitalize lg:text-4xl">
-                  Sistemas para Automatizar
-                  <br />
-                  <span className="decoration-[#F8F8F8]">
-                    Seu Negócio
-                  </span>
-                </h1>
+                <div className="invisible show-bottom">
+                  <h1 className="text-2xl text-center inter-bold text-[#F8F8F8] capitalize lg:text-4xl">
+                    Sistemas para Automatizar
+                    <br />
+                    <span className="decoration-[#F8F8F8]">
+                      Seu Negócio
+                    </span>
+                  </h1>
 
-                <div className="flex justify-center mx-auto mt-6">
-                  <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
-                  <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
-                  <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
+                  <div className="flex justify-center mx-auto mt-6">
+                    <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
+                    <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
+                    <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
+                  </div>
                 </div>
 
                 <CardDestaques />
@@ -108,16 +110,18 @@ export default function Inicio() {
           <section className="w-full bg-[#F8F8F8]">
             <section className="container lg:w-3/5 px-6 mx-auto">
               <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-2xl text-center inter-bold text-gray-800 capitalize lg:text-4xl">
-                  Emissão Facilitada e Segura de
-                  <br />
-                  Documentos Fiscais Eletrônicos
-                </h1>
+                <div className="invisible show-bottom">
+                  <h1 className="text-2xl text-center inter-bold text-gray-800 capitalize lg:text-4xl">
+                    Emissão Facilitada e Segura de
+                    <br />
+                    Documentos Fiscais Eletrônicos
+                  </h1>
 
-                <div className="flex justify-center mx-auto mt-6">
-                  <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-                  <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                  <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                  <div className="flex justify-center mx-auto mt-6">
+                    <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                    <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                    <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                  </div>
                 </div>
 
                 <CardEmissorFiscal />
@@ -126,7 +130,7 @@ export default function Inicio() {
           </section>
           {/*     SERVIÇOS.     */}
 
-          <section className="container lg:w-3/5 px-6 mx-auto text-center bg-transparent">
+          <section className="container lg:w-3/5 px-6 mx-auto text-center bg-transparent invisible show-top">
             <a
               href="https://www.planalto.gov.br/ccivil_03/Leis/L8078compilado.htm"
               className="ml-0 flex items-center inter-bold text-xl font-medium text-[#206BA5] hover:underline md:inline-flex hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer"

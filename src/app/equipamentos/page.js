@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Globals from "@/components/globals";
 import CardProdutos from "@/components/cards/cardProdutos";
+import Image from "next/image";
 //     /UTIL.       //
 
 const PageEquipment = () => {
@@ -29,8 +30,37 @@ const PageEquipment = () => {
                 </div>
             ) : (
                 <>
-                    <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4 mb-10">
-                        <div className="w-full">
+                    <section className="container lg:w-3/5 pb-10">
+                        <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
+                            <div className="w-full lg:w-1/2">
+                                <div className="lg:max-w-lg px-2">
+                                    <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
+                                        Equipamentos para
+                                        <br />
+                                        <span className="text-blue-500">
+                                            Automação Comercial
+                                        </span>
+                                    </h1>
+                                    <p className="mt-3 text-gray-600 raleway-regular">
+                                        Equipamentos para Automatizar e
+                                        <br />
+                                        Tornar Sua Empresa Mais Moderna e Eficiente.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                                <div className="w-full h-full max-w-[400px]">
+                                    <Image
+                                        src="./equipamentos/equipamentos.svg"
+                                        alt="Logo BM Informática Ltda"
+                                        layout="responsive"
+                                        width={400}
+                                        height={400}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="w-full">
                             <div className="w-full text-center">
                                 <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
                                     Equipamentos para Automação Comercial
@@ -40,10 +70,10 @@ const PageEquipment = () => {
                                     Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
                                 </p>
                             </div>
-                        </div>
-                        <div className="container px-6 py-10 mx-auto flex justify-center">
-                            <CardProdutos />
-                        </div>
+                        </div> */}
+                    </section>
+                    <section className="container lg:w-3/5 pb-10 flex flex-row justify-center">
+                        <CardProdutos />
                     </section>
                 </>
             )}

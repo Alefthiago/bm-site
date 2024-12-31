@@ -80,8 +80,33 @@ const PageContact = () => {
                 </div>
             ) : (
                 <>
-                    <section className="container lg:w-3/5 pb-10">
-                        <div className="w-full">
+                    <section className="container lg:w-3/5">
+                        <section className="mb-3">
+                            <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
+                                <div className="w-full lg:w-1/2">
+                                    <div className="lg:max-w-lg px-2">
+                                        <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
+                                            Contate-nos
+                                        </h1>
+                                        <p className="mt-3 text-gray-600 raleway-regular">
+                                            Nós da Bm Informatica teremos prazer em ouvir você
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                                    <div className="w-full h-full max-w-[400px]">
+                                        <Image
+                                            src="./contato/contato.svg"
+                                            alt="Logo BM Informática Ltda"
+                                            layout="responsive"
+                                            width={400}
+                                            height={400}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        {/* <div className="w-full">
                             <div className="w-full text-center">
                                 <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
                                     Contate-nos
@@ -91,7 +116,7 @@ const PageContact = () => {
                                     Nós da Bm Informatica teremos prazer em ouvir você
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
 
                         <section className="min-h-screen">
                             <div className="container px-6 py-10 mx-auto">
