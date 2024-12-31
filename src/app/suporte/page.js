@@ -4,39 +4,12 @@ import Globals from "@/components/globals";
 import { Tabs } from "flowbite-react";
 import { ListGroup } from "flowbite-react";
 import { Accordion } from "flowbite-react";
-import { Modal } from "flowbite-react";
 import React, { useEffect, useState } from "react";
-import ModalHorarios from "@/components/modalHorarios";
 import { HR } from "flowbite-react";
 // Util. //
 
-// let barra = "lg:h-[5px] h-[3px] lg:w-[30%] w-[20%] bg-[#A55820] rounded-[7px] lg:mt-4 mt-3"
-// let titulo = "lg:text-3xl text-xl roboto roboto-bold text-[#316994]"
-
 const PageLinks = () => {
-    const [openModal, setOpenModal] = useState(false);
-    const [tituloModal, setTituloModal] = useState('');
-
-    const [openModalHorario, setopenModalHorario] = useState(false);
-    // const [tituloModalHorario, setTituloModalHorario] = useState('');
-
     const [isLoading, setIsLoading] = useState(true);
-
-    // const vModal = (state, tipo = null) => {
-    //     if (tipo) {
-    //         console.log(tipo);
-    //         if (tipo === 'xml-email-datacash') {
-    //             setTituloModal('Enviar XMLs por E-mail');
-    //         } else if (tipo === 'xml-pasta-datacash') {
-    //             setTituloModal('Exportar XMLs para Pasta');
-    //         } else if (tipo === 'config-cert-datacash') {
-    //             setTituloModal('Configuração do Certificado Digital');
-    //         } else if (tipo === 'liberacao-sistema-datacash') {
-    //             setTituloModal('Liberação do sistema');
-    //         }
-    //     }
-    //     setOpenModal(state);
-    // };
 
     useEffect(() => {
         setInterval(() => setIsLoading(false), 500);
@@ -45,11 +18,6 @@ const PageLinks = () => {
     useEffect(() => {
         Globals.observer(setIsLoading);
     }, [isLoading]);
-
-
-    // useEffect(() => {
-    //     setTituloModal(tituloModal);
-    // }, [tituloModal]);
 
     return (
         <section className="flex min-h-screen flex-col items-center pt-12 px-4">
@@ -62,28 +30,20 @@ const PageLinks = () => {
                 </div>
             ) : (
                 <>
-                    <div className="w-full ">
+                    <div className="w-full">
                         <div className="w-full text-center">
                             <h1 className="text-4xl text-[#0E0E0E] invisible show-right inter-bold">
                                 Suporte
                             </h1>
                             <p className="mt-3 text-gray-600 invisible show-left inter-regular">
-                                Verifique nossos horários de funcionamento para ser atendido&nbsp;
-                                <span
-                                    onClick={() => {
-                                        setopenModalHorario(true);
-                                    }}
-                                    className="text-blue-500 hover:cursor-pointer"
-                                >
-                                    aqui!
-                                </span>
+                                Verifique nossos horários de funcionamento para ser atendido
                             </p>
                         </div>
                     </div>
                     <div className="overflow-x-auto w-full invisible show-top lg:w-3/5">
                         <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                             <Tabs.Item active title="Geral" className="inter-bold">
-                                <Accordion>
+                                <Accordion aria-disabled>
                                     <Accordion.Panel active>
                                         <Accordion.Title className="inter-bold">Links Uteis</Accordion.Title>
                                         <Accordion.Content>
@@ -127,7 +87,7 @@ const PageLinks = () => {
                                                 </ListGroup.Item>
                                             </ListGroup>
 
-                                            <HR.Text text="Fiscal"/>
+                                            <HR.Text text="Fiscal" />
 
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item
@@ -192,22 +152,6 @@ const PageLinks = () => {
                             </Tabs.Item>
                         </Tabs>
                     </div>
-                    <Modal show={openModal} onClose={() => setOpenModal(false)}>
-                        <Modal.Header id="modal-header">{tituloModal}</Modal.Header>
-                        <Modal.Body id="modal-body">
-                            <div className="space-y-6">
-                                <iframe
-                                    className="w-full"
-                                    src="https://download.diguiinhoflix.com.br/DFlix%20Downloads/GIFs/XML%20WEB/Exportar%20XML%20WEB.gif"
-                                ></iframe>
-                            </div>
-                        </Modal.Body>
-                    </Modal>
-
-                    <ModalHorarios
-                        setOpenModal={setopenModalHorario}
-                        openModal={openModalHorario}
-                    />
                 </>
             )}
         </section>
