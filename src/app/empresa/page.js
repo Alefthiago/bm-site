@@ -88,7 +88,7 @@ const PageCompany = () => {
 
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
-                        <section className="container px-6 lg:w-3/5 mx-auto">
+                        <section className="container px-6 py-10 mx-auto lg:w-3/5">
                             <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl invisible show-top">Nossos Princípios</h1>
 
                             <div className="flex justify-center mx-auto mt-6 invisible show-top">
@@ -158,8 +158,8 @@ const PageCompany = () => {
 
                     <div className="skew-cc"></div>
 
-                    <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center py-10">
-                        <div className="container px-6 py-10 mx-auto invisible show-top">
+                    <section className="container px-6 py-10 mx-auto lg:w-3/5 flex flex-col justify-center items-center">
+                        <div className="invisible show-top">
                             <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
 
                             <div className="flex justify-center mx-auto mt-6">
@@ -177,7 +177,7 @@ const PageCompany = () => {
 
                     <div className="skew-c"></div>
 
-                    <section className="w-full bg-[#206BA5]">
+                    <section className="w-full bg-[#206BA5] container px-6 py-10 mx-auto">
                         <section className="container lg:w-3/5 mx-auto">
                             <div className="h-[20rem]">
                                 <div className="container px-6 py-10 mx-auto invisible show-top">
@@ -200,9 +200,9 @@ const PageCompany = () => {
 
                     <div className="skew-cc"></div>
 
-                    <section className="w-full pb-10">
+                    <section className="w-full pb-10 container px-6 py-10 mx-auto">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
-                            <div className="container px-6 py-10 mx-auto invisible show-top">
+                            <div className="invisible show-top">
                                 <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Redes Sociais</h1>
 
                                 <div className="flex justify-center mx-auto mt-6">
