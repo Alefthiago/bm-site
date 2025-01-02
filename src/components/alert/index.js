@@ -1,73 +1,32 @@
-'use client';
-//      UTIL.       //
-import { Toast } from "flowbite-react";
-import { FaClock } from "react-icons/fa6";
-import React, { useState, useEffect } from 'react';
-//     /UTIL.       //
+import { Toast, ToastToggle } from "flowbite-react";
+import { HiCheck, HiExclamation, HiX } from "react-icons/hi";
 
-const Alerts = () => {
-    // const [openModal, setOpenModal] = useState(false);
-    const [situacao, setSituacao] = useState('Carregando...');
-    const [corSituacao, setCorSituacao] = useState('');
-
-    useEffect(() => {
-        const updateSituacao = () => {
-            const hora_atual = new Date().getHours();
-            const dia_atual = new Date().getDay(); // 0 (Domingo) - 6 (Sábado)
-
-            if (dia_atual >= 1 && dia_atual <= 5) { // (segunda a sexta)
-                if (hora_atual >= 8 && hora_atual < 12) {
-                    setSituacao('Aberto');
-                    setCorSituacao('text-green-500');
-                } else if (hora_atual >= 12 && hora_atual < 14) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
-                    setCorSituacao('text-yellow-500');
-                } else if (hora_atual >= 14 && hora_atual < 18) {
-                    setSituacao('Aberto');
-                    setCorSituacao('text-green-500');
-                } else if (hora_atual >= 18 && hora_atual < 20) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
-                    setCorSituacao('text-yellow-500');
-                } else {
-                    setSituacao('Fechado');
-                    setCorSituacao('text-red-500');
-                }
-            } else if (dia_atual == 6) { // Verifica se é Sábado
-                if (hora_atual >= 8 && hora_atual < 18) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
-                    setCorSituacao('text-yellow-500');
-                } else {
-                    setSituacao('Fechado');
-                    setCorSituacao('text-red-500');
-                }
-            } else if (dia_atual == 0) { // Verifica se é Domingo
-                if (hora_atual >= 8 && hora_atual < 17) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
-                    setCorSituacao('text-yellow-500');
-                } else {
-                    setSituacao('Fechado');
-                    setCorSituacao('text-red-500');
-                }
-            }
-        };
-
-        updateSituacao();
-        const intervalId = setInterval(updateSituacao, 1000);
-        return () => clearInterval(intervalId);
-    }, []);
-
+const AlertForm = (props) => {
     return (
-        <>
-            <Toast className="w-auto fixed bottom-4 right-4 flex items-center z-20">
-                <div className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cyan-100 ${corSituacao}`}>
-                    <FaClock className="h-5 w-5" />
+        <div className="fixed bottom-4 right-4 flex flex-col gap-4">
+            <Toast className="invisible">
+                <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
+                    <HiCheck className="h-5 w-5" />
                 </div>
-                <div className={`ml-3 text-sm font-normal ${corSituacao}`}>{situacao}</div>
-                <Toast.Toggle />
+                <div className="ml-3 text-sm font-normal">Item moved successfully.</div>
+                <ToastToggle />
             </Toast>
-        </>
-
+            <Toast className="invisible">
+                <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-100 text-red-500 dark:bg-red-800 dark:text-red-200">
+                    <HiX className="h-5 w-5" />
+                </div>
+                <div className="ml-3 text-sm font-normal">Item has been deleted.</div>
+                <ToastToggle />
+            </Toast>
+            <Toast className="invisible">
+                <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-100 text-orange-500 dark:bg-orange-700 dark:text-orange-200">
+                    <HiExclamation className="h-5 w-5" />
+                </div>
+                <div className="ml-3 text-sm font-normal">Improve password difficulty.</div>
+                <ToastToggle />
+            </Toast>
+        </div>
     );
-}
+};
 
-export default Alerts;
+export default AlertForm;

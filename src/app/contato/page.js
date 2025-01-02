@@ -6,10 +6,8 @@ import Globals from "@/components/globals";
 import Image from "next/image";
 import Form from "@/components/formContato";
 import { FaClock } from "react-icons/fa6";
-import { Tabs } from "flowbite-react";
-import { List } from "flowbite-react";
-import { Button, Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { Timeline } from "flowbite-react";
+import AlertForm from "@/components/alert";
 //     /UTIL.       //
 
 const PageContact = () => {
@@ -93,36 +91,14 @@ const PageContact = () => {
                                         </p>
                                     </div>
                                 </div>
-                                {/* <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                                    <div className="w-full h-full max-w-[400px]">
-                                        <Image
-                                            src="./contato/contato.svg"
-                                            alt="Logo BM Informática Ltda"
-                                            layout="responsive"
-                                            width={400}
-                                            height={400}
-                                        />
-                                    </div>
-                                </div> */}
                             </div>
                         </section>
-                        {/* <div className="w-full">
-                            <div className="w-full text-center">
-                                <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
-                                    Contate-nos
-                                </h1>
-
-                                <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
-                                    Nós da Bm Informatica teremos prazer em ouvir você
-                                </p>
-                            </div>
-                        </div> */}
-
                         <section className="min-h-screen">
                             <div className="container py-10 mx-auto">
                                 <div className="md:flex md:items-center md:-mx-10">
                                     <div className="md:w-1/2 md:mx-10">
                                         <Form />
+                                        <AlertForm />
                                     </div>
 
                                     <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
@@ -153,7 +129,9 @@ const PageContact = () => {
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                                 </svg>
 
-                                                <span className="mx-2 text-gray-700 w-72 ">Central (81) 3126-2050 | (81) 3439-5259 | (81) 2011-2754</span>
+                                                <span className="mx-2 text-gray-700 w-72 ">
+                                                    (81) 3126-2050 | (11) 2626-1337| (82) 3142-0562 | (83) 3142-0415
+                                                </span>
                                             </p>
 
                                             <p className="flex items-start -mx-2">
@@ -161,7 +139,9 @@ const PageContact = () => {
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                                 </svg>
 
-                                                <span className="mx-2 text-gray-700 truncate w-72 ">Comercial (81) 9 8804-9715</span>
+                                                <span className="mx-2 text-gray-700 truncate w-72 ">
+                                                    Whatsapp (81) 3126-2050
+                                                </span>
                                             </p>
 
                                             <p className="flex items-start -mx-2">
@@ -272,7 +252,7 @@ const PageContact = () => {
                     <section className="container lg:w-3/5 pb-10">
 
                         <div className="mt-6 w-80 md:mt-8">
-                            <h1 className="text-2xl inter-bold text-gray-600">
+                            <h1 className="text-2xl inter-bold text-gray-800">
                                 Siga-nos
                             </h1>
 

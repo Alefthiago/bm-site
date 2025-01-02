@@ -5,7 +5,7 @@ import { useState } from "react";
 // import { Alert } from "flowbite-react";
 
 
-const Form = () => {
+const Form = (props) => {
     const [form, setForm] = useState({
         nome: '',
         sobreNome: '',

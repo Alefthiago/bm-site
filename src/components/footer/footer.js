@@ -23,23 +23,28 @@ const Footers = () => {
               <Footer.Title title="Contatos" className="text-[#F8F8F8] inter-bold" />
               <Footer.LinkGroup className="text-[#F8F8F8] raleway-regular font-sans grid md:grid-cols-2 grid-cols-2 gap-5">
                 <Footer.Link className="hover:cursor-pointer">
-                  Central <br />
+                  Pernambuco<br />
                   (81) 3126-2050
                 </Footer.Link>
 
                 <Footer.Link className="hover:cursor-pointer">
-                  Central <br />
-                  (81) 3439-5259
+                  São Paulo<br />
+                  (11) 2626-1337
                 </Footer.Link>
 
                 <Footer.Link className="hover:cursor-pointer">
-                  Central <br />
-                  (81) 2011-2754
+                  Alagoas<br />
+                  (82) 3142-0562
                 </Footer.Link>
 
-                <Footer.Link href="https://wa.me/5581988049715" target="_blank">
-                  Comercial (Whatsapp) <br />
-                  (81) 9 8804-9715
+                <Footer.Link className="hover:cursor-pointer">
+                  Paraíba<br />
+                  (83) 3142-0415
+                </Footer.Link>
+
+                <Footer.Link href="https://wa.me/558131262050" target="_blank">
+                  Whatsapp <br />
+                  (81) 3126-2050
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>

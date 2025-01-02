@@ -61,18 +61,23 @@ const PageCompany = () => {
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
                                     </p>
 
-                                    <h3 className="mt-6 text-lg font-medium text-blue-500 inter-bold">Solicite demonstrações</h3>
+                                    <h3 className="mt-6 text-lg font-medium text-blue-500 inter-bold">
+                                        Solicite demonstrações
+                                    </h3>
                                     <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                                        <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
                                     </p>
                                     <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                                        <FaPhoneVolume /> &nbsp;  São Paulo (11) 2626-1337
                                     </p>
                                     <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; (81) 9 9921-1481
+                                        <FaPhoneVolume /> &nbsp; Alagoas (82) 3142-0562
                                     </p>
                                     <p className="text-gray-600 flex items-center raleway-regular">
-                                        <IoLogoWhatsapp /> &nbsp; (81) 9 8804-9715
+                                        <FaPhoneVolume /> &nbsp; Paraíba (83) 3142-0415
+                                    </p>
+                                    <p className="text-gray-600 flex items-center raleway-regular">
+                                        <IoLogoWhatsapp /> &nbsp; Whatsapp (81) 3126-2050
                                     </p>
                                 </div>
                             </div>
@@ -83,7 +88,7 @@ const PageCompany = () => {
 
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
-                        <section className="container lg:w-3/5 mx-auto">
+                        <section className="container px-6 lg:w-3/5 mx-auto">
                             <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl invisible show-top">Nossos Princípios</h1>
 
                             <div className="flex justify-center mx-auto mt-6 invisible show-top">
@@ -99,10 +104,16 @@ const PageCompany = () => {
                             </p>
 
                             <div className="flex items-center justify-center invisible show-bottom">
-                                <div className="flex items-center p-1 border border-[#D67229] rounded-xl inter-regular">
-                                    <button onClick={() => setTab(0)} className={`px-4 py-2 text-sm ${tabsP == 0 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>Missão</button>
-                                    <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-sm ${tabsP == 1 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>Visão</button>
-                                    <button onClick={() => setTab(2)} className={`px-4 py-2 text-sm ${tabsP == 2 ? 'text-[#F8F8F8]' : 'text-[#D67229]'} ${tabsP == 2 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:px-12`}>Valores</button>
+                                <div className="flex items-center p-1 border border-[#F8F8F8] rounded-xl inter-regular">
+                                    <button onClick={() => setTab(0)} className={`px-4 py-2 text-lg text-[#F8F8F8] capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>
+                                        Missão
+                                    </button>
+                                    <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-lg text-[#F8F8F8] ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>
+                                        Visão
+                                    </button>
+                                    <button onClick={() => setTab(2)} className={`px-4 py-2 text-lg text-[#F8F8F8] ${tabsP == 2 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:px-12`}>
+                                        Valores
+                                    </button>
                                 </div>
                             </div>
 
