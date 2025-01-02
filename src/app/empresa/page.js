@@ -159,7 +159,7 @@ const PageCompany = () => {
                     <div className="skew-cc"></div>
 
                     <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center py-10">
-                        <div className="invisible show-top">
+                        <div className="container px-6 py-10 mx-auto invisible show-top">
                             <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
 
                             <div className="flex justify-center mx-auto mt-6">
@@ -202,7 +202,7 @@ const PageCompany = () => {
 
                     <section className="w-full pb-10">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
-                            <div className="invisible show-top">
+                            <div className="container px-6 py-10 mx-auto invisible show-top">
                                 <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Redes Sociais</h1>
 
                                 <div className="flex justify-center mx-auto mt-6">

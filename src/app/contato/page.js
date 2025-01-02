@@ -96,12 +96,12 @@ const PageContact = () => {
                         <section className="min-h-screen">
                             <div className="container py-10 mx-auto">
                                 <div className="md:flex md:items-center md:-mx-10">
-                                    <div className="md:w-1/2 md:mx-10">
+                                    <div className="container px-6 py-10 mx-auto md:w-1/2 md:mx-10">
                                         <Form />
                                         <AlertForm />
                                     </div>
 
-                                    <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
+                                    <div className="container px-6 py-10 mx-auto mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
                                         <Image
                                             className="object-cover mx-auto rounded-full shrink-0 w-96 h-96"
                                             src="./bm/OIP.webp"
@@ -251,7 +251,7 @@ const PageContact = () => {
 
                     <section className="container lg:w-3/5 pb-10">
 
-                        <div className="mt-6 w-80 md:mt-8">
+                        <div className="mt-6 w-80 md:mt-8 container px-6 py-10 mx-auto">
                             <h1 className="text-2xl inter-bold text-gray-800">
                                 Siga-nos
                             </h1>
