@@ -44,13 +44,13 @@ const CardPremios = () => {
                         <div className="py-5 text-center">
                             <a
                                 href="#"
-                                className="block text-xl font-bold text-gray-800"
+                                className="block text-xl text-gray-800 inter-bold"
                                 tabIndex="0"
                                 role="link"
                             >
                                 {card.titulo}
                             </a>
-                            <span className="text-sm text-gray-700">
+                            <span className="text-sm text-gray-700 raleway-regular">
                                 {card.texto}
                             </span>
                         </div>

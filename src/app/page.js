@@ -45,6 +45,16 @@ export default function Inicio() {
                   </h1>
                   <p className="mt-3 text-gray-600 raleway-regular">
                     Nossos profissionais, especialistas em várias áreas criam soluções que transformam seu dia a dia.
+                    <br />
+                    Soluções em softwares de gestão
+                    <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                      &nbsp;ERP&nbsp;
+                    </abbr>
+                    em nuvem e
+                    <abbr title={`Ponto de Venda`}>
+                      &nbsp;PDV&nbsp;
+                    </abbr>
+                    para o varejo, além de equipamentos de automação comercial em todo o Brasil, otimize a gestão do seu negócio e aumente sua eficiência!
                   </p>
                   <a href="https://wa.me/5581988049715" target="_blank">
                     <button className="inter-regular w-full px-5 py-2 mt-6 text-sm tracking-wider text-[#F8F8F8] uppercase bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none transition-transform duration-500 ease-in-out transform hover:scale-105">

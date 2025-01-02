@@ -60,17 +60,6 @@ const PageEquipment = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="w-full">
-                            <div className="w-full text-center">
-                                <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] invisible show-right inter-bold">
-                                    Equipamentos para Automação Comercial
-                                </h1>
-
-                                <p className="mt-3 text-gray-600 font-sans invisible show-left inter-regular">
-                                    Equipamentos para Automatizar e Tornar Sua Empresa Mais Moderna e Eficiente.
-                                </p>
-                            </div>
-                        </div> */}
                     </section>
                     <section className="container lg:w-3/5 pb-10 flex flex-row justify-center">
                         <CardProdutos />

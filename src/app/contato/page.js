@@ -93,7 +93,7 @@ const PageContact = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                                {/* <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                                     <div className="w-full h-full max-w-[400px]">
                                         <Image
                                             src="./contato/contato.svg"
@@ -103,7 +103,7 @@ const PageContact = () => {
                                             height={400}
                                         />
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </section>
                         {/* <div className="w-full">
@@ -119,7 +119,7 @@ const PageContact = () => {
                         </div> */}
 
                         <section className="min-h-screen">
-                            <div className="container px-6 py-10 mx-auto">
+                            <div className="container py-10 mx-auto">
                                 <div className="md:flex md:items-center md:-mx-10">
                                     <div className="md:w-1/2 md:mx-10">
                                         <Form />
@@ -207,13 +207,12 @@ const PageContact = () => {
                             <div className="w-full">
                                 {/* Cabeçalho da seção */}
                                 <div className="flex flex-col justify-center items-center">
-                                    <h1 className="mt-2 text-2xl font-semibold text-[#F8F8F8] md:text-3xl">
+                                    <h1 className="mt-2 text-2xl text-[#F8F8F8] md:text-3xl inter-bold">
                                         Nossos horários
                                     </h1>
                                     <div className="flex gap-1 items-center">
-                                        <p id="horario-situacao" className={corSituacao}>
+                                        <p id="horario-situacao" className={`${corSituacao} inter-bold`}>
                                             {situacao}
-
                                         </p>
                                         <FaClock className={`h-3 w-3 ${corSituacao}`} />
                                     </div>
@@ -226,19 +225,19 @@ const PageContact = () => {
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Title>Segunda a Sexta</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8]">Comercial - Administrativo</Timeline.Time>
-                                                <Timeline.Title>08:00 às 12:00</Timeline.Title>
-                                                <Timeline.Title>14:00 às 18:00</Timeline.Title>
-                                                <Timeline.Body className="text-[#F8F8F8]">
+                                                <Timeline.Title className="inter-bold">Segunda a Sexta</Timeline.Title>
+                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Comercial - Administrativo</Timeline.Time>
+                                                <Timeline.Title className="inter-bold">08:00 às 12:00</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">14:00 às 18:00</Timeline.Title>
+                                                <Timeline.Body className="text-[#F8F8F8] raleway-regular">
                                                     Para atendimentos fora do horário informado, consulte a disponibilidade.
                                                 </Timeline.Body>
 
-                                                <Timeline.Time className="text-[#F8F8F8]">Suporte</Timeline.Time>
-                                                <Timeline.Title>08:00 às 12:00</Timeline.Title>
-                                                <Timeline.Title>12:00 às 14:00 Plantão</Timeline.Title>
-                                                <Timeline.Title>14:00 às 18:00</Timeline.Title>
-                                                <Timeline.Title>18:00 às 20:00 Plantão</Timeline.Title>
+                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="inter-bold">08:00 às 12:00</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">12:00 às 14:00 Plantão</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">14:00 às 18:00</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">18:00 às 20:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
 
@@ -246,9 +245,9 @@ const PageContact = () => {
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Title>Sabado</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8]">Suporte</Timeline.Time>
-                                                <Timeline.Title>08:00 às 18:00 Plantão</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">Sabado</Timeline.Title>
+                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="inter-bold">08:00 às 18:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
 
@@ -256,9 +255,9 @@ const PageContact = () => {
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Title>Domingo e Feriado</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8]">Suporte</Timeline.Time>
-                                                <Timeline.Title>08:00 às 17:00 Plantão</Timeline.Title>
+                                                <Timeline.Title className="inter-bold">Domingo e Feriado</Timeline.Title>
+                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="inter-bold">08:00 às 17:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
                                     </Timeline>
@@ -273,7 +272,7 @@ const PageContact = () => {
                     <section className="container lg:w-3/5 pb-10">
 
                         <div className="mt-6 w-80 md:mt-8">
-                            <h1 className="text-2xl font-semibold text-gray-600">
+                            <h1 className="text-2xl inter-bold text-gray-600">
                                 Siga-nos
                             </h1>
 

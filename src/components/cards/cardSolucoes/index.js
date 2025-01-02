@@ -111,7 +111,7 @@ const CardSolucoes = (props) => {
 
                         <div className="px-6 py-4">
 
-                            <p className="py-2 text-gray-700">
+                            <p className="py-2 text-gray-700 raleway-regular">
                                 {card.titulo}
                             </p>
 
@@ -123,7 +123,7 @@ const CardSolucoes = (props) => {
                                             <path fillRule="evenodd" clipRule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" />
                                         </svg>
 
-                                        <h1 className="px-2 text-sm">
+                                        <h1 className="px-2 text-sm inter-bold">
                                             {item}
                                         </h1>
                                     </div>
@@ -134,7 +134,7 @@ const CardSolucoes = (props) => {
                         <div onClick={() => props.clickInfo(card.tipoModal)} className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
                             <a>
                                 <button className="px-2 py-1 text-sm uppercase text-[#F8F8F8]">
-                                    <span className="font-semibold font-sans">
+                                    <span className="font-semibold inter-bold">
                                         Mais Informações
                                     </span>
                                 </button>

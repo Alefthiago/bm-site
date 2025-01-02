@@ -34,11 +34,11 @@ const PageCompany = () => {
                 <>
                     <section className="container lg:w-3/5 mx-auto">
                         <div className="container px-6 py-10 mx-auto">
-                            <p className="text-xl text-blue-500 invisible show-right inter-regular">
+                            <p className="text-xl text-gray-800 invisible show-right inter-regular">
                                 A Empresa
                             </p>
 
-                            <h1 className="mt-2 text-2xl inter-bold text-gray-800 capitalize lg:text-3xl invisible show-left">
+                            <h1 className="mt-2 text-2xl inter-bold text-blue-500 capitalize lg:text-3xl invisible show-left">
                                 Quem Somos
                             </h1>
 

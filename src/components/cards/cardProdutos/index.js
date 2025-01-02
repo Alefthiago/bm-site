@@ -77,10 +77,10 @@ const CardProdutos = () => {
                             </div>
                         )}
                     >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900">
+                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 inter-bold">
                             {card.nome}
                         </h5>
-                        <p className="font-normal text-gray-700">
+                        <p className="font-normal text-gray-700 raleway-regular">
                             {card.titulo}
                         </p>
                     </Card>
