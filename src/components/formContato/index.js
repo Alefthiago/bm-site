@@ -25,7 +25,13 @@ const Form = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        alert('submit')
+
+        // form.nome = form.nome.trim();
+        // form.sobreNome = form.sobreNome.trim();
+        // form.email = form.email.trim();
+        // form.documento = form.documento.trim();
+        // form.msg = form.msg.trim();
+        console.log(form);
     }
 
     return (
@@ -52,7 +58,7 @@ const Form = (props) => {
 
                 <div className="mt-4">
                     <label className="block mb-2 text-sm text-[#F8F8F8]">CNPJ/CPF</label>
-                    <input type="email" placeholder="Documento" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name="documento" value={form.documento} onChange={changeForm} />
+                    <input type="text" placeholder="Documento" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name="documento" value={form.documento} onChange={changeForm} />
                 </div>
 
                 <div className="w-full mt-4">

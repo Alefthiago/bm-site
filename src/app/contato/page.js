@@ -78,7 +78,7 @@ const PageContact = () => {
                 </div>
             ) : (
                 <>
-                    <section className="container lg:w-3/5 container px-6 py-10 mx-auto">
+                    <section className="container lg:w-3/5 px-6 py-10 mx-auto">
                         <section className="mb-3">
                             <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                                 <div className="w-full lg:w-1/2">
@@ -182,8 +182,8 @@ const PageContact = () => {
 
                     <div className="skew-c"></div>
 
-                    <section className="w-full bg-[#206BA5] container px-6 py-10 mx-auto">
-                        <section className="container lg:w-3/5 px-6 mx-auto">
+                    <section className="w-full bg-[#206BA5]">
+                        <section className="container lg:w-3/5 px-6 py-10 mx-auto">
                             <div className="w-full">
                                 {/* Cabeçalho da seção */}
                                 <div className="flex flex-col justify-center items-center">
@@ -249,7 +249,7 @@ const PageContact = () => {
 
                     <div className="skew-cc"></div>
 
-                    <section className="container lg:w-3/5 pb-10 container px-6 py-10 mx-auto">
+                    <section className="container lg:w-3/5 pb-10 px-6 py-10 mx-auto">
 
                         <div className="mt-6 w-80 md:mt-8">
                             <h1 className="text-2xl inter-bold text-gray-800">

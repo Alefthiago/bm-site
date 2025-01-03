@@ -177,8 +177,8 @@ const PageCompany = () => {
 
                     <div className="skew-c"></div>
 
-                    <section className="w-full bg-[#206BA5] container px-6 py-10 mx-auto">
-                        <section className="container lg:w-3/5 mx-auto">
+                    <section className="w-full bg-[#206BA5]">
+                        <section className="container lg:w-3/5 mx-auto px-6 py-10">
                             <div className="h-[20rem]">
                                 <div className="container px-6 py-10 mx-auto invisible show-top">
                                     <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
