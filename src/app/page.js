@@ -33,7 +33,67 @@ export default function Inicio() {
         <>
           {/*     EMPRESA.     */}
           <section className="container lg:w-3/5 pb-10">
-            <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
+            <section class="bg-white dark:bg-gray-900">
+              <div class="container px-6 py-10 mx-auto">
+                <div class="text-left">
+                  <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
+                    Sistemas para Automatizar
+                    <br />
+                    <span className="text-blue-500">
+                      O Seu Negócio
+                    </span>
+                  </h1>
+                  <p className="mt-3 text-gray-600 raleway-regular">
+                    Soluções em softwares de gestão
+                    <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                      &nbsp;ERP&nbsp;
+                    </abbr>
+                    em nuvem e
+                    <abbr title={`Ponto de Venda`}>
+                      &nbsp;PDV&nbsp;
+                    </abbr>
+                    para o varejo, além de equipamentos de automação comercial em todo o Brasil, otimize a gestão do seu negócio e aumente sua eficiência!
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+                  <div>
+                    <img class="relative z-10 object-cover w-full rounded-md" src="./destaques/bm2.webp" alt="" />
+
+                    <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                      <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        All the features you want to know
+                      </a>
+
+                      <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
+                        laudantium quia tempore delect
+                      </p>
+
+                      <p class="mt-3 text-sm text-blue-500">21 October 2019</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img class="relative z-10 object-cover w-full rounded-md" src="./destaques/bm1.webp" alt="" />
+
+                    <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                      <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                        How to use sticky note for problem solving
+                      </a>
+
+                      <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
+                        laudantium quia tempore delect
+                      </p>
+
+                      <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {/* <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
               <div className="w-full lg:w-1/2">
                 <div className="lg:max-w-lg px-2">
                   <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
@@ -74,7 +134,7 @@ export default function Inicio() {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <CardServicos />
           </section>

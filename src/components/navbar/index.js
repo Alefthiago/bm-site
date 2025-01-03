@@ -27,7 +27,8 @@ const NavbarApp = () => {
         '/equipamentos': 'Equipamentos',
         '/empresa': 'Empresa',
         '/contato': 'Contato',
-        '/suporte': 'Suporte'
+        '/suporte': 'Suporte',
+        // '/datacash': 'Soluções'
     }
     //      /VARIAVEIS      //
 
@@ -106,9 +107,9 @@ const NavbarApp = () => {
             </div>
             <Navbar.Collapse className={`md:block hidden font-sans`}>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={`/bm-site/`} className={`${navBarLink}`}>
+                {/* <Navbar.Link href={`/bm-site/`} className={`${navBarLink}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={`/`} className={`${navBarLink}`}> */}
+                    <Navbar.Link href={`/`} className={`${navBarLink}`}>
                     {verificarRota('/') == 'text-[#D67229]'
                         ?
                         <Kbd className={` ${verificarRota('/') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -121,9 +122,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}>
+                {/* <Navbar.Link href={'/bm-site/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}> */}
+                    <Navbar.Link href={'/solucoes'} className={`${navBarLink} ${verificarRota('/solucoes')}`}>
                     {verificarRota('/solucoes') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/solucoes') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -136,9 +137,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}>
+                {/* <Navbar.Link href={'/bm-site/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}> */}
+                    <Navbar.Link href={'/equipamentos'} className={`${navBarLink} ${verificarRota('/equipamentos')}`}>
                     {verificarRota('/equipamentos') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/equipamentos') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -151,9 +152,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}>
+                {/* <Navbar.Link href={'/bm-site/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}> */}
+                    <Navbar.Link href={'/empresa'} className={`${navBarLink} ${verificarRota('/empresa')}`}>
                     {verificarRota('/empresa') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/empresa') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -166,9 +167,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}>
+                {/* <Navbar.Link href={'/bm-site/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}> */}
+                    <Navbar.Link href={'/contato'} className={`${navBarLink} ${verificarRota('/contato')}`}>
                     {verificarRota('/contato') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/contato') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
@@ -181,9 +182,9 @@ const NavbarApp = () => {
                     }
                 </Navbar.Link>
                 {/*     PARA PRODUCAO       */}
-                <Navbar.Link href={'/bm-site/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}>
+                {/* <Navbar.Link href={'/bm-site/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}> */}
                     {/*    /PARA PRODUCAO       */}
-                    {/* <Navbar.Link href={'/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}> */}
+                    <Navbar.Link href={'/suporte'} className={`${navBarLink} ${verificarRota('/suporte')}`}>
                     {verificarRota('/suporte') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/suporte') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
