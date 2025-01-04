@@ -53,7 +53,7 @@ const PageLinks = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                            {/* <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
                                 <div className="w-full h-full max-w-[400px]">
                                     <Image
                                         src="./suporte/suporte.svg"
@@ -63,7 +63,7 @@ const PageLinks = () => {
                                         height={300}
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                     <section className="container lg:w-3/5 pb-10 invisible show-top">

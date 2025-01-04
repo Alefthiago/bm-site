@@ -5,9 +5,21 @@ import { useState, useEffect } from "react";
 import Globals from "@/components/globals";
 import { HiArrowRight } from "react-icons/hi";
 
+import { Carousel } from "flowbite-react";
 import CardDestaques from "@/components/cards/cardDestaques";
 import CardEmissorFiscal from "@/components/cards/cardEmissorFiscal";
 import CardServicos from "@/components/cards/cardServicos";
+
+import { BsCart4 } from "react-icons/bs";
+import { PiBreadBold } from "react-icons/pi";
+import { FaBarcode } from "react-icons/fa";
+import { MdOutlinePets } from "react-icons/md";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { FaTools } from "react-icons/fa";
+
+
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight } from "react-icons/hi";
 // UTIL. //
 
 export default function Inicio() {
@@ -32,68 +44,8 @@ export default function Inicio() {
       ) : (
         <>
           {/*     EMPRESA.     */}
-          <section className="container lg:w-3/5 pb-10">
-            <section class="bg-white dark:bg-gray-900">
-              <div class="container px-6 py-10 mx-auto">
-                <div class="text-left">
-                  <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
-                    Sistemas para Automatizar
-                    <br />
-                    <span className="text-blue-500">
-                      O Seu Negócio
-                    </span>
-                  </h1>
-                  <p className="mt-3 text-gray-600 raleway-regular">
-                    Soluções em softwares de gestão
-                    <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
-                      &nbsp;ERP&nbsp;
-                    </abbr>
-                    em nuvem e
-                    <abbr title={`Ponto de Venda`}>
-                      &nbsp;PDV&nbsp;
-                    </abbr>
-                    para o varejo, além de equipamentos de automação comercial em todo o Brasil, otimize a gestão do seu negócio e aumente sua eficiência!
-                  </p>
-                </div>
-
-                <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
-                  <div>
-                    <img class="relative z-10 object-cover w-full rounded-md" src="./destaques/bm2.webp" alt="" />
-
-                    <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                      <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        All the features you want to know
-                      </a>
-
-                      <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
-                      </p>
-
-                      <p class="mt-3 text-sm text-blue-500">21 October 2019</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <img class="relative z-10 object-cover w-full rounded-md" src="./destaques/bm1.webp" alt="" />
-
-                    <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-                      <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
-                        How to use sticky note for problem solving
-                      </a>
-
-                      <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
-                      </p>
-
-                      <p class="mt-3 text-sm text-blue-500">20 October 2019</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
+          <section className="container lg:w-3/5 pt-5">
+            <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
               <div className="w-full lg:w-1/2">
                 <div className="lg:max-w-lg px-2">
                   <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
@@ -104,8 +56,6 @@ export default function Inicio() {
                     </span>
                   </h1>
                   <p className="mt-3 text-gray-600 raleway-regular">
-                    Nossos profissionais, especialistas em várias áreas criam soluções que transformam seu dia a dia.
-                    <br />
                     Soluções em softwares de gestão
                     <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
                       &nbsp;ERP&nbsp;
@@ -134,9 +84,219 @@ export default function Inicio() {
                   />
                 </div>
               </div>
-            </div> */}
+            </div>
+
+            <div className="flex justify-center mt-6 w-full">
+              <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 w-full rounded-none">
+                <Carousel slideInterval={5000} className="rounded-none">
+                  <img src="./destaques/bm1.webp" alt="..." />
+                  <img src="./destaques/bm2.webp" alt="..." />
+                </Carousel>
+              </div>
+            </div>
 
             <CardServicos />
+
+            <section class="pt-5">
+              <div class="container py-10 mx-auto">
+                <h1 class="text-3xl inter-bold lg:text-4xl font-semibold text-gray-800 capitalize">
+                  Sistemas para Automatizar Sua Empresa
+                </h1>
+
+                <p class="mt-4 text-gray-500 xl:mt-1 dark:text-gray-300">
+                  Atendemos os mais diversos segmentos do mercado, com soluções personalizadas para cada tipo de negócio, conheça nossos produtos e serviços e veja como podemos ajudar a sua empresa a crescer.
+                </p>
+
+                {/* <div class="mt-8 xl:mt-12 2xl:flex lg:items-center">
+                  <div class="grid w-full grid-cols-1 gap-8 2xl:w-1/2 xl:gap-16 md:grid-cols-2">
+                    <div class="space-y-3">
+                      <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                      </span>
+
+                      <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">New Components</h1>
+
+                      <p class="text-gray-500 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                      </p>
+                    </div>
+
+                    <div class="space-y-3">
+                      <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                        </svg>
+                      </span>
+
+                      <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">elegant Dark Mode</h1>
+
+                      <p class="text-gray-500 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                      </p>
+                    </div>
+
+                    <div class="space-y-3">
+                      <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                        </svg>
+                      </span>
+
+                      <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Easy to customiztions</h1>
+
+                      <p class="text-gray-500 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                      </p>
+                    </div>
+
+                    <div class="space-y-3">
+                      <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                      </span>
+
+                      <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Simple & clean designs</h1>
+
+                      <p class="text-gray-500 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="hidden 2xl:flex 2xl:w-1/2 lg:justify-center">
+                    <img class="w-80 h-80 flex-shrink-0 object-cover rounded-full" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+                  </div>
+                </div> */}
+
+                <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                      </svg> */}
+                      <BsCart4 />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Supermercados</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                      </svg> */}
+                      <PiBreadBold />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Padarias</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg> */}
+                      <FaBarcode />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Varejo e Atacado</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                      </svg> */}
+                      <MdOutlinePets />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Pet Shops</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                      </svg> */}
+                      <IoFastFoodOutline />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Restaurantes e Lanchonetes</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+
+                  <div class="space-y-3">
+                    <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg> */}
+                      <FaTools />
+                    </span>
+
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Oficinas</h1>
+
+                    <p class="text-gray-500 dark:text-gray-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                    </p>
+
+                    <a href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                      <span class="mx-1">read more</span>
+                      <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {/* <CardServicos /> */}
           </section>
           {/*    /EMPRESA.     */}
 
@@ -147,15 +307,102 @@ export default function Inicio() {
           {/*     DESTAQUES.     */}
           <section className="w-full bg-[#206BA5]">
             <section className="container lg:w-3/5 px-6 mx-auto">
+              <h1 class="text-3xl inter-bold lg:text-4xl text-center font-semibold text-[#F8F8F8] capitalize">
+                Integrações com as Principais Plataformas e Ferramentas
+              </h1>
 
-              <div className="container px-6 py-10 mx-auto">
+              <p class="mt-4 text-[#F8F8F8] xl:mt-1 text-center">
+                Tenha seu sistema de gestão integrado com aplicativos de delivery e otimize seus processos com as melhores ferramentas do mercado.
+              </p>
+
+              <h1 class="pt-10 text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl">
+                Principais Integrações
+              </h1>
+
+              <div class="grid grid-cols-1 gap-8 mt-3 xl:gap-16 md:grid-cols-2 xl:grid-cols-2 mb-10">
+                <div class="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg> */}
+                    <img src="./destaques/ifood.svg" alt="E-commerce" class="w-8 h-8" />
+                  </span>
+
+                  <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Ifood</h1>
+
+                  <p class="text-gray-500 dark:text-gray-300">
+                    Realiza a integração do seu sistema de gestão com o aplicativo de delivery mais popular do Brasil
+                  </p>
+
+                  <a href="#" class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">read more</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </a>
+                </div>
+
+                <div class="flex flex-col items-center ju p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
+                  <span class="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg> */}
+                    <img src="./destaques/Ze_Delivery.svg" alt="E-commerce" class="w-8 h-8" />
+                  </span>
+
+                  <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Zé Delivery</h1>
+
+                  <p class="text-gray-500 dark:text-gray-300">
+                    Controle suas vendas e estoque de bebidas com o Zé Delivery
+                  </p>
+
+                  <a href="#" class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">read more</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </a>
+                </div>
+              </div>
+              <Timeline>
+                <Timeline.Item>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>February 2022</Timeline.Time>
+                    <Timeline.Title>Application UI code in Tailwind CSS</Timeline.Title>
+                    <Timeline.Body>
+                      Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
+                      E-commerce & Marketing pages.
+                    </Timeline.Body>
+                    <Button color="gray">
+                      Learn More
+                      <HiArrowNarrowRight className="ml-2 h-3 w-3" />
+                    </Button>
+                  </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>March 2022</Timeline.Time>
+                    <Timeline.Title>Marketing UI design in Figma</Timeline.Title>
+                    <Timeline.Body>
+                      All of the pages and components are first designed in Figma and we keep a parity between the two versions
+                      even as we update the project.
+                    </Timeline.Body>
+                  </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>April 2022</Timeline.Time>
+                    <Timeline.Title>E-Commerce UI code in Tailwind CSS</Timeline.Title>
+                    <Timeline.Body>
+                      Get started with dozens of web components and interactive elements built on top of Tailwind CSS.
+                    </Timeline.Body>
+                  </Timeline.Content>
+                </Timeline.Item>
+              </Timeline>
+
+              {/* <div className="container px-6 py-10 mx-auto">
                 <div className="invisible show-bottom">
                   <h1 className="text-2xl text-center inter-bold text-[#F8F8F8] capitalize lg:text-4xl">
-                    Sistemas para Automatizar
-                    <br />
-                    <span className="decoration-[#F8F8F8]">
-                      Seu Negócio
-                    </span>
+                    Faça a Gestão do Seu Negócio com A BM Informática
                   </h1>
 
                   <div className="flex justify-center mx-auto mt-6">
@@ -166,7 +413,7 @@ export default function Inicio() {
                 </div>
 
                 <CardDestaques />
-              </div>
+              </div> */}
 
             </section>
           </section>
