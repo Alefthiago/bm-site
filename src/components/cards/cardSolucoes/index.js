@@ -32,27 +32,27 @@ const card = [
         titulo: "Transforme a gestão da sua loja de materiais de construção com nossa solução completa! Controle estoque, vendas e automatize processos. Ferramentas precisas ajudam a otimizar a operação e impulsionar o crescimento do seu negócio",
         tipoModal: 1
     },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card5.webp",
-        nome: ["Livrarias", "Papelarias"],
-        titulo: "Impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle estoque, vendas e automatize processos. Tome decisões estratégicas com relatórios detalhados e leve seu negócio a novos patamares!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Informatica e eletronicos",
-        imgSrc: "./solucoes/card6.webp",
-        nome: ["Informática", "Telefonia", "Eletrônicos"],
-        titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão! Controle estoque, vendas e automatize operações. Com relatórios detalhados, tome decisões estratégicas e impulsione o crescimento do seu negócio!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card7.webp",
-        nome: ["Auto Peças", "Oficinas"],
-        titulo: "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle estoque, acompanhe serviços e automatize processos. Com relatórios precisos, tome decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio!",
-        tipoModal: 1
-    },
+    // {
+    //     imgAlt: "Descrição da imagem 2",
+    //     imgSrc: "./solucoes/card5.webp",
+    //     nome: ["Livrarias", "Papelarias"],
+    //     titulo: "Impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle estoque, vendas e automatize processos. Tome decisões estratégicas com relatórios detalhados e leve seu negócio a novos patamares!",
+    //     tipoModal: 1
+    // },
+    // {
+    //     imgAlt: "Informatica e eletronicos",
+    //     imgSrc: "./solucoes/card6.webp",
+    //     nome: ["Informática", "Telefonia", "Eletrônicos"],
+    //     titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão! Controle estoque, vendas e automatize operações. Com relatórios detalhados, tome decisões estratégicas e impulsione o crescimento do seu negócio!",
+    //     tipoModal: 1
+    // },
+    // {
+    //     imgAlt: "Descrição da imagem 2",
+    //     imgSrc: "./solucoes/card7.webp",
+    //     nome: ["Auto Peças", "Oficinas"],
+    //     titulo: "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle estoque, acompanhe serviços e automatize processos. Com relatórios precisos, tome decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio!",
+    //     tipoModal: 1
+    // },
     {
         imgAlt: "Descrição da imagem 2",
         imgSrc: "./solucoes/card8.webp",
@@ -60,21 +60,21 @@ const card = [
         titulo: "Revitalize a gestão da sua loja de roupas e calçados com nossa solução completa! Gerencie estoque, acompanhe vendas e automatize tarefas. Com relatórios detalhados, tome decisões estratégicas para otimizar operações e aumentar as vendas!",
         tipoModal: 1
     },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card9.webp",
-        nome: ["Brinquedos"],
-        titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Controle estoque, acompanhe vendas e automatize tarefas. Com relatórios precisos, tome decisões estratégicas para aumentar vendas e eficiência!",
-        link: "https://www.exemplo2.com",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card10.webp",
-        nome: ["Pet Shops"],
-        titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle estoque, acompanhe vendas e automatize processos diários. Relatórios detalhados ajudam a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio!",
-        tipoModal: 1
-    },
+    // {
+    //     imgAlt: "Descrição da imagem 2",
+    //     imgSrc: "./solucoes/card9.webp",
+    //     nome: ["Brinquedos"],
+    //     titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Controle estoque, acompanhe vendas e automatize tarefas. Com relatórios precisos, tome decisões estratégicas para aumentar vendas e eficiência!",
+    //     link: "https://www.exemplo2.com",
+    //     tipoModal: 1
+    // },
+    // {
+    //     imgAlt: "Descrição da imagem 2",
+    //     imgSrc: "./solucoes/card10.webp",
+    //     nome: ["Pet Shops"],
+    //     titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle estoque, acompanhe vendas e automatize processos diários. Relatórios detalhados ajudam a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio!",
+    //     tipoModal: 1
+    // },
     {
         imgAlt: "Descrição da imagem 2",
         imgSrc: "./solucoes/card11.webp",
@@ -82,42 +82,44 @@ const card = [
         titulo: "Otimize sua operação com nossa solução completa! Controle estoque, gerencie pedidos e automatize processos. Relatórios precisos ajudam nas decisões estratégicas, impulsionando eficiência e lucratividade. Eleve o desempenho e amplie sua capacidade de atendimento!",
         tipoModal: 1
     },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card12.webp",
-        nome: ["Varejo em Geral"],
-        titulo: "Simplifique a gestão do seu varejo com nossa solução completa! Controle estoque, gerencie vendas e automatize processos. Relatórios detalhados ajudam nas decisões estratégicas, otimizando operações e aumentando lucros. Eleve o sucesso do seu negócio!",
-        tipoModal: 1
-    },
+    // {
+    //     imgAlt: "Descrição da imagem 2",
+    //     imgSrc: "./solucoes/card12.webp",
+    //     nome: ["Varejo em Geral"],
+    //     titulo: "Simplifique a gestão do seu varejo com nossa solução completa! Controle estoque, gerencie vendas e automatize processos. Relatórios detalhados ajudam nas decisões estratégicas, otimizando operações e aumentando lucros. Eleve o sucesso do seu negócio!",
+    //     tipoModal: 1
+    // },
 ];
 //     /VARIAVEIS.      //
 
 
 const CardSolucoes = (props) => {
     return (
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 p-5 xl:mt-12 md:grid-cols-2 xl:grid-cols-3">
             {card.map((card, index) => (
                 <div key={index} className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                    <div className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'} flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[705px]`}>
+                    <div className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'} flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[600px] py-5`}>
+                        <div>
+                            <div className="relative w-full h-[300px]">
+                                <Image
+                                    className="object-cover object-center"
+                                    src={card.imgSrc}
+                                    fill
+                                    alt="Imagem Promocinal"
+                                />
+                            </div>
 
-                        <div className="relative w-full h-[310px]">
-                            <Image
-                                className="object-cover object-center p-2"
-                                src={card.imgSrc}
-                                fill
-                                alt="Imagem Promocinal"
-                            />
-                        </div>
-
-                        <div className="px-6 py-4">
-
-                            <p className="py-2 text-gray-700 raleway-regular">
+                            <p className="py-2 px-6 text-gray-700 raleway-regular">
                                 {card.titulo}
                             </p>
+                        </div>
+
+                        <div className="px-6">
+
 
                             <div className="grid grid-cols-1 md:grid-cols-2">
                                 {Array.isArray(card.nome) && card.nome.map((item, index) => (
-                                    <div key={index} className={`flex items-center mt-4 text-gray-700 rounded-lg`}>
+                                    <div key={index} className={`flex items-center text-gray-700 rounded-lg`}>
                                         <svg aria-label="suitcase icon" className="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14 11H10V13H14V11Z" />
                                             <path fillRule="evenodd" clipRule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" />
@@ -131,7 +133,7 @@ const CardSolucoes = (props) => {
                             </div>
                         </div>
 
-                        <div onClick={() => props.clickInfo(card.tipoModal)} className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
+                        {/* <div onClick={() => props.clickInfo(card.tipoModal)} className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
                             <a>
                                 <button className="px-2 py-1 text-sm uppercase text-[#F8F8F8]">
                                     <span className="font-semibold inter-bold">
@@ -139,7 +141,7 @@ const CardSolucoes = (props) => {
                                     </span>
                                 </button>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             ))}

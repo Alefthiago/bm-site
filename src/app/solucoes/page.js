@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import CardSolucoes from "@/components/cards/cardSolucoes";
 import DatacashModal from "@/components/modals/datacash";
 import Image from "next/image";
+import Segmentos from "@/components/cards/cardSegmentos";
 // Util. //
 
 const PaginaSolucoes = () => {
@@ -117,8 +118,9 @@ const PaginaSolucoes = () => {
                     </section> */}
 
                     <section className="container lg:w-3/5 pb-10 flex flex-row justify-center">
-                        <CardSolucoes clickInfo={clickInfo} />
-                        <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} tipoModal={tipoModal} setTipoModal={setTipoModal} />
+                        <Segmentos />
+                        {/* <CardSolucoes clickInfo={clickInfo} /> */}
+                        {/* <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} tipoModal={tipoModal} setTipoModal={setTipoModal} /> */}
                     </section>
                 </>
             )}

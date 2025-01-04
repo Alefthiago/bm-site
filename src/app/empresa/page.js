@@ -23,7 +23,7 @@ const PageCompany = () => {
 
 
     return (
-        <section className="flex min-h-screen flex-col items-center">
+        <section className={`${Globals.default_style_page}`}>
             {isLoading ? (
                 <div className="flex justify-center items-center min-h-screen absolute">
                     <svg width="100" height="100" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-jump animate-infinite animate-duration-1000 animate-delay-500">
@@ -32,7 +32,7 @@ const PageCompany = () => {
                 </div>
             ) : (
                 <>
-                    <section className="container lg:w-3/5 mx-auto">
+                    <section className="container lg:w-3/5 mx-auto p-5">
                         <div className="container px-6 py-10 mx-auto">
                             <p className="text-xl text-gray-800 invisible show-right inter-regular">
                                 A Empresa

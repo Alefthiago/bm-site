@@ -10,7 +10,7 @@ const Footers = () => {
     <Footer container className="bg-[#206BA5] w-full">
       <div className="w-full">
         {/* <div className="grid w-full justify-between md:justify-between md:flex md:grid-cols-1 gap-4"> */}
-        <div className="w-full flex justify-center items-center pb-5">
+        <div className="w-full flex justify-center items-center">
           <div>
             <Footer.Brand
               href="/bm-site"
@@ -60,14 +60,14 @@ const Footers = () => {
           </div> */}
         </div>
         {/* <Footer.Divider className="text-[#F8F8F8]" /> */}
-        <div className="w-full items-center justify-center gap-5">
-          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2024} className="text-[#F8F8F8] inter-bold" />
-
-          <div className="mt-2 flex space-x-6 md:justify-center">
+        <div className="w-full flex flex-col items-center justify-center gap-5">
+          <div className="mt-2 flex space-x-6 justify-center">
             <Footer.Icon target="_blank" href="https://www.facebook.com/bminformaticaoficial/?_rdr" icon={BsFacebook} className="text-[#F8F8F8]" />
             <Footer.Icon target="_blank" href="https://www.instagram.com/bminformaticaoficial/" icon={BsInstagram} className="text-[#F8F8F8]" />
             <Footer.Icon target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda" icon={FaLinkedinIn} className="text-[#F8F8F8]" />
           </div>
+
+          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2024} className="text-[#F8F8F8] inter-bold" />
         </div>
       </div>
     </Footer>
