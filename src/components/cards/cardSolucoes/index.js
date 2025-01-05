@@ -1,150 +1,234 @@
-//      UTIL.       //
-import Image from "next/image";
-//     /UTIL.       //
+import { PiFileCloud } from "react-icons/pi";
+import { TbReportAnalytics } from "react-icons/tb";
+import { CiBarcode } from "react-icons/ci";
 
-//     /VARIAVEIS.      //
-const card = [
-    {
-        alt: "Descrição da imagem 1",
-        imgSrc: "./solucoes/card1.webp",
-        nome: ["Supermercados", "Mercadinhos", "Frigoríficos", "Açougues", "Peixarias", "Hortifrutis"],
-        titulo: "Otimize a gestão do seu supermercado com nosso ERP especializado, que controla estoque, acompanha vendas em tempo real e automatiza operações diárias e com relatórios precisos",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card2.webp",
-        nome: ["Padarias", "Delicatessens", "Conveniência"],
-        titulo: "Transforme a gestão da sua padaria com nosso ERP especializado! Gerencie estoque, acompanhe vendas e automatize tarefas diárias. Relatórios detalhados ajudam a tomar decisões mais assertivas, aumentando a eficiência e os lucros",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card3.webp",
-        nome: ["Restaurantes", "Lanchonetes", "Cafeterias", "Food Services"],
-        titulo: "Simplifique a gestão do seu restaurante ou food service com nosso ERP especializado! Controle estoque, pedidos e vendas de forma integrada. Relatórios precisos ajudam a tomar decisões estratégicas, aumentando a eficiência e os lucros",
-        tipoModal: 2
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card4.webp",
-        nome: ["Materiais de Construção", "Madeireiras"],
-        titulo: "Transforme a gestão da sua loja de materiais de construção com nossa solução completa! Controle estoque, vendas e automatize processos. Ferramentas precisas ajudam a otimizar a operação e impulsionar o crescimento do seu negócio",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card5.webp",
-        nome: ["Livrarias", "Papelarias"],
-        titulo: "Impulsione sua livraria ou papelaria com nossa solução de gestão completa! Controle estoque, vendas e automatize processos. Tome decisões estratégicas com relatórios detalhados e leve seu negócio a novos patamares!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Informatica e eletronicos",
-        imgSrc: "./solucoes/card6.webp",
-        nome: ["Informática", "Telefonia", "Eletrônicos"],
-        titulo: "Potencialize sua loja de informática, telefonia ou eletrônicos com nossa solução de gestão! Controle estoque, vendas e automatize operações. Com relatórios detalhados, tome decisões estratégicas e impulsione o crescimento do seu negócio!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card7.webp",
-        nome: ["Auto Peças", "Oficinas"],
-        titulo: "Melhore a gestão da sua loja de autopeças ou oficina com nossa solução completa! Controle estoque, acompanhe serviços e automatize processos. Com relatórios precisos, tome decisões estratégicas que aumentam a eficiência e impulsionam o crescimento do seu negócio!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card8.webp",
-        nome: ["Roupas", "Calçados"],
-        titulo: "Revitalize a gestão da sua loja de roupas e calçados com nossa solução completa! Gerencie estoque, acompanhe vendas e automatize tarefas. Com relatórios detalhados, tome decisões estratégicas para otimizar operações e aumentar as vendas!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card9.webp",
-        nome: ["Brinquedos"],
-        titulo: "Simplifique a gestão da sua loja de brinquedos com nosso ERP especializado! Controle estoque, acompanhe vendas e automatize tarefas. Com relatórios precisos, tome decisões estratégicas para aumentar vendas e eficiência!",
-        link: "https://www.exemplo2.com",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card10.webp",
-        nome: ["Pet Shops"],
-        titulo: "Transforme a gestão do seu pet shop com nossa solução especializada! Controle estoque, acompanhe vendas e automatize processos diários. Relatórios detalhados ajudam a tomar decisões estratégicas, garantindo eficiência e crescimento para o seu negócio!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card11.webp",
-        nome: ["Atacados", "Distribuidoras", "Atacarejos"],
-        titulo: "Otimize sua operação com nossa solução completa! Controle estoque, gerencie pedidos e automatize processos. Relatórios precisos ajudam nas decisões estratégicas, impulsionando eficiência e lucratividade. Eleve o desempenho e amplie sua capacidade de atendimento!",
-        tipoModal: 1
-    },
-    {
-        imgAlt: "Descrição da imagem 2",
-        imgSrc: "./solucoes/card12.webp",
-        nome: ["Varejo em Geral"],
-        titulo: "Simplifique a gestão do seu varejo com nossa solução completa! Controle estoque, gerencie vendas e automatize processos. Relatórios detalhados ajudam nas decisões estratégicas, otimizando operações e aumentando lucros. Eleve o sucesso do seu negócio!",
-        tipoModal: 1
-    },
-];
-//     /VARIAVEIS.      //
+import { List, ListItem } from "flowbite-react";
+import { HiCheckCircle } from "react-icons/hi";
+import { HR } from "flowbite-react";
 
-
-const CardSolucoes = (props) => {
+const Segmentos = () => {
     return (
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-            {card.map((card, index) => (
-                <div key={index} className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                    <div className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'} flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[705px]`}>
+        <section className="grid grid-cols-1 gap-10 md:grid-cols-2 ">
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <div>
+                    <span className="inline-block text-blue-500">
+                        <PiFileCloud className="w-8 h-8" />
+                    </span>
 
-                        <div className="relative w-full h-[310px]">
-                            <Image
-                                className="object-cover object-center p-2"
-                                src={card.imgSrc}
-                                fill
-                                alt="Imagem Promocinal"
-                            />
-                        </div>
+                    <h1 className="text-xl font-semibold text-gray-700 capitalize">BM WEB</h1>
 
-                        <div className="px-6 py-4">
+                    <p className="text-gray-500">
+                        Sistema em nuvem
+                        <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                            &nbsp;ERP&nbsp;
+                        </abbr>
+                        para a gestão da sua empresa. Acesse de qualquer lugar, a qualquer hora, com segurança e praticidade.
+                    </p>
+                    <HR />
 
-                            <p className="py-2 text-gray-700 raleway-regular">
-                                {card.titulo}
-                            </p>
+                    <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2">
-                                {Array.isArray(card.nome) && card.nome.map((item, index) => (
-                                    <div key={index} className={`flex items-center mt-4 text-gray-700 rounded-lg`}>
-                                        <svg aria-label="suitcase icon" className="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14 11H10V13H14V11Z" />
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" />
-                                        </svg>
-
-                                        <h1 className="px-2 text-sm inter-bold">
-                                            {item}
-                                        </h1>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div onClick={() => props.clickInfo(card.tipoModal)} className="flex items-center px-6 py-3 bg-[#206BA5] justify-center rounded-b-lg">
-                            <a>
-                                <button className="px-2 py-1 text-sm uppercase text-[#F8F8F8]">
-                                    <span className="font-semibold inter-bold">
-                                        Mais Informações
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
+                    <List>
+                        <ListItem icon={HiCheckCircle}>Controle de estoque</ListItem>
+                        <ListItem icon={HiCheckCircle}>Vendas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Emissão de Notas Fiscais Eletrônicas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Fidelização de Clientes/Correntistas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Controle de Produção</ListItem>
+                        <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
+                    </List>
                 </div>
-            ))}
-        </div>
-    )
-};
 
-export default CardSolucoes;
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <span className="inline-block text-blue-500">
+                    <TbReportAnalytics className="w-8 h-8" />
+                </span>
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">DATACASH</h1>
+
+                <p className="text-gray-500">
+                    Solução local
+                    <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                        &nbsp;ERP&nbsp;
+                    </abbr>
+                    para a gestão da sua empresa integrada para administrar seu negócio. Com ele, você controla desde a compra do produto até o momento da concretização da venda, permitindo o total controle do estoque.
+                </p>
+                <HR />
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
+
+                <List>
+                    <ListItem icon={HiCheckCircle}>Controle de estoque</ListItem>
+                    <ListItem icon={HiCheckCircle}>Vendas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Emissão de Notas Fiscais Eletrônicas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Controle de Produção</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gerador de Etiquetas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Emissão de Boletos</ListItem>
+                    <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
+                    <ListItem icon={HiCheckCircle}>Conciliação bancária</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gerador de Arquivos Fiscais</ListItem>
+                    <ListItem icon={HiCheckCircle}>Cotações com Fornecedores</ListItem>
+                </List>
+
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <span className="inline-block text-blue-500">
+                    <CiBarcode className="w-8 h-8" />
+                </span>
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">BM PDV</h1>
+
+                <p className="text-gray-500">
+                    Software completo para
+                    <abbr title="Ponto de Venda">
+                        &nbsp;PDV&nbsp;
+                    </abbr>
+                    disponível para sistemas Android, Windows e também em Maquininhas de Cartão.
+                    Projetada para agilizar o atendimento, gerenciar vendas e melhorar a experiência dos clientes.
+                </p>
+
+                <HR />
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
+
+                <List>
+                    <ListItem icon={HiCheckCircle}>Emissão de
+                        <abbr title="Nota Fiscal do Consumidor Eletrônica">
+                            &nbsp;NFC-e
+                        </abbr>
+                        /
+                        <abbr title="Nota Fiscal Eletrônica">
+                            NF-e&nbsp;
+                        </abbr>
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>Gerador de
+                        <abbr title="Documento Auxiliar de Venda">
+                            &nbsp;DAV&nbsp;
+                        </abbr>
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>Controle de Mesas/Comandas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Integração com catracas eletrônicas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Integração com balanças eletrônicas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Integração com Ifood</ListItem>
+                    <ListItem icon={HiCheckCircle}>Recebimentos de Pagamentos</ListItem>
+                    <ListItem icon={HiCheckCircle}>Consulta de Preço e Estoque de Produtos</ListItem>
+                </List>
+
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <span className="inline-block text-blue-500">
+                    <CiBarcode className="w-8 h-8" />
+                </span>
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">BM DASHBOARD</h1>
+
+                <p className="text-gray-500">
+                    Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
+                    facilidando a tomada de decisões estratégicas de sua empresa.
+                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
+                </p>
+
+                <HR />
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
+
+                <List>
+                    <ListItem icon={HiCheckCircle}>Dashboard com acesso a informações atualizadas em tempo real</ListItem>
+                    <ListItem icon={HiCheckCircle}>Análises estratégicas facilitadas por visualização integrada</ListItem>
+                    <ListItem icon={HiCheckCircle}>Substituição de relatórios manuais por dados automatizados</ListItem>
+                    <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
+                </List>
+
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <span className="inline-block text-blue-500">
+                    <CiBarcode className="w-8 h-8" />
+                </span>
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">ARPP</h1>
+
+                <p className="text-gray-500">
+                    Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
+                    facilidando a tomada de decisões estratégicas de sua empresa.
+                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
+                </p>
+
+                <HR />
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
+
+                <List>
+                    <ListItem icon={HiCheckCircle}>Dashboard com acesso a informações atualizadas em tempo real</ListItem>
+                    <ListItem icon={HiCheckCircle}>Análises estratégicas facilitadas por visualização integrada</ListItem>
+                    <ListItem icon={HiCheckCircle}>Substituição de relatórios manuais por dados automatizados</ListItem>
+                    <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
+                </List>
+
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between">
+                <span className="inline-block text-blue-500">
+                    <CiBarcode className="w-8 h-8" />
+                </span>
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">BM COLETOR</h1>
+
+                <p className="text-gray-500">
+                    Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
+                    facilidando a tomada de decisões estratégicas de sua empresa.
+                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
+                </p>
+
+                <HR />
+
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
+
+                <List>
+                    <ListItem icon={HiCheckCircle}>Dashboard com acesso a informações atualizadas em tempo real</ListItem>
+                    <ListItem icon={HiCheckCircle}>Análises estratégicas facilitadas por visualização integrada</ListItem>
+                    <ListItem icon={HiCheckCircle}>Substituição de relatórios manuais por dados automatizados</ListItem>
+                    <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
+                </List>
+
+                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                    <span className="mx-1">saiba mais</span>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    );
+}
+
+export default Segmentos;

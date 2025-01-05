@@ -5,7 +5,8 @@ import { Tabs } from "flowbite-react";
 import { ListGroup } from "flowbite-react";
 import { Accordion } from "flowbite-react";
 import React, { useEffect, useState } from "react";
-import { HR } from "flowbite-react";
+import Image from "next/image";
+// import { HR } from "flowbite-react";
 // Util. //
 
 const PageLinks = () => {
@@ -30,7 +31,7 @@ const PageLinks = () => {
                 </div>
             ) : (
                 <>
-                    <div className="w-full">
+                    {/* <div className="w-full">
                         <div className="w-full text-center">
                             <h1 className="text-4xl text-[#0E0E0E] invisible show-right inter-bold">
                                 Suporte
@@ -39,16 +40,43 @@ const PageLinks = () => {
                                 Verifique nossos horários de funcionamento para ser atendido
                             </p>
                         </div>
-                    </div>
-                    <div className="overflow-x-auto w-full invisible show-top lg:w-3/5">
+                    </div> */}
+                    <section className="container lg:w-3/5 pb-10">
+                        <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
+                            <div className="w-full lg:w-1/2">
+                                <div className="lg:max-w-lg px-2">
+                                    <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
+                                        Suporte
+                                    </h1>
+                                    <p className="mt-3 text-gray-600 raleway-regular">
+                                        Verifique nossos horários de funcionamento para ser atendido
+                                    </p>
+                                </div>
+                            </div>
+                            {/* <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
+                                <div className="w-full h-full max-w-[400px]">
+                                    <Image
+                                        src="./suporte/suporte.svg"
+                                        alt="Logo BM Informática Ltda"
+                                        layout="responsive"
+                                        width={300}
+                                        height={300}
+                                    />
+                                </div>
+                            </div> */}
+                        </div>
+                    </section>
+                    <section className="container lg:w-3/5 pb-10 invisible show-top">
                         <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
-                            <Tabs.Item active title="Geral" className="inter-bold">
+                            <Tabs.Item active title="Links Úteis" className="inter-bold">
                                 <Accordion aria-disabled>
                                     <Accordion.Panel active>
-                                        <Accordion.Title className="inter-bold">Links Uteis</Accordion.Title>
-                                        <Accordion.Content>
-                                            <HR.Text text="Suporte" />
 
+                                        <Accordion.Title className="inter-bold">
+                                            Suporte
+                                        </Accordion.Title>
+
+                                        <Accordion.Content >
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item
                                                     href="https://download.teamviewer.com/download/version_12x/TeamViewerQS.exe"
@@ -86,9 +114,12 @@ const PageLinks = () => {
                                                     <strong className="text-[#A55820]">Android</strong>)
                                                 </ListGroup.Item>
                                             </ListGroup>
+                                        </Accordion.Content>
+                                    </Accordion.Panel>
 
-                                            <HR.Text text="Fiscal" />
-
+                                    <Accordion.Panel>
+                                        <Accordion.Title>Fiscal</Accordion.Title>
+                                        <Accordion.Content>
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item
                                                     href="http://www.sintegra.gov.br/"
@@ -151,7 +182,7 @@ const PageLinks = () => {
                                 </Accordion>
                             </Tabs.Item>
                         </Tabs>
-                    </div>
+                    </section>
                 </>
             )}
         </section>

@@ -23,7 +23,7 @@ const PageCompany = () => {
 
 
     return (
-        <section className="flex min-h-screen flex-col items-center">
+        <section className={`${Globals.default_style_page}`}>
             {isLoading ? (
                 <div className="flex justify-center items-center min-h-screen absolute">
                     <svg width="100" height="100" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-jump animate-infinite animate-duration-1000 animate-delay-500">
@@ -32,8 +32,8 @@ const PageCompany = () => {
                 </div>
             ) : (
                 <>
-                    <section className="container lg:w-3/5 mx-auto">
-                        <div className="container px-6 py-10 mx-auto">
+                    <section className="container lg:w-3/5 mx-auto p-5">
+                        <div className="container py-10 mx-auto">
                             <p className="text-xl text-gray-800 invisible show-right inter-regular">
                                 A Empresa
                             </p>
@@ -53,11 +53,14 @@ const PageCompany = () => {
                                 </div>
 
                                 <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-                                    <h1 className="text-2xl inter-bold text-gray-800 lg:text-3xl lg:w-96">
-                                        A Melhor Solução para o Seu Negocio aqui
+
+                                    <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
+                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                            A Melhor Solução para o Seu Negocio
+                                        </span>
                                     </h1>
 
-                                    <p className="mt-6 text-gray-500 raleway-regular">
+                                    <p className="text-gray-500 xl:mt-1 text-xl">
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
                                     </p>
 
@@ -89,19 +92,19 @@ const PageCompany = () => {
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
                         <section className="container px-6 py-10 mx-auto lg:w-3/5">
-                            <h1 className="text-2xl inter-bold text-center text-[#F8F8F8] capitalize lg:text-3xl invisible show-top">Nossos Princípios</h1>
+                            <div className="mx-auto md:text-center">
+                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                                        Nossos Princípios
+                                    </span>
+                                </h1>
 
-                            <div className="flex justify-center mx-auto mt-6 invisible show-top">
-                                <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
-                                <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
-                                <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
+                                <p className="mb-4 text-[#F8F8F8] xl:mt-1 text-xl">
+                                    Acreditamos no poder da transformação através da inovação e qualidade.
+                                    <br />
+                                    Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
+                                </p>
                             </div>
-
-                            <p className="max-w-2xl mx-auto my-6 text-center raleway-regular text-[#F8F8F8] invisible show-bottom">
-                                Acreditamos no poder da transformação através da inovação e qualidade.
-                                <br />
-                                Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
-                            </p>
 
                             <div className="flex items-center justify-center invisible show-bottom">
                                 <div className="flex items-center p-1 border border-[#F8F8F8] rounded-xl inter-regular">
@@ -118,36 +121,36 @@ const PageCompany = () => {
                             </div>
 
                             <section className={`${tabsP == 0 ? '' : 'hidden'} invisible show-right`}>
-                                <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-                                    <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
+                                <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
+                                    <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Missão
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 text-center text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
                                         Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
                                     </p>
                                 </div>
                             </section>
 
                             <section className={`${tabsP == 1 ? '' : 'hidden'} invisible show-top`}>
-                                <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-                                    <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
+                                <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
+                                    <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Visão
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 text-center text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
                                         Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
                                     </p>
                                 </div>
                             </section>
 
                             <section className={`${tabsP == 2 ? '' : 'hidden'} invisible show-left`}>
-                                <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-                                    <h2 className="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
+                                <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
+                                    <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Valores
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 text-center text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
                                         Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação.
                                     </p>
                                 </div>
@@ -160,17 +163,17 @@ const PageCompany = () => {
 
                     <section className="container px-6 py-10 mx-auto lg:w-3/5 flex flex-col justify-center items-center">
                         <div className="invisible show-top">
-                            <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Prêmios</h1>
+                            <div className="mx-auto md:text-center">
+                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text  from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                        Prêmios
+                                    </span>
+                                </h1>
 
-                            <div className="flex justify-center mx-auto mt-6">
-                                <span className="inline-block w-40 h-1 bg-[#206BA5] rounded-full"></span>
-                                <span className="inline-block w-3 h-1 mx-1 bg-[#206BA5] rounded-full"></span>
-                                <span className="inline-block w-1 h-1 bg-[#206BA5] rounded-full"></span>
+                                <p className="mb-4 text-gray-500 xl:mt-1 text-xl">
+                                    Nossos prêmios refletem o compromisso com a qualidade e inovação.
+                                </p>
                             </div>
-
-                            <p className="max-w-2xl mx-auto my-6 text-center raleway-regular text-gray-800">
-                                Nossos prêmios refletem o compromisso com a qualidade e inovação. Continuamos a superar expectativas e a oferecer o melhor aos nossos clientes.
-                            </p>
                         </div>
                         <CardPremios />
                     </section>
@@ -178,10 +181,19 @@ const PageCompany = () => {
                     <div className="skew-c"></div>
 
                     <section className="w-full bg-[#206BA5]">
-                        <section className="container lg:w-3/5 mx-auto px-6 py-10">
-                            <div className="h-[20rem]">
-                                <div className="container px-6 py-10 mx-auto invisible show-top">
-                                    <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
+                        <section className="container lg:w-3/5 mx-auto py-10 p-5">
+                            <div className="container mx-auto invisible show-top md:text-center">
+                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                                        Automação Comerial
+                                    </span>
+                                </h1>
+
+                                <p className="mt-4 text-gray-900 xl:mt-1 text-xl">
+                                    Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
+                                </p>
+
+                                {/* <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
 
                                     <div className="flex justify-center mx-auto mt-6">
                                         <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
@@ -192,8 +204,7 @@ const PageCompany = () => {
 
                                     <p className="max-w-2xl mx-auto mt-6 text-center text-[#F8F8F8] raleway-regular">
                                         Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
-                                    </p>
-                                </div>
+                                    </p> */}
                             </div>
                         </section>
                     </section>
@@ -202,16 +213,14 @@ const PageCompany = () => {
 
                     <section className="w-full pb-10 container px-6 py-10 mx-auto">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
-                            <div className="invisible show-top">
-                                <h1 className="text-2xl inter-bold text-center text-gray-800 capitalize lg:text-3xl">Redes Sociais</h1>
+                            <div className="invisible show-top md:text-center">
+                                <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                        Redes Sociais
+                                    </span>
+                                </h1>
 
-                                <div className="flex justify-center mx-auto mt-6">
-                                    <span className="inline-block w-40 h-1 bg-[#206BA5] rounded-full"></span>
-                                    <span className="inline-block w-3 h-1 mx-1 bg-[#206BA5] rounded-full"></span>
-                                    <span className="inline-block w-1 h-1 bg-[#206BA5] rounded-full"></span>
-                                </div>
-
-                                <p className="max-w-2xl mx-auto my-6 text-center raleway-regular text-gray-800 invisible show-bottom">
+                                <p className="text-gray-500 xl:mt-1 text-xl">
                                     Conecte-se conosco nas redes sociais e fique por dentro de todas as novidades.
                                 </p>
                             </div>

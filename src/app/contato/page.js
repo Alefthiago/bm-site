@@ -28,13 +28,13 @@ const PageContact = () => {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
                 } else if (hora_atual >= 12 && hora_atual < 14) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else if (hora_atual >= 14 && hora_atual < 18) {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
                 } else if (hora_atual >= 18 && hora_atual < 20) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -42,7 +42,7 @@ const PageContact = () => {
                 }
             } else if (dia_atual == 6) { // Verifica se é Sábado
                 if (hora_atual >= 8 && hora_atual < 18) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -50,7 +50,7 @@ const PageContact = () => {
                 }
             } else if (dia_atual == 0) { // Verifica se é Domingo
                 if (hora_atual >= 8 && hora_atual < 17) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -83,10 +83,13 @@ const PageContact = () => {
                             <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                                 <div className="w-full lg:w-1/2">
                                     <div className="lg:max-w-lg px-2">
-                                        <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
-                                            Contate-nos
+                                        <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
+                                            <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                                Contate-nos
+                                            </span>
                                         </h1>
-                                        <p className="mt-3 text-gray-600 raleway-regular">
+
+                                        <p className="text-gray-500 xl:mt-1 text-xl">
                                             Nós da Bm Informatica teremos prazer em ouvir você
                                         </p>
                                     </div>
@@ -186,12 +189,15 @@ const PageContact = () => {
                         <section className="container lg:w-3/5 px-6 py-10 mx-auto">
                             <div className="w-full">
                                 {/* Cabeçalho da seção */}
-                                <div className="flex flex-col justify-center items-center">
-                                    <h1 className="mt-2 text-2xl text-[#F8F8F8] md:text-3xl inter-bold">
-                                        Nossos horários
+                                <div className="flex flex-col justify-center md:items-center invisible show-bottom">
+                                    <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl md:text-center">
+                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                                            Nossos horários
+                                        </span>
                                     </h1>
+
                                     <div className="flex gap-1 items-center">
-                                        <p id="horario-situacao" className={`${corSituacao} inter-bold`}>
+                                        <p id="horario-situacao" className={`${corSituacao} inter-bold text-gray-900 xl:mt-1 text-xl`}>
                                             {situacao}
                                         </p>
                                         <FaClock className={`h-3 w-3 ${corSituacao}`} />
@@ -199,7 +205,7 @@ const PageContact = () => {
                                 </div>
 
                                 {/* Horários */}
-                                <div className="flex justify-center items-center pt-5 flex-col">
+                                <div className="flex justify-center items-center pt-5 flex-col invisible show-top">
                                     {/* Horário semanal */}
                                     <Timeline>
                                         <Timeline.Item>
@@ -252,11 +258,15 @@ const PageContact = () => {
                     <section className="container lg:w-3/5 pb-10 px-6 py-10 mx-auto">
 
                         <div className="mt-6 w-80 md:mt-8">
-                            <h1 className="text-2xl inter-bold text-gray-800">
-                                Siga-nos
-                            </h1>
+                            <div className="show-bottom">
+                                <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                        Siga-nos
+                                    </span>
+                                </h1>
+                            </div>
 
-                            <div className="flex mt-4 -mx-1.5">
+                            <div className="flex mt-4 -mx-1.5 show-top">
                                 <a className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda">
                                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z" fill="currentColor" />
@@ -278,7 +288,6 @@ const PageContact = () => {
                                 </a>
                             </div>
                         </div>
-
                         <div className="overflow-hidden rounded-lg h-auto w-full mb-10 invisible show-top mt-2">
                             <iframe width="100%" height="100%" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.845566945619!2d-34.904949224234315!3d-8.11720209191211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fadcaa54637%3A0xbdb1a1182c056086!2sR.%20Padre%20Carapuceiro%2C%20733%20-%20Sala%201001%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051020-280!5e0!3m2!1spt-BR!2sbr!4v1722870633793!5m2!1spt-BR!2sbr"></iframe>
                         </div>

@@ -2,9 +2,10 @@
 // Util //
 import Globals from "@/components/globals";
 import { useState, useEffect } from "react";
-import CardSolucoes from "@/components/cards/cardSolucoes";
+import CardSolucoes from "@/components/cards/cardSegmentos";
 import DatacashModal from "@/components/modals/datacash";
 import Image from "next/image";
+import Segmentos from "@/components/cards/cardSolucoes";
 // Util. //
 
 const PaginaSolucoes = () => {
@@ -37,42 +38,18 @@ const PaginaSolucoes = () => {
                 </div>
             ) : (
                 <>
-                    {/* <section className="flex flex-col justify-center gap-10 w-full max-w-7xl px-4">
-                        <div className="w-full">
-                            <div className="w-full text-center invisible show-bottom">
-                                <h1 className="text-4xl font-semibold font-sans text-[#0E0E0E] inter-bold">
-                                    Soluções para a sua Empresa
-                                </h1>
-
-                                <div className="flex justify-center mx-auto mt-2">
-                                    <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-                                    <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                                    <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
-                                </div>
-
-                                <p className="mt-3 text-gray-600 font-sans inter-regular">
-                                    Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.
-                                    <br />
-                                    Clique no seu segmento e verifique o que a BM Informática tem a oferecer
-                                </p>
-                            </div>
-                        </div>
-                    </section>*/}
-                    <section className="container lg:w-3/5 pb-10">
+                    <section className="container lg:w-3/5 pb-10 p-5">
                         <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                             <div className="w-full lg:w-1/2">
-                                <div className="lg:max-w-lg px-2">
-                                    <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
-                                        Soluções para o
-                                        <br />
-                                        <span className="text-blue-500">
-                                            Seu Negócio
+                                <div className="mx-auto">
+                                    <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                            Soluções criadas para automatizar e simplificar o seu negócio.
                                         </span>
                                     </h1>
-                                    <p className="mt-3 text-gray-600 raleway-regular">
-                                        Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.
-                                        <br />
-                                        Clique no seu segmento e verifique o que a BM Informática tem a oferecer
+
+                                    <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
+                                        A BM Informática oferece soluções completas para o seu negócio. Simplifique a gestão da sua empresa com nossa solução completa! Controle estoque, gerencie vendas e automatize processos.
                                     </p>
                                 </div>
                             </div>
@@ -90,39 +67,13 @@ const PaginaSolucoes = () => {
                         </div>
                     </section>
 
-                    {/* <section className="container lg:w-3/5 pb-10">
-                        <div className="lg:flex">
-                            <div className="w-full lg:w-1/2">
-                                <div className="lg:max-w-lg">
-                                    <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
-                                        Soluções para a
-                                        <br />
-                                        <span class="text-blue-500 ">
-                                            Sua Empresa
-                                        </span>
-                                    </h1>
-
-                                    <p className="mt-3 text-gray-600 font-sans inter-regular">
-                                        Com quase 20 anos no mercado, a BM Informática desenvolve softwares para os mais diversos segmentos.
-                                        <br />
-                                        Clique no seu segmento e verifique o que a BM Informática tem a oferecer
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-                                <img className="w-full h-full lg:max-w-3xl" src="./solucoes/solucoes.svg" alt="Catalogue-pana.svg" />
-                            </div>
-                        </div>
-                    </section> */}
-
-                    <section className="container lg:w-3/5 pb-10 flex flex-row justify-center">
-                        <CardSolucoes clickInfo={clickInfo} />
-                        <DatacashModal modalDatacash={modalDatacash} setModalDatacash={setModalDatacash} tipoModal={tipoModal} setTipoModal={setTipoModal} />
+                    <section className="container lg:w-3/5 pb-10 p-5 flex flex-row justify-center">
+                        <Segmentos />
                     </section>
                 </>
-            )}
-        </section>
+            )
+            }
+        </section >
     );
 }
 

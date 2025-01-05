@@ -19,13 +19,13 @@ const Form = (props) => {
         // console.log(value)
         setForm(prevSate => ({
             ...prevSate,
-            [name]: value
+            [name]: value.length == 0 ? value.trim() : value
         }));
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        
         // form.nome = form.nome.trim();
         // form.sobreNome = form.sobreNome.trim();
         // form.email = form.email.trim();

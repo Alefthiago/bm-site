@@ -31,13 +31,13 @@ const MenuMobile = (props) => {
                         >
                             Soluções
                         </Link>
-                        <Link
+                        {/* <Link
                             onClick={() => props.clickIcone('equipamentos', 'Equipamentos')}
                             href={'/equipamentos'}
                             className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/equipamentos', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/equipamentos', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
                             Equipamentos
-                        </Link>
+                        </Link> */}
                         <Link
                             onClick={() => props.clickIcone('empresa', 'Empresa')}
                             href={'/empresa'}
