@@ -87,7 +87,7 @@ export default function Inicio() {
 
           {/*   DESTAQUES.    */}
           <section className="container lg:w-3/5 p-5">
-            <div className="container flex flex-col items-center px-4 py-12 mx-auto md:text-center ">
+            <div className="container flex flex-col items-center py-12 mx-auto md:text-center ">
               <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl invisible show-bottom">
                 <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                   Soluções completas de
@@ -131,7 +131,7 @@ export default function Inicio() {
                 <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-right">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
                     <Image
-                      src="/destaques/ifood.svg"
+                      src="./destaques/ifood.svg"
                       alt="Ifood Logo"
                       width={32}
                       height={32}
@@ -168,7 +168,7 @@ export default function Inicio() {
                 <div className="flex flex-col items-center ju p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-left">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
                     <Image
-                      src="/destaques/Ze_Delivery.svg"
+                      src="./destaques/Ze_Delivery.svg"
                       alt="Zé Delivery Logo"
                       width={32}
                       height={32}
