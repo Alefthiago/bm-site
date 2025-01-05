@@ -14,7 +14,7 @@ const card = [
     {
         imgSrc: './destaques/nf/nfce.svg',
         alt: 'Logo NFCe',
-        texto: ' Nota Fiscal de Consumidor Eletrônica - NFCe',
+        texto: 'Nota Fiscal de Consumidor Eletrônica - NFCe',
         abbr: 'Nota Fiscal do Consumidor Eletrônica',
         desc: 'Emitir notas fiscais para consumidores de forma eletrônica, com simplicidade e agilidade.',
     },
@@ -51,13 +51,13 @@ const CardEmissorFiscal = () => {
                             />
                         </div>
 
-                        <h1 className="mt-4 text-xl inter-bold text-gray-800">
+                        <h1 className="mt-4 inter-bold text-gray-800 text-2xl">
                             <abbr title={`${card.abbr}`}>
                                 {card.texto}
                             </abbr>
                         </h1>
 
-                        <p className="mt-2 text-gray-600 raleway-regular">
+                        <p className="mt-2 text-gray-600 raleway-regular text-xl">
                             {card.desc}
                         </p>
                     </div>

@@ -28,13 +28,13 @@ const PageContact = () => {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
                 } else if (hora_atual >= 12 && hora_atual < 14) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else if (hora_atual >= 14 && hora_atual < 18) {
                     setSituacao('Aberto');
                     setCorSituacao('text-green-500');
                 } else if (hora_atual >= 18 && hora_atual < 20) {
-                    setSituacao('Plantão (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -42,7 +42,7 @@ const PageContact = () => {
                 }
             } else if (dia_atual == 6) { // Verifica se é Sábado
                 if (hora_atual >= 8 && hora_atual < 18) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -50,7 +50,7 @@ const PageContact = () => {
                 }
             } else if (dia_atual == 0) { // Verifica se é Domingo
                 if (hora_atual >= 8 && hora_atual < 17) {
-                    setSituacao('Aberto (APENAS URGÊNCIAS)');
+                    setSituacao('Plantão');
                     setCorSituacao('text-yellow-500');
                 } else {
                     setSituacao('Fechado');
@@ -83,10 +83,13 @@ const PageContact = () => {
                             <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                                 <div className="w-full lg:w-1/2">
                                     <div className="lg:max-w-lg px-2">
-                                        <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
-                                            Contate-nos
+                                        <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
+                                            <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                                Contate-nos
+                                            </span>
                                         </h1>
-                                        <p className="mt-3 text-gray-600 raleway-regular">
+
+                                        <p className="text-gray-500 xl:mt-1 text-xl">
                                             Nós da Bm Informatica teremos prazer em ouvir você
                                         </p>
                                     </div>
@@ -186,12 +189,15 @@ const PageContact = () => {
                         <section className="container lg:w-3/5 px-6 py-10 mx-auto">
                             <div className="w-full">
                                 {/* Cabeçalho da seção */}
-                                <div className="flex flex-col justify-center items-center invisible show-bottom">
-                                    <h1 className="mt-2 text-2xl text-[#F8F8F8] md:text-3xl inter-bold">
-                                        Nossos horários
+                                <div className="flex flex-col justify-center md:items-center invisible show-bottom">
+                                    <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl md:text-center">
+                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                                            Nossos horários
+                                        </span>
                                     </h1>
+
                                     <div className="flex gap-1 items-center">
-                                        <p id="horario-situacao" className={`${corSituacao} inter-bold`}>
+                                        <p id="horario-situacao" className={`${corSituacao} inter-bold text-gray-900 xl:mt-1 text-xl`}>
                                             {situacao}
                                         </p>
                                         <FaClock className={`h-3 w-3 ${corSituacao}`} />
@@ -253,8 +259,10 @@ const PageContact = () => {
 
                         <div className="mt-6 w-80 md:mt-8">
                             <div className="show-bottom">
-                                <h1 className="text-2xl inter-bold text-gray-800">
-                                    Siga-nos
+                                <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl">
+                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                        Siga-nos
+                                    </span>
                                 </h1>
                             </div>
 

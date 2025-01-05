@@ -10,8 +10,8 @@ import CardEmissorFiscal from "@/components/cards/cardEmissorFiscal";
 import Carousel from "@/components/carousel";
 
 import { Timeline } from "flowbite-react";
-import Segmentos from "@/components/cards/cardSegmentos";
-import CardSolucoes from "@/components/cards/cardSolucoes";
+import Segmentos from "@/components/cards/cardSolucoes";
+import CardSolucoes from "@/components/cards/cardSegmentos";
 // UTIL. //
 
 export default function Inicio() {
@@ -45,14 +45,16 @@ export default function Inicio() {
                   </span>
                 </h1>
 
-                <p className="mt-4 text-gray-500 xl:mt-1 text-lg">
+                <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
                   Atendemos os mais diversos segmentos do mercado, com soluções personalizadas para cada tipo de negócio conheça nossos produtos e serviços e veja como podemos ajudar a sua empresa a crescer.
                 </p>
 
                 <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
                   Solicite uma Demonstração
                 </button>
-                <p className="mt-3 text-sm text-gray-400 ">Sem custo</p>
+                <p className="mt-3 text-sm text-gray-400 ">
+                  Sem custo
+                </p>
               </div>
             </div>
           </section>
@@ -64,11 +66,17 @@ export default function Inicio() {
           {/*   SEGMENTOS.    */}
           <section className="w-full bg-[#206BA5] flex flex-col items-center">
             <div className="container lg:w-3/5 p-5">
-              <h1 class="text-4xl font-extrabold md:text-center lg:text-5xl 2xl:text-6xl">
-                <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#ebebeb] via-[#F8F8F8] to-[#ebebeb]">
-                  Principais Segmentos
-                </span>
-              </h1>
+              <div class="md:text-center">
+                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                  <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                    Principais Segmentos
+                  </span>
+                </h1>
+
+                <p class="mt-3 text-gray-900 text-xl">
+                  Nossos sistemas são desenvolvidos para atender as necessidades de diversos segmentos do mercado, com soluções personalizadas para cada tipo de negócio.
+                </p>
+              </div>
             </div>
             <CardSolucoes />
           </section>
@@ -89,21 +97,26 @@ export default function Inicio() {
             </h1>
             <CardDestaques /> */}
 
-            <section class="bg-white dark:bg-gray-900">
-              <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
-                  Try something really different right now.
-                </h2>
+            <div class="container flex flex-col items-center px-4 py-12 mx-auto md:text-center">
+              <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                  Soluções completas de
+                  <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                    &nbsp;ERP&nbsp;
+                  </abbr>
+                  e
+                  <abbr title={`Ponto de Venda`}>
+                    &nbsp;PDV&nbsp;
+                  </abbr>
+                  para inovar na gestão do seu negócio
+                </span>
+              </h1>
 
-                <p class="block max-w-4xl mt-4 text-gray-500 dark:text-gray-300">
-                  Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Esse iure tenetur commodi ipsam error voluptate magni. Adipisci repudiandae ullam commodi
-                  iusto reprehenderit suscipit facere voluptatem, eaque maiores minima. Neque, officiis.
-                </p>
+              <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
+                Descubra nossos sistemas de gestão empresarial e ponto de venda, projetados com as melhores práticas do mercado para otimizar processos, simplificar rotinas e impulsionar resultados.
+              </p>
+            </div>
 
-              
-              </div>
-            </section>
           </section>
           {/*  /DESTAQUES.    */}
 
@@ -128,9 +141,9 @@ export default function Inicio() {
                     <img src="./destaques/ifood.svg" alt="E-commerce" className="w-8 h-8" />
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">Ifood</h1>
+                  <h1 className="text-2xl font-semibold text-gray-700 capitalize">Ifood</h1>
 
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 text-xl">
                     Realiza a integração do seu sistema de gestão com o aplicativo de delivery mais popular do Brasil
                   </p>
 
@@ -145,9 +158,9 @@ export default function Inicio() {
                     <img src="./destaques/Ze_Delivery.svg" alt="E-commerce" className="w-8 h-8" />
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">Zé Delivery</h1>
+                  <h1 className="text-2xl font-semibold text-gray-700 capitalize ">Zé Delivery</h1>
 
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 text-xl">
                     Controle suas vendas e estoque de bebidas com o Zé Delivery
                   </p>
 
@@ -169,7 +182,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Mini Impressoras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Mini impressora de cupom fiscal, compacta e eficiente. Ideal para pequenos negócios, imprime recibos rapidamente via conexão Rede ou USB. Leve e fácil de transportar, perfeita para o dia a dia!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -181,7 +194,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Smart PCs
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Smart PC compacto e versátil, combina desempenho e portabilidade. Ideal para trabalho e entretenimento, com conectividade avançada e design moderno. Perfeito para produtividade em qualquer lugar!</Timeline.Body>
                   </Timeline.Content>
                 </Timeline.Item>
@@ -192,7 +205,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       TEF / Pin-Pads
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Pin-Pad TEF (Transferência Eletrônica de Fundos) confiável e fácil de usar, oferece transações rápidas e seguras. Compatível com diversos sistemas de pagamento, é a escolha ideal para aprimorar o atendimento no seu negócio!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -204,7 +217,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Leitores de Código de Barras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Leitor de Código de Barras rápido e preciso, ideal para otimizar o atendimento e controle de estoque. Fácil de usar, compatível com diversos sistemas, garantindo eficiência em cada leitura! </Timeline.Body>
                   </Timeline.Content>
                 </Timeline.Item>
@@ -215,7 +228,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Gavetas de Dinheiro
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Gaveta de Dinheiro robusta e segura, perfeita para armazenar e organizar seu caixa. Fácil de usar, com abertura rápida e compatível com diversos sistemas de ponto de venda. Ideal para seu negócio!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -227,7 +240,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Impressora de Etiquetas de Código de Barras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Impressora de Etiquetas de Código de Barras eficiente e precisa, ideal para identificar produtos e organizar estoques. Fácil de operar, compatível com diversos formatos de etiquetas. Perfeita para otimizar a sua gestão.
                     </Timeline.Body>
                   </Timeline.Content>
@@ -237,7 +250,7 @@ export default function Inicio() {
                   <Timeline.Point />
                   <Timeline.Content>
                     <Timeline.Title className="text-[#F8F8F8]">Balanças Eletrônicas</Timeline.Title>
-                    <Timeline.Body className="text-gray-900">
+                    <Timeline.Body className="text-gray-900 text-xl">
                       Balanças Eletrônicas precisas e duráveis, ideal para pesagens rápidas e confiáveis no varejo. Fácil de usar, com display claro e alta capacidade de carga. Perfeita para melhorar a eficiência no atendimento!
                     </Timeline.Body>
                   </Timeline.Content>
