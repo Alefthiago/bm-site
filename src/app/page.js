@@ -5,12 +5,10 @@ import { useState, useEffect } from "react";
 import Globals from "@/components/globals";
 import { HiArrowRight } from "react-icons/hi";
 
-import CardDestaques from "@/components/cards/cardDestaques";
 import CardEmissorFiscal from "@/components/cards/cardEmissorFiscal";
 import Carousel from "@/components/carousel";
 
 import { Timeline } from "flowbite-react";
-import Segmentos from "@/components/cards/cardSolucoes";
 import CardSolucoes from "@/components/cards/cardSegmentos";
 // UTIL. //
 
@@ -38,9 +36,9 @@ export default function Inicio() {
           {/*     INICIAL.     */}
           <section className="container lg:w-3/5 p-5">
             <div className="container mx-auto md:text-center">
-              <div className="mx-auto">
-                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                  <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+              <div className="mx-auto invisible show-bottom">
+                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                  <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                     Sistemas para Automatizar Sua Empresa
                   </span>
                 </h1>
@@ -49,9 +47,12 @@ export default function Inicio() {
                   Atendemos os mais diversos segmentos do mercado, com soluções personalizadas para cada tipo de negócio conheça nossos produtos e serviços e veja como podemos ajudar a sua empresa a crescer.
                 </p>
 
-                <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
-                  Solicite uma Demonstração
-                </button>
+                <a href="https://wa.me/558131262050?text=Olá%2C%20gostaria%20de%20solicitar%20uma%20demonstração.%20Poderia%20me%20ajudar%3F" target="_blank">
+                  <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
+                    Solicite uma Demonstração
+                  </button>
+                </a>
+
                 <p className="mt-3 text-sm text-gray-400 ">
                   Sem custo
                 </p>
@@ -66,14 +67,14 @@ export default function Inicio() {
           {/*   SEGMENTOS.    */}
           <section className="w-full bg-[#206BA5] flex flex-col items-center">
             <div className="container lg:w-3/5 p-5">
-              <div class="md:text-center">
-                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                  <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+              <div className="md:text-center invisible show-bottom">
+                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                  <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
                     Principais Segmentos
                   </span>
                 </h1>
 
-                <p class="mt-3 text-gray-900 text-xl">
+                <p className="mt-3 text-zinc-200 text-xl">
                   Nossos sistemas são desenvolvidos para atender as necessidades de diversos segmentos do mercado, com soluções personalizadas para cada tipo de negócio.
                 </p>
               </div>
@@ -86,20 +87,9 @@ export default function Inicio() {
 
           {/*   DESTAQUES.    */}
           <section className="container lg:w-3/5 p-5">
-            {/* <h1 class="text-4xl font-extrabold md:text-center lg:text-5xl 2xl:text-6xl">
-              <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
-                Automatize Sua Gestão
-              </span>
-              <br />
-              <span class="text-transparent bg-gradient-to-tr bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
-                Da Sua Empresa com Nossos Sistemas
-              </span>
-            </h1>
-            <CardDestaques /> */}
-
-            <div class="container flex flex-col items-center px-4 py-12 mx-auto md:text-center">
-              <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+            <div className="container flex flex-col items-center px-4 py-12 mx-auto md:text-center ">
+              <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl invisible show-bottom">
+                <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                   Soluções completas de
                   <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
                     &nbsp;ERP&nbsp;
@@ -112,7 +102,7 @@ export default function Inicio() {
                 </span>
               </h1>
 
-              <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
+              <p className="mt-4 text-gray-500 xl:mt-1 text-xl invisible show-top">
                 Descubra nossos sistemas de gestão empresarial e ponto de venda, projetados com as melhores práticas do mercado para otimizar processos, simplificar rotinas e impulsionar resultados.
               </p>
             </div>
@@ -125,20 +115,27 @@ export default function Inicio() {
           {/*     INTEGRACOES.     */}
           <section className="w-full bg-[#206BA5]">
             <section className="container lg:w-3/5 p-5 mx-auto">
-              <h1 class="text-4xl font-extrabold md:text-center lg:text-5xl 2xl:text-6xl">
-                <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#ebebeb] via-[#F8F8F8] to-[#ebebeb]">
-                  Integrado com os principais aplicativos e equipamentos do mercado
-                </span>
-              </h1>
+              <div className="invisible show-bottom">
+                <h1 className="text-4xl font-extrabold md:text-center lg:text-5xl 2xl:text-6xl">
+                  <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#ebebeb] via-[#F8F8F8] to-[#ebebeb]">
+                    Integrado com os principais aplicativos e equipamentos do mercado
+                  </span>
+                </h1>
 
-              <h1 className="pt-10 text-2xl font-semibold md:text-center text-[#F8F8F8] capitalize lg:text-3xl">
-                Principais Aplicativos
-              </h1>
+                <h1 className="pt-10 text-2xl font-semibold md:text-center text-[#F8F8F8] capitalize lg:text-3xl">
+                  Principais Aplicativos
+                </h1>
+              </div>
 
               <div className="grid grid-cols-1 gap-8 mt-3 xl:gap-16 md:grid-cols-2 xl:grid-cols-2 mb-10">
-                <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl">
+                <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-right">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
-                    <img src="./destaques/ifood.svg" alt="E-commerce" className="w-8 h-8" />
+                    <Image
+                      src="/destaques/ifood.svg"
+                      alt="Ifood Logo"
+                      width={32}
+                      height={32}
+                    />
                   </span>
 
                   <h1 className="text-2xl font-semibold text-gray-700 capitalize">Ifood</h1>
@@ -147,15 +144,35 @@ export default function Inicio() {
                     Realiza a integração do seu sistema de gestão com o aplicativo de delivery mais popular do Brasil
                   </p>
 
-                  <a href="#" className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                  <a
+                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20a%20integração%20com%20o%20Ifood."
+                    target="_blank"
+                    className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600"
+                  >
                     <span className="mx-1">saiba mais</span>
-                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      className="w-4 h-4 mx-1 rtl:-scale-x-100"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </a>
                 </div>
 
-                <div className="flex flex-col items-center ju p-6 space-y-3 text-center bg-gray-100 rounded-xl">
+                <div className="flex flex-col items-center ju p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-left">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
-                    <img src="./destaques/Ze_Delivery.svg" alt="E-commerce" className="w-8 h-8" />
+                    <Image
+                      src="/destaques/Ze_Delivery.svg"
+                      alt="Zé Delivery Logo"
+                      width={32}
+                      height={32}
+                    />
                   </span>
 
                   <h1 className="text-2xl font-semibold text-gray-700 capitalize ">Zé Delivery</h1>
@@ -164,25 +181,40 @@ export default function Inicio() {
                     Controle suas vendas e estoque de bebidas com o Zé Delivery
                   </p>
 
-                  <a href="#" className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                  <a
+                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20controle%20de%20vendas%20e%20estoque%20no%20Zé%20Delivery."
+                    target="_blank"
+                    className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600"
+                  >
                     <span className="mx-1">saiba mais</span>
-                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      className="w-4 h-4 mx-1 rtl:-scale-x-100"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </a>
                 </div>
               </div>
 
-              <h1 className="text-2xl font-semibold md:text-center text-[#F8F8F8] capitalize lg:text-3xl">
+              <h1 className="text-2xl font-semibold md:text-center text-[#F8F8F8] capitalize lg:text-3xl invisible show-bottom">
                 Principais Equipamentos
               </h1>
 
-              <Timeline>
+              <Timeline className="invisible show-top">
                 <Timeline.Item>
                   <Timeline.Point />
                   <Timeline.Content>
                     <Timeline.Title className="text-[#F8F8F8]">
                       Mini Impressoras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Mini impressora de cupom fiscal, compacta e eficiente. Ideal para pequenos negócios, imprime recibos rapidamente via conexão Rede ou USB. Leve e fácil de transportar, perfeita para o dia a dia!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -194,7 +226,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Smart PCs
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Smart PC compacto e versátil, combina desempenho e portabilidade. Ideal para trabalho e entretenimento, com conectividade avançada e design moderno. Perfeito para produtividade em qualquer lugar!</Timeline.Body>
                   </Timeline.Content>
                 </Timeline.Item>
@@ -205,7 +237,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       TEF / Pin-Pads
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Pin-Pad TEF (Transferência Eletrônica de Fundos) confiável e fácil de usar, oferece transações rápidas e seguras. Compatível com diversos sistemas de pagamento, é a escolha ideal para aprimorar o atendimento no seu negócio!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -217,7 +249,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Leitores de Código de Barras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Leitor de Código de Barras rápido e preciso, ideal para otimizar o atendimento e controle de estoque. Fácil de usar, compatível com diversos sistemas, garantindo eficiência em cada leitura! </Timeline.Body>
                   </Timeline.Content>
                 </Timeline.Item>
@@ -228,7 +260,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Gavetas de Dinheiro
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Gaveta de Dinheiro robusta e segura, perfeita para armazenar e organizar seu caixa. Fácil de usar, com abertura rápida e compatível com diversos sistemas de ponto de venda. Ideal para seu negócio!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -240,7 +272,7 @@ export default function Inicio() {
                     <Timeline.Title className="text-[#F8F8F8]">
                       Impressora de Etiquetas de Código de Barras
                     </Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Impressora de Etiquetas de Código de Barras eficiente e precisa, ideal para identificar produtos e organizar estoques. Fácil de operar, compatível com diversos formatos de etiquetas. Perfeita para otimizar a sua gestão.
                     </Timeline.Body>
                   </Timeline.Content>
@@ -250,7 +282,7 @@ export default function Inicio() {
                   <Timeline.Point />
                   <Timeline.Content>
                     <Timeline.Title className="text-[#F8F8F8]">Balanças Eletrônicas</Timeline.Title>
-                    <Timeline.Body className="text-gray-900 text-xl">
+                    <Timeline.Body className="text-zinc-200 text-xl">
                       Balanças Eletrônicas precisas e duráveis, ideal para pesagens rápidas e confiáveis no varejo. Fácil de usar, com display claro e alta capacidade de carga. Perfeita para melhorar a eficiência no atendimento!
                     </Timeline.Body>
                   </Timeline.Content>
@@ -268,12 +300,12 @@ export default function Inicio() {
           {/*     SERVIÇOS.     */}
           <section className="container lg:w-3/5 p-5">
             <div className="invisible show-bottom md:text-center">
-              <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+              <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                   Emissão Facilitada e Segura de
                 </span>
                 <br />
-                <span class="text-transparent bg-gradient-to-tr bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                   Documentos Fiscais Eletrônicos
                 </span>
               </h1>

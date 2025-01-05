@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from 'next/link';
-
+import Image from 'next/image';
 const Custom404 = () => {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -40,7 +40,13 @@ const Custom404 = () => {
                         </div>
 
                         <div className="relative w-full mt-12 lg:w-1/2 lg:mt-0 flex flex-row justify-center">
-                            <img className="w-full max-w-lg lg:mx-auto" src="./404.svg" alt="Erro 404" />
+                            <Image
+                                src="./404.svg"
+                                alt="Erro 404"
+                                width={400}
+                                height={400}
+                                priority
+                            />
                         </div>
                     </div>
                 </section>

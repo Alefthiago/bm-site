@@ -41,10 +41,10 @@ const PaginaSolucoes = () => {
                     <section className="container lg:w-3/5 pb-10 p-5">
                         <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                             <div className="w-full lg:w-1/2">
-                                <div className="mx-auto">
-                                    <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
-                                            Soluções criadas para automatizar e simplificar o seu negócio.
+                                <div className="mx-auto invisible show-bottom">
+                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                        <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                            Soluções criadas para automatizar e simplificar o seu negócio
                                         </span>
                                     </h1>
 
@@ -54,13 +54,13 @@ const PaginaSolucoes = () => {
                                 </div>
                             </div>
                             <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                                <div className="w-full h-full max-w-[400px]">
+                                <div className="w-full h-full max-w-[400px] invisible show-left">
                                     <Image
                                         src="./solucoes/solucoes.svg"
                                         alt="Logo BM Informática Ltda"
-                                        layout="responsive"
                                         width={400}
                                         height={400}
+                                        priority
                                     />
                                 </div>
                             </div>
