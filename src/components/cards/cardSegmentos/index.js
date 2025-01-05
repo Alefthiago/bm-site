@@ -104,8 +104,9 @@ const CardSolucoes = (props) => {
                                 <Image
                                     className="object-cover object-center"
                                     src={card.imgSrc}
-                                    fill
                                     alt="Imagem Promocinal"
+                                    fill
+                                    priority
                                 />
                             </div>
 
