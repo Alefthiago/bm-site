@@ -1,5 +1,6 @@
 export default class Globals {
     static default_style_page = "flex min-h-screen flex-col items-center pt-5";
+    //      FUNÇÃO PARA ANIMAÇÃO DE ELEMENTOS AO SCROLL       //
     static observer() {
         let observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -24,13 +25,14 @@ export default class Globals {
         }, {
             threshold: [0]
         });
-    
+
         document.querySelectorAll('.show-top, .show-bottom, .show-left, .show-right').forEach(element => {
             observer.observe(element);
         });
-    
+
         return () => {
             observer.disconnect();
         };
-    }    
+    }
+    //     /FUNÇÃO PARA ANIMAÇÃO DE ELEMENTOS AO SCROLL       //
 }

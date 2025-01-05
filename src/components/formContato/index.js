@@ -1,10 +1,6 @@
 'use client';
 import { useState } from "react";
 
-// import { HiInformationCircle } from "react-icons/hi";
-// import { Alert } from "flowbite-react";
-
-
 const Form = (props) => {
     const [form, setForm] = useState({
         nome: '',

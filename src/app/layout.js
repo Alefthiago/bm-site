@@ -1,11 +1,9 @@
 // Util //
 import { Inter } from "next/font/google";
 import "./globals.css";
-
 // Util //
 
 // Componentes //
-// import Head from "next/head";
 import NavbarApp from "@/components/navbar";
 import Footers from '../components/footer/footer';
 import Libras from "@/components/vLibras";
