@@ -81,7 +81,16 @@ const PageLinks = () => {
                                                     target="_blank"
                                                     className="text-[#316994] "
                                                 >
-                                                    Rust Desk (
+                                                    Rust Desk 1 (
+                                                    <strong className="text-[#A55820]">Android</strong>)
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
+                                                    href="https://bit.ly/apkrustdesk2"
+                                                    target="_blank"
+                                                    className="text-[#316994] "
+                                                >
+                                                    Rust Desk 2 (
                                                     <strong className="text-[#A55820]">Android</strong>)
                                                 </ListGroup.Item>
 
