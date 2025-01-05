@@ -135,7 +135,7 @@ const PageLinks = () => {
                                                 </ListGroup.Item>
 
                                                 <ListGroup.Item
-                                                    href="https://www.nfe.fazenda.gov.br/portal/principal.aspx"
+                                                    href="https://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx"
                                                     target="_blank"
                                                     className=" text-[#316994] text-center "
                                                 >
