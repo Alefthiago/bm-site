@@ -36,17 +36,6 @@ const PageCompany = () => {
                 <>
                     <section className="container lg:w-3/5 mx-auto p-5">
                         <div className="container mx-auto">
-                            <h2 className="text-xl font-extrabold lg:text-2xl 2xl:text-3xl pb-5 invisible show-right">
-                                <span className="text-gray-900">
-                                    A Empresa
-                                </span>
-                            </h2>
-                            <h1 className="text-2xl font-extrabold lg:text-3xl 2xl:text-4xl pb-5 invisible show-left">
-                                <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
-                                    Quem Somos
-                                </span>
-                            </h1>
-
                             <div className="lg:-mx-6 lg:items-center invisible show-bottom">
                                 <div className="relative w-full flex justify-center">
                                     <Image
