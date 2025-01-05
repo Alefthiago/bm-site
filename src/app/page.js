@@ -101,10 +101,6 @@ export default function Inicio() {
                   para inovar na gestão do seu negócio
                 </span>
               </h1>
-
-              <p className="mt-4 text-gray-500 xl:mt-1 text-xl invisible show-top">
-                Descubra nossos sistemas de gestão empresarial e ponto de venda, projetados com as melhores práticas do mercado para otimizar processos, simplificar rotinas e impulsionar resultados.
-              </p>
             </div>
 
           </section>
