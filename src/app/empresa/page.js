@@ -81,12 +81,16 @@ const PageCompany = () => {
                                                 <Timeline.Content className="pt-5">
                                                     <Timeline.Title>E-mail</Timeline.Title>
                                                     <Timeline.Body>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <MdEmail /> &nbsp; Email: bm@bminformatica.com.br
-                                                        </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <MdEmail /> &nbsp; Email: comercial@bminformatica.com.br
-                                                        </p>
+                                                        <a href="mailto:bm@bminformatica.com.br">
+                                                            <p className="text-gray-600 flex items-center raleway-regular">
+                                                                <MdEmail /> &nbsp; Email: bm@bminformatica.com.br
+                                                            </p>
+                                                        </a>
+                                                        <a href="mailto:comercial@bminformatica.com.br">
+                                                            <p className="text-gray-600 flex items-center raleway-regular">
+                                                                <MdEmail /> &nbsp; Email: comercial@bminformatica.com.br
+                                                            </p>
+                                                        </a>
                                                     </Timeline.Body>
                                                 </Timeline.Content>
                                             </Timeline.Item>
@@ -100,7 +104,7 @@ const PageCompany = () => {
                                                         <p className="text-gray-600 flex items-center raleway-regular">
                                                             <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
                                                         </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">''
+                                                        <p className="text-gray-600 flex items-center raleway-regular">
                                                             <FaPhoneVolume /> &nbsp; São Paulo (11) 2626-1337
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
