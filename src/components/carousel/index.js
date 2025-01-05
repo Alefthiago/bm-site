@@ -22,7 +22,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-full pt-64 pb-[300px] md:flex hidden">
+        <div className="w-full pt-64 pb-[300px] md:flex hidden invisible show-top">
             <aside className="carousel">
                 <div className="carousel__wrapper">
                     {[...Array(totalItems)].map((_, index) => (
@@ -36,6 +36,7 @@ const Carousel = () => {
                                 width={0}
                                 height={0}
                                 className='rounded-xl'
+                                priority
                             />
                         </div>
                     ))}

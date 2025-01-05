@@ -3,6 +3,7 @@
 import { Footer } from "flowbite-react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa6";
+import Image from "next/image";
 //   /UTIL.   //
 
 const Footers = () => {
@@ -15,6 +16,8 @@ const Footers = () => {
             <Footer.Brand
               href="/bm-site"
               src={'./bm/lgbranco.svg'}
+              width={0}
+              height={0}
               alt={'Logo BM Informática Ltda'}
               name={<span style={{ color: '#F8F8F8' }} className="inter-bold" >BM Informática</span>}
             />

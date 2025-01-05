@@ -21,7 +21,7 @@ const PageLinks = () => {
     }, [isLoading]);
 
     return (
-        <section className="flex min-h-screen flex-col items-center pt-12 px-4">
+        <section className={`${Globals.default_style_page}`}>
             {isLoading ? (
                 <div className="flex justify-center items-center min-h-screen absolute">
                     <svg width="100" height="100" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-jump animate-infinite animate-duration-1000 animate-delay-500">
@@ -31,42 +31,22 @@ const PageLinks = () => {
                 </div>
             ) : (
                 <>
-                    {/* <div className="w-full">
-                        <div className="w-full text-center">
-                            <h1 className="text-4xl text-[#0E0E0E] invisible show-right inter-bold">
-                                Suporte
-                            </h1>
-                            <p className="mt-3 text-gray-600 invisible show-left inter-regular">
-                                Verifique nossos horários de funcionamento para ser atendido
-                            </p>
-                        </div>
-                    </div> */}
-                    <section className="container lg:w-3/5 pb-10">
+                    <section className="container lg:w-3/5 p-5">
                         <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
-                            <div className="w-full lg:w-1/2">
-                                <div className="lg:max-w-lg px-2">
-                                    <h1 className="text-3xl inter-bold lg:text-4xl text-gray-800">
+                            <div className="w-full">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                         Suporte
-                                    </h1>
-                                    <p className="mt-3 text-gray-600 raleway-regular">
-                                        Verifique nossos horários de funcionamento para ser atendido
-                                    </p>
-                                </div>
+                                    </span>
+                                </h1>
+
+                                <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
+                                    Verifique nossos horários de funcionamento para ser atendido
+                                </p>
                             </div>
-                            {/* <div className="lg:flex hidden items-center justify-center w-full lg:w-1/2 mt-6 lg:mt-0 hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                                <div className="w-full h-full max-w-[400px]">
-                                    <Image
-                                        src="./suporte/suporte.svg"
-                                        alt="Logo BM Informática Ltda"
-                                        layout="responsive"
-                                        width={300}
-                                        height={300}
-                                    />
-                                </div>
-                            </div> */}
                         </div>
                     </section>
-                    <section className="container lg:w-3/5 pb-10 invisible show-top">
+                    <section className="container lg:w-3/5 p-5 invisible show-top">
                         <Tabs className="p-1" aria-label="Tabs with icons" variant="underline">
                             <Tabs.Item active title="Links Úteis" className="inter-bold">
                                 <Accordion aria-disabled>

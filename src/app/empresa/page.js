@@ -7,6 +7,9 @@ import Globals from "@/components/globals";
 import { useEffect, useState } from "react";
 import CardPremios from "@/components/cards/cardPremios/Index";
 import "./styles.css";
+import { MdEmail } from "react-icons/md";
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 //     /UTIL.       //
 
 const PageCompany = () => {
@@ -33,29 +36,33 @@ const PageCompany = () => {
             ) : (
                 <>
                     <section className="container lg:w-3/5 mx-auto p-5">
-                        <div className="container py-10 mx-auto">
-                            <p className="text-xl text-gray-800 invisible show-right inter-regular">
-                                A Empresa
-                            </p>
-
-                            <h1 className="mt-2 text-2xl inter-bold text-blue-500 capitalize lg:text-3xl invisible show-left">
-                                Quem Somos
+                        <div className="container mx-auto">
+                            <h2 className="text-xl font-extrabold lg:text-2xl 2xl:text-3xl pb-5 invisible show-right">
+                                <span className="text-gray-900">
+                                    A Empresa
+                                </span>
+                            </h2>
+                            <h1 className="text-2xl font-extrabold lg:text-3xl 2xl:text-4xl pb-5 invisible show-left">
+                                <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                    Quem Somos
+                                </span>
                             </h1>
 
-                            <div className="lg:-mx-6 lg:flex lg:items-center invisible show-top">
-                                <div className="relative w-full lg:w-1/2 lg:mx-6 h-52 lg:h-[36rem]">
+                            <div className="lg:-mx-6 lg:items-center invisible show-bottom">
+                                <div className="relative w-full flex justify-center">
                                     <Image
                                         className="object-center rounded-lg"
                                         src="./bm/BM.svg"
                                         alt="Logo da Empresa"
-                                        fill
+                                        width={800}
+                                        height={600}
+                                        priority
                                     />
                                 </div>
 
-                                <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-
-                                    <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
-                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                <div className="mt-8">
+                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-5">
+                                        <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                             A Melhor Solução para o Seu Negocio
                                         </span>
                                     </h1>
@@ -64,26 +71,86 @@ const PageCompany = () => {
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
                                     </p>
 
-                                    <h3 className="mt-6 text-lg font-medium text-blue-500 inter-bold">
+                                    <h3 className="mt-6 mb-6 text-lg font-medium text-blue-500 inter-bold">
                                         Solicite demonstrações
                                     </h3>
-                                    <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
-                                    </p>
-                                    <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp;  São Paulo (11) 2626-1337
-                                    </p>
-                                    <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; Alagoas (82) 3142-0562
-                                    </p>
-                                    <p className="text-gray-600 flex items-center raleway-regular">
-                                        <FaPhoneVolume /> &nbsp; Paraíba (83) 3142-0415
-                                    </p>
-                                    <p className="text-gray-600 flex items-center raleway-regular">
-                                        <IoLogoWhatsapp /> &nbsp; Whatsapp (81) 3126-2050
-                                    </p>
+
+                                    <Timeline horizontal>
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={HiCalendar} />
+                                            <Timeline.Content>
+                                                <Timeline.Time>February 2022</Timeline.Time>
+                                                <Timeline.Title>Application UI code in Tailwind CSS</Timeline.Title>
+                                                <Timeline.Body>
+                                                    Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
+                                                    E-commerce & Marketing pages.
+                                                </Timeline.Body>
+                                                <Button color="gray">
+                                                    Learn More
+                                                    <HiArrowNarrowRight className="ml-2 h-3 w-3" />
+                                                </Button>
+                                            </Timeline.Content>
+                                        </Timeline.Item>
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={HiCalendar} />
+                                            <Timeline.Content>
+                                                <Timeline.Time>March 2022</Timeline.Time>
+                                                <Timeline.Title>Marketing UI design in Figma</Timeline.Title>
+                                                <Timeline.Body>
+                                                    All of the pages and components are first designed in Figma and we keep a parity between the two versions
+                                                    even as we update the project.
+                                                </Timeline.Body>
+                                            </Timeline.Content>
+                                        </Timeline.Item>
+                                        <Timeline.Item>
+                                            <Timeline.Point icon={HiCalendar} />
+                                            <Timeline.Content>
+                                                <Timeline.Time>April 2022</Timeline.Time>
+                                                <Timeline.Title>E-Commerce UI code in Tailwind CSS</Timeline.Title>
+                                                <Timeline.Body>
+                                                    Get started with dozens of web components and interactive elements built on top of Tailwind CSS.
+                                                </Timeline.Body>
+                                            </Timeline.Content>
+                                        </Timeline.Item>
+                                    </Timeline>
+                                    {/* <div className="flex">
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <MdEmail /> &nbsp; Whatsapp (81) 3126-2050
+                                        </p>
+
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <MdEmail /> &nbsp; Whatsapp (81) 3126-2050
+                                        </p>
+
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
+                                        </p>
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <FaPhoneVolume /> &nbsp;  São Paulo (11) 2626-1337
+                                        </p>
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <FaPhoneVolume /> &nbsp; Alagoas (82) 3142-0562
+                                        </p>
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <FaPhoneVolume /> &nbsp; Paraíba (83) 3142-0415
+                                        </p>
+                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                            <IoLogoWhatsapp /> &nbsp; Whatsapp (81) 3126-2050
+                                        </p>
+                                    </div> */}
+
                                 </div>
                             </div>
+                            {/* <div className="relative w-full lg:mx-6">
+                                <Image
+                                    className="object-center rounded-lg"
+                                    src="./bm/BM.svg"
+                                    alt="Logo da Empresa"
+                                    width={500}
+                                    height={500}
+                                    priority
+                                />
+                            </div> */}
                         </div>
                     </section>
 
@@ -92,29 +159,29 @@ const PageCompany = () => {
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
                         <section className="container px-6 py-10 mx-auto lg:w-3/5">
-                            <div className="mx-auto md:text-center">
-                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                            <div className="mx-auto md:text-center invisible show-bottom">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
                                         Nossos Princípios
                                     </span>
                                 </h1>
 
-                                <p className="mb-4 text-[#F8F8F8] xl:mt-1 text-xl">
+                                <p className="mb-4 text-zinc-200 xl:mt-1 text-xl">
                                     Acreditamos no poder da transformação através da inovação e qualidade.
                                     <br />
                                     Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
                                 </p>
                             </div>
 
-                            <div className="flex items-center justify-center invisible show-bottom">
+                            <div className="flex items-center justify-center invisible show-top">
                                 <div className="flex items-center p-1 border border-[#F8F8F8] rounded-xl inter-regular">
-                                    <button onClick={() => setTab(0)} className={`px-4 py-2 text-lg text-[#F8F8F8] capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>
+                                    <button onClick={() => setTab(0)} className={`px-4 py-2 text-lg text-zinc-200 capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>
                                         Missão
                                     </button>
-                                    <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-lg text-[#F8F8F8] ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>
+                                    <button onClick={() => setTab(1)} className={`px-4 py-2 mx-4 text-lg text-zinc-200 ${tabsP == 1 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:mx-8 md:px-12`}>
                                         Visão
                                     </button>
-                                    <button onClick={() => setTab(2)} className={`px-4 py-2 text-lg text-[#F8F8F8] ${tabsP == 2 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:px-12`}>
+                                    <button onClick={() => setTab(2)} className={`px-4 py-2 text-lg text-zinc-200 ${tabsP == 2 ? 'bg-[#D67229]' : ''} capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-[#D67229] hover:text-white rounded-xl md:px-12`}>
                                         Valores
                                     </button>
                                 </div>
@@ -126,7 +193,7 @@ const PageCompany = () => {
                                         Missão
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
                                         Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
                                     </p>
                                 </div>
@@ -138,7 +205,7 @@ const PageCompany = () => {
                                         Visão
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
                                         Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
                                     </p>
                                 </div>
@@ -150,7 +217,7 @@ const PageCompany = () => {
                                         Valores
                                     </h2>
 
-                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-[#F8F8F8] raleway-regular">
+                                    <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
                                         Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação.
                                     </p>
                                 </div>
@@ -162,10 +229,10 @@ const PageCompany = () => {
                     <div className="skew-cc"></div>
 
                     <section className="container px-6 py-10 mx-auto lg:w-3/5 flex flex-col justify-center items-center">
-                        <div className="invisible show-top">
+                        <div className="invisible show-bottom">
                             <div className="mx-auto md:text-center">
-                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                                    <span class="text-transparent bg-gradient-to-br bg-clip-text  from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text  from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                         Prêmios
                                     </span>
                                 </h1>
@@ -182,29 +249,16 @@ const PageCompany = () => {
 
                     <section className="w-full bg-[#206BA5]">
                         <section className="container lg:w-3/5 mx-auto py-10 p-5">
-                            <div className="container mx-auto invisible show-top md:text-center">
-                                <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                            <div className="container mx-auto md:text-center">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl invisible show-bottom">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
                                         Automação Comerial
                                     </span>
                                 </h1>
 
-                                <p className="mt-4 text-gray-900 xl:mt-1 text-xl">
+                                <p className="mt-4 text-zinc-200 xl:mt-1 text-xl invisible show-top">
                                     Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
                                 </p>
-
-                                {/* <h1 className="text-2xl font-semibold text-center text-[#F8F8F8] capitalize lg:text-3xl inter-bold">Automação Comerial</h1>
-
-                                    <div className="flex justify-center mx-auto mt-6">
-                                        <span className="inline-block w-40 h-1 bg-[#D67229] rounded-full"></span>
-                                        <span className="inline-block w-3 h-1 mx-1 bg-[#D67229] rounded-full"></span>
-                                        <span className="inline-block w-1 h-1 bg-[#D67229] rounded-full"></span>
-                                    </div>
-
-
-                                    <p className="max-w-2xl mx-auto mt-6 text-center text-[#F8F8F8] raleway-regular">
-                                        Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
-                                    </p> */}
                             </div>
                         </section>
                     </section>
@@ -213,9 +267,9 @@ const PageCompany = () => {
 
                     <section className="w-full pb-10 container px-6 py-10 mx-auto">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
-                            <div className="invisible show-top md:text-center">
-                                <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
-                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                            <div className="invisible show-bottom md:text-center">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-5">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                         Redes Sociais
                                     </span>
                                 </h1>
@@ -225,7 +279,7 @@ const PageCompany = () => {
                                 </p>
                             </div>
 
-                            <div className="card invisible show-bottom">
+                            <div className="card invisible show-top">
                                 <a className="socialContainer containerOne" href="https://www.instagram.com/bminformaticaoficial/" target="_blank">
                                     <svg viewBox="0 0 16 16" className="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
                                     </path>

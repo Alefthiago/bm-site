@@ -78,13 +78,13 @@ const PageContact = () => {
                 </div>
             ) : (
                 <>
-                    <section className="container lg:w-3/5 px-6 py-10 mx-auto">
+                    <section className="container lg:w-3/5 p-5 mx-auto">
                         <section className="mb-3">
                             <div className="flex flex-col lg:flex-row items-center invisible show-bottom">
                                 <div className="w-full lg:w-1/2">
                                     <div className="lg:max-w-lg px-2">
-                                        <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl pb-5">
-                                            <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                        <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-5">
+                                            <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                                 Contate-nos
                                             </span>
                                         </h1>
@@ -166,16 +166,6 @@ const PageContact = () => {
                                                     <span className="mx-2 text-gray-700 truncate w-72 ">comercial@bminformatica.com.br</span>
                                                 </a>
                                             </p>
-
-                                            <p className="flex items-start -mx-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                                </svg>
-
-                                                <a href="mailto:suporte@bminformatica.com.br">
-                                                    <span className="mx-2 text-gray-700 truncate w-72 ">suporte@bminformatica.com.br</span>
-                                                </a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,14 +180,14 @@ const PageContact = () => {
                             <div className="w-full">
                                 {/* Cabeçalho da seção */}
                                 <div className="flex flex-col justify-center md:items-center invisible show-bottom">
-                                    <h1 class="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl md:text-center">
-                                        <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl md:text-center">
+                                        <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
                                             Nossos horários
                                         </span>
                                     </h1>
 
                                     <div className="flex gap-1 items-center">
-                                        <p id="horario-situacao" className={`${corSituacao} inter-bold text-gray-900 xl:mt-1 text-xl`}>
+                                        <p id="horario-situacao" className={`${corSituacao} inter-bold text-gray-900 xl:mt-1 text-2xl`}>
                                             {situacao}
                                         </p>
                                         <FaClock className={`h-3 w-3 ${corSituacao}`} />
@@ -211,39 +201,39 @@ const PageContact = () => {
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
                                             <Timeline.Content className="text-left">
-                                                <Timeline.Title className="inter-bold">Segunda a Sexta</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Comercial - Administrativo</Timeline.Time>
-                                                <Timeline.Title className="inter-bold">08:00 às 12:00</Timeline.Title>
-                                                <Timeline.Title className="inter-bold">14:00 às 18:00</Timeline.Title>
-                                                <Timeline.Body className="text-[#F8F8F8] raleway-regular">
+                                                <Timeline.Title className="text-xl inter-bold">Segunda a Sexta</Timeline.Title>
+                                                <Timeline.Time className="text-xl text-[#F8F8F8] raleway-regular">Comercial - Administrativo</Timeline.Time>
+                                                <Timeline.Title className="text-xl inter-bold">08:00 às 12:00</Timeline.Title>
+                                                <Timeline.Title className="text-xl inter-bold">14:00 às 18:00</Timeline.Title>
+                                                <Timeline.Body className="text-xl text-[#F8F8F8] raleway-regular">
                                                     Para atendimentos fora do horário informado, consulte a disponibilidade.
                                                 </Timeline.Body>
 
-                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
-                                                <Timeline.Title className="inter-bold">08:00 às 12:00</Timeline.Title>
-                                                <Timeline.Title className="inter-bold">12:00 às 14:00 Plantão</Timeline.Title>
-                                                <Timeline.Title className="inter-bold">14:00 às 18:00</Timeline.Title>
-                                                <Timeline.Title className="inter-bold">18:00 às 20:00 Plantão</Timeline.Title>
+                                                <Timeline.Time className="text-xl text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="text-xl inter-bold">08:00 às 12:00</Timeline.Title>
+                                                <Timeline.Title className="text-xl inter-bold">12:00 às 14:00 Plantão</Timeline.Title>
+                                                <Timeline.Title className="text-xl inter-bold">14:00 às 18:00</Timeline.Title>
+                                                <Timeline.Title className="text-xl inter-bold">18:00 às 20:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
 
                                         {/* Horário aos sábados */}
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
-                                            <Timeline.Content className="text-left">
-                                                <Timeline.Title className="inter-bold">Sabado</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
-                                                <Timeline.Title className="inter-bold">08:00 às 18:00 Plantão</Timeline.Title>
+                                            <Timeline.Content className="text-xl text-left">
+                                                <Timeline.Title className="text-xl inter-bold">Sabado</Timeline.Title>
+                                                <Timeline.Time className="text-xl text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="text-xl inter-bold">08:00 às 18:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
 
                                         {/* Horário aos domingos e feriados */}
                                         <Timeline.Item>
                                             <Timeline.Point icon={FaClock} />
-                                            <Timeline.Content className="text-left">
-                                                <Timeline.Title className="inter-bold">Domingo e Feriado</Timeline.Title>
-                                                <Timeline.Time className="text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
-                                                <Timeline.Title className="inter-bold">08:00 às 17:00 Plantão</Timeline.Title>
+                                            <Timeline.Content className="text-xl text-left">
+                                                <Timeline.Title className="text-xl inter-bold">Domingo e Feriado</Timeline.Title>
+                                                <Timeline.Time className="text-xl text-[#F8F8F8] raleway-regular">Suporte</Timeline.Time>
+                                                <Timeline.Title className="text-xl inter-bold">08:00 às 17:00 Plantão</Timeline.Title>
                                             </Timeline.Content>
                                         </Timeline.Item>
                                     </Timeline>
@@ -259,8 +249,8 @@ const PageContact = () => {
 
                         <div className="mt-6 w-80 md:mt-8">
                             <div className="show-bottom">
-                                <h1 class="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl">
-                                    <span class="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                         Siga-nos
                                     </span>
                                 </h1>

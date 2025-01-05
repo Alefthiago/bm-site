@@ -45,9 +45,9 @@ const CardEmissorFiscal = () => {
                             <Image
                                 src={card.imgSrc}
                                 alt={card.alt}
-                                layout="fill"
-                                objectFit="contain"
                                 className="p-2"
+                                width={56}
+                                height={56}
                             />
                         </div>
 
