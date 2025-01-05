@@ -5,8 +5,6 @@ import { Tabs } from "flowbite-react";
 import { ListGroup } from "flowbite-react";
 import { Accordion } from "flowbite-react";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-// import { HR } from "flowbite-react";
 // Util. //
 
 const PageLinks = () => {

@@ -1,10 +1,4 @@
-"use client";
-// UTIL //
-import { Clipboard } from "flowbite-react";
-// UTIL. //
-
 const Contacts = () => {
-
     return (
         <>
             <div className={`w-full flex items-center gap-5`}>

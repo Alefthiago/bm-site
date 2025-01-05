@@ -293,9 +293,7 @@ export default function Inicio() {
           {/*    /INTEGRACOES.     */}
 
 
-          {/*   DIVIDER   */}
           <div className="skew-cc"></div>
-          {/*  /DIVIDER   */}
 
           {/*     SERVIÇOS.     */}
           <section className="container lg:w-3/5 p-5">

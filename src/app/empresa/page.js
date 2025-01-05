@@ -8,8 +8,7 @@ import { useEffect, useState } from "react";
 import CardPremios from "@/components/cards/cardPremios/Index";
 import "./styles.css";
 import { MdEmail } from "react-icons/md";
-import { Button, Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { Timeline } from "flowbite-react";
 //     /UTIL.       //
 
 const PageCompany = () => {
@@ -79,14 +78,14 @@ const PageCompany = () => {
                                             {/* E-mail */}
                                             <Timeline.Item>
                                                 <Timeline.Point icon={MdEmail} />
-                                                <Timeline.Content className="pt-2">
+                                                <Timeline.Content className="pt-5">
                                                     <Timeline.Title>E-mail</Timeline.Title>
                                                     <Timeline.Body>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <MdEmail /> &nbsp; Email: contato@example.com
+                                                            <MdEmail /> &nbsp; Email: bm@bminformatica.com.br
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <MdEmail /> &nbsp; Email: contato@example.com
+                                                            <MdEmail /> &nbsp; Email: comercial@bminformatica.com.br
                                                         </p>
                                                     </Timeline.Body>
                                                 </Timeline.Content>
@@ -95,13 +94,13 @@ const PageCompany = () => {
                                             {/* Ligações */}
                                             <Timeline.Item>
                                                 <Timeline.Point icon={FaPhoneVolume} />
-                                                <Timeline.Content className="pt-2">
+                                                <Timeline.Content className="pt-5">
                                                     <Timeline.Title>Ligações</Timeline.Title>
                                                     <Timeline.Body>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
                                                             <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
                                                         </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
+                                                        <p className="text-gray-600 flex items-center raleway-regular">''
                                                             <FaPhoneVolume /> &nbsp; São Paulo (11) 2626-1337
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
@@ -117,7 +116,7 @@ const PageCompany = () => {
                                             {/* WhatsApp */}
                                             <Timeline.Item>
                                                 <Timeline.Point icon={IoLogoWhatsapp} />
-                                                <Timeline.Content className="pt-2">
+                                                <Timeline.Content className="pt-5">
                                                     <Timeline.Title>WhatsApp</Timeline.Title>
                                                     <Timeline.Body>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
@@ -130,16 +129,6 @@ const PageCompany = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="relative w-full lg:mx-6">
-                                <Image
-                                    className="object-center rounded-lg"
-                                    src="./bm/BM.svg"
-                                    alt="Logo da Empresa"
-                                    width={500}
-                                    height={500}
-                                    priority
-                                />
-                            </div> */}
                         </div>
                     </section>
 

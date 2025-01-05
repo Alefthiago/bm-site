@@ -2,8 +2,6 @@
 // Util //
 import Globals from "@/components/globals";
 import { useState, useEffect } from "react";
-import CardSolucoes from "@/components/cards/cardSegmentos";
-import DatacashModal from "@/components/modals/datacash";
 import Image from "next/image";
 import Segmentos from "@/components/cards/cardSolucoes";
 // Util. //
