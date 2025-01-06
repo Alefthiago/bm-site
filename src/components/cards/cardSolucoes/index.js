@@ -1,7 +1,7 @@
 import { PiFileCloud } from "react-icons/pi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { CiBarcode } from "react-icons/ci";
-
+import { HiOutlineDocumentReport } from "react-icons/hi";
 import { List, ListItem } from "flowbite-react";
 import { HiCheckCircle } from "react-icons/hi";
 import { HR } from "flowbite-react";
@@ -36,6 +36,10 @@ const Segmentos = () => {
                         <ListItem icon={HiCheckCircle}>Controle de Produção</ListItem>
                         <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
                         <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
+                        <ListItem icon={HiCheckCircle}>Acesso Facilitado a Multiplas Filias</ListItem>
+                        <ListItem icon={HiCheckCircle}>Emissão de Boletos</ListItem>
+                        <ListItem icon={HiCheckCircle}>Conciliação bancária</ListItem>
+
                     </List>
                 </div>
 
@@ -72,9 +76,7 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Emissão de Boletos</ListItem>
                     <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
                     <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
-                    <ListItem icon={HiCheckCircle}>Conciliação bancária</ListItem>
                     <ListItem icon={HiCheckCircle}>Gerador de Arquivos Fiscais</ListItem>
-                    <ListItem icon={HiCheckCircle}>Cotações com Fornecedores</ListItem>
                 </List>
 
                 <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
@@ -134,15 +136,13 @@ const Segmentos = () => {
 
             <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between show-left">
                 <span className="inline-block text-blue-500">
-                    <CiBarcode className="w-8 h-8" />
+                    <HiOutlineDocumentReport className="w-8 h-8" />
                 </span>
 
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">BM DASHBOARD</h1>
 
                 <p className="text-gray-500">
                     Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
-                    facilidando a tomada de decisões estratégicas de sua empresa.
-                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
                 </p>
 
                 <HR />
@@ -172,9 +172,7 @@ const Segmentos = () => {
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">ARPP</h1>
 
                 <p className="text-gray-500">
-                    Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
-                    facilidando a tomada de decisões estratégicas de sua empresa.
-                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
+                    O ARPP é um sistema voltado para gestão de produções e controle de qualidade.
                 </p>
 
                 <HR />
@@ -182,10 +180,9 @@ const Segmentos = () => {
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
 
                 <List>
-                    <ListItem icon={HiCheckCircle}>Dashboard com acesso a informações atualizadas em tempo real</ListItem>
-                    <ListItem icon={HiCheckCircle}>Análises estratégicas facilitadas por visualização integrada</ListItem>
-                    <ListItem icon={HiCheckCircle}>Substituição de relatórios manuais por dados automatizados</ListItem>
-                    <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gerenciamento de Produção</ListItem>
+                    <ListItem icon={HiCheckCircle}>Consulta de Estoque</ListItem>
+                    <ListItem icon={HiCheckCircle}>Consulta de Validades de Produtos Pesaveis</ListItem>
                 </List>
 
                 <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
@@ -204,9 +201,7 @@ const Segmentos = () => {
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">BM COLETOR</h1>
 
                 <p className="text-gray-500">
-                    Com o BM Dashboard em seu celular, você tem acesso a todas as informações importantes em tempo real, onde quer que esteja.
-                    facilidando a tomada de decisões estratégicas de sua empresa.
-                    Não perca mais tempo com relatórios desatualizados e garanta agilidade e eficiência para a gestão dos seus negócios.
+                    Facilita o seu processo de inventário de estoque.
                 </p>
 
                 <HR />
@@ -214,10 +209,8 @@ const Segmentos = () => {
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
 
                 <List>
-                    <ListItem icon={HiCheckCircle}>Dashboard com acesso a informações atualizadas em tempo real</ListItem>
-                    <ListItem icon={HiCheckCircle}>Análises estratégicas facilitadas por visualização integrada</ListItem>
-                    <ListItem icon={HiCheckCircle}>Substituição de relatórios manuais por dados automatizados</ListItem>
-                    <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
+                    <ListItem icon={HiCheckCircle}>Controle de Estoque</ListItem>
+                    <ListItem icon={HiCheckCircle}>Consulta de Estoque</ListItem>
                 </List>
 
                 <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">

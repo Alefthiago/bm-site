@@ -127,7 +127,7 @@ export default function Inicio() {
                 <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-right">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
                     <Image
-                      src="./destaques/ifood.svg"
+                      src="./destaques/IFood_logo.png"
                       alt="Ifood Logo"
                       width={32}
                       height={32}
@@ -164,21 +164,21 @@ export default function Inicio() {
                 <div className="flex flex-col items-center ju p-6 space-y-3 text-center bg-gray-100 rounded-xl invisible show-left">
                   <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
                     <Image
-                      src="./destaques/Ze_Delivery.svg"
-                      alt="Zé Delivery Logo"
+                      src="./destaques/anotaai_logo.png"
+                      alt="AnotaAi"
                       width={32}
                       height={32}
                     />
                   </span>
 
-                  <h1 className="text-2xl font-semibold text-gray-700 capitalize ">Zé Delivery</h1>
+                  <h1 className="text-2xl font-semibold text-gray-700 capitalize ">AnotaAi</h1>
 
                   <p className="text-gray-500 text-xl">
-                    Controle suas vendas e estoque de bebidas com o Zé Delivery
+                    integração com o aplicativo de delivery AnotaAi, para facilitar a gestão de pedidos e entregas
                   </p>
 
                   <a
-                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20controle%20de%20vendas%20e%20estoque%20no%20Zé%20Delivery."
+                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20controle%20de%20vendas%20e%20estoque%20no%20Zé%20AnotaAi."
                     target="_blank"
                     className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600"
                   >
