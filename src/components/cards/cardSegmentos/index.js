@@ -97,8 +97,8 @@ const CardSolucoes = (props) => {
     return (
         <div className="grid grid-cols-1 gap-5 p-5 xl:mt-12 md:grid-cols-2 xl:grid-cols-3">
             {card.map((card, index) => (
-                <div key={index} className="hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer">
-                    <div className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'} flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[600px] py-5`}>
+                <div key={index} className={`invisible ${index <= 2 || (index > 5 && index < 9) ? 'show-right' : 'show-left'}`}>
+                    <div className={`hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer flex flex-col justify-between drop-shadow-xl w-full max-w-sm bg-white rounded-lg shadow-lg min-h-[600px] py-5`}>
                         <div>
                             <div className="relative w-full h-[300px]">
                                 <Image

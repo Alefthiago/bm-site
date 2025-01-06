@@ -8,8 +8,8 @@ import { HR } from "flowbite-react";
 
 const Segmentos = () => {
     return (
-        <section className="grid grid-cols-1 gap-10 md:grid-cols-2 ">
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
+        <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
                 <div>
                     <span className="inline-block text-blue-500">
                         <PiFileCloud className="w-8 h-8" />
@@ -43,9 +43,9 @@ const Segmentos = () => {
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
-            </div>
+            </section>
 
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
                 <span className="inline-block text-blue-500">
                     <TbReportAnalytics className="w-8 h-8" />
                 </span>
@@ -81,9 +81,9 @@ const Segmentos = () => {
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
-            </div>
+            </section>
 
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-left">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-left">
                 <span className="inline-block text-blue-500">
                     <CiBarcode className="w-8 h-8" />
                 </span>
@@ -130,9 +130,9 @@ const Segmentos = () => {
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
-            </div>
+            </section>
 
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between show-left">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between show-left">
                 <span className="inline-block text-blue-500">
                     <CiBarcode className="w-8 h-8" />
                 </span>
@@ -162,9 +162,9 @@ const Segmentos = () => {
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                     </svg>
                 </a>
-            </div>
+            </section>
 
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
                 <span className="inline-block text-blue-500">
                     <CiBarcode className="w-8 h-8" />
                 </span>
@@ -194,9 +194,9 @@ const Segmentos = () => {
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                     </svg>
                 </a>
-            </div>
+            </section>
 
-            <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-right">
                 <span className="inline-block text-blue-500">
                     <CiBarcode className="w-8 h-8" />
                 </span>
@@ -226,7 +226,7 @@ const Segmentos = () => {
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                     </svg>
                 </a>
-            </div>
+            </section>
         </section>
     );
 }
