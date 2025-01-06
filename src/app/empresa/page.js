@@ -1,6 +1,7 @@
 'use client';
 //      UTIL.       //
 import Image from "next/image";
+import { HR } from "flowbite-react";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Globals from "@/components/globals";
@@ -37,25 +38,25 @@ const PageCompany = () => {
                     <section className="container lg:w-3/5 mx-auto p-5">
                         <div className="container mx-auto">
                             <div className="lg:-mx-6 lg:items-center invisible show-bottom">
-                                <div className="relative w-full flex justify-center">
+                                <div className="relative w-full flex justify-center mb-10">
                                     <Image
                                         className="object-center rounded-lg"
                                         src="./bm/BM.svg"
                                         alt="Logo da Empresa"
-                                        width={800}
-                                        height={600}
+                                        width={550}
+                                        height={500}
                                         priority
                                     />
                                 </div>
-
-                                <div className="mt-8">
-                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-5">
+                                <HR />
+                                <div className="mt-10">
+                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-1">
                                         <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                             A Melhor Solução para o Seu Negocio
                                         </span>
                                     </h1>
 
-                                    <p className="text-gray-500 xl:mt-1 text-xl">
+                                    <p className="text-gray-500 text-xl">
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
                                     </p>
 
@@ -239,13 +240,13 @@ const PageCompany = () => {
                     <section className="w-full pb-10 container px-6 py-10 mx-auto">
                         <section className="container lg:w-3/5 mx-auto flex flex-col justify-center items-center">
                             <div className="invisible show-bottom md:text-center">
-                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-5">
+                                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-1">
                                     <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                         Redes Sociais
                                     </span>
                                 </h1>
 
-                                <p className="text-gray-500 xl:mt-1 text-xl">
+                                <p className="text-gray-500 text-xl">
                                     Conecte-se conosco nas redes sociais e fique por dentro de todas as novidades.
                                 </p>
                             </div>
