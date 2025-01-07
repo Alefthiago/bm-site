@@ -43,7 +43,7 @@ const Segmentos = () => {
                     </List>
                 </div>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMWEB." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
@@ -79,7 +79,7 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Gerador de Arquivos Fiscais</ListItem>
                 </List>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20DATACASH." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
@@ -128,13 +128,13 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Consulta de Preço e Estoque de Produtos</ListItem>
                 </List>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMPDV." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </a>
             </section>
 
-            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between show-left">
+            <section className="p-8 space-y-3 border-2 border-blue-400 rounded-xl flex flex-col justify-between invisible show-left">
                 <span className="inline-block text-blue-500">
                     <HiOutlineDocumentReport className="w-8 h-8" />
                 </span>
@@ -156,7 +156,7 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Ferramentas para otimizar a gestão operacional e estratégica</ListItem>
                 </List>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMDASHBOARD." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -185,7 +185,7 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Consulta de Validades de Produtos Pesaveis</ListItem>
                 </List>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20ARPP." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -213,7 +213,7 @@ const Segmentos = () => {
                     <ListItem icon={HiCheckCircle}>Consulta de Estoque</ListItem>
                 </List>
 
-                <a href="#" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
+                <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMDATACASH." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
                     <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>

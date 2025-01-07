@@ -218,7 +218,6 @@ export default function Inicio() {
           </section>
           {/*    /INTEGRACOES.     */}
 
-
           <div className="skew-cc"></div>
 
           {/*     SERVIÇOS.     */}

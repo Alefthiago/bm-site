@@ -56,72 +56,9 @@ const PageCompany = () => {
                                         </span>
                                     </h1>
 
-                                    <p className="text-gray-500 text-xl">
+                                    <p className="text-gray-500 text-xl md:text-center">
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados
                                     </p>
-
-                                    <h3 className="mt-6 mb-6 text-lg font-medium md:text-center text-blue-500 inter-bold">
-                                        Solicite demonstrações
-                                    </h3>
-                                    <div className="flex items-center md:justify-center">
-                                        <Timeline horizontal>
-                                            {/* E-mail */}
-                                            <Timeline.Item>
-                                                <Timeline.Point icon={MdEmail} />
-                                                <Timeline.Content className="pt-5">
-                                                    <Timeline.Title>E-mail</Timeline.Title>
-                                                    <Timeline.Body>
-                                                        <a href="mailto:bm@bminformatica.com.br">
-                                                            <p className="text-gray-600 flex items-center raleway-regular">
-                                                                bm@bminformatica.com.br
-                                                            </p>
-                                                        </a>
-                                                        <a href="mailto:comercial@bminformatica.com.br">
-                                                            <p className="text-gray-600 flex items-center raleway-regular">
-                                                                comercial@bminformatica.com.br
-                                                            </p>
-                                                        </a>
-                                                    </Timeline.Body>
-                                                </Timeline.Content>
-                                            </Timeline.Item>
-
-                                            {/* Ligações */}
-                                            <Timeline.Item>
-                                                <Timeline.Point icon={FaPhoneVolume} />
-                                                <Timeline.Content className="pt-5">
-                                                    <Timeline.Title>Ligações</Timeline.Title>
-                                                    <Timeline.Body>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            (81) 3126-2050
-                                                        </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            (11) 2626-1337
-                                                        </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            (82) 3142-0562
-                                                        </p>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            (83) 3142-0415
-                                                        </p>
-                                                    </Timeline.Body>
-                                                </Timeline.Content>
-                                            </Timeline.Item>
-
-                                            {/* WhatsApp */}
-                                            <Timeline.Item>
-                                                <Timeline.Point icon={IoLogoWhatsapp} />
-                                                <Timeline.Content className="pt-5">
-                                                    <Timeline.Title>WhatsApp</Timeline.Title>
-                                                    <Timeline.Body>
-                                                        <p className="text-gray-600 flex items-center raleway-regular">
-                                                            {/* <IoLogoWhatsapp />(81) 3126-2050 */}
-                                                            (81) 3126-2050
-                                                        </p>
-                                                    </Timeline.Body>
-                                                </Timeline.Content>
-                                            </Timeline.Item>
-                                        </Timeline>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +164,7 @@ const PageCompany = () => {
                                     </span>
                                 </h1>
 
-                                <p className="mt-4 text-zinc-200 xl:mt-1 text-xl invisible show-top">
+                                <p className="mt-4 text-zinc-200 xl:mt-3 text-xl invisible show-top">
                                     Sediada em Recife-PE, a BM Informática é especializada no desenvolvimento de produtos e serviços voltados para a automação de rotinas em empresas que desejam atender seus clientes com rapidez e segurança. Com profissionais qualificados, oferecemos soluções que aliam qualidade e preços competitivos, garantindo eficiência e inovação para o seu negócio
                                 </p>
                             </div>
