@@ -180,7 +180,7 @@ export default function Inicio() {
                   </p>
 
                   <a
-                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20controle%20de%20vendas%20e%20estoque%20no%20Zé%20AnotaAi."
+                    href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20a%20integração%20com%20o%20AnotaAi."
                     target="_blank"
                     className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600"
                   >
