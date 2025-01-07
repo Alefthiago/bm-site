@@ -47,7 +47,7 @@ const PaginaSolucoes = () => {
                                     </h1>
 
                                     <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
-                                        A BM Informática oferece soluções completas para o seu negócio. Simplifique a gestão da sua empresa com nossa solução completa! Controle estoque, gerencie vendas e automatize processos.
+                                        A BM Informática oferece soluções completas para o seu negócio
                                     </p>
                                 </div>
                             </div>

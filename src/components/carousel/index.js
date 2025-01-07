@@ -22,7 +22,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-full pt-64 pb-[300px] md:flex hidden invisible show-top">
+        <div className="w-full pt-64 pb-[300px] md:flex hidden">
             <aside className="carousel">
                 <div className="carousel__wrapper">
                     {[...Array(totalItems)].map((_, index) => (
