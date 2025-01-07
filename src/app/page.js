@@ -36,7 +36,7 @@ export default function Inicio() {
         <>
           {/*     INICIAL.     */}
           <section className="container lg:w-3/5 p-5">
-            <div className="container mx-auto md:text-center">
+            <div className="container mx-auto md:text-center invisible show-bottom">
               <div className="mx-auto ">
                 <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
                   <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
@@ -66,28 +66,30 @@ export default function Inicio() {
           <div className="skew-c"></div>
 
           {/*   SEGMENTOS.    */}
-          <section className="w-full bg-[#206BA5] flex flex-col items-center">
-            <div className="container lg:w-3/5 p-5">
-              <div className="md:text-center ">
-                <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
-                  <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
-                    Principais Segmentos
-                  </span>
-                </h1>
+          <section className="w-full bg-[#206BA5]">
+            <div className="flex flex-col items-center">
+              <div className="container lg:w-3/5 p-5 invisible show-bottom">
+                <div className="md:text-center ">
+                  <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
+                    <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
+                      Principais Segmentos
+                    </span>
+                  </h1>
 
-                <p className="mt-3 text-zinc-200 text-xl">
-                  Nossos sistemas são desenvolvidos para atender as necessidades de diversos segmentos do mercado
-                </p>
+                  <p className="mt-3 text-zinc-200 text-xl">
+                    Nossos sistemas são desenvolvidos para atender as necessidades de diversos segmentos do mercado
+                  </p>
+                </div>
               </div>
+              <CardSolucoes />
             </div>
-            <CardSolucoes />
           </section>
           {/*  /SEGMENTOS.    */}
 
           <div className="skew-cc"></div>
 
           {/*   DESTAQUES.    */}
-          <section className="container lg:w-3/5 p-5">
+          <section className="container lg:w-3/5 p-5 invisible show-bottom">
             <div className="container flex flex-col items-center py-12 mx-auto md:text-center ">
               <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl ">
                 <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
@@ -103,7 +105,6 @@ export default function Inicio() {
                 </span>
               </h1>
             </div>
-
           </section>
           {/*  /DESTAQUES.    */}
 
@@ -111,7 +112,7 @@ export default function Inicio() {
 
           {/*     INTEGRACOES.     */}
           <section className="w-full bg-[#206BA5]">
-            <section className="container lg:w-3/5 p-5 mx-auto">
+            <section className="container lg:w-3/5 p-5 mx-auto invisible show-bottom">
               <div>
                 <h1 className="text-4xl font-extrabold md:text-center lg:text-5xl 2xl:text-6xl">
                   <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#ebebeb] via-[#F8F8F8] to-[#ebebeb]">
@@ -222,7 +223,7 @@ export default function Inicio() {
 
           {/*     SERVIÇOS.     */}
           <section className="container lg:w-3/5 p-5">
-            <div className=" md:text-center">
+            <div className=" md:text-center invisible show-bottom">
               <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
                 <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                   Emissão Facilitada e Segura de
@@ -237,7 +238,7 @@ export default function Inicio() {
           </section>
           {/*     SERVIÇOS.     */}
 
-          <section className="container lg:w-3/5 px-6 mb-5 mx-auto text-center bg-transparent ">
+          <section className="container lg:w-3/5 px-6 mb-5 mx-auto text-center bg-transparent">
             <a
               href="https://www.planalto.gov.br/ccivil_03/Leis/L8078compilado.htm"
               className="ml-0 flex items-center inter-bold text-xl font-medium text-[#206BA5] hover:underline md:inline-flex hover:scale-105 transition-transform duration-500 ease-in-out hover:cursor-pointer"
