@@ -4,7 +4,7 @@ export default class Globals {
     static observer() {
         let observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                if (entry.intersectionRatio > 0) {
+                if (entry.intersectionRatio > 0 && entry.target.classList.contains('invisible')) {
                     switch (true) {
                         case entry.target.classList.contains('show-top'):
                             entry.target.classList.add('animate-fade-up');
@@ -20,10 +20,11 @@ export default class Globals {
                             break;
                     }
                     entry.target.classList.remove('invisible');
+                    observer.unobserve(entry.target); 
                 }
             });
         }, {
-            threshold: [0]
+            threshold: [0.1]
         });
 
         document.querySelectorAll('.show-top, .show-bottom, .show-left, .show-right').forEach(element => {
