@@ -57,7 +57,7 @@ const PageCompany = () => {
                                     </h1>
 
                                     <p className="text-gray-500 text-xl">
-                                        A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados.
+                                        A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados
                                     </p>
 
                                     <h3 className="mt-6 mb-6 text-lg font-medium md:text-center text-blue-500 inter-bold">
@@ -73,12 +73,12 @@ const PageCompany = () => {
                                                     <Timeline.Body>
                                                         <a href="mailto:bm@bminformatica.com.br">
                                                             <p className="text-gray-600 flex items-center raleway-regular">
-                                                                <MdEmail /> &nbsp; Email: bm@bminformatica.com.br
+                                                                bm@bminformatica.com.br
                                                             </p>
                                                         </a>
                                                         <a href="mailto:comercial@bminformatica.com.br">
                                                             <p className="text-gray-600 flex items-center raleway-regular">
-                                                                <MdEmail /> &nbsp; Email: comercial@bminformatica.com.br
+                                                                comercial@bminformatica.com.br
                                                             </p>
                                                         </a>
                                                     </Timeline.Body>
@@ -92,16 +92,16 @@ const PageCompany = () => {
                                                     <Timeline.Title>Ligações</Timeline.Title>
                                                     <Timeline.Body>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <FaPhoneVolume /> &nbsp; Pernambuco (81) 3126-2050
+                                                            (81) 3126-2050
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <FaPhoneVolume /> &nbsp; São Paulo (11) 2626-1337
+                                                            (11) 2626-1337
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <FaPhoneVolume /> &nbsp; Alagoas (82) 3142-0562
+                                                            (82) 3142-0562
                                                         </p>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <FaPhoneVolume /> &nbsp; Paraíba (83) 3142-0415
+                                                            (83) 3142-0415
                                                         </p>
                                                     </Timeline.Body>
                                                 </Timeline.Content>
@@ -114,7 +114,8 @@ const PageCompany = () => {
                                                     <Timeline.Title>WhatsApp</Timeline.Title>
                                                     <Timeline.Body>
                                                         <p className="text-gray-600 flex items-center raleway-regular">
-                                                            <IoLogoWhatsapp /> &nbsp; WhatsApp: (81) 3126-2050
+                                                            {/* <IoLogoWhatsapp />(81) 3126-2050 */}
+                                                            (81) 3126-2050
                                                         </p>
                                                     </Timeline.Body>
                                                 </Timeline.Content>
@@ -139,9 +140,7 @@ const PageCompany = () => {
                                 </h1>
 
                                 <p className="mb-4 text-zinc-200 xl:mt-1 text-xl">
-                                    Acreditamos no poder da transformação através da inovação e qualidade.
-                                    <br />
-                                    Estamos comprometidos em oferecer soluções que atendem às expectativas dos nossos clientes, com ética, transparência e dedicação.
+                                    Acreditamos no poder da transformação através da inovação e qualidade
                                 </p>
                             </div>
 
@@ -159,38 +158,38 @@ const PageCompany = () => {
                                 </div>
                             </div>
 
-                            <section className={`${tabsP == 0 ? '' : 'hidden'} invisible show-right`}>
+                            <section className={`text-xl ${tabsP == 0 ? '' : 'hidden'} invisible show-right`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Missão
                                     </h2>
 
                                     <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
-                                        Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas.
+                                        Transformar a informática em uma ferramenta estratégica para o sucesso dos negócios de nossos clientes, oferecendo assessoria especializada, suporte contínuo e desenvolvimento de sistemas com tecnologias modernas
                                     </p>
                                 </div>
                             </section>
 
-                            <section className={`${tabsP == 1 ? '' : 'hidden'} invisible show-top`}>
+                            <section className={`text-xl ${tabsP == 1 ? '' : 'hidden'} invisible show-top`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Visão
                                     </h2>
 
                                     <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
-                                        Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos.
+                                        Ser referência em soluções tecnológicas inovadoras, reconhecida pela excelência em nossos serviços e pelo impacto positivo e significativo nos resultados dos nossos clientes, promovendo a transformação digital e o crescimento sustentável dos negócios que atendemos
                                     </p>
                                 </div>
                             </section>
 
-                            <section className={`${tabsP == 2 ? '' : 'hidden'} invisible show-left`}>
+                            <section className={`text-xl ${tabsP == 2 ? '' : 'hidden'} invisible show-left`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Valores
                                     </h2>
 
                                     <p className="max-w-4xl mt-6 md:text-center md:mx-auto text-zinc-200 raleway-regular">
-                                        Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação.
+                                        Compromisso inabalável com a qualidade, constante inovação em nossas soluções, atendimento personalizado que atende às necessidades específicas de cada cliente, garantindo sucesso e satisfação
                                     </p>
                                 </div>
                             </section>
@@ -210,7 +209,7 @@ const PageCompany = () => {
                                 </h1>
 
                                 <p className="mb-4 text-gray-500 xl:mt-1 text-xl">
-                                    Nossos prêmios refletem o compromisso com a qualidade e inovação.
+                                    Nossos prêmios refletem o compromisso com a qualidade e inovação
                                 </p>
                             </div>
                         </div>
@@ -224,7 +223,7 @@ const PageCompany = () => {
                             <div className="container mx-auto md:text-center">
                                 <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl invisible show-bottom">
                                     <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
-                                        Automação Comerial
+                                        Soluções para Automação Comercial
                                     </span>
                                 </h1>
 
@@ -247,7 +246,7 @@ const PageCompany = () => {
                                 </h1>
 
                                 <p className="text-gray-500 text-xl">
-                                    Conecte-se conosco nas redes sociais e fique por dentro de todas as novidades.
+                                    Conecte-se conosco nas redes sociais
                                 </p>
                             </div>
 
