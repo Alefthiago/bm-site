@@ -10,6 +10,7 @@ const Form = (props) => {
         nome: '',
         sobreNome: '',
         email: '',
+        contato: '',
         documento: '',
         msg: ''
     });
@@ -17,8 +18,15 @@ const Form = (props) => {
     const changeForm = (e) => {
         let { name, value } = e.target;
         // console.log(value)
-
-        if (name === 'documento') {
+        if (name === 'contato') {
+            value = value.replace(/\D/g, '');
+            if (value.length <= 10) {
+                value = value.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+            }
+            else if (value.length > 10 && value.length <= 11) {
+                value = value.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
+            }
+        } else if (name === 'documento') {
             value = value.replace(/\D/g, '');
             if (value.length <= 11) {
                 value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
@@ -43,6 +51,7 @@ const Form = (props) => {
         formData.append('nome', form.nome);
         formData.append('sobreNome', form.sobreNome);
         formData.append('email', form.email);
+        formData.append('contato', form.contato);
         formData.append('documento', form.documento);
         formData.append('msg', form.msg);
 
@@ -51,18 +60,24 @@ const Form = (props) => {
             body: formData,
             // contentType: 'json',
         })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        })
-        .finally(() => {
-            $btn.disabled = false;
-            setSpinnerVisivel(false);
-            setBtnFormTextoVisivel(true);
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    props.setMsgAlertaForm({ msg: data.message, tipo: 0 });
+                } else {
+                    console.error('Error:', data.message);
+                    props.setMsgAlertaForm({ msg: 'Houve um problema inesperado. Por favor, entre em contato com o suporte se precisar de ajuda', tipo: 2 });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                props.setMsgAlertaForm({ msg: 'Houve um problema inesperado. Por favor, entre em contato com o suporte se precisar de ajuda', tipo: 1 });
+            })
+            .finally(() => {
+                $btn.disabled = false;
+                setSpinnerVisivel(false);
+                setBtnFormTextoVisivel(true);
+            });
     }
 
     //      Remove espaços em branco.        //
@@ -75,6 +90,7 @@ const Form = (props) => {
             [e.target.name]: valorCampo
         }));
     };
+    
     //      Remove espaços em branco.        //
 
     return (
@@ -100,13 +116,33 @@ const Form = (props) => {
                 </div>
 
                 <div className="mt-4">
+                    <label className="block mb-2 text-sm text-[#F8F8F8]">
+                        Contato
+                    </label>
+                    <input
+                        type="text"
+                        placeholder="Apenas Números"
+                        className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        name="contato"
+                        value={form.contato}
+                        onChange={changeForm}
+                        onBlur={eventoBlur}
+                        maxLength={16}
+                        minLength={14}
+                    />
+                    <small className="block mt-1 text-xs text-[#F8F8F8]">
+                        Insira o número no formato: (00) 0 0000-0000
+                    </small>
+                </div>
+
+                <div className="mt-4">
                     <label className="block mb-2 text-sm text-[#F8F8F8]">CNPJ/CPF <span className="text-red-600">*</span></label>
                     <input type="text" placeholder="Apenas Números" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name="documento" value={form.documento} onChange={changeForm} onBlur={eventoBlur} required maxLength={18} minLength={14} />
                 </div>
 
                 <div className="w-full mt-4">
                     <label className="block mb-2 text-sm text-[#F8F8F8]">Mensagem <span className="text-red-600">*</span></label>
-                    <textarea placeholder="Mensagem" className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name="msg" value={form.msg} onChange={changeForm} onBlur={eventoBlur}></textarea>
+                    <textarea placeholder="Mensagem" className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name="msg" value={form.msg} onChange={changeForm} onBlur={eventoBlur} required></textarea>
                 </div>
 
                 <button type="submit" id="btnForm" className="inter-bold w-full px-6 py-3 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#D67229] hover:bg-[#C55300] rounded-lg focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
