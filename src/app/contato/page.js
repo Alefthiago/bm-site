@@ -13,6 +13,10 @@ import AlertForm from "@/components/alert";
 const PageContact = () => {
     const [situacao, setSituacao] = useState('Carregando...');
     const [corSituacao, setCorSituacao] = useState('');
+    const [msgAlertaForm, setMsgAlertaForm] = useState({
+        'tipo': null, // 0: info, 1: success, 2: error
+        'msg': null
+    });
 
 
     const [isLoading, setIsLoading] = useState(true);
@@ -99,9 +103,9 @@ const PageContact = () => {
                         <section className="min-h-screen">
                             <div className="container py-10 mx-auto">
                                 <div className="md:flex md:items-center md:-mx-10">
-                                    <div className="md:w-1/2 md:mx-10">
-                                        <Form />
-                                        <AlertForm />
+                                    <div>
+                                        <Form msgAlertaForm={msgAlertaForm} setMsgAlertaForm={setMsgAlertaForm} />
+                                        <AlertForm msgAlertaForm={msgAlertaForm} setMsgAlertaForm={setMsgAlertaForm}/>
                                     </div>
 
                                     <div className="mt-12 md:flex md:mt-0 md:flex-col md:items-center md:w-1/2 md:mx-10 invisible show-left">
