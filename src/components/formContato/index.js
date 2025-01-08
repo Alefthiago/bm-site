@@ -68,6 +68,7 @@ const Form = (props) => {
                     console.error('Error:', data.message);
                     props.setMsgAlertaForm({ msg: 'Houve um problema inesperado. Por favor, entre em contato com o suporte se precisar de ajuda', tipo: 2 });
                 }
+                setForm({ nome: '', sobreNome: '', email: '', contato: '', documento: '', msg: '' });
             })
             .catch(error => {
                 console.error('Error:', error);
