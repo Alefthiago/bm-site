@@ -50,13 +50,13 @@ const PageCompany = () => {
                                 </div>
                                 <HR />
                                 <div className="mt-10">
-                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-1">
+                                    <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl pb-1 md:text-center">
                                         <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
                                             A Melhor Solução para o Seu Negocio
                                         </span>
                                     </h1>
 
-                                    <p className="text-gray-500 text-xl md:text-center">
+                                    <p className="text-gray-500 text-xl md:text-center pt-3">
                                         A BM Informática surgiu em 1998 com o ideal de transformar a informática numa ferramenta estratégica para o sucesso dos negócios de seus clientes, através de assessoria, suporte e desenvolvimento de sistemas com modernas tecnologias, visando contribuir para a efetividade de seus resultados
                                     </p>
                                 </div>
