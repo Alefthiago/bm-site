@@ -63,8 +63,8 @@ const PageCompany = () => {
 
                     {/*         MISSAO, VISAO E VALORES         */}
                     <section className="w-full bg-[#206BA5]">
-                        <section className="container px-6 py-10 mx-auto lg:w-3/5">
-                            <div className="mx-auto md:text-center invisible show-bottom">
+                        <section className="container px-6 py-10 mx-auto lg:w-3/5  invisible show-bottom">
+                            <div className="mx-auto md:text-center">
                                 <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
                                     <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#F8F8F8] via-[#ebebeb] to-[#F8F8F8]">
                                         Nossos Princípios
@@ -76,7 +76,7 @@ const PageCompany = () => {
                                 </p>
                             </div>
 
-                            <div className="flex items-center justify-center invisible show-top">
+                            <div className="flex items-center justify-center">
                                 <div className="flex items-center p-1 border border-[#F8F8F8] rounded-xl inter-regular">
                                     <button onClick={() => setTab(0)} className={`px-4 py-2 text-lg text-zinc-200 capitalize ${tabsP == 0 ? 'bg-[#D67229]' : ''} md:py-3 rounded-xl md:px-12`}>
                                         Missão
@@ -92,7 +92,7 @@ const PageCompany = () => {
                                 </div>
                             </div>
 
-                            <section className={`text-xl ${tabsP == 0 ? '' : 'hidden'} show-right`}>
+                            <section className={`text-xl ${tabsP == 0 ? '' : 'hidden'}`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Missão
@@ -104,7 +104,7 @@ const PageCompany = () => {
                                 </div>
                             </section>
 
-                            <section className={`text-xl ${tabsP == 1 ? '' : 'hidden'} show-top`}>
+                            <section className={`text-xl ${tabsP == 1 ? '' : 'hidden'}`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Visão
@@ -116,7 +116,7 @@ const PageCompany = () => {
                                 </div>
                             </section>
 
-                            <section className={`text-xl ${tabsP == 2 ? '' : 'hidden'} show-left`}>
+                            <section className={`text-xl ${tabsP == 2 ? '' : 'hidden'}`}>
                                 <div className="container flex flex-col px-4 py-12 mx-auto md:text-center">
                                     <h2 className="max-w-2xl text-2xl font-semibold md:mx-auto tracking-tight text-[#F8F8F8] xl:text-3xl inter-bold">
                                         Valores
