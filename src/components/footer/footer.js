@@ -64,12 +64,12 @@ const Footers = () => {
         {/* <Footer.Divider className="text-[#F8F8F8]" /> */}
         <div className="w-full flex flex-col items-center justify-center gap-5">
           <div className="mt-2 flex space-x-6 justify-center">
-            <Footer.Icon target="_blank" href="https://www.facebook.com/bminformaticaoficial/?_rdr" icon={BsFacebook} className="text-[#F8F8F8]" />
-            <Footer.Icon target="_blank" href="https://www.instagram.com/bminformaticaoficial/" icon={BsInstagram} className="text-[#F8F8F8]" />
             <Footer.Icon target="_blank" href="https://br.linkedin.com/company/bm-inform-tica-ltda" icon={FaLinkedinIn} className="text-[#F8F8F8]" />
+            <Footer.Icon target="_blank" href="https://www.instagram.com/bminformaticaoficial/" icon={BsInstagram} className="text-[#F8F8F8]" />
+            <Footer.Icon target="_blank" href="https://www.facebook.com/bminformaticaoficial/?_rdr" icon={BsFacebook} className="text-[#F8F8F8]" />
           </div>
 
-          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2024} className="text-[#F8F8F8] inter-bold" />
+          <Footer.Copyright target="_blank" href="#" by="BM Informática Ltda" year={2025} className="text-[#F8F8F8] inter-bold" />
         </div>
       </div>
     </Footer>
