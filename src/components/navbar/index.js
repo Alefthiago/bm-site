@@ -188,11 +188,11 @@ const NavbarApp = () => {
                     {verificarRota('/suporte') == 'text-[#D67229]'
                         ?
                         <Kbd className={`${verificarRota('/suporte') == 'text-[#D67229]' ? 'bg-[#D67229] border-[#D67229] text-sm text-[#F8F8F8]' : ''}`}>
-                            Suporte
+                            Links Úteis
                         </Kbd>
                         :
                         <>
-                            Suporte
+                            Links Úteis
                         </>
                     }
                 </Navbar.Link>

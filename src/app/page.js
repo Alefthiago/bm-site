@@ -45,7 +45,7 @@ export default function Inicio() {
                 </h1>
 
                 <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
-                  Atendemos os mais diversos segmentos do mercado, conheça nossos produtos e serviços e veja como podemos ajudar a sua empresa a crescer
+                  Nossa empresa possui profissionais especializados nas mais diversas áreas para desenvolvermos soluções que busquem facilitar o dia-a-dia do nosso usuário
                 </p>
 
                 <a href="https://wa.me/558131262050?text=Olá%2C%20gostaria%20de%20solicitar%20uma%20demonstração.%20Poderia%20me%20ajudar%3F" target="_blank">

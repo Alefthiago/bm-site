@@ -19,10 +19,10 @@ const Segmentos = () => {
 
                     <p className="text-gray-500">
                         Sistema em nuvem
-                        <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                        <abbr title="Enterprise Resource Planning - Planejamento dos Recursos da Empresa">
                             &nbsp;ERP&nbsp;
                         </abbr>
-                        para a gestão da sua empresa. Acesse de qualquer lugar, a qualquer hora, com segurança e praticidade.
+                        completo para a gestão da sua empresa. Acesse de qualquer lugar, com segurança, mobilidade e eficiência.
                     </p>
                     <HR />
 
@@ -30,22 +30,23 @@ const Segmentos = () => {
 
                     <List>
                         <ListItem icon={HiCheckCircle}>Controle de estoque</ListItem>
-                        <ListItem icon={HiCheckCircle}>Vendas</ListItem>
-                        <ListItem icon={HiCheckCircle}>Emissão de Notas Fiscais Eletrônicas</ListItem>
-                        <ListItem icon={HiCheckCircle}>Fidelização de Clientes/Correntistas</ListItem>
-                        <ListItem icon={HiCheckCircle}>Controle de Produção</ListItem>
-                        <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
-                        <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
-                        <ListItem icon={HiCheckCircle}>Acesso Facilitado a Multiplas Filias</ListItem>
-                        <ListItem icon={HiCheckCircle}>Emissão de Boletos</ListItem>
+                        <ListItem icon={HiCheckCircle}>Gestão de vendas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Emissão de <abbr title="Nota Fiscal Eletrônica">&nbsp;NF-e</abbr></ListItem>
+                        <ListItem icon={HiCheckCircle}>Fidelização de clientes e correntistas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Controle de produção</ListItem>
+                        <ListItem icon={HiCheckCircle}>Gestão financeira e de contas</ListItem>
+                        <ListItem icon={HiCheckCircle}>Geração de relatórios gerenciais</ListItem>
+                        <ListItem icon={HiCheckCircle}>Acesso simplificado a múltiplas filiais</ListItem>
+                        <ListItem icon={HiCheckCircle}>Emissão de boletos bancários</ListItem>
                         <ListItem icon={HiCheckCircle}>Conciliação bancária</ListItem>
-
                     </List>
                 </div>
 
                 <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMWEB." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
-                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                    </svg>
                 </a>
             </section>
 
@@ -54,14 +55,14 @@ const Segmentos = () => {
                     <TbReportAnalytics className="w-8 h-8" />
                 </span>
 
-                <h1 className="text-xl font-semibold text-gray-700 capitalize">DATACASH</h1>
+                <h1 className="text-xl font-semibold text-gray-700 capitalize">DATACASH - DATA PÃO</h1>
 
                 <p className="text-gray-500">
                     Solução local
-                    <abbr title={`Enterprise Resource Planning - Planejamento dos Recursos da Empresa`}>
+                    <abbr title="Enterprise Resource Planning - Planejamento dos Recursos da Empresa">
                         &nbsp;ERP&nbsp;
                     </abbr>
-                    para a gestão da sua empresa integrada para administrar seu negócio. Com ele, você controla desde a compra do produto até o momento da concretização da venda, permitindo o total controle do estoque.
+                    desenvolvida para facilitar a gestão completa do seu negócio. Permite controlar desde a entrada de mercadorias até a finalização das vendas, garantindo total controle sobre o estoque e operações.
                 </p>
                 <HR />
 
@@ -69,19 +70,21 @@ const Segmentos = () => {
 
                 <List>
                     <ListItem icon={HiCheckCircle}>Controle de estoque</ListItem>
-                    <ListItem icon={HiCheckCircle}>Vendas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gestão de vendas</ListItem>
                     <ListItem icon={HiCheckCircle}>Emissão de Notas Fiscais Eletrônicas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Controle de Produção</ListItem>
-                    <ListItem icon={HiCheckCircle}>Gerador de Etiquetas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Emissão de Boletos</ListItem>
-                    <ListItem icon={HiCheckCircle}>Financeiro / Contas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Gerador de relatórios</ListItem>
-                    <ListItem icon={HiCheckCircle}>Gerador de Arquivos Fiscais</ListItem>
+                    <ListItem icon={HiCheckCircle}>Controle de produção</ListItem>
+                    <ListItem icon={HiCheckCircle}>Geração de etiquetas de produtos</ListItem>
+                    <ListItem icon={HiCheckCircle}>Emissão de boletos bancários</ListItem>
+                    <ListItem icon={HiCheckCircle}>Gestão financeira e de contas</ListItem>
+                    <ListItem icon={HiCheckCircle}>Geração de relatórios detalhados</ListItem>
+                    <ListItem icon={HiCheckCircle}>Exportação de arquivos fiscais</ListItem>
                 </List>
 
                 <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20DATACASH." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>
-                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                    <svg className="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                    </svg>
                 </a>
             </section>
 
@@ -89,16 +92,13 @@ const Segmentos = () => {
                 <span className="inline-block text-blue-500">
                     <CiBarcode className="w-8 h-8" />
                 </span>
-
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">BM PDV</h1>
 
                 <p className="text-gray-500">
-                    Software completo para
-                    <abbr title="Ponto de Venda">
-                        &nbsp;PDV&nbsp;
-                    </abbr>
-                    disponível para sistemas Android, Windows e também em Maquininhas de Cartão.
-                    Projetada para agilizar o atendimento, gerenciar vendas e melhorar a experiência dos clientes.
+                    O BM PDV é uma solução completa de ponto de venda (PDV), compatível com Android, Windows e maquininhas de cartão.
+                    Ideal para empresas que buscam agilidade, controle e praticidade nas operações de venda.
+                    O sistema oferece recursos avançados como controle de comandas, emissão de <abbr title="Documento Auxiliar de Venda">DAV</abbr>,
+                    notas manuais (<abbr title="Documento Auxiliar de Venda">D1</abbr>), além de suporte à NFC-e e SAT.
                 </p>
 
                 <HR />
@@ -106,27 +106,36 @@ const Segmentos = () => {
                 <h1 className="text-xl font-semibold text-gray-700 capitalize">Principais Funcionalidades</h1>
 
                 <List>
-                    <ListItem icon={HiCheckCircle}>Emissão de
-                        <abbr title="Nota Fiscal do Consumidor Eletrônica">
-                            &nbsp;NFC-e
-                        </abbr>
-                        /
-                        <abbr title="Nota Fiscal Eletrônica">
-                            NF-e&nbsp;
-                        </abbr>
+                    <ListItem icon={HiCheckCircle}>
+                        Emissão de <abbr title="Nota Fiscal do Consumidor Eletrônica">&nbsp;NFC-e</abbr> /
+                        <abbr title="Nota Fiscal Eletrônica"> NF-e</abbr>
                     </ListItem>
-                    <ListItem icon={HiCheckCircle}>Gerador de
-                        <abbr title="Documento Auxiliar de Venda">
-                            &nbsp;DAV&nbsp;
-                        </abbr>
+                    <ListItem icon={HiCheckCircle}>
+                        Geração de <abbr title="Documento Auxiliar de Venda">&nbsp;DAV</abbr>
                     </ListItem>
-                    <ListItem icon={HiCheckCircle}>Controle de Mesas/Comandas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Integração com catracas eletrônicas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Integração com balanças eletrônicas</ListItem>
-                    <ListItem icon={HiCheckCircle}>Integração com Ifood</ListItem>
-                    <ListItem icon={HiCheckCircle}>Recebimentos de Pagamentos</ListItem>
-                    <ListItem icon={HiCheckCircle}>Consulta de Preço e Estoque de Produtos</ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Controle completo de mesas/comandas
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Integração com catracas eletrônicas
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Integração com balanças eletrônicas
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Módulo especializado para armazéns
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Integração com os principais marketplaces do mercado
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Recebimento de pagamentos em diversos meios
+                    </ListItem>
+                    <ListItem icon={HiCheckCircle}>
+                        Consulta de preços e controle de estoque em tempo real
+                    </ListItem>
                 </List>
+
 
                 <a href="https://wa.me/558131262050?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20BMPDV." target="_blank" className="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform hover:underline hover:text-blue-600">
                     <span className="mx-1">saiba mais</span>

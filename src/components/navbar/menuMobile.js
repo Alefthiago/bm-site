@@ -57,7 +57,7 @@ const MenuMobile = (props) => {
                             href={'/suporte'}
                             className={`w-full rounded-lg border border-gray-200 px-4 py-2 text-[#0E0E0E] text-center text-sm ${props.verificarRota('/links', true) ? '' : 'hover:bg-gray-100 hover:text-[#208DA5]'} ${props.verificarRota('/suporte', true)} focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200`}
                         >
-                            Suporte
+                            Links Úteis
                         </Link>
 
                         <Link

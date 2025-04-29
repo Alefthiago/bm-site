@@ -34,12 +34,12 @@ const PageLinks = () => {
                             <div className="w-full">
                                 <h1 className="text-4xl font-extrabold lg:text-5xl 2xl:text-6xl">
                                     <span className="text-transparent bg-gradient-to-br bg-clip-text from-[#206BA5] via-[#3A8CC1] to-[#67AEE6]">
-                                        Suporte
+                                        Links Úteis
                                     </span>
                                 </h1>
 
-                                <p className="mt-4 text-gray-500 xl:mt-1 text-xl">
-                                    Verifique nossos horários de funcionamento para ser atendido
+                                <p className="mt-2 text-gray-500 text-lg">
+                                    Reunimos aqui os links mais acessados para facilitar sua navegação. Clique no item desejado e encontre o que precisa com agilidade.
                                 </p>
                             </div>
                         </div>
@@ -57,12 +57,19 @@ const PageLinks = () => {
                                         <Accordion.Content >
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item
+                                                    href="https://cloud.bminformatica.com.br/login"
+                                                    target="_blank"
+                                                    className="text-[#316994]"
+                                                >
+                                                    BM Web
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
                                                     href="https://download.teamviewer.com/download/version_12x/TeamViewerQS.exe"
                                                     target="_blank"
                                                     className="text-[#316994]"
                                                 >
-                                                    Suporte BM (
-                                                    <strong className="text-[#A55820]">Team ViewerQs</strong>)
+                                                    Suporte BM (<strong className="text-[#A55820]">Team ViewerQs</strong>)
                                                 </ListGroup.Item>
 
                                                 <ListGroup.Item
@@ -109,6 +116,38 @@ const PageLinks = () => {
                                         <Accordion.Content>
                                             <ListGroup className="w-full raleway-regular">
                                                 <ListGroup.Item
+                                                    href="https://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx"
+                                                    target="_blank"
+                                                    className=" text-[#316994] text-center "
+                                                >
+                                                    Disponibilidade da NFE
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
+                                                    href="https://nfce.sefaz.se.gov.br/portal/painelMonitor.jsp"
+                                                    target="_blank"
+                                                    className=" text-[#316994] text-center"
+                                                >
+                                                    Disponibilidade NFCE
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
+                                                    href="https://dfe-portal.svrs.rs.gov.br/Mdfe"
+                                                    target="_blank"
+                                                    className=" text-[#316994] text-center"
+                                                >
+                                                    Portal MDFE
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
+                                                    href="https://dfe-portal.svrs.rs.gov.br/Nfce"
+                                                    target="_blank"
+                                                    className=" text-[#316994] text-center"
+                                                >
+                                                    Download NFCE XML
+                                                </ListGroup.Item>
+
+                                                <ListGroup.Item
                                                     href="http://www.sintegra.gov.br/"
                                                     target="_blank"
                                                     className=" text-[#316994] text-center"
@@ -133,14 +172,6 @@ const PageLinks = () => {
                                                 </ListGroup.Item>
 
                                                 <ListGroup.Item
-                                                    href="https://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx"
-                                                    target="_blank"
-                                                    className=" text-[#316994] text-center "
-                                                >
-                                                    Disponibilidade da NFE
-                                                </ListGroup.Item>
-
-                                                <ListGroup.Item
                                                     href="https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21"
                                                     target="_blank"
                                                     className=" text-[#316994] text-center "
@@ -154,14 +185,6 @@ const PageLinks = () => {
                                                     className=" text-[#316994] text-center"
                                                 >
                                                     Tabela de CFOP
-                                                </ListGroup.Item>
-
-                                                <ListGroup.Item
-                                                    href="http://www.nfce.se.gov.br/portal/painelMonitor.jsp"
-                                                    target="_blank"
-                                                    className=" text-[#316994] text-center"
-                                                >
-                                                    Disponibilidade NFCE
                                                 </ListGroup.Item>
                                             </ListGroup>
                                         </Accordion.Content>
