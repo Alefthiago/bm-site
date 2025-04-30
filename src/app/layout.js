@@ -30,7 +30,7 @@ export const metadata = {
     description: "A BM Informática oferece soluções em softwares de gestão ERP em nuvem e PDV para o varejo, além de equipamentos de automação comercial em todo o Brasil. Otimize a gestão do seu negócio e aumente sua eficiência agora!",
     images: [
       {
-        url: "./bm/banner.png",
+        url: "https://static.wixstatic.com/media/3500c1_e3450d38a0f04dc8a3dfc63852f83b45%7Emv2.png/v1/fit/w_2500,h_1330,al_c/3500c1_e3450d38a0f04dc8a3dfc63852f83b45%7Emv2.png",
         width: 2500,
         height: 1330,
         alt: "BM Informática Logo"
@@ -42,7 +42,7 @@ export const metadata = {
     title: "BM Informática - Softwares de Gestão ERP em Nuvem e PDV para Varejo | Brasil",
     description: "A BM Informática oferece soluções em softwares de gestão ERP em nuvem e PDV para o varejo, além de equipamentos de automação comercial em todo o Brasil. Otimize a gestão do seu negócio e aumente sua eficiência agora!",
     images: [
-      "./bm/banner.png"
+      "https://static.wixstatic.com/media/3500c1_e3450d38a0f04dc8a3dfc63852f83b45%7Emv2.png/v1/fit/w_2500,h_1330,al_c/3500c1_e3450d38a0f04dc8a3dfc63852f83b45%7Emv2.png"
     ],
   },
   other: {
