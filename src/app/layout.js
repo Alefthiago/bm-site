@@ -7,6 +7,7 @@ import "./globals.css";
 import NavbarApp from "@/components/navbar";
 import Footers from '../components/footer/footer';
 import Libras from "@/components/vLibras";
+import ScrollTop from "@/components/btn/ScrollTop"
 // Componentes //
 
 const inter = Inter({ subsets: ["latin"] });
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
           <div className="skew-cc lg:block hidden"></div>
           {children}
         </main>
+        <ScrollTop />
         <Libras />
         <Footers />
       </body>
