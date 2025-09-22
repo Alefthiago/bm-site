@@ -9,10 +9,35 @@ export default function manifest() {
     theme_color: '#000000',
     icons: [
       {
-        src: '/favicon.ico',
-        sizes: '64x64 32x32 24x24 16x16',
-        type: 'image/x-icon',
-      }
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-16.svg',
+        sizes: '16x16',
+        type: 'image/svg+xml',
+      },
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-32.svg',
+        sizes: '32x32',
+        type: 'image/svg+xml',
+      },
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-64.svg',
+        sizes: '64x64',
+        type: 'image/svg+xml',
+      },
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-128.svg',
+        sizes: '128x128',
+        type: 'image/svg+xml',
+      },
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-256.svg',
+        sizes: '256x256',
+        type: 'image/svg+xml',
+      },
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@primer/octicons@17.7.0/build/svg/mark-github-512.svg',
+        sizes: '512x512',
+        type: 'image/svg+xml',
+      },
     ],
   };
 };
